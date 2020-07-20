@@ -1,2 +1,2 @@
 # ClimateStudioDocs
-Read the docs documentation repository for CliamteStudio
+Read the docs documentation repository for ClimateStudio
