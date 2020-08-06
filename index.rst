@@ -15,10 +15,46 @@ DIVA-for-Rhino is `Solemma\'\s`_ legacy daylighting and energy modeling plug-in 
    :caption: Getting Started
 
    Installation <docs/installation.rst>
-   Setting up a Rhino Model<docs/settingupaRhinoModel.rst>
-   File Naming and Storage<docs/filenamingandstorage.rst>
-   The DIVA User Interface, Part 1<docs/theDIVAuserinterface1.rst>
-   The DIVA User Interface, Part 2<docs/theDIVAuserinterface2.rst>
+   Setting up a Model<docs/settingupaModel.rst>
+   The Climate Studio Interface<docs/theClimateStudioInterface.rst>
+   
+.. toctree::
+   :maxdepth: 3
+   :caption: Climate Studio Work Flows
+   
+   Site Analysis<docs/siteAnalysis.rst>
+   Radiation Map<docs/radiationMap.rst>
+   Point-in-Time Illuminance<docs/point-in-timeIlluminance.rst>
+   Daylight Availability<docs/daylightAvailability.rst>
+   Annual Glare<docs/annualGlare.rst>
+   Radiance Render<docs/radianceRender.rst>
+   Thermal Model<docs/thermalModel.rst>
+   Results<docs/results.rst>
+   
+.. toctree::
+   :maxdepth: 3
+   :caption: Subpanels
+   
+   Location<docs/Location.rst>
+   Assign Materials<docs/assignMaterials.rst>
+   Add Analysis Surfaces<docs/addAnalysisSurfaces.rst>
+   Sun Path<docs/sunPath.rst>
+   Add Luminaires<docs/addLuminaires.rst>
+   Add Areas<docs/addAreas.rst>
+   Sky<docs/sky.rst>
+   Add Blinds<docs/addBlinds.rst>
+   Add Objects<docs/addObjects.rst>
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+
 
 
 
