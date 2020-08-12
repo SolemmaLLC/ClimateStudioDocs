@@ -1,10 +1,8 @@
 
 
-Welcome to the DIVA-for-Rhino Documentation
+Welcome to the ClimateStudio Documentation
 ===================================================
-DIVA-for-Rhino is `Solemma\'\s`_ legacy daylighting and energy modeling plug-in for Rhinoceros. DIVA-for-Rhino allows users to carry out a series of environmental performance evaluations of individual buildings and urban landscapes including Radiation Maps, Photorealistic Renderings, Climate-Based Daylighting Metrics, Annual and Individual Time Step Glare Analysis, LEED and CHPS Daylighting Compliance, and Single Thermal Zone Energy and Load Calculations.
-
-.. _Solemma's: https://www.solemma.com/Diva.html 
+ClimateStudio is a daylight and thermal analysis software developed by Solemma LLC. It supports a series of environmental analysis workflows for buildings and neighborhoods including annual illuminance simulations for LEED v4 daylighting credits, glare and thermal comfort distributions in both daylit and artificially lit spaces as well as annual and seasonal radiation map analysis for urban massing and shading design studies. Head to the Getting Started section to install ClimateStudio and get an overview of the ClimateStudio interface or jump select any of the workflows below. 
 
 
 
@@ -14,13 +12,13 @@ DIVA-for-Rhino is `Solemma\'\s`_ legacy daylighting and energy modeling plug-in 
    :maxdepth: 3
    :caption: Getting Started
 
+   Requirements<docs/requirements.rst>
    Installation <docs/installation.rst>
-   Setting up a Model<docs/settingupaModel.rst>
-   The Climate Studio Interface<docs/theClimateStudioInterface.rst>
+   Learning ClimateStudio<docs/learningClimateStudio.rst>
    
 .. toctree::
    :maxdepth: 3
-   :caption: Climate Studio Work Flows
+   :caption: ClimateStudio Work Flows
    
    Site Analysis<docs/siteAnalysis.rst>
    Radiation Map<docs/radiationMap.rst>
