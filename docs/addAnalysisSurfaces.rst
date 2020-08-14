@@ -2,6 +2,6 @@
 Add Analysis Surfaces
 ================================================
 .. figure:: images/AddAnalysisSurfaces.jpg
-   :scale: 80 %
+   :width: 900px
    :align: center
 

@@ -4,7 +4,7 @@ Location
 The location subpanel is used to select the site position of earth via a typical meteorological year (TMY). A TMY contains hourly measured data for a variety of environmental variables that are requires for a environmental performance analysis such as direct and diffuse solar radiation, temperature and relative humidity levels as well as wind speed and direction. 
 
 .. figure:: images/Location.jpg
-   :scale: 80   %
+   :width: 900px
    :align: center
 
 ClimateStudio uses the widely used `EnergyPlus weather file format`_ (file extension EPW). EPW files are available for thousands of sites worldwide and can be downloaded from the following web sites. 

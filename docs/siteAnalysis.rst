@@ -2,7 +2,7 @@
 Site Analysis
 ================================================
 .. figure:: images/SiteAnalysis_GUI.jpg
-   :scale: 80 %
+   :width: 900px
    :align: center
 
 This workflow supports direct shading studies, i.e. an evaluation of how a given scene geometry interacts with direct sunlight over the course of the year. This information may be used for multiple purposes such as to determine when in the year a give site or building is shaded by neighboring objects, how to size an overhang or where to place solar cells or collectors. 

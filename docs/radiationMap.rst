@@ -2,5 +2,5 @@
 Radiation Map
 ================================================
 .. figure:: images/RadiationMap_GUI.jpg
-   :scale: 80 %
+   :width: 900px
    :align: center

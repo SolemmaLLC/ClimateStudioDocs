@@ -2,6 +2,6 @@
 Add Objects
 ================================================
 .. figure:: images/AddObjects.jpg
-   :scale: 80 %
+   :width: 900px
    :align: center
 

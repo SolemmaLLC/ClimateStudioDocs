@@ -2,6 +2,6 @@
 Radiance Render
 ================================================
 .. figure:: images/RadianceRender_GUI.jpg
-   :scale: 80 %
+   :width: 900px
    :align: center
 

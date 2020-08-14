@@ -2,6 +2,6 @@
 Add Areas
 ================================================
 .. figure:: images/AddAreas.jpg
-   :scale: 80 %
+   :width: 900px
    :align: center
 

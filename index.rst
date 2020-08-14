@@ -27,7 +27,7 @@ ClimateStudio is a daylight and thermal analysis software developed by Solemma L
    Annual Glare<docs/annualGlare.rst>
    Radiance Render<docs/radianceRender.rst>
    Thermal Model<docs/thermalModel.rst>
-   Results<docs/results.rst>
+   
    
 .. toctree::
    :maxdepth: 3
@@ -42,6 +42,20 @@ ClimateStudio is a daylight and thermal analysis software developed by Solemma L
    Sky<docs/sky.rst>
    Add Blinds<docs/addBlinds.rst>
    Add Objects<docs/addObjects.rst>
+
+.. toctree::
+   :maxdepth: 3
+   :caption: Results
+  
+   Results<docs/results.rst>
+   
+   
+   
+.. toctree::
+   :maxdepth: 3
+   :caption: FAQ
+   
+   Custom Radiance Materials<docs/customRadianceMaterials.rst>
    
    
    

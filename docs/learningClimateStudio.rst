@@ -32,13 +32,13 @@ To get started using ClimateStudio we recommend that to watch a few of the video
 To get to any of these workflows open Rhino, search for the ClimateStudio toolbar  and select a workflow. 
 
 .. figure:: images/workflows.jpg
-   :scale: 120 %
+   :width: 200px
    :align: center
    
 As a result the CS workflow panel will open up. The panel is a dock-able Rhino element meaning that you can drag and drop to set up your Rhino workspace. You can switch between workflow via the ClimateStudio toolbar or by using the top pull-down menu in the CS workflow panel.
 
 .. figure:: images/workflows2.jpg
-   :scale: 100 %
+   :width: 400px
    :align: center 
 
 As a side note, if you are unfamiliar with computer aided design (CAD) software in general or Rhino in particular, you might want to also go through various online material such as the `Lynda tutorials for Rhino.`_ 

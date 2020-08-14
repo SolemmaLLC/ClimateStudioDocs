@@ -4,7 +4,7 @@ Sun Path
 The sun path subpanel controls how the current sun position and how the sun path diagram is displayed in the Rhino viewport. 
 
 .. figure:: images/SunPath.jpg
-   :scale: 80 %
+   :width: 900px
    :align: center
 
 3D Sun Path
@@ -12,7 +12,7 @@ The sun path subpanel controls how the current sun position and how the sun path
 The toggle changes the Rhino viewport from its current setting to a ClimateStudio specific render model that shows the different 3D Sun Path elements as well as the shade of any objects.
 
 .. figure:: images/3dSunPathExample.jpg
-   :scale: 50 %
+   :width: 900px
    :align: center
 
 *Example 3D Sun Path on winter solstice at noon in Boston*

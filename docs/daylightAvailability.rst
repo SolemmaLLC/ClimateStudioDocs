@@ -2,6 +2,6 @@
 Daylight Availability
 ================================================
 .. figure:: images/DaylightAvailability_GUI.jpg
-   :scale: 80 %
+   :width: 900px
    :align: center
 

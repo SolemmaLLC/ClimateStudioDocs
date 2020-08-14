@@ -2,6 +2,6 @@
 Add Luminaires
 ================================================
 .. figure:: images/AddLuminaires.jpg
-   :scale: 80 %
+   :width: 900px
    :align: center
 

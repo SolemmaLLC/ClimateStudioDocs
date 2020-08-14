@@ -2,6 +2,6 @@
 Annual Glare
 ================================================
 .. figure:: images/AnnualGlare_GUI.jpg
-   :scale: 80   %
+   :width: 900px
    :align: center
 

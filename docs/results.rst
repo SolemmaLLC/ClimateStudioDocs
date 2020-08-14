@@ -2,6 +2,6 @@
 Results
 ================================================
 .. figure:: images/Results.jpg
-   :scale: 80 %
+   :width: 300px
    :align: center
 

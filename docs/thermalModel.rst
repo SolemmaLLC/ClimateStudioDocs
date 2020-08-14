@@ -2,5 +2,5 @@
 Thermal Model
 ================================================
 .. figure:: images/ThermalModel_GUI.jpg
-   :scale: 80   %
+   :width: 900px
    :align: center
