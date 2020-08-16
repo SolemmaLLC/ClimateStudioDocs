@@ -1,7 +1,10 @@
 
 Location
 ================================================
-The location subpanel is used to select the site position of earth via a typical meteorological year (TMY). A TMY contains hourly measured data for a variety of environmental variables that are requires for a environmental performance analysis such as direct and diffuse solar radiation, temperature and relative humidity levels as well as wind speed and direction. 
+The location subpanel is used to specify the position of the site on earth by selecting the closest available typical meteorological year (TMY). 
+A TMY file contains hourly measured data for a variety of physical quantities that are required for an environmental performance analysis 
+including direct and diffuse solar radiation, temperature and relative humidity levels as well as wind speed and direction. The default site 
+is the TMY3 file for Boston, Logan International Airport. To select another file, left-click on the file selector icon next to the name of the current TMY file.  
 
 .. figure:: images/Location.jpg
    :width: 900px
@@ -18,7 +21,7 @@ ClimateStudio uses the widely used `EnergyPlus weather file format`_ (file exten
 
 .. _Climate.OneBuilding.org: http://climate.onebuilding.org/
 
-**North Offset:** Be default North is along the positive y-axis. To see the direction of North use the slider or manually enter an angle.
+**North Offset:** Be default North is along the positive y-axis. To adjust the North direction, use the slider or manually enter an angle.
 
 **Show Compass:** Toggle to show the North arrow
 

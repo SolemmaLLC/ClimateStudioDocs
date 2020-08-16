@@ -35,7 +35,7 @@ To get to any of these workflows open Rhino, search for the ClimateStudio toolba
    :width: 200px
    :align: center
    
-As a result the CS workflow panel will open up. The panel is a dock-able Rhino element meaning that you can drag and drop to set up your Rhino workspace. You can switch between workflow via the ClimateStudio toolbar or by using the top pull-down menu in the CS workflow panel.
+As a result, the CS workflow panel will open up. The panel is a dock-able Rhino element meaning that you can drag and drop it to set up your Rhino workspace. You can switch between workflows via the ClimateStudio toolbar or by using the top pull-down menu in the CS workflow panel.
 
 .. figure:: images/workflows2.jpg
    :width: 400px
@@ -43,7 +43,7 @@ As a result the CS workflow panel will open up. The panel is a dock-able Rhino e
 
 As a side note, if you are unfamiliar with computer aided design (CAD) software in general or Rhino in particular, you might want to also go through various online material such as the `Lynda tutorials for Rhino.`_ 
 
-If you are interested in learning more about the theory underlying the different ClimateStudio workflows, some of the material provided bel ow might be useful:
+If you are interested in learning more about the theory underlying the different ClimateStudio workflows, some of the material provided below might be useful:
 
 - `MIT open courseware`_ for 4.401/4/464 Environmental Technologies in Buildings (lecture notes from MIT)
 - EdX course on `Sustainable Building Design`_ (free course that runs about twice a year)

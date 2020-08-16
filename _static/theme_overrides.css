@@ -1,13 +1,65 @@
+
+
 /* override table width restrictions */
 @media screen and (min-width: 767px) {
 
    .wy-table-responsive table td {
       /* !important prevents the common CSS stylesheets from overriding
-         this as on RTD they are loaded after this stylesheet */
+         this as on RTD they are loaded after this stylesheet #adadad*/
       white-space: normal !important;
    }
 
    .wy-table-responsive {
       overflow: visible !important;
    }
+
+
+body, div, h1, h2, h3, h4, h5, h6, p {
+	widows: 2;
+	orphans: 2;
 }
+
+
+h1, h2, h3, h4, h5, h6 {
+	font-weight: normal;
+	font-style: normal;
+	text-align: left;
+	page-break-after: avoid;
+	color: #000000;
+}
+
+
+.caption-text {
+  color:#000000;
+}
+
+
+.toctree-l2
+{
+  color: #0177C1;
+}
+
+
+a:link {
+	
+	color: #0177C1;
+}
+
+a:visited {
+	 color: #0177C1;
+}
+
+.wy-menu-vertical{
+	background-color: lightgray;
+	
+}
+
+  /* Sidebar header (and topbar for mobile) */
+    .wy-side-nav-search, .wy-nav-top {
+      background: lightgray;
+    }
+    /* Sidebar */
+    .wy-nav-side {
+      background: lightgray;
+    }
+  
