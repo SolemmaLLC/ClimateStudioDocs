@@ -1,0 +1,265 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Point-in-Time Illuminance &mdash; ClimateStudio Documentation 4.1 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/theme_overrides.css" type="text/css" />
+
+  
+  
+    <link rel="shortcut icon" href="../_static/favicon.ico"/>
+  
+  
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Daylight Availability" href="daylightAvailability.html" />
+    <link rel="prev" title="Radiation Map" href="radiationMap.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search"  style="background: white" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home" alt="Documentation Home"> ClimateStudio Documentation
+          
+
+          
+            
+            <img src="../_static/ClimateStudio_logo.jpg" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Getting Started</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="requirements.html">Requirements</a></li>
+<li class="toctree-l1"><a class="reference internal" href="installation.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="learningClimateStudio.html">Learning ClimateStudio</a></li>
+</ul>
+<p class="caption"><span class="caption-text">ClimateStudio Work Flows</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="siteAnalysis.html">Site Analysis</a></li>
+<li class="toctree-l1"><a class="reference internal" href="radiationMap.html">Radiation Map</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Point-in-Time Illuminance</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#simulation-results">Simulation Results</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="daylightAvailability.html">Daylight Availability</a></li>
+<li class="toctree-l1"><a class="reference internal" href="annualGlare.html">Annual Glare</a></li>
+<li class="toctree-l1"><a class="reference internal" href="radianceRender.html">Radiance Render</a></li>
+<li class="toctree-l1"><a class="reference internal" href="thermalModel.html">Thermal Model</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Subpanels</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="Location.html">Location</a></li>
+<li class="toctree-l1"><a class="reference internal" href="assignMaterials.html">Assign Materials</a></li>
+<li class="toctree-l1"><a class="reference internal" href="addAnalysisSurfaces.html">Add Analysis Surfaces</a></li>
+<li class="toctree-l1"><a class="reference internal" href="sunPath.html">Sun Path</a></li>
+<li class="toctree-l1"><a class="reference internal" href="addLuminaires.html">Add Luminaires</a></li>
+<li class="toctree-l1"><a class="reference internal" href="addAreas.html">Add Areas</a></li>
+<li class="toctree-l1"><a class="reference internal" href="sky.html">Sky</a></li>
+<li class="toctree-l1"><a class="reference internal" href="addBlinds.html">Add Blinds</a></li>
+<li class="toctree-l1"><a class="reference internal" href="addObjects.html">Add Objects</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Results</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="results.html">Results</a></li>
+</ul>
+<p class="caption"><span class="caption-text">FAQ</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="customRadianceMaterials.html">Custom Radiance Materials</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">ClimateStudio Documentation</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+      <li>Point-in-Time Illuminance</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="point-in-time-illuminance">
+<h1>Point-in-Time Illuminance<a class="headerlink" href="#point-in-time-illuminance" title="Permalink to this headline">¶</a></h1>
+<p>This workflow supports the calculation of illuminance distribution for electric lighting and/or daylight at specific moments in time.</p>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="../_images/Point-in-TimeIlluminace_GUI.jpg"><img alt="../_images/Point-in-TimeIlluminace_GUI.jpg" src="../_images/Point-in-TimeIlluminace_GUI.jpg" style="width: 900px;" /></a>
+</div>
+<p>The workflow relies on five subpanels, location, sky, assign materials, add luminaires and add areas.</p>
+<ul class="simple">
+<li><p>Go to the <a class="reference external" href="Location.html">Location Subpanel</a></p></li>
+<li><p>Go to the <a class="reference external" href="sky.html">Sky Subpanel</a></p></li>
+<li><p>Go to the <a class="reference external" href="assignMaterials.html">Assign Materials Subpanel</a></p></li>
+<li><p>Go to the <a class="reference external" href="addLuminaires.html">Add Luminaires Subpanel</a></p></li>
+<li><p>Go to the <a class="reference external" href="addAreas.html">Add Areas Subpanel</a></p></li>
+</ul>
+<p>Once all required input subpanels have been populated, a simulation is invoked by pressing the start button. ClimateStudio uses a <a class="reference external" href="https://www.solemma.com/Speed.html">progressive path-tracing</a> version of the Radiance raytracer to simulate illuminance distributions. While a simulation is in progress new iterations are added to the simulation results until the user-specified number of passes has been reached.</p>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="../_images/IlluminanceSimulation.jpg"><img alt="../_images/IlluminanceSimulation.jpg" src="../_images/IlluminanceSimulation.jpg" style="width: 900px;" /></a>
+</div>
+<p>Under settings, the following parameters can be specified. For most simulations, these parameters can be left untouched.</p>
+<p><strong>Sample rays per sensor per pass:</strong> Number of rays emitted for each sensor at each pass. Increasing this number may reduce the number of passes required before a simulation converges but also increase the time required by each pass.</p>
+<p><strong>Maximum number of passes:</strong> While the simulation can be stopped by the users at any moment by using the stop button, this parameters provides a hard stop for a simulation run.</p>
+<p><strong>Radiance parameters:</strong> By default ClimateStudio considers up to 6 ambient bounces before discarding a ray. If you want to adjust these parameters,  you should familiarize yourself with the <a class="reference external" href="https://floyd.lbl.gov/radiance/man_html/rtrace.1.html">Radiance rtrace parameter.</a></p>
+<div class="section" id="simulation-results">
+<h2>Simulation Results<a class="headerlink" href="#simulation-results" title="Permalink to this headline">¶</a></h2>
+<p>Upon completion of the first pass, the simulation automatically switched into the ClimateStudio results panel. A General overview of the Results panel is provided here [got to results panel overview]. The image below shows the point-in-time illuminance results panel with the illuminance distribution shows in the Rhino viewport to the left and overall statistics (mean and median illuminances) being  displayed on the right. The Rhino viewport results can be modified using the Viewport Display editor [go to viewport display editor].</p>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="daylightAvailability.html" class="btn btn-neutral float-right" title="Daylight Availability" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="radiationMap.html" class="btn btn-neutral float-left" title="Radiation Map" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        
+        &copy; Copyright 2020, Solemma LLC
+
+    </p>
+  </div> 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
