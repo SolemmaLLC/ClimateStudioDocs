@@ -1,7 +1,7 @@
 
-Results Panel
+Viewport Display.
 ================================================
-.. figure:: images/Results.jpg
+.. figure:: images/ViewportDisplay.jpg
    :width: 300px
    :align: center
 

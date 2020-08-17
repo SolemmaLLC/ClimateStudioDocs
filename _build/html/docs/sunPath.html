@@ -7,7 +7,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Sun Path &mdash; ClimateStudio Documentation 4.1 documentation</title>
+  <title>3D Sun Path &mdash; ClimateStudio latest documentation</title>
   
 
   
@@ -54,7 +54,7 @@
           
 
           
-            <a href="../index.html" class="icon icon-home" alt="Documentation Home"> ClimateStudio Documentation
+            <a href="../index.html" class="icon icon-home" alt="Documentation Home"> ClimateStudio
           
 
           
@@ -94,22 +94,19 @@
 <p class="caption"><span class="caption-text">ClimateStudio Work Flows</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="siteAnalysis.html">Site Analysis</a></li>
-<li class="toctree-l1"><a class="reference internal" href="radiationMap.html">Radiation Map</a></li>
 <li class="toctree-l1"><a class="reference internal" href="point-in-timeIlluminance.html">Point-in-Time Illuminance</a></li>
 <li class="toctree-l1"><a class="reference internal" href="daylightAvailability.html">Daylight Availability</a></li>
 <li class="toctree-l1"><a class="reference internal" href="annualGlare.html">Annual Glare</a></li>
 <li class="toctree-l1"><a class="reference internal" href="radianceRender.html">Radiance Render</a></li>
 <li class="toctree-l1"><a class="reference internal" href="thermalModel.html">Thermal Model</a></li>
+<li class="toctree-l1"><a class="reference internal" href="radiationMap.html">Radiation Map</a></li>
 </ul>
 <p class="caption"><span class="caption-text">Subpanels</span></p>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="Location.html">Location</a></li>
 <li class="toctree-l1"><a class="reference internal" href="assignMaterials.html">Assign Materials</a></li>
 <li class="toctree-l1"><a class="reference internal" href="addAnalysisSurfaces.html">Add Analysis Surfaces</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Sun Path</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#d-sun-path">3D Sun Path</a></li>
-</ul>
-</li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">3D Sun Path</a></li>
 <li class="toctree-l1"><a class="reference internal" href="addLuminaires.html">Add Luminaires</a></li>
 <li class="toctree-l1"><a class="reference internal" href="addAreas.html">Add Areas</a></li>
 <li class="toctree-l1"><a class="reference internal" href="sky.html">Sky</a></li>
@@ -118,7 +115,8 @@
 </ul>
 <p class="caption"><span class="caption-text">Results</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="results.html">Results</a></li>
+<li class="toctree-l1"><a class="reference internal" href="results.html">Results Panel</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ViewportDisplay.html">Viewport Display</a></li>
 </ul>
 <p class="caption"><span class="caption-text">FAQ</span></p>
 <ul>
@@ -138,7 +136,7 @@
       <nav class="wy-nav-top" aria-label="top navigation">
         
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href="../index.html">ClimateStudio Documentation</a>
+          <a href="../index.html">ClimateStudio</a>
         
       </nav>
 
@@ -169,7 +167,7 @@
     
       <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
         
-      <li>Sun Path</li>
+      <li>3D Sun Path</li>
     
     
       <li class="wy-breadcrumbs-aside">
@@ -186,34 +184,32 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="sun-path">
-<h1>Sun Path<a class="headerlink" href="#sun-path" title="Permalink to this headline">¶</a></h1>
+  <div class="section" id="d-sun-path">
+<h1>3D Sun Path<a class="headerlink" href="#d-sun-path" title="Permalink to this headline">¶</a></h1>
 <p>The sun path subpanel controls how the current sun position and the 3D sun path diagram are displayed in the Rhino viewport.</p>
 <div class="figure align-center">
 <a class="reference internal image-reference" href="../_images/SunPath.jpg"><img alt="../_images/SunPath.jpg" src="../_images/SunPath.jpg" style="width: 900px;" /></a>
 </div>
-<div class="section" id="d-sun-path">
-<h2>3D Sun Path<a class="headerlink" href="#d-sun-path" title="Permalink to this headline">¶</a></h2>
+<p><strong>3D Sun Path</strong></p>
 <p>The toggle changes the Rhino viewport from its current setting to a ClimateStudio-specific render mode that shows the different 3D Sun Path elements as well as
 the shadow created by all scene objects on the ground and neighboring objects.</p>
 <div class="figure align-center">
 <a class="reference internal image-reference" href="../_images/3dSunPathExample.jpg"><img alt="../_images/3dSunPathExample.jpg" src="../_images/3dSunPathExample.jpg" style="width: 900px;" /></a>
 </div>
 <p><em>Example 3D Sun Path on winter solstice at noon in Boston</em></p>
-<p>The 3D Sun Path is highly customizable:</p>
+<p>The 3D Sun Path diagram is highly customizable:</p>
 <ul class="simple">
-<li><p>Show annual sun: Shows the position of the sun on  key ways in the year such was winter/summer solstice and equinox days.</p></li>
+<li><p>Show annual sun: Shows the position of the sun on  key days in the year such was winter/summer solstice and equinox days.</p></li>
 <li><p>Show annual sun path analemmas: Shows the position of the sun at the same time of day throughout the year.</p></li>
-<li><p>Show compass: Toggles the compass on the ground plane.</p></li>
+<li><p>Show compass: Toggles the compass on the ground plane on or off.</p></li>
 <li><p>Show sun position: Shows the current sun position in the 3D Sun Path.</p></li>
 <li><p>Show sun ray: Displays a rays from the current sun position to the center of the 3D Sun Path.</p></li>
 <li><p>Show day sun path: Shows the position of the sun for the current day.</p></li>
-<li><p>Render ground plane: Display shadows of scene objects on the ground plane (z-coordinate=0)</p></li>
+<li><p>Render ground plane: Display shadows of scene objects on the ground plane (z-coordinate=0).</p></li>
 </ul>
 <p><strong>Position:</strong> Sets the center of the 3D Sun Path</p>
 <p><strong>Radius:</strong> Sets the radius of the 3D Sun Path in model units</p>
 <p>Date and time of day can be set using the slider option, using presets dates and times or by manually entering the Julian date or time of day.</p>
-</div>
 </div>
 
 

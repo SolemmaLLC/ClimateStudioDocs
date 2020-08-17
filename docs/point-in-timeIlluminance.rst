@@ -1,7 +1,7 @@
 
 Point-in-Time Illuminance
 ================================================
-This workflow supports the calculation of illuminance distribution for electric lighting and/or daylight at specific moments in time.
+This workflow supports the calculation of illuminance distributions for electric lighting and/or daylight at specific moments in time.
 
 .. figure:: images/Point-in-TimeIlluminace_GUI.jpg
    :width: 900px
@@ -25,6 +25,13 @@ The workflow relies on five subpanels, location, sky, assign materials, add lumi
 
 .. _Add Areas Subpanel: addAreas.html
 
+
+If you have not done any lighting simulations in CLimateStudio, it is recommended that you go through `Lighting Model Setup`_ video tutorial (5 minutes). The example Rhino file used in the tutorials can be downloaded `here`_.
+
+.. _Lighting Model Setup: https://vimeo.com/392379928 
+.. _here: https://solemma.com/tutorial/CS%20Two%20Zone%20Office.3dm
+ 
+
 Once all required input subpanels have been populated, a simulation is invoked by pressing the start button. ClimateStudio uses a `progressive path-tracing`_ version of the Radiance raytracer to simulate illuminance distributions. While a simulation is in progress new iterations are added to the simulation results until the user-specified number of passes has been reached. 
 
 .. _progressive path-tracing: https://www.solemma.com/Speed.html
@@ -35,7 +42,7 @@ Once all required input subpanels have been populated, a simulation is invoked b
    
 Under settings, the following parameters can be specified. For most simulations, these parameters can be left untouched.
 
-**Sample rays per sensor per pass:** Number of rays emitted for each sensor at each pass. Increasing this number may reduce the number of passes required before a simulation converges but also increase the time required by each pass.
+**Sample rays per sensor per pass:** Number of rays emitted for each sensor at each pass. Increasing this number may reduce the number of passes required before a simulation converges but also increase the time required for each pass.
 
 **Maximum number of passes:** While the simulation can be stopped by the users at any moment by using the stop button, this parameters provides a hard stop for a simulation run. 
 
@@ -45,12 +52,16 @@ Under settings, the following parameters can be specified. For most simulations,
 
 Simulation Results
 ------------------------
-Upon completion of the first pass, the simulation automatically switched into the ClimateStudio results panel. A General overview of the Results panel is provided here [got to results panel overview]. The image below shows the point-in-time illuminance results panel with the illuminance distribution shows in the Rhino viewport to the left and overall statistics (mean and median illuminances) being  displayed on the right. The Rhino viewport results can be modified using the Viewport Display editor [go to viewport display editor]. 
+Upon completion of the first pass, the simulation automatically switches into the ClimateStudio results panel. 
+A General overview of the Results panel is provided `here`_. The image below shows the point-in-time illuminance results panel with the illuminance distribution 
+shown in the Rhino viewport to the left and overall statistics (mean and median illuminances) being  displayed on the right. The Rhino viewport results can be modified 
+using the `Viewport Display`_ editor. 
 
+.. figure:: images/IlluminanceResults.jpg
+   :width: 900px
+   :align: center
 
-
-
-
-
+.. _here: results.html
+.. _Viewport Display: ViewportDisplay.html
 
 

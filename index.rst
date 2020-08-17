@@ -24,12 +24,12 @@ Welcome to the ClimateStudio Documentation
    :caption: ClimateStudio Work Flows
    
    Site Analysis<docs/siteAnalysis.rst>
-   Radiation Map<docs/radiationMap.rst>
    Point-in-Time Illuminance<docs/point-in-timeIlluminance.rst>
    Daylight Availability<docs/daylightAvailability.rst>
    Annual Glare<docs/annualGlare.rst>
    Radiance Render<docs/radianceRender.rst>
    Thermal Model<docs/thermalModel.rst>
+   Radiation Map<docs/radiationMap.rst>
    
    
 .. toctree::
@@ -39,7 +39,7 @@ Welcome to the ClimateStudio Documentation
    Location<docs/Location.rst>
    Assign Materials<docs/assignMaterials.rst>
    Add Analysis Surfaces<docs/addAnalysisSurfaces.rst>
-   Sun Path<docs/sunPath.rst>
+   3D Sun Path<docs/sunPath.rst>
    Add Luminaires<docs/addLuminaires.rst>
    Add Areas<docs/addAreas.rst>
    Sky<docs/sky.rst>
@@ -50,8 +50,8 @@ Welcome to the ClimateStudio Documentation
    :maxdepth: 3
    :caption: Results
   
-   Results<docs/results.rst>
-   
+   Results Panel<docs/results.rst>
+   Viewport Display<docs/ViewportDisplay.rst>
    
    
 .. toctree::
