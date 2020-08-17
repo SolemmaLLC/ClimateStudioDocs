@@ -26,10 +26,11 @@ The workflow relies on five subpanels, location, sky, assign materials, add lumi
 .. _Add Areas Subpanel: addAreas.html
 
 
-If you have not done any lighting simulations in CLimateStudio, it is recommended that you go through `Lighting Model Setup`_ video tutorial (5 minutes). The example Rhino file used in the tutorials can be downloaded `here`_.
+If you have not done any lighting simulations in ClimateStudio, it is recommended that you go through `Lighting Model Setup`_ video tutorial (5 minutes). 
+The Rhino file used in the tutorial is available for `download`_.
 
 .. _Lighting Model Setup: https://vimeo.com/392379928 
-.. _here: https://solemma.com/tutorial/CS%20Two%20Zone%20Office.3dm
+.. _download: https://solemma.com/tutorial/CS%20Two%20Zone%20Office.3dm
  
 
 Once all required input subpanels have been populated, a simulation is invoked by pressing the start button. ClimateStudio uses a `progressive path-tracing`_ version of the Radiance raytracer to simulate illuminance distributions. While a simulation is in progress new iterations are added to the simulation results until the user-specified number of passes has been reached. 
