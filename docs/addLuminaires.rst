@@ -17,8 +17,12 @@ To add a new luminaire to the scene, left-clink on the *Add Luminaire* icon. The
 
 As an example, the luminarie in the image below corresponds to a suspended linear luminaire with a large direct (down lit) and a small indirect (up lit) component. 
 
-IMAGE
+.. figure:: images/luminaire1.png
+   :width: 900px
+   :align: center
 
 An imported luminaire is placed at the model origin. The user can then move the luminaire to its desired position within the scene and add additional copies of the same luminaire to a group via the *copy* or *array* commands in Rhino. Copying luminaires places them on the same lighting group as the original luminaire. The luminaire type of all elements in a group can be changed via the edit button in the Add Luminaire panel. The image below shows the direct/indirect suspended luminaire from above placed on a 3 x 3 grid in a corner open office.
 
-IMAGE
+.. figure:: images/luminaire2.png
+   :width: 900px
+   :align: center

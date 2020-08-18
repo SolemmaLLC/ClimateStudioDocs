@@ -10,11 +10,15 @@ This subpanel is used to specify regularly occupied spaces within a building suc
 
 In the example below, the two reference surfaces are coincident with the floor and marked in yellow. 
 
-IMAGE
+.. figure:: images/areas1.png
+   :width: 900px
+   :align: center
 
 After selecting the surfaces and pressing *Enter* the *Edit Occupied Areas* panel opens. 
 
-IMAGE
+.. figure:: images/areas2.png
+   :width: 900px
+   :align: center
 
 While occupied areas are continuous surfaces, lighting calculations conduct simulations at discrete sensor points that are distributed on a grid pattern across an occupied area and that are oriented along the surface normal areas. The *Edit Occipied Areas* panel includes the following customization settings:
 
@@ -30,5 +34,7 @@ While occupied areas are continuous surfaces, lighting calculations conduct simu
 	
 Once the occupied areas have been selected and specified, they appear in the Rhino Viewport and are added to a list in the *Add Areas* subpanel.The list provides statistics for each occupied area such as its area and number of sensors as well as the ability to edit or delete an area. A larger building may include hundreds of occupied areas. The *Tag* item therefore allows to organize areas by, for example, floor, program type and/or orientation. Once tagged, ares can be displayed selectively using the filter and tag functions above the table. 
 	
-IMAGE 
+.. figure:: images/areas3.png
+   :width: 900px
+   :align: center
 	
