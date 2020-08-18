@@ -2,6 +2,6 @@
 Viewport Display.
 ================================================
 .. figure:: images/ViewportDisplay.jpg
-   :width: 300px
+   :width: 900px
    :align: center
 

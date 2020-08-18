@@ -186,9 +186,24 @@
             
   <div class="section" id="add-areas">
 <h1>Add Areas<a class="headerlink" href="#add-areas" title="Permalink to this headline">¶</a></h1>
+<p>This subpanel is used to specify regularly occupied spaces within a building such a workareas, circulation spaces etc. Many standards and green building rating systems rely on the concept of “regularly occupied areas” to analyze the environmental performance of a building, such as daylighting, glare and thermal comfort, where it matters. In ClimateStudio regularly occupied areas are defined via reference surfaces. These surfaces are often coincident with the floor but may be objects on layers without any assigned material properties. To define a regularly occupied area left-click on the <em>Add Area</em> button and select one of more reference surfaces.</p>
 <div class="figure align-center">
 <a class="reference internal image-reference" href="../_images/AddAreas.jpg"><img alt="../_images/AddAreas.jpg" src="../_images/AddAreas.jpg" style="width: 900px;" /></a>
 </div>
+<p>In the example below, the two reference surfaces are coincident with the floor and marked in yellow.</p>
+<p>IMAGE</p>
+<p>After selecting the surfaces and pressing <em>Enter</em> the <em>Edit Occupied Areas</em> panel opens.</p>
+<p>IMAGE</p>
+<p>While occupied areas are continuous surfaces, lighting calculations conduct simulations at discrete sensor points that are distributed on a grid pattern across an occupied area and that are oriented along the surface normal areas. The <em>Edit Occipied Areas</em> panel includes the following customization settings:</p>
+<blockquote>
+<div><p><strong>ID:</strong> Brief area description such as conference room or open office</p>
+<p><strong>Description:</strong> Optional, more extensive description</p>
+<p><strong>Sensor Spacing:</strong> Distance between sensors in model units</p>
+<p><strong>Sensor Inset:</strong> Distance of sensors from the edge of the surface area. Some standards and lighting measurement specifications require a minimum sensor distance from walls and windows.</p>
+<p><strong>Workplane Offset:</strong> Distance between the reference surface and the sensor plane.</p>
+</div></blockquote>
+<p>Once the occupied areas have been selected and specified, they appear in the Rhino Viewport and are added to a list in the <em>Add Areas</em> subpanel.The list provides statistics for each occupied area such as its area and number of sensors as well as the ability to edit or delete an area. A larger building may include hundreds of occupied areas. The <em>Tag</em> item therefore allows to organize areas by, for example, floor, program type and/or orientation. Once tagged, ares can be displayed selectively using the filter and tag functions above the table.</p>
+<p>IMAGE</p>
 </div>
 
 
