@@ -14,7 +14,7 @@ In the example below, the two reference surfaces are coincident with the floor a
    :width: 900px
    :align: center
 
-After selecting the surfaces and pressing *Enter* the *Edit Occupied Areas* panel opens. 
+After selecting the surfaces and pressing *Enter* the *Edit Occupied Areas* panel opens. The panel slightly differs for different workflows.
 
 .. figure:: images/areas2.png
    :width: 900px
@@ -31,6 +31,8 @@ While occupied areas are continuous surfaces, lighting calculations conduct simu
 	**Sensor Inset:** Distance of sensors from the edge of the surface area. Some standards and lighting measurement specifications require a minimum sensor distance from walls and windows.
 	
 	**Workplane Offset:** Distance between the reference surface and the sensor plane. 
+	
+	**Occupancy:** Allows to specify the times in the year when the area is occupied. The user can select from a selection of provided schedules or import a custom schedule in csv (comma separated value) format.
 	
 Once the occupied areas have been selected and specified, they appear in the Rhino Viewport and are added to a list in the *Add Areas* subpanel.The list provides statistics for each occupied area such as its area and number of sensors as well as the ability to edit or delete an area. A larger building may include hundreds of occupied areas. The *Tag* item therefore allows to organize areas by, for example, floor, program type and/or orientation. Once tagged, ares can be displayed selectively using the filter and tag functions above the table. 
 	

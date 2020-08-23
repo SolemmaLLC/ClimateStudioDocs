@@ -45,6 +45,7 @@ Welcome to the ClimateStudio Documentation
    Sky<docs/sky.rst>
    Add Blinds<docs/addBlinds.rst>
    Add Objects<docs/addObjects.rst>
+   Path-tracing Settings<docs/path-tracingSettings.rst>
 
 .. toctree::
    :maxdepth: 3
