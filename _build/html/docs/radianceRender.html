@@ -97,7 +97,10 @@
 <li class="toctree-l1"><a class="reference internal" href="point-in-timeIlluminance.html">Point-in-Time Illuminance</a></li>
 <li class="toctree-l1"><a class="reference internal" href="daylightAvailability.html">Daylight Availability</a></li>
 <li class="toctree-l1"><a class="reference internal" href="annualGlare.html">Annual Glare</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Radiance Render</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Radiance Render</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#start-rendering">Start Rendering</a></li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="thermalModel.html">Thermal Model</a></li>
 <li class="toctree-l1"><a class="reference internal" href="radiationMap.html">Radiation Map</a></li>
 </ul>
@@ -113,6 +116,8 @@
 <li class="toctree-l1"><a class="reference internal" href="addBlinds.html">Add Blinds</a></li>
 <li class="toctree-l1"><a class="reference internal" href="addObjects.html">Add Objects</a></li>
 <li class="toctree-l1"><a class="reference internal" href="path-tracingSettings.html">Path-tracing Settings</a></li>
+<li class="toctree-l1"><a class="reference internal" href="manageLibrary.html">Manage Library Menu</a></li>
+<li class="toctree-l1"><a class="reference internal" href="EnergyPlus.html">EnergyPlus Simulation Settings</a></li>
 </ul>
 <p class="caption"><span class="caption-text">Results</span></p>
 <ul>
@@ -189,6 +194,32 @@
 <h1>Radiance Render<a class="headerlink" href="#radiance-render" title="Permalink to this headline">¶</a></h1>
 <div class="figure align-center">
 <a class="reference internal image-reference" href="../_images/RadianceRender_GUI.jpg"><img alt="../_images/RadianceRender_GUI.jpg" src="../_images/RadianceRender_GUI.jpg" style="width: 900px;" /></a>
+</div>
+<p>The ClimateStudio Radiance Render workflow supports the creation of physically based renderings using a path tracing version of the <a class="reference external" href="https://www.radiance-online.org/">Radiance</a> light backwards raytracer. The workflow relies on four subpanels, location, sky, assign materials and add luminaires.</p>
+<ul class="simple">
+<li><p>The <a class="reference external" href="Location.html">Location Subpanel</a></p></li>
+<li><p>The <a class="reference external" href="sky.html">Sky Subpanel</a></p></li>
+<li><p>The <a class="reference external" href="assignMaterials.html">Assign Materials Subpanel</a></p></li>
+<li><p>The <a class="reference external" href="addLuminaires.html">Add Luminaires Subpanel</a></p></li>
+</ul>
+<p>If you have not done any lighting simulations in ClimateStudio, it is recommended that you go through the <a class="reference external" href="https://vimeo.com/392379928">Lighting Model Setup video tutorial</a> (5 minutes). The Rhino file used in the tutorial is available for <a class="reference external" href="https://solemma.com/tutorial/CS%20Two%20Zone%20Office.3dm">download.</a></p>
+<p>Once all required input subpanels have been populated, the rendering panel is invoked via the “Render Window” button. The panel consists of a render view on the left and the control setting on the right.</p>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="../_images/radianceRender.png"><img alt="../_images/radianceRender.png" src="../_images/radianceRender.png" style="width: 900px;" /></a>
+</div>
+<p>The camera settings offer a series of input parameters.</p>
+<p><strong>Projection Radiance:</strong> Supports a series of camera models that determine how a rendering of the surrounding scene is projected onto a dimensional image. For most projections the users is encouraged to consult the <a class="reference external" href="https://floyd.lbl.gov/radiance/man_html/rpict.1.html">Radiance rpict manual pages.</a> The “Rotating Angular Fisheye” projection is the default camera setting. It displays a camera view with a 180 Deg opening angle while simulating a 360Deg view. This allows users to rotate the view while the rendering is being generated.</p>
+<p><strong>Position:</strong> Corresponds to the location of the camera in the scene.</p>
+<p><strong>Rotation and Tilt:</strong> Control the direction in which the camera is facing.</p>
+<p><strong>Width/ Height (pixels):</strong> Sets the pixel resolution of the rendering.</p>
+<p><strong>Lens Length (mm):</strong> Only applies to select projections and sets the opening angle of the camera which in turns determines the extent of the scene shown on the rendering.</p>
+<p>Radiance renderings are in so-called high dynamic range (HDR) format. An HDR image contains the regular red, green and blue color channels for each pixel as any regular image format plus an absolute luminance level per pixel that determines its absolute brightness. The benefit of HDR images is that exposure levels can be readjusted to highlight different regions of an image. The Scheme input displays images either in full color (RGB) or in grayscale. A falsecolor display mode is also supported.</p>
+<p>In order to identify pixels that may act as glare sources, all pixels above a user defined value (by default 2000 cd/m2) can be colored separately.</p>
+<div class="section" id="start-rendering">
+<h2>Start Rendering<a class="headerlink" href="#start-rendering" title="Permalink to this headline">¶</a></h2>
+<p>Once all required input subpanels have been populated, a simulation is invoked by pressing the start button. ClimateStudio uses a <a class="reference external" href="https://www.solemma.com/Speed.html">progressive path-tracing</a> version of Radiance so the viewport rendering is updated after each simulation pass. Details on the simulation settings can be found in the <a class="reference external" href="path-tracingSettings.html">Path-tracing Settings Subpanel.</a></p>
+<p>While the simulation is running, the user may adjust rendering Exposure, Gamma correction and Scheme. For the rotating fisheye projection, ClimateStudio calculates the daylight glare probability (DGP) for the current view and classified it as either imperceptible, perceptible, disturbing or intolerable glare. Details can be found under the <a class="reference external" href="annualGlare.html">Annual Glare</a> workflow.</p>
+<p>Once the simulation has been stopped, the resulting rendering can be saved within  the CLimateStudio project or exported in a variety of formats.</p>
 </div>
 </div>
 

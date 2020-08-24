@@ -46,6 +46,8 @@ Welcome to the ClimateStudio Documentation
    Add Blinds<docs/addBlinds.rst>
    Add Objects<docs/addObjects.rst>
    Path-tracing Settings<docs/path-tracingSettings.rst>
+   Manage Library Menu<docs/manageLibrary.rst>
+   EnergyPlus Simulation Settings<docs/EnergyPlus.rst>
 
 .. toctree::
    :maxdepth: 3
