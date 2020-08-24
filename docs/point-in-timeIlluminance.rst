@@ -33,23 +33,11 @@ The Rhino file used in the tutorial is available for `download`_.
 .. _download: https://solemma.com/tutorial/CS%20Two%20Zone%20Office.3dm
  
 
-Once all required input subpanels have been populated, a simulation is invoked by pressing the start button. ClimateStudio uses a `progressive path-tracing`_ version of the Radiance raytracer to simulate illuminance distributions. While a simulation is in progress new iterations are added to the simulation results until the user-specified number of passes has been reached. 
-
+Once all required input subpanels have been populated, a simulation is invoked by pressing the start button. ClimateStudio uses a `progressive path-tracing`_ version of the Radiance raytracer to simulate illuminance distributions. While a simulation is in progress new iterations are added to the simulation results until the user-specified number of passes has been reached. Details on the simulation settings can be found in the `Path-tracing Settings Subpanel.`_
+ 
 .. _progressive path-tracing: https://www.solemma.com/Speed.html
 
-.. figure:: images/IlluminanceSimulation.jpg
-   :width: 900px
-   :align: center
-   
-Under settings, the following parameters can be specified. For most simulations, these parameters can be left untouched.
-
-**Sample rays per sensor per pass:** Number of rays emitted for each sensor at each pass. Increasing this number may reduce the number of passes required before a simulation converges but also increase the time required for each pass.
-
-**Maximum number of passes:** While the simulation can be stopped by the users at any moment by using the stop button, this parameters provides a hard stop for a simulation run. 
-
-**Radiance parameters:** By default ClimateStudio considers up to 6 ambient bounces before discarding a ray. If you want to adjust these parameters,  you should familiarize yourself with the `Radiance rtrace parameter.`_ 
-
-.. _Radiance rtrace parameter.: https://floyd.lbl.gov/radiance/man_html/rtrace.1.html
+.. _Path-tracing Settings Subpanel.: path-tracingSettings.html
 
 Simulation Results
 ------------------------

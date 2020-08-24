@@ -115,6 +115,7 @@
 <li class="toctree-l1"><a class="reference internal" href="sky.html">Sky</a></li>
 <li class="toctree-l1"><a class="reference internal" href="addBlinds.html">Add Blinds</a></li>
 <li class="toctree-l1"><a class="reference internal" href="addObjects.html">Add Objects</a></li>
+<li class="toctree-l1"><a class="reference internal" href="path-tracingSettings.html">Path-tracing Settings</a></li>
 </ul>
 <p class="caption"><span class="caption-text">Results</span></p>
 <ul>
@@ -203,14 +204,7 @@
 </ul>
 <p>If you have not done any lighting simulations in ClimateStudio, it is recommended that you go through <a class="reference external" href="https://vimeo.com/392379928">Lighting Model Setup</a> video tutorial (5 minutes).
 The Rhino file used in the tutorial is available for <a class="reference external" href="https://solemma.com/tutorial/CS%20Two%20Zone%20Office.3dm">download</a>.</p>
-<p>Once all required input subpanels have been populated, a simulation is invoked by pressing the start button. ClimateStudio uses a <a class="reference external" href="https://www.solemma.com/Speed.html">progressive path-tracing</a> version of the Radiance raytracer to simulate illuminance distributions. While a simulation is in progress new iterations are added to the simulation results until the user-specified number of passes has been reached.</p>
-<div class="figure align-center">
-<a class="reference internal image-reference" href="../_images/IlluminanceSimulation.jpg"><img alt="../_images/IlluminanceSimulation.jpg" src="../_images/IlluminanceSimulation.jpg" style="width: 900px;" /></a>
-</div>
-<p>Under settings, the following parameters can be specified. For most simulations, these parameters can be left untouched.</p>
-<p><strong>Sample rays per sensor per pass:</strong> Number of rays emitted for each sensor at each pass. Increasing this number may reduce the number of passes required before a simulation converges but also increase the time required for each pass.</p>
-<p><strong>Maximum number of passes:</strong> While the simulation can be stopped by the users at any moment by using the stop button, this parameters provides a hard stop for a simulation run.</p>
-<p><strong>Radiance parameters:</strong> By default ClimateStudio considers up to 6 ambient bounces before discarding a ray. If you want to adjust these parameters,  you should familiarize yourself with the <a class="reference external" href="https://floyd.lbl.gov/radiance/man_html/rtrace.1.html">Radiance rtrace parameter.</a></p>
+<p>Once all required input subpanels have been populated, a simulation is invoked by pressing the start button. ClimateStudio uses a <a class="reference external" href="https://www.solemma.com/Speed.html">progressive path-tracing</a> version of the Radiance raytracer to simulate illuminance distributions. While a simulation is in progress new iterations are added to the simulation results until the user-specified number of passes has been reached. Details on the simulation settings can be found in the <a class="reference external" href="path-tracingSettings.html">Path-tracing Settings Subpanel.</a></p>
 <div class="section" id="simulation-results">
 <h2>Simulation Results<a class="headerlink" href="#simulation-results" title="Permalink to this headline">¶</a></h2>
 <p>Upon completion of the first pass, the simulation automatically switches into the ClimateStudio results panel.
