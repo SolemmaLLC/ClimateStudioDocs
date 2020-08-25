@@ -100,6 +100,8 @@
 <li class="toctree-l1"><a class="reference internal" href="radianceRender.html">Radiance Render</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Thermal Model</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#simulation-results">Simulation Results</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#building">Building</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#zone">Zone</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="radiationMap.html">Radiation Map</a></li>
@@ -118,6 +120,7 @@
 <li class="toctree-l1"><a class="reference internal" href="path-tracingSettings.html">Path-tracing Settings</a></li>
 <li class="toctree-l1"><a class="reference internal" href="manageLibrary.html">Manage Library Menu</a></li>
 <li class="toctree-l1"><a class="reference internal" href="EnergyPlus.html">EnergyPlus Simulation Settings</a></li>
+<li class="toctree-l1"><a class="reference internal" href="thermalZoneSettings.html">Thermal Zone Settings</a></li>
 </ul>
 <p class="caption"><span class="caption-text">Results</span></p>
 <ul>
@@ -202,9 +205,45 @@
 <li><p>The <a class="reference external" href="manageLibrary.html">Manage Library Menu</a></p></li>
 <li><p>The <a class="reference external" href="EnergyPlus.html">EnergyPlus Simulation Settings</a></p></li>
 </ul>
-<p>Once all required input subpanels have been populated, a simulation is invoked by pressing the start button. A DOS window should appear that is running the EnergyPlus simulation.</p>
+<p>Once all required input subpanels have been populated, a simulation is invoked by pressing the start button. A DOS window should appear that is running the EnergyPlus simulation.  This takes several minutes and the progress of the simulation is visible on screen.</p>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="../_images/thermalModel.png"><img alt="../_images/thermalModel.png" src="../_images/thermalModel.png" style="width: 900px;" /></a>
+</div>
 <div class="section" id="simulation-results">
 <h2>Simulation Results<a class="headerlink" href="#simulation-results" title="Permalink to this headline">¶</a></h2>
+<p>Upon completion of the simulation the DOS window disappears and ClimateStudio automatically switches into the <a class="reference external" href="results.html">results panel.</a> The image below shows an annual thermal loads simulation of the two zone ClimateStudio demo model located in Boston The Viewport to the left shows all objects that make us the thermal model The energy results are shown in the lower results panel of the right.</p>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="../_images/thermalModel2.png"><img alt="../_images/thermalModel2.png" src="../_images/thermalModel2.png" style="width: 900px;" /></a>
+</div>
+<p>The top panel shows some summary results for the whole building including the site energy use intensity (EUI) as well as annual carbon emissions and costs from operational energy use.</p>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="../_images/thermalModel3.png"><img alt="../_images/thermalModel3.png" src="../_images/thermalModel3.png" style="width: 900px;" /></a>
+</div>
+<p>The results below are organized at the whole building and zone level.</p>
+</div>
+<div class="section" id="building">
+<h2>Building<a class="headerlink" href="#building" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p><strong>Energy Use Intensity</strong> shows monthly EUI levels for the whole building for heating, cooling, lighting and equipment</p></li>
+<li><p><strong>Energy Use</strong> shows total monthly energy use for the whole building for heating, cooling, lighting and equipment</p></li>
+<li><p><strong>Zone Temperature Curves</strong> show the number of hours for each zone that the operative temperature is below (red) or abor (blue) a given temperature. In the example below, the operative temperature Open Office zone is 73h per year above 26oC indicating a potential propensity for overheating.</p></li>
+</ul>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="../_images/thermalModel4.png"><img alt="../_images/thermalModel4.png" src="../_images/thermalModel4.png" style="width: 900px;" /></a>
+</div>
+<ul class="simple">
+<li><p><strong>Energy Flow</strong> indicates the monthly sum of heat flows into and out of a zone. Heat from equipment, people and electric lighting is always positive. System loads may be positive (heating) or negative (cooling).</p></li>
+</ul>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="../_images/thermalModel5.png"><img alt="../_images/thermalModel5.png" src="../_images/thermalModel5.png" style="width: 900px;" /></a>
+</div>
+</div>
+<div class="section" id="zone">
+<h2>Zone<a class="headerlink" href="#zone" title="Permalink to this headline">¶</a></h2>
+<p>At the zone level ClimateStudio reports hourly dry bulb, mean radiant and operative temperature as well as relative humidity at the center of a zone.</p>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="../_images/thermalModel6.png"><img alt="../_images/thermalModel6.png" src="../_images/thermalModel6.png" style="width: 900px;" /></a>
+</div>
 </div>
 </div>
 
