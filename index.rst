@@ -48,6 +48,7 @@ Welcome to the ClimateStudio Documentation
    Path-tracing Settings<docs/path-tracingSettings.rst>
    Manage Library Menu<docs/manageLibrary.rst>
    EnergyPlus Simulation Settings<docs/EnergyPlus.rst>
+   Thermal Zone Settings<docs/thermalZoneSettings.rst>
 
 .. toctree::
    :maxdepth: 3

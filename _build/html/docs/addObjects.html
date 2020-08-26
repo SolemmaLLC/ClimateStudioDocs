@@ -115,11 +115,13 @@
 <li class="toctree-l2"><a class="reference internal" href="#thermal-zones">Thermal Zones</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#windows">Windows</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#shading">Shading</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#boundary-conditions">Boundary Conditions</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="path-tracingSettings.html">Path-tracing Settings</a></li>
 <li class="toctree-l1"><a class="reference internal" href="manageLibrary.html">Manage Library Menu</a></li>
 <li class="toctree-l1"><a class="reference internal" href="EnergyPlus.html">EnergyPlus Simulation Settings</a></li>
+<li class="toctree-l1"><a class="reference internal" href="thermalZoneSettings.html">Thermal Zone Settings</a></li>
 </ul>
 <p class="caption"><span class="caption-text">Results</span></p>
 <ul>
@@ -214,9 +216,19 @@
 </div>
 <p>Neighboring zones have to be modeled carefully so that their surfaces actually touch so that EnergyPlus understands that the overlapping surface area between them is interior.</p>
 <p>Once one or several breps have been selected as thermal zones, the user should press enter and the Zone dialogue appears.</p>
-<p>IMAGE</p>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="../_images/addObjects4.png"><img alt="../_images/addObjects4.png" src="../_images/addObjects4.png" style="width: 900px;" /></a>
+</div>
 <p>ClimateStudio comes with a large election of predefined thermal zone descriptions including the USE Department of Energy (DOE) Commercial <a class="reference external" href="https://www.energy.gov/eere/slsc/building-energy-use-benchmarking">Prototype Building models.</a> These preset zone templates are descriptions of typical commercial US buildings located in different ASHRAE climate zones. For example, BOston is located in climate zone 5A. By using the filter function in the Zone dialogue the user can , for example, all benchmark building types available in the ClimateStudio database such as Midrise Apartment, Medium Office and Strip Mall.</p>
-<p>IMAGE</p>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="../_images/addObjects5.png"><img alt="../_images/addObjects5.png" src="../_images/addObjects5.png" style="width: 900px;" /></a>
+</div>
+<p>The <a class="reference external" href="thermalZoneSettings.html">Thermal Zone Settings</a> page describes a description of all modeling inputs.</p>
+<p>Once a zone template has been assigned, the zones appear in the objects table on the right. The image below show a tow zone model representing the conference room and open office in the <a class="reference external" href="https://solemma.com/tutorial/CS%20Two%20Zone%20Office.3dm">ClimateStudio example file.</a></p>
+<p>It is worthwhile pointing out that it is assumed that the thermal model is built separately from the daylighting model in ClimateStudio. Both models can be stored on separate layers in the same Rhino file.</p>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="../_images/addObjects6.png"><img alt="../_images/addObjects6.png" src="../_images/addObjects6.png" style="width: 900px;" /></a>
+</div>
 </div>
 <div class="section" id="windows">
 <h2>Windows<a class="headerlink" href="#windows" title="Permalink to this headline">¶</a></h2>
@@ -225,11 +237,46 @@
 <dt>Note:</dt><dd><p>While window surfaces in EnergyPlus may not touch the edge of a zone surface, you may draw a window in CLimateStudio by just snapping at the corner points of a wall. ClimateStudio will then slightly offset the corner of the window for the wall surface.</p>
 </dd>
 </dl>
+<p>Once all windows have been selected, the Windows dialogue appears.</p>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="../_images/addObjects7.png"><img alt="../_images/addObjects7.png" src="../_images/addObjects7.png" style="width: 900px;" /></a>
+</div>
+<p><strong>Glazing Construction:</strong> ClimateStudio comes with a large selection of actual glazing units that can be selected by the glazing construction dialogue. The input data for these glazing units are based on measurements stored in the <a class="reference external" href="https://windows.lbl.gov/software/igdb">International Glazing Database (IGDB).</a> The glazing construction panel supports sorting the glazing units in the ClimateStudio database by, for example, visual light transmittance or solar heat gain coefficient. Once a glazing is selected, its main elements such individual glass panes and any fillings between the panes is displayed above.</p>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="../_images/addObjects8.png"><img alt="../_images/addObjects8.png" src="../_images/addObjects8.png" style="width: 900px;" /></a>
+</div>
+<p>Under <strong>Ventilation Settings</strong> the user can specify whether a window is operable for natural ventilation purposes, the fraction of the window area that is operable and at what indoor zone temperature the window will be opened.</p>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="../_images/addObjects9.png"><img alt="../_images/addObjects9.png" src="../_images/addObjects9.png" style="width: 900px;" /></a>
+</div>
+<p><strong>Window Frame:</strong> By default, EnergyPlus assumes that the thermal properties of a glazing unit extend across the rough opening of the window. To consider the thermal properties of a frame, its out frame width and U value can be set to account for heat losses across the frame.</p>
+<p><strong>Shading System:</strong> Setting Any shading system can be modeled by setting an shading plus shading control. The schedule determines when the control is being activated throughout the year.</p>
+<p>Once all window surfaces have been selected, they are added to the thermal zone object table and are marked as turquoise in the viewport.</p>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="../_images/addObjects10.png"><img alt="../_images/addObjects10.png" src="../_images/addObjects10.png" style="width: 900px;" /></a>
+</div>
 </div>
 <div class="section" id="shading">
 <h2>Shading<a class="headerlink" href="#shading" title="Permalink to this headline">¶</a></h2>
 <p>Shading surfaces may represent an overhang or parts of a neighboring building that shade thermal zone or window objects. EnergyPlus will create a shading mask for each window and all shading surfaces. This process is both slow as well as somewhat unstable so it is recommended that shading surfaces are assigned somewhat selectively. For example, in the urban massing model below shading surfaces are the overhangs as well as walls from neighboring buildings facing the apartment building in the center.</p>
-<p>IMAGE</p>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="../_images/addObjects11.png"><img alt="../_images/addObjects11.png" src="../_images/addObjects11.png" style="width: 900px;" /></a>
+</div>
+</div>
+<div class="section" id="boundary-conditions">
+<h2>Boundary Conditions<a class="headerlink" href="#boundary-conditions" title="Permalink to this headline">¶</a></h2>
+<p>Boundary conditions are surfaces such as interior adiabatic surfaces of the ground. They have to be defined  as 3 or 4 corner surface objects in Rhino that are coincident with a thermal zone surface. I a surface is defined as adiabatic no heat flow will go through it during a simulation.</p>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="../_images/addObjects12.png"><img alt="../_images/addObjects12.png" src="../_images/addObjects12.png" style="width: 900px;" /></a>
+</div>
+<p>In the case of the ClimateStudio demo file, one may assume that the model only represents part of a larger building and that the three surfaces towards the West and North are adiabatic. The figure below shows how this would be modeled in ClimateStudio.</p>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="../_images/addObjects13.png"><img alt="../_images/addObjects13.png" src="../_images/addObjects13.png" style="width: 900px;" /></a>
+</div>
+<dl class="simple">
+<dt>Note:</dt><dd><p>As shown above, the model assumes that the building is single story. If the model rather represents a typical corner part of a multi story building, roof and floor surfaces would also have to be modeled as adiabatic.</p>
+</dd>
+</dl>
 </div>
 </div>
 
