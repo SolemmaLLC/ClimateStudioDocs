@@ -22,9 +22,9 @@ After selecting the surfaces and pressing *Enter* the *Edit Occupied Areas* pane
 
 While occupied areas are continuous surfaces, lighting calculations conduct simulations at discrete sensor points that are distributed on a grid pattern across an occupied area and that are oriented along the surface normal areas. The *Edit Occipied Areas* panel includes the following customization settings:
 
-	**ID:** Brief area description such as conference room or open office
+	**Space ID:** Space identifier (e.g. “Room 104”)
 	
-	**Description:** Optional, more extensive description
+	**Description:** Space description or type (e.g. “Open office”)
 	
 	**Sensor Spacing:** Distance between sensors in model units
 	

@@ -25,9 +25,21 @@ According to the US Green Building Council the intent of Environmental Creit 8, 
 
 BREEAM
 ------------
-BREEAM is another green building rating system maintained by the `BRE`_ on Britain. Add some working ….    BREEAM UK 4.a BREEAM UK 4.b BREEAM UK 4.c (Healthcare only) BREEAM International 4.a BREEAM International 4.b
+BREEAM is a UK-based green building rating system maintained by the Building Research Establishment Group (`BRE`_). ClimateStudio supports the calculation of BREEAM credits for the achievement of good-practice daylighting levels. The user can choose among five 
+pathways to the credit:
+
+- BREEAM UK 4a: Daylight factor based (UK projects) 
+- BREEAM UK 4b: Annual illuminance based (UK projects) 
+- BREEAM UK 4c: Daylight factor based (UK hospital projects) 
+- BREEAM International 4a: Daylight factor based (international projects) 
+- BREEAM International 4b: Annual illuminance based (international projects)  
+
 
 .. _BRE: https://www.breeam.com/
+
+The daylight factor pathways impose thresholds for average daylight factor and daylight-factor uniformity ratios. The annual illuminance pathways require spaces to achieve minimum average and worst-point illuminance levels for a certain number of hours throughout the year. 
+The targets are building and space-type specific, and are documented in detail here: https://www.breeam.com/discover/technical-standards/newconstruction/
+
 
 **Daylight Factor:** The daylight factor is defined as the ratio between the illuminance at a point in a building divided by the illuminance at an upward facing, unshaded outside sensor. THe reference sly for the daylight factor is the CIE overcast sky.  The Daylight factor serves as a daylight availability metric in multiple building standards world-wide with minimum requirements typically ranging between 2% and 5%.  
 
