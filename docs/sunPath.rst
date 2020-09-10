@@ -20,16 +20,16 @@ the shadow created by all scene objects on the ground and neighboring objects.
 
 The 3D Sun Path diagram is highly customizable:
 
-- Show annual sun: Shows the position of the sun on  key days in the year such was winter/summer solstice and equinox days.
-- Show annual sun path analemmas: Shows the position of the sun at the same time of day throughout the year.
-- Show compass: Toggles the compass on the ground plane on or off.
-- Show sun position: Shows the current sun position in the 3D Sun Path.
-- Show sun ray: Displays a rays from the current sun position to the center of the 3D Sun Path.
-- Show day sun path: Shows the position of the sun for the current day.
-- Render ground plane: Display shadows of scene objects on the ground plane (z-coordinate=0).
+- **Show Annual Sun:** Shows the position of the sun on key days in the year, such as winter/summer solstice and equinox days.
+- **Show Annual Sun Path Analemmas:** Shows the position of the sun at the same time of day throughout the year.
+- **Show Compass:** Toggles the compass on the ground plane on or off.
+- **Show Sun Position:** Shows the current sun position in the 3D Sun Path.
+- **Show Sun Ray:** Displays a ray from the current sun position to the center of the 3D Sun Path.
+- **Show Day Sun Path:** Shows the position of the sun for the current day.
+- **Render Ground Plane:** Displays shadows of scene objects on the ground plane (z-coordinate=0).
 
 **Position:** Sets the center of the 3D Sun Path
 
 **Radius:** Sets the radius of the 3D Sun Path in model units
 
-Date and time of day can be set using the slider option, using presets dates and times or by manually entering the Julian date or time of day.
+*Date* and *time of day* can be set using the slider option, using preset dates and times or by manually entering the Julian date or time of day.

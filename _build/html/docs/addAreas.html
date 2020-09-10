@@ -96,7 +96,9 @@
 <li class="toctree-l1"><a class="reference internal" href="siteAnalysis.html">Site Analysis</a></li>
 <li class="toctree-l1"><a class="reference internal" href="point-in-timeIlluminance.html">Point-in-Time Illuminance</a></li>
 <li class="toctree-l1"><a class="reference internal" href="daylightAvailability.html">Daylight Availability</a></li>
-<li class="toctree-l1"><a class="reference internal" href="annualGlare.html">Annual Glare</a></li>
+<li class="toctree-l1"><a class="reference internal" href="annualGlare.html">Simulation Setup</a></li>
+<li class="toctree-l1"><a class="reference internal" href="annualGlare.html#run-simulation">Run Simulation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="annualGlare.html#simulation-results">Simulation Results</a></li>
 <li class="toctree-l1"><a class="reference internal" href="radianceRender.html">Radiance Render</a></li>
 <li class="toctree-l1"><a class="reference internal" href="thermalModel.html">Thermal Model</a></li>
 <li class="toctree-l1"><a class="reference internal" href="radiationMap.html">Radiation Map</a></li>
@@ -190,7 +192,7 @@
             
   <div class="section" id="add-areas">
 <h1>Add Areas<a class="headerlink" href="#add-areas" title="Permalink to this headline">¶</a></h1>
-<p>This subpanel is used to specify regularly occupied spaces within a building such a workareas, circulation spaces etc. Many standards and green building rating systems rely on the concept of “regularly occupied areas” to analyze the environmental performance of a building, such as daylighting, glare and thermal comfort, where it matters. In ClimateStudio regularly occupied areas are defined via reference surfaces. These surfaces are often coincident with the floor but may be objects on layers without any assigned material properties. To define a regularly occupied area left-click on the <em>Add Area</em> button and select one of more reference surfaces.</p>
+<p>This subpanel is used to specify regularly occupied spaces within a building such a workareas, circulation spaces etc. Many standard green building rating systems rely on the concept of “regularly occupied areas” to analyze the environmental performance of a building, such as daylighting, glare and thermal comfort, where it matters. In ClimateStudio, regularly occupied areas are defined via reference surfaces. These surfaces are often coincident with the floor but may be objects on layers without any assigned material properties. To define a regularly occupied area, left-click on the <em>Add Area</em> button and select one or more reference surfaces.</p>
 <div class="figure align-center">
 <a class="reference internal image-reference" href="../_images/AddAreas.jpg"><img alt="../_images/AddAreas.jpg" src="../_images/AddAreas.jpg" style="width: 900px;" /></a>
 </div>
@@ -198,7 +200,7 @@
 <div class="figure align-center">
 <a class="reference internal image-reference" href="../_images/areas1.png"><img alt="../_images/areas1.png" src="../_images/areas1.png" style="width: 900px;" /></a>
 </div>
-<p>After selecting the surfaces and pressing <em>Enter</em> the <em>Edit Occupied Areas</em> panel opens. The panel slightly differs for different workflows.</p>
+<p>After selecting the surfaces and pressing <em>Enter,</em> the <em>Edit Occupied Areas</em> panel opens. The panel slightly differs for different workflows.</p>
 <div class="figure align-center">
 <a class="reference internal image-reference" href="../_images/areas2.png"><img alt="../_images/areas2.png" src="../_images/areas2.png" style="width: 900px;" /></a>
 </div>
@@ -209,9 +211,9 @@
 <p><strong>Sensor Spacing:</strong> Distance between sensors in model units</p>
 <p><strong>Sensor Inset:</strong> Distance of sensors from the edge of the surface area. Some standards and lighting measurement specifications require a minimum sensor distance from walls and windows.</p>
 <p><strong>Workplane Offset:</strong> Distance between the reference surface and the sensor plane.</p>
-<p><strong>Occupancy:</strong> Allows to specify the times in the year when the area is occupied. The user can select from a selection of provided schedules or import a custom schedule in csv (comma separated value) format.</p>
+<p><strong>Occupancy:</strong> Allows the user to specify the times in the year when the area is occupied. The user can select from a selection of provided schedules or import a custom schedule in csv (comma separated value) format.</p>
 </div></blockquote>
-<p>Once the occupied areas have been selected and specified, they appear in the Rhino Viewport and are added to a list in the <em>Add Areas</em> subpanel.The list provides statistics for each occupied area such as its area and number of sensors as well as the ability to edit or delete an area. A larger building may include hundreds of occupied areas. The <em>Tag</em> item therefore allows to organize areas by, for example, floor, program type and/or orientation. Once tagged, ares can be displayed selectively using the filter and tag functions above the table.</p>
+<p>Once the occupied areas have been selected and specified, they appear in the Rhino Viewport and are added to a list in the <em>Add Areas</em> subpanel. The list provides statistics for each occupied area, such as its area and number of sensors as well as the ability to edit or delete an area. A larger building may include hundreds of occupied areas. The <em>Tag</em> item therefore allows the user to organize areas by, for example, floor, program type and/or orientation. Once tagged, areas can be displayed selectively using the filter and tag functions above the table.</p>
 <div class="figure align-center">
 <a class="reference internal image-reference" href="../_images/areas3.png"><img alt="../_images/areas3.png" src="../_images/areas3.png" style="width: 900px;" /></a>
 </div>

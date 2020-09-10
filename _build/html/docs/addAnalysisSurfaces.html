@@ -96,7 +96,9 @@
 <li class="toctree-l1"><a class="reference internal" href="siteAnalysis.html">Site Analysis</a></li>
 <li class="toctree-l1"><a class="reference internal" href="point-in-timeIlluminance.html">Point-in-Time Illuminance</a></li>
 <li class="toctree-l1"><a class="reference internal" href="daylightAvailability.html">Daylight Availability</a></li>
-<li class="toctree-l1"><a class="reference internal" href="annualGlare.html">Annual Glare</a></li>
+<li class="toctree-l1"><a class="reference internal" href="annualGlare.html">Simulation Setup</a></li>
+<li class="toctree-l1"><a class="reference internal" href="annualGlare.html#run-simulation">Run Simulation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="annualGlare.html#simulation-results">Simulation Results</a></li>
 <li class="toctree-l1"><a class="reference internal" href="radianceRender.html">Radiance Render</a></li>
 <li class="toctree-l1"><a class="reference internal" href="thermalModel.html">Thermal Model</a></li>
 <li class="toctree-l1"><a class="reference internal" href="radiationMap.html">Radiation Map</a></li>
@@ -190,7 +192,7 @@
             
   <div class="section" id="add-analysis-surfaces">
 <h1>Add Analysis Surfaces<a class="headerlink" href="#add-analysis-surfaces" title="Permalink to this headline">¶</a></h1>
-<p>This subpanel is used to specify analysis surfaces for a radiation map analysis. These surfaces are often coincident with the floor but may be objects on layers without any assigned material properties. To define an analysis surface  left-click on the <em>Add Surface</em> button and select one of more reference surfaces.</p>
+<p>This subpanel is used to specify analysis surfaces for a radiation map analysis. These surfaces are often coincident with the floor but may be objects on layers without any assigned material properties. To define an analysis surface, left-click on the <em>Add Surface</em> button and select one or more reference surfaces.</p>
 <div class="figure align-center">
 <a class="reference internal image-reference" href="../_images/AddAnalysisSurfaces.jpg"><img alt="../_images/AddAnalysisSurfaces.jpg" src="../_images/AddAnalysisSurfaces.jpg" style="width: 900px;" /></a>
 </div>
@@ -198,14 +200,14 @@
 <div class="figure align-center">
 <a class="reference internal image-reference" href="../_images/addAnalysisSurfaces.png"><img alt="../_images/addAnalysisSurfaces.png" src="../_images/addAnalysisSurfaces.png" style="width: 900px;" /></a>
 </div>
-<p>After selecting the surfaces and pressing <em>Enter</em> the <em>Edit Radiation Surfaces</em> panel opens.</p>
+<p>After selecting the surfaces and pressing <em>Enter,</em> the <em>Edit Radiation Surfaces</em> panel opens.</p>
 <div class="figure align-center">
 <a class="reference internal image-reference" href="../_images/addAnalysisSurfaces2.png"><img alt="../_images/addAnalysisSurfaces2.png" src="../_images/addAnalysisSurfaces2.png" style="width: 400px;" /></a>
 </div>
 <p>While analysis surfaces are displayed as surfaces, radiation map calculations conduct simulations at discrete sensor points that are distributed on a grid pattern across an analysis surface and that are oriented along the surface normal areas. The <em>Edit Analysis Surfaces</em> panel includes the following customization settings:</p>
-<p><strong>ID:</strong> Brief area description such as conference room or open office</p>
+<p><strong>ID:</strong> Brief area description such as “conference room” or “open office”</p>
 <p><strong>Sensor Spacing:</strong> The distance between sensors in model units</p>
-<p>Once all analysis surfaces have been selected and specified, they appear in the Rhino Viewport and are added to a list in the <em>Add Analysis Surfaces</em> subpanel. The list provides statistics for each analysis surface area such as its area and annual radiation falling onto it. The <em>Tag</em> item therefore allows to organize analysis surfaces areas by, for example, building and/or orientation. Once tagged, areas can be displayed selectively using the filter and tag functions above the table.</p>
+<p>Once all analysis surfaces have been selected and specified, they appear in the Rhino Viewport and are added to a list in the <em>Add Analysis Surfaces</em> subpanel. The list provides statistics for each analysis surface area, such as its area and annual radiation falling onto it. The <em>Tag</em> item therefore allows the user to organize analysis surfaces areas by, for example, building and/or orientation. Once tagged, areas can be displayed selectively using the filter and tag functions above the table.</p>
 <div class="figure align-center">
 <a class="reference internal image-reference" href="../_images/addAnalysisSurfaces3.png"><img alt="../_images/addAnalysisSurfaces3.png" src="../_images/addAnalysisSurfaces3.png" style="width: 900px;" /></a>
 </div>

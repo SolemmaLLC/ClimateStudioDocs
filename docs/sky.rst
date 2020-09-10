@@ -8,8 +8,8 @@ Sky
 The sky subpanel facilitates the specification of a single sky luminance distribution for either a `point-in-time illuminance`_
 calculation or a `Radiance Rendering`_. The sky condition can be set as follows:
 	
-	**Type:** The sky type determines the sky model being used such as the CIE clear, intermediate or overcast skies. For the Perez all weather sky 
-	model direct and diffuse irradiances for the date and time of day  selected are taken for the EPW weather files specified under `Location.`_
+	**Type:** The sky type determines the sky model being used such as the CIE clear, intermediate or overcast skies. For the Perez, all weather sky 
+	models direct and diffuse irradiances for the date and time of day selected, and are taken from the EPW weather files specified under `Location.`_
 	
 	**Month, Day and Hour:** Set the date and time of day for which the sky luminance distribution should be calculated.
 	

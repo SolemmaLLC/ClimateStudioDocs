@@ -3,7 +3,7 @@ Add Luminaires
 ================================================
 ClimateStudio supports lighting calculations for daylit and electrically lit scenes. The daylight portion is set via the `sky subpanel.`_ For electric lighting only simulations, the sky can simply be set to nighttime. 
 
-The panel supports the selection of actual luminaire products and to place and organize them individuals or in groups in a scene. The *Photometric Web* and *Size* entry fields at the bottom of the panel control the size and appearance of luminaires in the Rhino viewport (see below.)
+This subpanel supports the selection of actual luminaire products and to place and organize them by individuals or in groups in a scene. The *Photometric Web* and *Size* entry fields at the bottom of the panel control the size and appearance of luminaires in the Rhino viewport (see below).
 
 .. _sky subpanel.: sky.html
 
@@ -11,7 +11,7 @@ The panel supports the selection of actual luminaire products and to place and o
    :width: 900px
    :align: center
 
-To add a new luminaire to the scene, left-clink on the *Add Luminaire* icon. The resulting dialogue panel allows the user to browse through a series of IES files that come with ClimateStudio. An IES file is a manufacturer-supplied text file that provides the luminous intensity distribution of actual lighting products on a spherical grid. This data is usually displayed either three dimensionally as a photometric web or in horizontal and vertical sections. Most lighting manufacturers provide IES files of their products on their web sites. If you are experiencing difficulties locating an IES file for a specific product, try the `IES library.`_ 
+To add a new luminaire to the scene, left-click on the *Add Luminaire* icon. The resulting dialogue panel allows the user to browse through a series of IES files that come with ClimateStudio. An IES file is a manufacturer-supplied text file that provides the luminous intensity distribution of actual lighting products on a spherical grid. This data is usually displayed either three dimensionally as a photometric web or in horizontal and vertical sections. Most lighting manufacturers provide IES files of their products on their web sites. If you are experiencing difficulties locating an IES file for a specific product, try the `IES library.`_ 
 
 .. _IES library.: https://ieslibrary.com/en/home
 

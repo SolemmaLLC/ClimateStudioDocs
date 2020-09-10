@@ -11,7 +11,7 @@ Simulation Results
 ------------------------
 **On** toggles the display on or off.
 
-**Show Values** displays simulation result at each sensor position.
+**Show Values** displays simulation results at each sensor position.
 
 **Show Nodes** displays a point at each sensor location.
 

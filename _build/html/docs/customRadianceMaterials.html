@@ -95,7 +95,9 @@
 <li class="toctree-l1"><a class="reference internal" href="siteAnalysis.html">Site Analysis</a></li>
 <li class="toctree-l1"><a class="reference internal" href="point-in-timeIlluminance.html">Point-in-Time Illuminance</a></li>
 <li class="toctree-l1"><a class="reference internal" href="daylightAvailability.html">Daylight Availability</a></li>
-<li class="toctree-l1"><a class="reference internal" href="annualGlare.html">Annual Glare</a></li>
+<li class="toctree-l1"><a class="reference internal" href="annualGlare.html">Simulation Setup</a></li>
+<li class="toctree-l1"><a class="reference internal" href="annualGlare.html#run-simulation">Run Simulation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="annualGlare.html#simulation-results">Simulation Results</a></li>
 <li class="toctree-l1"><a class="reference internal" href="radianceRender.html">Radiance Render</a></li>
 <li class="toctree-l1"><a class="reference internal" href="thermalModel.html">Thermal Model</a></li>
 <li class="toctree-l1"><a class="reference internal" href="radiationMap.html">Radiation Map</a></li>
@@ -191,20 +193,20 @@
 <h1>Custom Radiance Materials<a class="headerlink" href="#custom-radiance-materials" title="Permalink to this headline">¶</a></h1>
 <p>ClimateStudio allows you to set up your own Radiance materials via BSDFs and .rad files and use them in conjunction with the Default library that comes with ClimateStudio. Please note that you need to be familiar with the <a class="reference external" href="https://www.radiance-online.org/learning/documentation">Radiance material modifiers</a> to use this option.</p>
 <dl class="simple">
-<dt>Step 1: Create a Library Directory</dt><dd><p>Create a directory in which you want to store your custom Radiance materials, e.g. C:\tmp\MyCustomRadianceMaterials.</p>
+<dt>Step 1: Create a Library Directory</dt><dd><p>Create a directory in which you want to store your custom Radiance materials, e.g. <code class="docutils literal notranslate"><span class="pre">C:\\\tmp\\\MyCustomRadianceMaterials.</span></code></p>
 </dd>
 <dt>Step 2: Create a Radiance Material File</dt><dd><p>An example file for a bright red material can be downloaded from <a class="reference external" href="https://www.solemma.com/tutorial/BrightRed.rad">here.</a> Download and copy the file into your library directory.</p>
 </dd>
 </dl>
 <dl class="simple">
-<dt>Step 3: Link the Material Library to ClimateStudio</dt><dd><p>Under <em>Assign materials</em> open the Edit Layer Material dialogue and add your custom library.</p>
+<dt>Step 3: Link the Material Library to ClimateStudio</dt><dd><p>Under <em>Assign materials,</em> open the Edit Layer Material dialogue and add your custom library.</p>
 </dd>
 </dl>
 <div class="figure align-center">
 <a class="reference internal image-reference" href="../_images/customRadianceMaterials.jpg"><img alt="../_images/customRadianceMaterials.jpg" src="../_images/customRadianceMaterials.jpg" style="width: 900px;" /></a>
 </div>
 <dl class="simple">
-<dt>Step 4: Select Your Custom Library and Assign a Material</dt><dd><p>Under <em>Assign materials</em> open the Edit Layer Material dialogue and add your custom library.</p>
+<dt>Step 4: Select Your Custom Library and Assign a Material</dt><dd><p>Under <em>Assign materials,</em> open the Edit Layer Material dialogue and add your custom library.</p>
 </dd>
 </dl>
 <div class="figure align-center">

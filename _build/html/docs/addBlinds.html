@@ -96,7 +96,9 @@
 <li class="toctree-l1"><a class="reference internal" href="siteAnalysis.html">Site Analysis</a></li>
 <li class="toctree-l1"><a class="reference internal" href="point-in-timeIlluminance.html">Point-in-Time Illuminance</a></li>
 <li class="toctree-l1"><a class="reference internal" href="daylightAvailability.html">Daylight Availability</a></li>
-<li class="toctree-l1"><a class="reference internal" href="annualGlare.html">Annual Glare</a></li>
+<li class="toctree-l1"><a class="reference internal" href="annualGlare.html">Simulation Setup</a></li>
+<li class="toctree-l1"><a class="reference internal" href="annualGlare.html#run-simulation">Run Simulation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="annualGlare.html#simulation-results">Simulation Results</a></li>
 <li class="toctree-l1"><a class="reference internal" href="radianceRender.html">Radiance Render</a></li>
 <li class="toctree-l1"><a class="reference internal" href="thermalModel.html">Thermal Model</a></li>
 <li class="toctree-l1"><a class="reference internal" href="radiationMap.html">Radiation Map</a></li>
@@ -193,22 +195,22 @@
             
   <div class="section" id="add-blinds">
 <h1>Add Blinds<a class="headerlink" href="#add-blinds" title="Permalink to this headline">¶</a></h1>
-<p>Several workflows such as <a class="reference external" href="daylightAvailability.html">Daylight Availability</a> and <a class="reference external" href="annualGlare.html">Annual Glare</a> support the setting of dynamic shading systems such as fabric shades or switchable glazings. Specifying such a system requires identifying windows that have a dynamic shading system and specifying a shading type and control strategy for each window. The process is initiated via the Add Blinds subpanel. Left-click on the Add Area button and select one of more reference surfaces.</p>
+<p>Several workflows such as <a class="reference external" href="daylightAvailability.html">Daylight Availability</a> and <a class="reference external" href="annualGlare.html">Annual Glare</a> support the setting of dynamic shading systems, such as fabric shades or switchable glazings. Specifying such a system requires identifying windows that have a dynamic shading system and specifying a shading type and control strategy for each window. The process is initiated via the Add Blinds subpanel. Left-click on the Add Area button and select one or more reference surfaces.</p>
 <div class="figure align-center">
 <a class="reference internal image-reference" href="../_images/AddBlinds.jpg"><img alt="../_images/AddBlinds.jpg" src="../_images/AddBlinds.jpg" style="width: 900px;" /></a>
 </div>
-<p>In the example below, the three window surfaces, one in the conference room and two for the corner office are selected.</p>
+<p>In the example below, the three window surfaces, one in the conference room and two in the corner office are selected.</p>
 <blockquote>
 <div><p><strong>Tip:</strong> A quick way to do so is to pick all objects on the <em>glazing</em> layer.</p>
 </div></blockquote>
 <div class="figure align-center">
 <a class="reference internal image-reference" href="../_images/blinds1.png"><img alt="../_images/blinds1.png" src="../_images/blinds1.png" style="width: 900px;" /></a>
 </div>
-<p>Once all window surfaces with a shading system have selected the <em>Edit Dynamic Windows</em> panel opens.</p>
-<p><strong>Type:</strong> As shown below, the dialogue allows setting the shading type and control strategy, <em>operable blinds</em> and <em>dynamic glass.</em> For both cases LCimateStudio comes with a list of actual materials. For operable blinds, it is assumed that the shading system is fully opened or closed at any time. For dynamic glass several shading states as provided by the manufacturer are supported. In the example below Halio Black comes with one clear and six tint states ranging from 50.6% to 0.1% visual light transmittance.</p>
-<p><strong>Schedule:</strong> The schedule input sets the dynamic shading control strategy for the shading, i..e when it is opened or closed.  The following controls are currently supported:</p>
+<p>Once all window surfaces with a shading system are selected, the <em>Edit Dynamic Windows</em> panel opens.</p>
+<p><strong>Type:</strong> As shown below, the dialogue allows setting the shading type and control strategy, <em>operable blinds</em> and <em>dynamic glass.</em> For both cases, ClimateStudio comes with a list of actual materials. For operable blinds, it is assumed that the shading system is fully opened or closed at any time. For dynamic glass, several shading states, as provided by the manufacturer, are supported. In the example below, Halio Black comes with one clear and six tint states ranging from 50.6% to 0.1% visual light transmittance.</p>
+<p><strong>Schedule:</strong> The schedule input sets the dynamic shading control strategy for the shading, i.e when it is opened or closed.  The following controls are currently supported:</p>
 <ul class="simple">
-<li><p><strong>Default (LEEDv4 2% Rule):</strong> According to this control algorithm a shading system is closed if more than 2% of an occupied area associated with a window is illuminated by more than 1000lux of direct sunlight. For dynamic glass the transmittance of the glass is lowered until either the 1000lux criterion is not met any more or the glass is in its darkest tint state.</p></li>
+<li><p><strong>Default (LEEDv4 2% Rule):</strong> According to this control algorithm, a shading system is closed if more than 2% of an occupied area associated with a window is illuminated by more than 1000lux of direct sunlight. For dynamic glass, the transmittance of the glass is lowered until either the 1000lux criterion is not met anymore or the glass is in its darkest tint state.</p></li>
 <li><p><strong>Custom (CSV file):</strong> Alternatively, the user can provide a simple CSV file with 8760 values for every hour of the year.</p></li>
 </ul>
 <div class="figure align-center">
@@ -220,7 +222,7 @@
 </div>
 <div class="section" id="simulation-details">
 <h2>Simulation Details<a class="headerlink" href="#simulation-details" title="Permalink to this headline">¶</a></h2>
-<p>Once a simulation involving dynamic shading has started, CliamteStudio organizes all dynamic shading systems into blind groups. These groups depend on shading type and schedule suggested as well as on window orientation, proximity to nearby <em>Occupied Areas</em> and any external shading from neighboring objects. Once a simulation has been run, the shading group number of each shading system is shown along with the surface normal. For example, the image below shows that the three windows have been divided into three glind groups. The blind group number has no specific meaning.</p>
+<p>Once a simulation involving dynamic shading has started, ClimateStudio organizes all dynamic shading systems into blind groups. These groups depend on shading type and schedule suggested, as well as on window orientation, proximity to nearby <em>Occupied Areas</em> and any external shading from neighboring objects. Once a simulation has been run, the shading group number of each shading system is shown along with the surface normal. For example, the image below shows that the three windows have been divided into three blind groups. The blind group number has no specific meaning.</p>
 <div class="figure align-center">
 <a class="reference internal image-reference" href="../_images/blinds4.png"><img alt="../_images/blinds4.png" src="../_images/blinds4.png" style="width: 900px;" /></a>
 </div>

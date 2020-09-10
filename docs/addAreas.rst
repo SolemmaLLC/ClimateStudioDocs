@@ -1,7 +1,7 @@
 
 Add Areas
 ================================================
-This subpanel is used to specify regularly occupied spaces within a building such a workareas, circulation spaces etc. Many standards and green building rating systems rely on the concept of “regularly occupied areas” to analyze the environmental performance of a building, such as daylighting, glare and thermal comfort, where it matters. In ClimateStudio regularly occupied areas are defined via reference surfaces. These surfaces are often coincident with the floor but may be objects on layers without any assigned material properties. To define a regularly occupied area left-click on the *Add Area* button and select one of more reference surfaces.  
+This subpanel is used to specify regularly occupied spaces within a building such a workareas, circulation spaces etc. Many standard green building rating systems rely on the concept of “regularly occupied areas” to analyze the environmental performance of a building, such as daylighting, glare and thermal comfort, where it matters. In ClimateStudio, regularly occupied areas are defined via reference surfaces. These surfaces are often coincident with the floor but may be objects on layers without any assigned material properties. To define a regularly occupied area, left-click on the *Add Area* button and select one or more reference surfaces.  
 
 
 .. figure:: images/AddAreas.jpg
@@ -14,7 +14,7 @@ In the example below, the two reference surfaces are coincident with the floor a
    :width: 900px
    :align: center
 
-After selecting the surfaces and pressing *Enter* the *Edit Occupied Areas* panel opens. The panel slightly differs for different workflows.
+After selecting the surfaces and pressing *Enter,* the *Edit Occupied Areas* panel opens. The panel slightly differs for different workflows.
 
 .. figure:: images/areas2.png
    :width: 900px
@@ -32,9 +32,9 @@ While occupied areas are continuous surfaces, lighting calculations conduct simu
 	
 	**Workplane Offset:** Distance between the reference surface and the sensor plane. 
 	
-	**Occupancy:** Allows to specify the times in the year when the area is occupied. The user can select from a selection of provided schedules or import a custom schedule in csv (comma separated value) format.
+	**Occupancy:** Allows the user to specify the times in the year when the area is occupied. The user can select from a selection of provided schedules or import a custom schedule in csv (comma separated value) format.
 	
-Once the occupied areas have been selected and specified, they appear in the Rhino Viewport and are added to a list in the *Add Areas* subpanel.The list provides statistics for each occupied area such as its area and number of sensors as well as the ability to edit or delete an area. A larger building may include hundreds of occupied areas. The *Tag* item therefore allows to organize areas by, for example, floor, program type and/or orientation. Once tagged, ares can be displayed selectively using the filter and tag functions above the table. 
+Once the occupied areas have been selected and specified, they appear in the Rhino Viewport and are added to a list in the *Add Areas* subpanel. The list provides statistics for each occupied area, such as its area and number of sensors as well as the ability to edit or delete an area. A larger building may include hundreds of occupied areas. The *Tag* item therefore allows the user to organize areas by, for example, floor, program type and/or orientation. Once tagged, areas can be displayed selectively using the filter and tag functions above the table. 
 	
 .. figure:: images/areas3.png
    :width: 900px

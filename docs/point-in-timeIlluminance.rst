@@ -7,7 +7,7 @@ This workflow supports the calculation of illuminance distributions for electric
    :width: 900px
    :align: center
 
-The workflow relies on five subpanels, location, sky, assign materials, add luminaires and add areas.
+The workflow relies on five subpanels: location, sky, assign materials, add luminaires and add areas.
 
 - Go to the `Location Subpanel`_ 
 - Go to the `Sky Subpanel`_
@@ -26,14 +26,14 @@ The workflow relies on five subpanels, location, sky, assign materials, add lumi
 .. _Add Areas Subpanel: addAreas.html
 
 
-If you have not done any lighting simulations in ClimateStudio, it is recommended that you go through `Lighting Model Setup`_ video tutorial (5 minutes). 
+If you have not done any lighting simulations in ClimateStudio, it is recommended that you go through the `Lighting Model Setup`_ video tutorial (5 minutes). 
 The Rhino file used in the tutorial is available for `download`_.
 
 .. _Lighting Model Setup: https://vimeo.com/392379928 
 .. _download: https://solemma.com/tutorial/CS%20Two%20Zone%20Office.3dm
  
 
-Once all required input subpanels have been populated, a simulation is invoked by pressing the start button. ClimateStudio uses a `progressive path-tracing`_ version of the Radiance raytracer to simulate illuminance distributions. While a simulation is in progress new iterations are added to the simulation results until the user-specified number of passes has been reached. Details on the simulation settings can be found in the `Path-tracing Settings Subpanel.`_
+Once all required input subpanels have been populated, a simulation is invoked by pressing the start button. ClimateStudio uses a `progressive path-tracing`_ version of the Radiance raytracer to simulate illuminance distributions. While a simulation is in progress, new iterations are added to the simulation results until the user-specified number of passes has been reached. Details on the simulation settings can be found in the `Path-tracing Settings Subpanel.`_
  
 .. _progressive path-tracing: https://www.solemma.com/Speed.html
 

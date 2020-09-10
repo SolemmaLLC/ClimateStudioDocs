@@ -1,7 +1,7 @@
 
 Learning ClimateStudio
 ================================================
-To get started using ClimateStudio we recommend that to watch a few of the video tutorials for ClimateStudio on the `Solemma web site.`_ We recommend that you start with  3 minute the `Interface Overview`_ and then dive into any Climate Studio’s design analysis workflows:
+To get started using ClimateStudio we recommend that to watch a few of the video tutorials for ClimateStudio on the `Solemma web site.`_ We recommend that you start with the 3 minute `Interface Overview`_ and then dive into any Climate Studio’s design analysis workflows:
 
 .. _Solemma web site.: https://solemma.com/TrainingClimateStudio.html
 
@@ -29,7 +29,7 @@ To get started using ClimateStudio we recommend that to watch a few of the video
 
 .. _Thermal Model: thermalModel.html
 
-To get to any of these workflows open Rhino, search for the ClimateStudio toolbar  and select a workflow. 
+To get to any of these workflows, open Rhino, search for the ClimateStudio toolbar  and select a workflow. 
 
 .. figure:: images/workflows.jpg
    :width: 200px
