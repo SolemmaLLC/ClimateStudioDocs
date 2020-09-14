@@ -1,7 +1,7 @@
 
 Assign Materials
 ================================================
-Each object in the Rhino scene is located on a single layer. ClimateStudio uses these layers to assign material properties to scene objects. 
+Each object in a Rhino scene is located on a single layer. ClimateStudio uses these layers to assign material properties to scene objects. 
 Objects on layers without an assigned material are **ignored** by all lighting simulations. 
 
 .. figure:: images/AssignMaterials.jpg
