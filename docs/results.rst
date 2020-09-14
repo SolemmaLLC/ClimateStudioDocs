@@ -9,9 +9,9 @@ The results panel is activated once a simulation is in progress (finished its fi
 
 Results Organization
 -------------------------
-Results should be named according to their main design feature such as the glazing typs if that has been modified. While results are stored in a binary format, their content can be exported in CSV or other formats.  
+Results should be named according to their main design feature such as the glazing type, if that has been modified. While results are stored in a binary format, their content can be exported in CSV or other formats.  
 
-.. figure:: images/resultsPanel.png
+.. figure:: images/resultsPanel.jpg
    :width: 900px
    :align: center
 

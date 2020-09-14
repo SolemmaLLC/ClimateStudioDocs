@@ -19,7 +19,7 @@ Simulation Results
 
 **Style** toggles between a continuous surface and individual disks at each sensor position.
 
-**Surface Edge Thickness** modifies the line weight of the end of the result surfaces.
+**Surface Edge Thickness** modifies the line weight of the edge of the result surfaces.
 
 **Edit Falsecolor** offers a series of color mappings.
 

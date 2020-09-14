@@ -39,11 +39,10 @@ Once all required input subpanels have been populated, a simulation is invoked b
    :width: 300px
    :align: center
 
-ClimateStudio uses a `progressive path-tracing`_ version of the Radiance raytracer to simulate illuminance distributions. While a simulation is in progress, new iterations are added to the simulation results until the user-specified number of passes has been reached. Details on the simulation settings can be found in the `Path-tracing Settings Subpanel.`_
+ClimateStudio uses a `progressive path-tracing`_ version of the Radiance raytracer to simulate illuminance distributions. While a simulation is in progress, new iterations are added to the simulation results until the user-specified number of passes has been reached. Details on the simulation settings can be found in the `Path-tracing Settings Subpanel`_.
  
 .. _progressive path-tracing: https://www.solemma.com/Speed.html
-
-.. _Path-tracing Settings Subpanel.: path-tracingSettings.html
+.. _Path-tracing Settings Subpanel: path-tracingSettings.html
 
 Simulation Results
 ------------------------

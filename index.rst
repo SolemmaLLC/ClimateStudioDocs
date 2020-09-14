@@ -49,6 +49,7 @@ Welcome to the ClimateStudio Documentation
    Manage Library Menu<docs/manageLibrary.rst>
    EnergyPlus Simulation Settings<docs/EnergyPlus.rst>
    Thermal Zone Settings<docs/thermalZoneSettings.rst>
+   CS Settings <docs/CS_Settings.rst>
 
 .. toctree::
    :maxdepth: 3

@@ -7,7 +7,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Custom Radiance Materials &mdash; ClimateStudio latest documentation</title>
+  <title>CS Settings &mdash; ClimateStudio latest documentation</title>
   
 
   
@@ -39,7 +39,8 @@
     
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="prev" title="Viewport Display" href="ViewportDisplay.html" /> 
+    <link rel="next" title="Results Panel" href="results.html" />
+    <link rel="prev" title="Thermal Zone Settings" href="thermalZoneSettings.html" /> 
 </head>
 
 <body class="wy-body-for-nav">
@@ -101,7 +102,7 @@
 <li class="toctree-l1"><a class="reference internal" href="radiationMap.html">Radiation Map</a></li>
 </ul>
 <p class="caption"><span class="caption-text">Subpanels</span></p>
-<ul>
+<ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="Location.html">Location</a></li>
 <li class="toctree-l1"><a class="reference internal" href="assignMaterials.html">Assign Materials</a></li>
 <li class="toctree-l1"><a class="reference internal" href="addAnalysisSurfaces.html">Add Analysis Surfaces</a></li>
@@ -115,7 +116,10 @@
 <li class="toctree-l1"><a class="reference internal" href="manageLibrary.html">Manage Library Menu</a></li>
 <li class="toctree-l1"><a class="reference internal" href="EnergyPlus.html">EnergyPlus Simulation Settings</a></li>
 <li class="toctree-l1"><a class="reference internal" href="thermalZoneSettings.html">Thermal Zone Settings</a></li>
-<li class="toctree-l1"><a class="reference internal" href="CS_Settings.html">CS Settings</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">CS Settings</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#units">Units</a></li>
+</ul>
+</li>
 </ul>
 <p class="caption"><span class="caption-text">Results</span></p>
 <ul>
@@ -123,8 +127,8 @@
 <li class="toctree-l1"><a class="reference internal" href="ViewportDisplay.html">Viewport Display</a></li>
 </ul>
 <p class="caption"><span class="caption-text">FAQ</span></p>
-<ul class="current">
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Custom Radiance Materials</a></li>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="customRadianceMaterials.html">Custom Radiance Materials</a></li>
 </ul>
 
             
@@ -171,7 +175,7 @@
     
       <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
         
-      <li>Custom Radiance Materials</li>
+      <li>CS Settings</li>
     
     
       <li class="wy-breadcrumbs-aside">
@@ -188,28 +192,16 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="custom-radiance-materials">
-<h1>Custom Radiance Materials<a class="headerlink" href="#custom-radiance-materials" title="Permalink to this headline">¶</a></h1>
-<p>ClimateStudio allows you to set up your own Radiance materials via BSDFs and .rad files and use them in conjunction with the Default library that comes with ClimateStudio. Please note that you need to be familiar with the <a class="reference external" href="https://www.radiance-online.org/learning/documentation">Radiance material modifiers</a> to use this option.</p>
-<dl class="simple">
-<dt>Step 1: Create a Library Directory</dt><dd><p>Create a directory in which you want to store your custom Radiance materials, e.g. <code class="docutils literal notranslate"><span class="pre">C:\\\tmp\\\MyCustomRadianceMaterials.</span></code></p>
-</dd>
-<dt>Step 2: Create a Radiance Material File</dt><dd><p>An example file for a bright red material can be downloaded from <a class="reference external" href="https://www.solemma.com/tutorial/BrightRed.rad">here.</a> Download and copy the file into your library directory.</p>
-</dd>
-</dl>
-<dl class="simple">
-<dt>Step 3: Link the Material Library to ClimateStudio</dt><dd><p>Under <em>Assign materials,</em> open the Edit Layer Material dialogue and add your custom library.</p>
-</dd>
-</dl>
+  <div class="section" id="cs-settings">
+<h1>CS Settings<a class="headerlink" href="#cs-settings" title="Permalink to this headline">¶</a></h1>
+<p>The CS settings panel is opened by typing  “CSSettings” on the Rhino command line.</p>
 <div class="figure align-center">
-<a class="reference internal image-reference" href="../_images/customRadianceMaterials.jpg"><img alt="../_images/customRadianceMaterials.jpg" src="../_images/customRadianceMaterials.jpg" style="width: 900px;" /></a>
+<a class="reference internal image-reference" href="../_images/CSSettings.jpg"><img alt="../_images/CSSettings.jpg" src="../_images/CSSettings.jpg" style="width: 400px;" /></a>
 </div>
-<dl class="simple">
-<dt>Step 4: Select Your Custom Library and Assign a Material</dt><dd><p>Under <em>Assign materials,</em> open the Edit Layer Material dialogue and add your custom library.</p>
-</dd>
-</dl>
-<div class="figure align-center">
-<a class="reference internal image-reference" href="../_images/customRadianceMaterials2.jpg"><img alt="../_images/customRadianceMaterials2.jpg" src="../_images/customRadianceMaterials2.jpg" style="width: 900px;" /></a>
+<div class="section" id="units">
+<h2>Units<a class="headerlink" href="#units" title="Permalink to this headline">¶</a></h2>
+<p><strong>Solar Exposure</strong> toggles radiation map results between kWh/m2 and kBTU/ft2</p>
+<p><strong>Illuminance</strong> toggles point-in-time illumiance results between lux and foot candle.</p>
 </div>
 </div>
 
@@ -221,8 +213,10 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
+        <a href="results.html" class="btn btn-neutral float-right" title="Results Panel" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
-        <a href="ViewportDisplay.html" class="btn btn-neutral float-left" title="Viewport Display" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+        <a href="thermalZoneSettings.html" class="btn btn-neutral float-left" title="Thermal Zone Settings" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   
