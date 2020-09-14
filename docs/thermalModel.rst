@@ -9,23 +9,29 @@ ClimateStudio supports multi zone thermal simulations using the US Department of
    :width: 900px
    :align: center
    
-- Go to the `Location Subpanel`_ 
+- `Location`_ 
 
-- Go to the `Add Objects Subpanel`_
+- `Add Objects`_
 
-- Go to the `Manage Library Menu`_
+- `Manage Library Menu`_
 
-- Go to the `EnergyPlus Simulation Settings`_
+- `EnergyPlus Simulation Settings`_
 
-.. _Location Subpanel: Location.html
+.. _Location: Location.html
 
-.. _Add Objects Subpanel: addObjects.html
+.. _Add Objects: addObjects.html
 
 .. _Manage Library Menu: manageLibrary.html 
 
 .. _EnergyPlus Simulation settings: EnergyPlus.html 
 
-Once all required input subpanels have been populated, a simulation is invoked by pressing the start button. A DOS window should appear that is running the EnergyPlus simulation.  This takes several minutes and the progress of the simulation is visible on screen.
+Once all required input subpanels have been populated, a simulation is invoked by pressing the start button. 
+
+.. figure:: images/StartButton.jpg
+   :width: 300px
+   :align: center
+   
+A DOS window should appear that is running the EnergyPlus simulation.  This takes several minutes and the progress of the simulation is visible on screen.
 
 .. figure:: images/thermalModel.png
    :width: 900px
@@ -55,7 +61,7 @@ Building
 
 - **Energy Use** shows total monthly energy use for the whole building for heating, cooling, lighting and equipment.
 
-- **Zone Temperature Curves** show the number of hours for each zone that the operative temperature is below (red) or above (blue) a given temperature. In the example below, the operative temperature of the Open Office zone is 73h per year above 26 degrees celcius, indicating a potential propensity for overheating. 
+- **Zone Temperature Curves** show the number of hours for each zone that the operative temperature is below (red) or above (blue) a given temperature. In the example below, the operative temperature of the Open Office zone is 673h per year above 26 degrees celcius, indicating a propensity of the space for overheating. 
 
 .. figure:: images/thermalModel4.png
    :width: 900px

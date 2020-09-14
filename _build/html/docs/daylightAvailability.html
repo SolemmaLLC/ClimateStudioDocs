@@ -39,7 +39,7 @@
     
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Simulation Setup" href="annualGlare.html" />
+    <link rel="next" title="Annual Glare" href="annualGlare.html" />
     <link rel="prev" title="Point-in-Time Illuminance" href="point-in-timeIlluminance.html" /> 
 </head>
 
@@ -102,9 +102,7 @@
 <li class="toctree-l2"><a class="reference internal" href="#reporting">Reporting</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="annualGlare.html">Simulation Setup</a></li>
-<li class="toctree-l1"><a class="reference internal" href="annualGlare.html#run-simulation">Run Simulation</a></li>
-<li class="toctree-l1"><a class="reference internal" href="annualGlare.html#simulation-results">Simulation Results</a></li>
+<li class="toctree-l1"><a class="reference internal" href="annualGlare.html">Annual Glare</a></li>
 <li class="toctree-l1"><a class="reference internal" href="radianceRender.html">Radiance Render</a></li>
 <li class="toctree-l1"><a class="reference internal" href="thermalModel.html">Thermal Model</a></li>
 <li class="toctree-l1"><a class="reference internal" href="radiationMap.html">Radiation Map</a></li>
@@ -198,26 +196,28 @@
             
   <div class="section" id="daylight-availability">
 <h1>Daylight Availability<a class="headerlink" href="#daylight-availability" title="Permalink to this headline">¶</a></h1>
-<p>This workflow supports the calculation of a variety of illuminance-based daylight availability metrics. As the name suggests, these metrics are based on indoor illuminance distributions due to daylight under either a few select sky conditions, such as 9am/3pm on equinox days or all hours in the year. The purpose of these metrics is to separate an occupied area into daylit and non-daylit areas.</p>
+<p>This workflow supports the calculation of a variety of illuminance-based daylight availability metrics. As the name suggests, these metrics are based on indoor illuminance distributions due to daylight under
+either a few select sky conditions, such as 9am/3pm on equinox days or all hours in the year. The purpose of these metrics is to devide an occupied area into daylit and non-daylit portions.</p>
 <div class="figure align-center">
 <a class="reference internal image-reference" href="../_images/DaylightAvailability_GUI.jpg"><img alt="../_images/DaylightAvailability_GUI.jpg" src="../_images/DaylightAvailability_GUI.jpg" style="width: 900px;" /></a>
 </div>
-<p>The workflow relies on four subpanels: location, assign materials, add blinds and add areas.</p>
+<p>The workflow relies on four subpanels:</p>
 <ul class="simple">
-<li><p>Go to the <a class="reference external" href="Location.html">Location Subpanel</a></p></li>
-<li><p>Go to the <a class="reference external" href="assignMaterials.html">Assign Materials Subpanel</a></p></li>
-<li><p>Go to the <a class="reference external" href="addBlinds.html">Add Blinds Subpanel</a></p></li>
-<li><p>Go to the <a class="reference external" href="addAreas.html">Add Areas Subpanel</a></p></li>
+<li><p><a class="reference external" href="Location.html">Location</a></p></li>
+<li><p><a class="reference external" href="assignMaterials.html">Assign Materials</a></p></li>
+<li><p><a class="reference external" href="addBlinds.html">Add Blinds</a></p></li>
+<li><p><a class="reference external" href="addAreas.html">Add Areas</a></p></li>
 </ul>
-<p>This workflow is organized into several “sub-workflows” for the different daylight availability metrics. Depending on the metric chosen, the number of required input subpanels varies. The following metrics are supported.</p>
+<p>This workflow is organized into several “sub-workflows” for a variety of daylight availability metrics. Depending on the metric chosen, the number of required input subpanels varies. The following metrics are supported.</p>
 <div class="figure align-center">
 <a class="reference internal image-reference" href="../_images/daylightAvailability.png"><img alt="../_images/daylightAvailability.png" src="../_images/daylightAvailability.png" style="width: 900px;" /></a>
 </div>
 <div class="section" id="leed-version-4-environmental-quality-credit-8">
 <h2>LEED version 4 Environmental Quality Credit 8<a class="headerlink" href="#leed-version-4-environmental-quality-credit-8" title="Permalink to this headline">¶</a></h2>
-<p>According to the US Green Building Council, the intent of Environmental Creit 8, <a class="reference external" href="https://www.usgbc.org/credits/?Version=%22v4.1%22&amp;Rating+System=%22New+Construction%22">Daylighting and View,</a> is to “provide building occupants with a connection between indoor spaces and the outdoors through the introduction of daylight and views into the regularly occupied areas of the building.” ClimateStudio supports various compliance paths for both LEED version 4.0 and 4.1.</p>
+<p>According to the US Green Building Council, the intent of Environmental Credit 8, <a class="reference external" href="https://www.usgbc.org/credits/?Version=%22v4.1%22&amp;Rating+System=%22New+Construction%22">Daylighting and View,</a> is to “provide building occupants with a connection between indoor spaces and the outdoors through
+the introduction of daylight and views into the regularly occupied areas of the building.” ClimateStudio supports various compliance paths for both LEED version 4.0 and 4.1.</p>
 <ul class="simple">
-<li><p><strong>Option 1</strong> calculates spatial daylight autonomy (sDA) for a target illuminance of 300lux and occupant hours from 8am to 6pm daily. sDA is defined as the percentage of occupied hours during which the target illuminance is met through daylight alone. sDA calculations are based on annua, climate-based simulations of thousands of different sky conditions throughout the year. Dynamic shading devices such as blinds or electrochromic glazings have to be specified for all window units. Another metric called annual solar exposure (ASE), corresponds to the percentage of occupied time when the illuminance at a point due to direct sunlight is above 1000lux. The design goal is generally to maximize the daylit area with an sDA above 50%, meaning that there is daylight at a space for at least half of the year. At the same time, the ASE has to be kept below 10% to avoid glare and overheating. LEED versions 4.0 and 4.1 differ in how strict ASE calculations are being handled. It is worthwhile pointing out that ASE is calculated for the dynamic shading system fully opened all year whereas sDA takes the actual use of dynamic shading into account.</p></li>
+<li><p><strong>Option 1</strong> calculates spatial daylight autonomy (sDA) for a target illuminance of 300lux and occupant hours from 8am to 6pm daily. sDA is defined as the percentage of occupied hours during which the target illuminance is met through daylight alone. sDA calculations are based on annual, climate-based simulations of thousands of different sky conditions throughout the year. Dynamic shading devices such as blinds or electrochromic glazings have to be specified for all window units. Another metric called annual solar exposure (ASE), corresponds to the percentage of occupied time when the illuminance at a point due to direct sunlight is above 1000lux. The design goal is usually to maximize the daylit area with an sDA above 50%, meaning that there is daylight at a space for at least half of the year. At the same time, the ASE has to be kept below 10% of the occupeid area to avoid glare and overheating. LEED versions 4.0 and 4.1 differ in how strict ASE calculations are being handled. It is worthwhile pointing out that ASE is calculated for the dynamic shading system fully opened all year whereas sDA takes the actual use of dynamic shading into account.</p></li>
 <li><p><strong>Option 2</strong> is based on two point-in-time illuminance distributions on equinox days at 9am and 3pm under CIE clear sky conditions. The daylit area corresponds to the part of the space with more than 300lux and less than 3000lux at both 9am and 3pm.</p></li>
 </ul>
 </div>
@@ -234,7 +234,7 @@ pathways to the credit:</p>
 </ul>
 <p>The daylight factor pathways impose thresholds for average daylight factor and daylight-factor uniformity ratios. The annual illuminance pathways require spaces to achieve minimum average and worst-point illuminance levels for a certain number of hours throughout the year.
 The targets are building and space-type specific, and are documented in detail here: <a class="reference external" href="https://www.breeam.com/discover/technical-standards/newconstruction/">https://www.breeam.com/discover/technical-standards/newconstruction/</a></p>
-<p><strong>Daylight Factor:</strong> The daylight factor is defined as the ratio between the illuminance at a point in a building divided by the illuminance at an upward facing, unshaded outside sensor. The reference sky for the daylight factor is the CIE overcast sky.  The Daylight factor serves as a daylight availability metric in multiple building standards world-wide with minimum requirements typically ranging between 2% and 5%.</p>
+<p><strong>Daylight Factor:</strong> The daylight factor is defined as the ratio between the illuminance at a point in a building divided by the illuminance at an upward facing, unshaded outside sensor. The reference sky for the daylight factor is the CIE overcast sky.  The daylight factor serves as a daylight availability metric in multiple building standards world-wide with minimum requirements typically ranging between 2% and 5%.</p>
 <p><strong>Custom:</strong> This sub-workflow allows users to conduct a climate-based annual illuminance calculation including dynamic shading systems. Rather than following a particular standard, the workflow allows users to set custom minimum, target and exceeding illuminance levels to calculate, for example, the useful daylight illuminance (UDI) between 300lux and 1000lux. The levels can be set through the <a class="reference external" href="addAreas.html">Add Areas subpanel.</a></p>
 <p>Depending on the sub-workflow selected, a varying number of input subpanels are required, namely:</p>
 <ul class="simple">
@@ -244,23 +244,36 @@ The targets are building and space-type specific, and are documented in detail h
 <li><p>The <a class="reference external" href="addAreas.html">Add Areas Subpanel</a></p></li>
 </ul>
 <p>If you have not done any lighting simulations in ClimateStudio, it is recommended that you go through the <a class="reference external" href="https://vimeo.com/392379928">Lighting Model Setup video tutorial</a> (5 minutes) followed by two video tutorials specifically focussed on daylight availability simulations, namely <a class="reference external" href="https://vimeo.com/392380513">Daylight Availability Study</a> and <a class="reference external" href="https://vimeo.com/392380721">LEEDv4 Daylight Simulation - Iterative.</a> The Rhino file used in the tutorials is available for <a class="reference external" href="https://solemma.com/tutorial/CS%20Two%20Zone%20Office.3dm">download.</a></p>
-<p>Once all required input subpanels have been populated, a simulation is invoked by pressing the start button. ClimateStudio uses a <a class="reference external" href="https://www.solemma.com/Speed.html">progressive path-tracing</a> version of the Radiance raytracer to simulate illuminance distributions. While a simulation is in progress, new iterations are added to the simulation results until the user-specified number of passes has been reached. Details on the simulation settings can be found in the <a class="reference external" href="path-tracingSettings.html">Path-tracing Settings Subpanel.</a></p>
+<p>Once all required input subpanels have been populated, a simulation is invoked by pressing the start button.</p>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="../_images/StartButton.jpg"><img alt="../_images/StartButton.jpg" src="../_images/StartButton.jpg" style="width: 300px;" /></a>
+</div>
+<p>ClimateStudio uses a <a class="reference external" href="https://www.solemma.com/Speed.html">progressive path-tracing</a> version of the Radiance raytracer to simulate illuminance distributions. While a simulation is in progress, new iterations are added to the simulation results until the user-specified number of passes has been reached. Details on the simulation settings can be found in the <a class="reference external" href="path-tracingSettings.html">Path-tracing Settings Subpanel.</a></p>
 </div>
 <div class="section" id="simulation-results">
 <h2>Simulation Results<a class="headerlink" href="#simulation-results" title="Permalink to this headline">¶</a></h2>
-<p>Upon completion of the first pass, the simulation automatically switches into the ClimateStudio results panel. A General overview of the Results panel is provided <a class="reference external" href="results.html">here.</a> The image below shows the LEED v4.1 option 1 results panel with the sDA300lux/50% distribution shown in the Rhino viewport to the left and overall statistics on the right. In the example, the Southeast corner office (SE) and the conference room (conf) meet the sDA300lux/50% criterion in 42.3% of the area which awards the design three credits under LEED. The Rhino viewport results can be modified using the <a class="reference external" href="ViewportDisplay.html">Viewport Display</a> editor.</p>
+<p>Upon completion of the first pass, the simulation automatically switches into the ClimateStudio results panel. A General overview of the Results panel is provided <a class="reference external" href="results.html">here.</a>
+The image below shows the LEED v4.1 option 1 results panel with the sDA300lux/50% distribution shown in the Rhino viewport on the left and various statistics on the right.
+In the example, the Southeast corner office (SE) and the conference room (conf) meet the sDA300lux/50% criterion in 42.3% of the area which awards the design three credits
+under LEED. The Rhino viewport results can be modified using the <a class="reference external" href="ViewportDisplay.html">Viewport Display</a> editor.</p>
 <div class="figure align-center">
-<a class="reference internal image-reference" href="../_images/daylightAvailability2.png"><img alt="../_images/daylightAvailability2.png" src="../_images/daylightAvailability2.png" style="width: 900px;" /></a>
+<a class="reference internal image-reference" href="../_images/daylightAvailability2.jpg"><img alt="../_images/daylightAvailability2.jpg" src="../_images/daylightAvailability2.jpg" style="width: 900px;" /></a>
 </div>
-<p>Apart from the overall, annual sDA300lux/50%, the graphs to the right show the mean variation of the sDA300lux/50% distribution by time of day (top) and day in the year. The figure shows that the sDA rises in the morning after 4:30am and reaches values over 50% from 10:30am to 3:30pm. Daylight availability varies with season, with maximum values from mid-May to the end of July.</p>
+<p>Apart from the overall, annual sDA300lux/50%, the graphs to the right show the mean variation of the sDA300lux/50% distribution by time of day (top) and day of the year (bottom). The top figure shows that the sDA rises in the morning after 4:30am and reaches values over 50% from 10:30am to 3:30pm. Daylight availability varies with season, with maximum values from May to the end of July.</p>
 <p>By default, the two figures on the right show average results for all sensors and times of day/year. The user can select a specific sensor, date and time of day to see the sDA distribution for any particular point in time.</p>
 <p>The user can also display other metrics such as ASE, illuminance distributions and  blind position by selecting the different quantities on the top.</p>
 <div class="figure align-center">
 <a class="reference internal image-reference" href="../_images/daylightAvailability3.png"><img alt="../_images/daylightAvailability3.png" src="../_images/daylightAvailability3.png" style="width: 900px;" /></a>
 </div>
-<p>The display settings are very flexible. For example, the figure below shows the illuminance distribution on July 11 at 5:30am for a sensor near the South facing facade. (To select a sensor, just hover the mouse over it.) The lower figure on the right figure shows the so-called, temporal map for the sensor with illuminances, generally peaking from mid April to mid August.</p>
+<p>The display settings are very flexible. For example, the figure below shows the illuminance distribution on July 11 at 8:30am for a sensor near the South facing facade. (To select a sensor, just hover the mouse over it.) The lower figure on the right figure shows the so-called, temporal map for the sensor with illuminances, generally peaking from mid April to mid August.</p>
 <div class="figure align-center">
-<a class="reference internal image-reference" href="../_images/daylightAvailability4.png"><img alt="../_images/daylightAvailability4.png" src="../_images/daylightAvailability4.png" style="width: 900px;" /></a>
+<a class="reference internal image-reference" href="../_images/daylightAvailability4.jpg"><img alt="../_images/daylightAvailability4.jpg" src="../_images/daylightAvailability4.jpg" style="width: 900px;" /></a>
+</div>
+<p>While sliding through a given day, apart form showing the illuminance distribution across the occupied areas, ClimateStudio also indicates the status of any dynamic shading system. In the example figure above, the two South facing windows have the shading fully openend whereas the East facing roller shade is closed.</p>
+<p>A temporal map shows 8760 values for a given quantity with time of day shown on the y-axis and day in the year shown on the x-axis. ClimateStudio allows exporting the illumiance charts via an export dialogue at the
+top right of the two images. An example output is shown below.</p>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="../_images/IlluminanceChart.png"><img alt="../_images/IlluminanceChart.png" src="../_images/IlluminanceChart.png" style="width: 900px;" /></a>
 </div>
 </div>
 <div class="section" id="reporting">
@@ -273,7 +286,7 @@ The targets are building and space-type specific, and are documented in detail h
 <div class="figure align-center">
 <a class="reference internal image-reference" href="../_images/daylightAvailability6.png"><img alt="../_images/daylightAvailability6.png" src="../_images/daylightAvailability6.png" style="width: 400px;" /></a>
 </div>
-<p>As of summer 2020, the US Green Building Council accepted ClimateStudio report for compliance for LEEDv4 Daylighting Credit option 1. An example report can be <a class="reference external" href="LEEDReportv1Daylighting.pdf">downloaded here.</a></p>
+<p>As of summer 2020, the US Green Building Council accepted ClimateStudio reports for compliance for LEEDv4 Daylighting Credit option 1. An example report can be <a class="reference external" href="https://solemma.com/Daylight_LEEDv4.1Report.pdf">downloaded here</a>.</p>
 </div>
 </div>
 
@@ -285,7 +298,7 @@ The targets are building and space-type specific, and are documented in detail h
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="annualGlare.html" class="btn btn-neutral float-right" title="Simulation Setup" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="annualGlare.html" class="btn btn-neutral float-right" title="Annual Glare" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
         <a href="point-in-timeIlluminance.html" class="btn btn-neutral float-left" title="Point-in-Time Illuminance" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>

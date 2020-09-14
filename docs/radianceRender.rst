@@ -5,25 +5,25 @@ Radiance Render
    :width: 900px
    :align: center
 
-The ClimateStudio Radiance Render workflow supports the creation of physically based renderings using a path tracing version of the `Radiance`_ light backwards raytracer. The workflow relies on four subpanels: location, sky, assign materials and add luminaires.
+The ClimateStudio Radiance Render workflow supports the creation of physically based renderings using a path tracing version of the `Radiance`_ light backwards raytracer. The workflow relies on four subpanels: 
 
 .. _Radiance: https://www.radiance-online.org/
 
-- Go to the `Location Subpanel`_ 
+- `Location`_ 
 
-- Go to the `Sky Subpanel`_
+- `Sky`_
 
-- Go to the `Assign Materials Subpanel`_
+- `Assign Materials`_
 
-- Go to the `Add Luminaires Subpanel`_
+- `Add Luminaires`_
 
-.. _Location Subpanel: Location.html
+.. _Location: Location.html
 
-.. _Sky Subpanel: sky.html
+.. _Sky: sky.html
 
-.. _Assign Materials Subpanel: assignMaterials.html
+.. _Assign Materials: assignMaterials.html
 
-.. _Add Luminaires Subpanel: addLuminaires.html
+.. _Add Luminaires: addLuminaires.html
 
 If you have not done any lighting simulations in ClimateStudio, it is recommended that you go through the `Lighting Model Setup video tutorial`_ (5 minutes). The Rhino file used in the tutorial is available for `download.`_
 
@@ -33,13 +33,13 @@ If you have not done any lighting simulations in ClimateStudio, it is recommende
 
 Once all required input subpanels have been populated, the rendering panel is invoked via the “Render Window” button. The panel consists of a render view on the left and the control settings on the right.
 
-.. figure:: images/radianceRender.png
-   :width: 900px
+.. figure:: images/radianceRender.jpg
+   :width: 300px
    :align: center
 
 The camera settings offer a series of input parameters.
 
-**Projection Radiance:** Supports a series of camera models that determine how a rendering of the surrounding scene is projected onto a dimensional image. For most projections, the user is encouraged to consult the `Radiance rpict manual pages.`_ The “Rotating Angular Fisheye” projection is the default camera setting. It displays a camera view with a 180 degree opening angle while simulating a 360 degree view. This allows users to rotate the view while the rendering is being generated.
+**Projection:** Radiance supports a series of camera models that determine how a rendering of the surrounding scene is projected onto a two-dimensional image. For more details consult the `Radiance rpict manual pages.`_ The “Rotating Angular Fisheye” projection is the default camera setting. It displays a camera view with a 180 degree opening angle while simulating a 360 degree view. This allows users to rotate the view while the rendering is being generated.
 
 .. _Radiance rpict manual pages.: https://floyd.lbl.gov/radiance/man_html/rpict.1.html
 
@@ -51,7 +51,7 @@ The camera settings offer a series of input parameters.
 
 **Lens Length (mm):** Only applies to select projections and sets the opening angle of the camera, which in turn determines the extent of the scene shown on the rendering.
 
-Radiance renderings are in so-called high dynamic range (HDR) format. An HDR image contains the regular red, green and blue color channels for each pixel as any regular image format plus an absolute luminance level per pixel that determines its absolute brightness. The benefit of HDR images is that exposure levels can be re-adjusted to highlight different regions of an image. The Scheme input displays images either in full color (RGB) or in grayscale. A falsecolor display mode is also supported. 
+Radiance renderings are in so-called high dynamic range (HDR) format. An HDR image contains the regular red, green and blue color channels for each pixel as any regular image format plus an absolute luminance level per pixel that determines its absolute brightness. The benefit of HDR images is that exposure levels can be re-adjusted to highlight different regions of an image. The scheme input displays images either in full color (RGB) or in grayscale. A falsecolor display mode is also supported. 
 
 In order to identify pixels that may act as glare sources, all pixels above a user defined value (by default 2000 cd/m2) can be colored separately.    
 

@@ -7,13 +7,11 @@ Site Analysis
 
 This workflow supports direct shading studies, i.e. an evaluation of how a given scene geometry interacts with direct sunlight over the course of the year. 
 This information may be used for multiple purposes such as to determine when in the year a given site or building is shaded by neighboring objects, 
-how to size an overhang or where to place solar cells or collectors. 
+how to size an overhang or where to place photovoltaic cells or solar hot water collectors. The workflow relies on two input subpanels:
 
-The workflow relies on two input subpanels, location and the sun path.
+- `Location`_
+- `Sun Path`_
 
-- Go to the `Location Subpanel`_
-- Go to the `Sun Path Subpanel`_
+.. _Location: Location.html
 
-.. _Location Subpanel: Location.html
-
-.. _Sun Path Subpanel: sunPath.html
+.. _Sun Path: sunPath.html

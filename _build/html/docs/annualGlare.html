@@ -7,7 +7,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Simulation Setup &mdash; ClimateStudio latest documentation</title>
+  <title>Annual Glare &mdash; ClimateStudio latest documentation</title>
   
 
   
@@ -96,9 +96,12 @@
 <li class="toctree-l1"><a class="reference internal" href="siteAnalysis.html">Site Analysis</a></li>
 <li class="toctree-l1"><a class="reference internal" href="point-in-timeIlluminance.html">Point-in-Time Illuminance</a></li>
 <li class="toctree-l1"><a class="reference internal" href="daylightAvailability.html">Daylight Availability</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Simulation Setup</a></li>
-<li class="toctree-l1"><a class="reference internal" href="#run-simulation">Run Simulation</a></li>
-<li class="toctree-l1"><a class="reference internal" href="#simulation-results">Simulation Results</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Annual Glare</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#simulation-setup">Simulation Setup</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#run-simulation">Run Simulation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#simulation-results">Simulation Results</a></li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="radianceRender.html">Radiance Render</a></li>
 <li class="toctree-l1"><a class="reference internal" href="thermalModel.html">Thermal Model</a></li>
 <li class="toctree-l1"><a class="reference internal" href="radiationMap.html">Radiation Map</a></li>
@@ -173,7 +176,7 @@
     
       <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
         
-      <li>Simulation Setup</li>
+      <li>Annual Glare</li>
     
     
       <li class="wy-breadcrumbs-aside">
@@ -190,10 +193,9 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <p>`
-Annual Glare
-================================================
-A unique feature of ClimateStudio is its ability to calculate annual glare distributions across an occupied area. The glare calculations are based on the <a class="reference external" href="https://www.radiance-online.org/community/workshops/2014-london/presentations/day1/Wienold_glare_rad.pdf">Daylight Glare Probability (DGP) metric</a>, developed by Wienold and Christofferen. DGP is an image based metric, meaning that it predicts the likelihood that somebody positioned at where the camera is located and facing in a certain direction is experiencing discomfort glare. The required camera type is a fisheye lens, meaning that it has an opening angle of 180 degrees. DGP can have values between 0% and 100%, which are divided into four bands:</p>
+  <div class="section" id="annual-glare">
+<h1>Annual Glare<a class="headerlink" href="#annual-glare" title="Permalink to this headline">¶</a></h1>
+<p>A unique feature of ClimateStudio is its ability to calculate annual glare distributions across an occupied area. These glare calculations are based on the <a class="reference external" href="https://www.radiance-online.org/community/workshops/2014-london/presentations/day1/Wienold_glare_rad.pdf">Daylight Glare Probability (DGP) metric</a>, developed by Wienold and Christofferen. DGP is an image-based metric, meaning that it predicts the likelihood that somebody positioned at a given camera position and orientation is experiencing discomfort glare. The required camera type is a fisheye lens, meaning that it has an opening angle of 180 degrees. DGP can have values between 0% and 100%, which are divided into four bands:</p>
 <div class="figure align-center">
 <a class="reference internal image-reference" href="../_images/annualGlare.png"><img alt="../_images/annualGlare.png" src="../_images/annualGlare.png" style="width: 900px;" /></a>
 </div>
@@ -202,34 +204,39 @@ A unique feature of ClimateStudio is its ability to calculate annual glare distr
 <a class="reference internal image-reference" href="../_images/annualGlare2.png"><img alt="../_images/annualGlare2.png" src="../_images/annualGlare2.png" style="width: 900px;" /></a>
 </div>
 <div class="section" id="simulation-setup">
-<h1>Simulation Setup<a class="headerlink" href="#simulation-setup" title="Permalink to this headline">¶</a></h1>
+<h2>Simulation Setup<a class="headerlink" href="#simulation-setup" title="Permalink to this headline">¶</a></h2>
 <p>For annual DPG simulations, ClimateStudio relies on the vertical illuminance portion of the DGP formula, DGPs.  To set up an annual glare simulation, the following subpanel inputs are required:</p>
 <div class="figure align-center">
 <a class="reference internal image-reference" href="../_images/AnnualGlare_GUI.jpg"><img alt="../_images/AnnualGlare_GUI.jpg" src="../_images/AnnualGlare_GUI.jpg" style="width: 900px;" /></a>
 </div>
 <ul class="simple">
-<li><p>Go to the <a class="reference external" href="Location.html">Location Subpanel</a></p></li>
-<li><p>Go to the <a class="reference external" href="assignMaterials.html">Assign Materials Subpanel</a></p></li>
-<li><p>Go to the <a class="reference external" href="addAreas.html">Add Areas Subpanel</a></p></li>
+<li><p><a class="reference external" href="Location.html">Location</a></p></li>
+<li><p><a class="reference external" href="assignMaterials.html">Assign Materials</a></p></li>
+<li><p><a class="reference external" href="addAreas.html">Add Areas</a></p></li>
 </ul>
 <p>Please note that at this point, ClimateStudio does not support annual glare calculations that consider the use of dynamic shading systems.</p>
 <p>If you have not done any lighting simulations in ClimateStudio, it is recommended that you go through the <a class="reference external" href="https://vimeo.com/392379928">Lighting Model Setup video tutorial</a> (5 minutes) followed by a video tutorial specifically focussed on <a class="reference external" href="https://vimeo.com/392380942">Annual Glare Analysis.</a> The Rhino file used in the tutorials is available for <a class="reference external" href="https://solemma.com/tutorial/CS%20Two%20Zone%20Office.3dm">download.</a></p>
 </div>
 <div class="section" id="run-simulation">
-<h1>Run Simulation<a class="headerlink" href="#run-simulation" title="Permalink to this headline">¶</a></h1>
-<p>Once all required input subpanels have been populated, a simulation is invoked by pressing the start button. ClimateStudio uses a <a class="reference external" href="https://www.solemma.com/Speed.html">progressive path-tracing</a> version of the Radiance raytracer to simulate illuminance distributions. While a simulation is in progress, new iterations are added to the simulation results until the user-specified number of passes has been reached. Details on the simulation settings can be found in the <a class="reference external" href="path-tracingSettings.html">Path-tracing Settings Subpanel.</a></p>
+<h2>Run Simulation<a class="headerlink" href="#run-simulation" title="Permalink to this headline">¶</a></h2>
+<p>Once all required input subpanels have been populated, a simulation is invoked by pressing the start button.</p>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="../_images/StartButton.jpg"><img alt="../_images/StartButton.jpg" src="../_images/StartButton.jpg" style="width: 300px;" /></a>
+</div>
+<p>ClimateStudio uses a <a class="reference external" href="https://www.solemma.com/Speed.html">progressive path-tracing</a> version of the Radiance raytracer to simulate illuminance distributions. While a simulation is in progress, new iterations are added to the simulation results until the user-specified number of passes has been reached. Details on the simulation settings can be found in the <a class="reference external" href="path-tracingSettings.html">Path-tracing Settings Subpanel.</a></p>
 </div>
 <div class="section" id="simulation-results">
-<h1>Simulation Results<a class="headerlink" href="#simulation-results" title="Permalink to this headline">¶</a></h1>
-<p>Upon completion of the first pass, the simulation automatically switches into the ClimateStudio results panel. A General overview of the Results panel is provided <a class="reference external" href="results.html">here.</a> The image below shows an annual glare analysis on the ClimateStudio example scene. The annual glare distribution is shown in the Rhino viewport to the left. Since glare results and view direction are dependent, the height of the occupied area sensors are by default at 1.2m (eye height of a sitting human) and facing into eight directions, each represented as a slice of pie. The color of each pie slice depends on the percentage of occupied time in the year that a person, located at the sensor and facing in the direction of the pie, is experiencing disturbing or intolerable glare. The default threshold level is 5% of occupied time but can be reset using <a class="reference external" href="ViewportDisplay.html">Viewport Display</a> in the lower left corner.</p>
+<h2>Simulation Results<a class="headerlink" href="#simulation-results" title="Permalink to this headline">¶</a></h2>
+<p>Upon completion of the first pass, the simulation automatically switches into the ClimateStudio results panel. An overview of the Results panel is provided <a class="reference external" href="results.html">here.</a> The image below shows an annual glare analysis on the ClimateStudio example scene. The annual glare distribution is shown in the Rhino viewport to the left. Since glare results depend on view direction and position, the height of the occupied area sensors is by default set to 1.2m above the floor (eye height of a sitting human) and facing into eight directions, each represented as a pie slice. The color of each slice depends on the percentage of occupied time in the year that a person, located at the sensor and facing in the direction of the pie, is experiencing disturbing or intolerable glare. The default threshold level is 5% of occupied time but can be reset using <a class="reference external" href="ViewportDisplay.html">Viewport Display</a> in the lower left corner.</p>
 <div class="figure align-center">
 <a class="reference internal image-reference" href="../_images/annualGlare3.png"><img alt="../_images/annualGlare3.png" src="../_images/annualGlare3.png" style="width: 900px;" /></a>
 </div>
-<p>The left part of the results display shows the percentage of the occupied area with disturbing glare for more than 5% of the occupied time (19.8% for the example above). The two graphs below show the mean variation of the DGP distribution by time of day (top) and day in the year (bottom). The user can also select a specific sensor, date and time of day to see the DGP distribution for any particular point in time and for a particular sensor. For example, the figure below shows the DGP distribution on November 1 at 8:30am for a workplace facing East in the center of the open office area. By selecting one of the glare pies, the display on the right dynamically changes.</p>
+<p>The right part of the results display shows the percentage of the occupied area with disturbing glare for more than 5% of the occupied time (19.8% for the example above; click on the image for details). The two graphs below show the mean variation of the DGP distribution by time of day (top) and day in the year (bottom). The user can also select a specific sensor, date and time of day to see the DGP distribution for that instance and sensor. For example, the figure below shows the DGP distribution on November 1 at 8:30am for a workplace facing East in the center of the open office area. By selecting one of the glare pies, the display on the right dynamically changes.</p>
 <div class="figure align-center">
 <a class="reference internal image-reference" href="../_images/annualGlare4.png"><img alt="../_images/annualGlare4.png" src="../_images/annualGlare4.png" style="width: 900px;" /></a>
 </div>
-<p>To understand what might be causing glare at a particular sensor and point-in-time, left-click on the temp (oral map on the lower right). A black camera will appear to the right (see above). Left-click on the camera to initial a <a class="reference external" href="radianceRender.html">Radiance Rendering</a> using the sky condition corresponding to the time of year currently selected and centered on the sensor point chosen on the left.</p>
+<p>To understand what might be causing glare at a particular sensor and point-in-time, left-click on the temporal map on the lower right and select a date/time. A black camera will appear to the right (see above). Left-click on the camera to initiate a <a class="reference external" href="radianceRender.html">Radiance Rendering</a> using the sky condition corresponding to the time of year currently selected and centered on the sensor point chosen on the left.</p>
+</div>
 </div>
 
 
