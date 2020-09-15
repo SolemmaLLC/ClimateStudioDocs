@@ -5,7 +5,7 @@ To edit you first need to install thr SPHINX package for Python (https://www.sph
 
 To update text or image:
 
-(1) Get lhe latest version of the CS_Docs from Github
+(1) Get the latest version of the CS_Docs from Github
 
 (2) Go to the folder "docs" and edit the RST file  with the same root name as the htiml file that you want to change.
 
