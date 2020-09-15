@@ -1,27 +1,27 @@
 
 Add Blinds
 ================================================
-Several workflows such as `Daylight Availability`_ and `Annual Glare`_ support the setting of dynamic shading systems, such as fabric shades or switchable glazings. Specifying such a system requires identifying windows that have a dynamic shading system and specifying a shading type and control strategy for each window. The process is initiated via the Add Blinds subpanel. Left-click on the Add Area button and select one or more reference surfaces.
+Several workflows including `Daylight Availability`_  support the setting of dynamic shading systems, such as fabric shades or switchable glazings. Specifying such a system requires identifying windows that have a dynamic shading system and specifying a shading type and control strategy for each window. The process is initiated via the Add Blinds subpanel. Left-click on the Add Blind button and select one or more window surfaces.
 
 .. _Daylight Availability: daylightAvailability.html
 
-.. _Annual Glare: annualGlare.html
+
 
 .. figure:: images/AddBlinds.jpg
    :width: 900px
    :align: center
 
-In the example below, the three window surfaces, one in the conference room and two in the corner office are selected. 
+In the example below, three window surfaces, one in the conference room and two in the corner office have been selected. 
 
-	**Tip:** A quick way to do so is to pick all objects on the *glazing* layer.
+	**Tip:** A quick way to select mutiple windows is to pick all objects on the *glazing* layer.
 
 .. figure:: images/blinds1.png
    :width: 900px
    :align: center
    
-Once all window surfaces with a shading system are selected, the *Edit Dynamic Windows* panel opens. 
+Once all window surfaces with a shading system have been selected, the *Edit Dynamic Windows* panel opens. 
 
-**Type:** As shown below, the dialogue allows setting the shading type and control strategy, *operable blinds* and *dynamic glass.* For both cases, ClimateStudio comes with a list of actual materials. For operable blinds, it is assumed that the shading system is fully opened or closed at any time. For dynamic glass, several shading states, as provided by the manufacturer, are supported. In the example below, Halio Black comes with one clear and six tint states ranging from 50.6% to 0.1% visual light transmittance.
+**Type:** As shown below, the dialogue allows setting the shading type and control strategy, *operable blinds* and *dynamic glass.* For both cases, ClimateStudio comes with a list of actual materials. For operable blinds, it is assumed that the shading system is either fully opened or fully closed. For dynamic glass, several intermediate tint states, as provided by the manufacturer, are supported. In the example below, Halio Black comes with one clear and six tint states ranging from 50.6% to 0.1% visual light transmittance.
 
 **Schedule:** The schedule input sets the dynamic shading control strategy for the shading, i.e when it is opened or closed.  The following controls are currently supported:
 
@@ -33,7 +33,7 @@ Once all window surfaces with a shading system are selected, the *Edit Dynamic W
    :width: 900px
    :align: center
    
-Once dynamic shading systems have been specified, they appear in the *Add Blinds* subpanel table as shown below. Same as *Occupied Areas,* the different window shading systems can be organized via tags and selections can be edited.
+Once all dynamic shading systems have been specified, they appear in the *Add Blinds* subpanel table as shown below. Same as *Occupied Areas,* the different window shading systems can be organized via tags and selections can be edited.
 
 .. figure:: images/blinds3.png
    :width: 900px
@@ -41,7 +41,7 @@ Once dynamic shading systems have been specified, they appear in the *Add Blinds
    
 Simulation Details
 --------------------
-Once a simulation involving dynamic shading has started, ClimateStudio organizes all dynamic shading systems into blind groups. These groups depend on shading type and schedule suggested, as well as on window orientation, proximity to nearby *Occupied Areas* and any external shading from neighboring objects. Once a simulation has been run, the shading group number of each shading system is shown along with the surface normal. For example, the image below shows that the three windows have been divided into three blind groups. The blind group number has no specific meaning.
+Once a simulation involving dynamic shading has started, ClimateStudio organizes all dynamic shading systems into blind groups. These groups depend on shading type and schedule, as well as on window orientation, proximity to nearby *Occupied Areas* and any external shading from neighboring objects. Once a simulation has been run, the shading group number of each shading system is shown along with the surface normal. For example, the image below shows that the three windows have been divided into three blind groups. The blind group number has no specific meaning.
 
 .. figure:: images/blinds4.png
    :width: 900px

@@ -11,7 +11,7 @@ Under settings, the following parameters can be specified. For most simulations,
 
 **Maximum Number of Passes:** While the simulation can be stopped by the user at any moment by using the stop button, this parameter provides a hard stop for a simulation run. 
 
-**Radiance Parameters:** By default, ClimateStudio considers up to 6 ambient bounces before discarding a ray. If you want to adjust these parameters,  you should familiarize yourself with the `Radiance rtrace parameter.`_ 
+**Radiance Parameters:** By default, ClimateStudio considers up to 6 ambient bounces before discarding a ray. If you want to adjust these parameters,  you should familiarize yourself with the `Radiance rtrace parameters`_. 
 
-.. _Radiance rtrace parameter.: https://floyd.lbl.gov/radiance/man_html/rtrace.1.html
+.. _Radiance rtrace parameters: https://floyd.lbl.gov/radiance/man_html/rtrace.1.html
 

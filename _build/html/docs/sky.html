@@ -197,12 +197,12 @@
 <p>The sky subpanel facilitates the specification of a single sky luminance distribution for either a <a class="reference external" href="point-in-timeIlluminance.html">point-in-time illuminance</a>
 calculation or a <a class="reference external" href="radianceRender.html">Radiance Rendering</a>. The sky condition can be set as follows:</p>
 <blockquote>
-<div><p><strong>Type:</strong> The sky type determines the sky model being used such as the CIE clear, intermediate or overcast skies. For the Perez, all weather sky
-models direct and diffuse irradiances for the date and time of day selected, and are taken from the EPW weather files specified under <a class="reference external" href="Location.html">Location.</a></p>
+<div><p><strong>Type:</strong> The sky type determines the sky model being used such as the CIE clear, intermediate or overcast skies. In the case of the Perez all-weather sky
+model direct and diffuse irradiances are taken from the weather file for the date and time of day selected.</p>
 <p><strong>Month, Day and Hour:</strong> Set the date and time of day for which the sky luminance distribution should be calculated.</p>
 <p><strong>Ground Albedo:</strong> Sets the diffuse reflectance of the lower hemisphere in the scene. If a ray leaves the scene through the lower hemisphere without hitting an explicitly model ground object,
 this value is being used to estimate the luminance of the ground which will vary with the prevailing sky condition.  A typical ground albedo
-is 20%. The user is encouraged to explicitly model any relevant nearby ground objects such as a streert or lawn and to assign a specific material to these ground objects.</p>
+is 20%. The user is encouraged to explicitly model any relevant nearby ground objects such as a street or lawn and to assign a specific material to these ground objects.</p>
 </div></blockquote>
 </div>
 

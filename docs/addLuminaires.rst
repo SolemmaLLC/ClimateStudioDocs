@@ -3,7 +3,7 @@ Add Luminaires
 ================================================
 ClimateStudio supports lighting calculations for daylit and electrically lit scenes. The daylight portion is set via the `sky subpanel.`_ For electric lighting only simulations, the sky can simply be set to nighttime. 
 
-This subpanel supports the selection of actual luminaire products and to place and organize them by individuals or in groups in a scene. The *Photometric Web* and *Size* entry fields at the bottom of the panel control the size and appearance of luminaires in the Rhino viewport (see below).
+This subpanel supports the selection of actual luminaire products and to place and organize them individually or in groups. The *Photometric Web* and *Size* entry fields at the bottom of the panel control the size and appearance of luminaires in the Rhino viewport (see below).
 
 .. _sky subpanel.: sky.html
 
@@ -21,7 +21,7 @@ As an example, the luminarie in the image below corresponds to a suspended linea
    :width: 900px
    :align: center
 
-An imported luminaire is placed at the model origin. The user can then move the luminaire to its desired position within the scene and add additional copies of the same luminaire to a group via the *copy* or *array* commands in Rhino. Copying luminaires places them on the same lighting group as the original luminaire. The luminaire type of all elements in a group can be changed via the edit button in the Add Luminaire panel. The image below shows the direct/indirect suspended luminaire from above placed on a 3 x 3 grid in a corner open office.
+An imported luminaire is placed at the model origin. The user can then move the luminaire to its desired position within the scene and add additional copies of the same luminaire to a group via the *copy* or *array* commands in Rhino. Copying luminaires places them in the same lighting group as the original luminaire. The luminaire type of all elements in a group can be changed via the edit button in the Add Luminaire panel. The image below shows the direct/indirect suspended luminaire from above placed on a 3 x 3 grid in a corner open office.
 
 .. figure:: images/luminaire2.png
    :width: 900px
