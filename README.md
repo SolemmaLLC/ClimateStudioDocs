@@ -1,7 +1,7 @@
 # ClimateStudioDocs
 Read the docs documentation repository for ClimateStudio
 
-To edit you first need to install thr SPHINX package for Python (https://www.sphinx-doc.org/en/master/).
+To edit you first need to install the SPHINX package for Python (https://www.sphinx-doc.org/en/master/).
 
 To update text or image:
 
