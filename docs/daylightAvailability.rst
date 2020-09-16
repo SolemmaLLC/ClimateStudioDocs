@@ -26,7 +26,7 @@ The workflow relies on four subpanels:
 
 .. _Add Areas: addAreas.html
 
-This workflow is organized into several “sub-workflows” for a variety of daylight availability metrics. Depending on the metric chosen, the number of required input subpanels varies. The following metrics are supported.
+This workflow is organized into several “sub-workflows” for a variety of daylight availability standards. Depending on the standard chosen, the number of required input subpanels varies. The following standards are supported.
  
 .. figure:: images/daylightAvailability.png
    :width: 900px
@@ -101,7 +101,7 @@ Once all required input subpanels have been populated, a simulation is invoked b
    :width: 300px
    :align: center
 
-ClimateStudio uses a `progressive path-tracing`_ version of the Radiance raytracer to simulate illuminance distributions. While a simulation is in progress, new iterations are added to the simulation results until the user-specified number of passes has been reached. Details on the simulation settings can be found in the `Path-tracing Settings Subpanel.`_
+ClimateStudio uses a `progressive path-tracing`_ version of the Radiance raytracer to simulate illuminance distributions. While a simulation is in progress, traced light paths accumulate until the user-specified number of passes has been reached. Details on the simulation settings can be found in the `Path-tracing Settings Subpanel.`_
 
 .. _progressive path-tracing: https://www.solemma.com/Speed.html
 
@@ -111,8 +111,7 @@ Simulation Results
 --------------------
 Upon completion of the first pass, the simulation automatically switches into the ClimateStudio results panel. A General overview of the Results panel is provided `here.`_ 
 The image below shows the LEED v4.1 option 1 results panel with the sDA300lux/50% distribution shown in the Rhino viewport on the left and various statistics on the right. 
-In the example, the Southeast corner office (SE) and the conference room (conf) meet the sDA300lux/50% criterion in 42.3% of the area which awards the design three credits 
-under LEED. The Rhino viewport results can be modified using the `Viewport Display`_ editor.
+In the example, the two-zone office space achieves a daylit area of 40.3%, which makes it eligible for a maximum of one daylighing credit. The Rhino viewport results can be modified using the `Viewport Display`_ editor.
 
 .. _here.: results.html
 
@@ -122,11 +121,11 @@ under LEED. The Rhino viewport results can be modified using the `Viewport Displ
    :width: 900px
    :align: center
 
-Apart from the overall, annual sDA300lux/50%, the graphs to the right show the mean variation of the sDA300lux/50% distribution by time of day (top) and day of the year (bottom). The top figure shows that the sDA rises in the morning after 4:30am and reaches values over 50% from 10:30am to 3:30pm. Daylight availability varies with season, with maximum values from May to the end of July. 
+Apart from the annual daylit area (sDA300lux/50%), the graphs to the right show the mean dayit area (% of space > 300lux) by time of day (top) and day of the year (bottom). The two figures show that the daylit area peaks in the middle of the day and the summer season, respectively. 
 
-By default, the two figures on the right show average results for all sensors and times of day/year. The user can select a specific sensor, date and time of day to see the sDA distribution for any particular point in time.
+By default, the two figures on the right show average results for all sensors and times of day/year. However the user can also isolate a specific specific sensor by selecting it in the viewport, or scrub through time steps to see the daylight distribution at specific dates and times.
 
-The user can also display other metrics such as ASE, illuminance distributions and  blind position by selecting the different quantities on the top. 
+The user can also display other metrics such as ASE, illuminance distributions and blind position by selecting the different quantities on the top. 
 
 .. figure:: images/daylightAvailability3.png
    :width: 900px
