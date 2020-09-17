@@ -1,7 +1,7 @@
 
 Requirements
 ================================================
-ClimateStudio is a plugin for the Rhinoceros 3D NURBs modeler. To use ClimateStudio, you will need the following:
+ClimateStudio is a plugin for the Rhinoceros 3D NURBS modeler. To use ClimateStudio, you will need the following:
 
 Hardware
 	1. A newer computer with Windows OS installed on it. ClimateStudio does currently not run under Mac OS. If you have a Mac you will need to install a multi boot utility such as `boot camp.`_ 
