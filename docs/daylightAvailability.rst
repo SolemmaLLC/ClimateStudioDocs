@@ -161,7 +161,23 @@ The report generator allows you to customize your report by adding your company 
    :width: 400px
    :align: center
 
-As of summer 2020, the US Green Building Council accepted ClimateStudio reports for compliance for LEEDv4 Daylighting Credit option 1. An example report can be `downloaded here`_.
+An example report can be `downloaded here`_. As of summer 2020, the US Green Building Council accepted ClimateStudio reports for compliance for LEEDv4 Daylighting Credit option 1. 
+Follow the procedure below during submission. The LEED Online form will soon be updated to allow for this option.
+
+
+**Add this language to the “Special Circumstances” section of the LEED Online credit form**: 
+
+Thank you for your request for approval of the Solemma ClimateStudio daylight simulation report for LEED EQ credit: Daylight documentation. The ClimateStudio report may be used in lieu of the Daylight and Quality Views Calculator documentation requirements outlined in the LEED Online credit form.  The report or supporting documentation must include daylight details for all regularly occupied spaces in the project. 
+
+GBCI reviewer questions may be directed to Larissa Oaks at USGBC (loaks@usgbc.org)
+
+Larissa Oaks
+Indoor Environmental Quality Specialist, LEED
+U.S. Green Building Council
+2101 L Street NW,  Suite 500, Washington DC 20037
+www.usgbc.org | main 202 828 7422 | direct 202 640 2337
+
+
 
 .. _downloaded here: https://solemma.com/Daylight_LEEDv4.1Report.pdf
 
