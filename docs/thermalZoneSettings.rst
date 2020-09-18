@@ -41,20 +41,54 @@ HVAC
 -----------
 Comming soon.
 
+.. figure:: images/ZoneHVAC.PNG
+   :width: 900px
+   :align: center
+
 Ventilation
 -----------
-Comming soon.
+
+.. figure:: images/ZoneVentilation.PNG
+   :width: 900px
+   :align: center
+
+This section controls three different approaches to model natural ventilation or infiltration. Note: These controls do not have an effect when you select the “AirflowNetwork” options in the advances Simulation Settings. 
+Scheduled Ventilation:
+Scheduled ventilation allows modelers to control hourly air change rates using a schedule.
+This option is useful if you know the flow rate already (i.e., because you ran an external CFD or CONTAM simulation). Otherwise, it is advisable to refer to the modeling approach below.
+Natural Ventilation:
+The natural ventilation section provides a simple approach to simulate natural ventilation. You can select the driving force for the flow to be either buoyancy-driven flow only, wind-driven, or both together. A conservative, worst-case scenario is to assess natural ventilation with just buoyancy-driven flow. This driving force is more reliable than wind. Wind patterns can fluctuate drastically based on the location and context of the site. When “wind-driven flow” is selected, the simulation model assumes an ideal exhaust and that you can cross-ventilate. You can read more about these models in the EnergyPlus InputOutput reference in the “ZoneVentilation:WindandStackOpenArea” section.
+Infiltration:
+This section models infiltration rates using the “ZoneInfiltration:DesignFlowRate” model.
+The question of typical values for these coefficients is subject to debate. Ideally, one should do a detailed analysis of the infiltration situation and then determine a custom set of coefficients using methods such as those laid out in Chapter 26 of the ASHRAE Handbook of Fundamentals. The EnergyPlus defaults are 1,0,0,0 which give a constant volume flow of infiltration under all conditions [EnergyPlus InputOutput reference].
+
 
 Water
 -----------
+
+.. figure:: images/ZoneWater.PNG
+   :width: 900px
+   :align: center
+
 Comming soon.
 
 Materials
 -----------
+
+.. figure:: images/ZoneMaterials.PNG
+   :width: 900px
+   :align: center
+
 Comming soon.
 
 Settings
 -----------
+
+.. figure:: images/ZoneSettings.PNG
+   :width: 900px
+   :align: center
+
+Comming soon.
 
 **Carbon And Cost Factors**
 

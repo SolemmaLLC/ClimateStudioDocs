@@ -1,10 +1,10 @@
 
 
-Welcome to the ClimateStudio Documentation
+Welcome to the ClimateStudio User Guide
 ===================================================
 	ClimateStudio is a daylight and thermal analysis software developed by `Solemma LLC`_. It supports a series of environmental analysis workflows for buildings and neighborhoods including annual illuminance simulations for LEED v4 daylighting credits, glare and thermal comfort distributions in both daylit and artificially lit spaces as well as annual and seasonal radiation map analysis for urban massing and shading design studies. 
 	
-	We recommend that you initially go through the Getting Started sections to install ClimateStudio and to familiarize yourself with the ClimateStudio interface. You can then go to any of the design analysis work flows below. 
+	We recommend that you initially go through the Getting Started sections to install ClimateStudio and to familiarize yourself with the ClimateStudio interface. You can then go to any of the design analysis workflows below. 
 
 	.. _Solemma LLC: https://www.solemma.com
 
@@ -21,7 +21,7 @@ Welcome to the ClimateStudio Documentation
    
 .. toctree::
    :maxdepth: 3
-   :caption: ClimateStudio Work Flows
+   :caption: ClimateStudio Workflows
    
    Site Analysis<docs/siteAnalysis.rst>
    Point-in-Time Illuminance<docs/point-in-timeIlluminance.rst>
