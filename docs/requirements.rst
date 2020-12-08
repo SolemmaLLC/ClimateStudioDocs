@@ -1,23 +1,22 @@
 
 Requirements
 ================================================
-ClimateStudio is a plugin for the Rhinoceros 3D NURBS modeler. To use ClimateStudio, you will need the following:
+ClimateStudio is a plugin for the `Rhinoceros 3D NURBS modeler`_.
+To use ClimateStudio, you need the following:
 
 Hardware
-	1. A newer computer with Windows OS installed on it. ClimateStudio does currently not run under Mac OS. If you have a Mac you will need to install a multi boot utility such as `boot camp.`_ 
+	1. A computer running the Windows operating system. ClimateStudio does not currently run on the Mac operating system. Mac users can still use ClimateStudio by running Windows through a multi-boot utility such as `boot camp`_. 
 
-	2. Although not strictly required, a modern graphics card that supports OpenCL and/or CUDA is highly recommended.
+	2. A modern graphics card that supports OpenCL and/or CUDA is highly recommended.
 
 Software
-	1. You need the latest version of `Rhinoceros 3D version 6.`_  A free, fully functional 90 day evaluation version is available from the McNeel web site.
+	1. The latest version of `Rhino 6 or 7`_.  A free, fully functional 90 day trial is available from the McNeel web site.
 
-	2. If you intend to use ClimateStudio for commercial purposes, you need to `request`_ a ClimateStudio Trial from Solemma. If you are an educator or student, find out whether your school already has a `ClimateStudio ambassador`_.
+	2. A license for ClimateStudio. An installer and trial license for commercial purposes can be `requested here`_. Teachers and students can obtain an academic license through their school's participation in Solemma's free `educational licensing program`_.
 
 
-.. _boot camp.: https://support.apple.com/boot-camp
-
-.. _Rhinoceros 3D version 6.: https://www.rhino3d.com/
-
-.. _request: https://solemma.com/Download-ClimateStudio.html
-
-.. _ClimateStudio ambassador: https://solemma.com/EducationalClimateStudio.html
+.. _boot camp: https://support.apple.com/boot-camp
+.. _Rhinoceros 3D NURBS modeler: https://www.rhino3d.com/
+.. _Rhino 6 or 7: https://www.rhino3d.com/
+.. _requested here: https://solemma.com/Download-ClimateStudio.html
+.. _educational licensing program: https://solemma.com/EducationalClimateStudio.html
