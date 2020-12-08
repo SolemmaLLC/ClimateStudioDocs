@@ -33,7 +33,13 @@ Begin with the 3 minute `Interface Overview`_. After that you are ready to explo
 
 ================================================
 
-Start using ClimateStudio by opening Rhino and look for the ClimateStudio toolbar. If the toolbar is not there, type 'toolbar' into the Rhino command line and checkmark the visibility. Once visible, the toolbar can also be floated in the viewport or docked as a panel.
+Start using ClimateStudio by opening Rhino and look for the ClimateStudio toolbar.
+
+.. figure:: images/workflows.jpg
+   :width: 200px
+   :align: center
+
+If the toolbar is not there, type 'toolbar' into the Rhino command line and checkmark the visibility. Once visible, the toolbar can also be floated in the viewport or docked as a panel.
 
 .. image:: images/CS_toolbar.gif
    :width: 200px
