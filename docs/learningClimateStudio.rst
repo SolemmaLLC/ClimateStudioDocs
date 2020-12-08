@@ -33,6 +33,10 @@ of the design analysis workflows:
 To get to any of these workflows, open Rhino, search for the ClimateStudio toolbar (see below) and select a workflow. If the toolbar is not visible after you installed ClimateStudio,
 type "Toolbar" on the Rhino command line, find ClimateStudio and switch the toolbar on. 
 
+.. image:: images/CS_toolbar.gif
+   :width: 400px
+   :align: center
+
 .. figure:: images/workflows.jpg
    :width: 200px
    :align: center
