@@ -27,7 +27,7 @@ Once all window surfaces with a shading system have been selected, the *Edit Dyn
 
 - **Default (LEEDv4 2% Rule):** According to this control algorithm, a shading system is closed if more than 2% of an occupied area associated with a window is illuminated by more than 1000lux of direct sunlight. For dynamic glass, the transmittance of the glass is lowered until either the 1000lux criterion is not met anymore or the glass is in its darkest tint state.
 
-- **Custom (CSV file):** Alternatively, the user can provide a simple CSV file with 8760 values for every hour of the year.  
+- **Custom (CSV file):** Alternatively, the user can provide a CSV (comma seperated value ) file with 8760 values for every hour of the year. The file format is single column. The dynamic shading state is 0 for wide open and an integer depending on the number of shading states supported, i.e. 1 for up/down blinds or 1, 2 and 3 for dynamic glass with one clear and three tinted states.
 
 .. figure:: images/blinds2.png
    :width: 900px
@@ -39,12 +39,7 @@ Once all dynamic shading systems have been specified, they appear in the *Add Bl
    :width: 900px
    :align: center
    
-Simulation Details
---------------------
-Once a simulation involving dynamic shading has started, ClimateStudio organizes all dynamic shading systems into blind groups. These groups depend on shading type and schedule, as well as on window orientation, proximity to nearby *Occupied Areas* and any external shading from neighboring objects. Once a simulation has been run, the shading group number of each shading system is shown along with the surface normal. For example, the image below shows that the three windows have been divided into three blind groups. The blind group number has no specific meaning.
-
-.. figure:: images/blinds4.png
-   :width: 900px
+Simulation Details2,3,
    :align: center
 
 

@@ -91,7 +91,7 @@
 <li class="toctree-l1"><a class="reference internal" href="installation.html">Installation</a></li>
 <li class="toctree-l1"><a class="reference internal" href="learningClimateStudio.html">Learning ClimateStudio</a></li>
 </ul>
-<p class="caption"><span class="caption-text">ClimateStudio Work Flows</span></p>
+<p class="caption"><span class="caption-text">ClimateStudio Workflows</span></p>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="siteAnalysis.html">Site Analysis</a></li>
 <li class="toctree-l1"><a class="reference internal" href="point-in-timeIlluminance.html">Point-in-Time Illuminance</a></li>
@@ -209,7 +209,7 @@ either a few select sky conditions, such as 9am/3pm on equinox days or all hours
 <li><p><a class="reference external" href="addBlinds.html">Add Blinds</a></p></li>
 <li><p><a class="reference external" href="addAreas.html">Add Areas</a></p></li>
 </ul>
-<p>This workflow is organized into several “sub-workflows” for a variety of daylight availability metrics. Depending on the metric chosen, the number of required input subpanels varies. The following metrics are supported.</p>
+<p>This workflow is organized into several “sub-workflows” for a variety of daylight availability standards. Depending on the standard chosen, the number of required input subpanels varies. The following standards are supported.</p>
 <div class="figure align-center">
 <a class="reference internal image-reference" href="../_images/daylightAvailability.png"><img alt="../_images/daylightAvailability.png" src="../_images/daylightAvailability.png" style="width: 900px;" /></a>
 </div>
@@ -249,20 +249,19 @@ The targets are building and space-type specific, and are documented in detail h
 <div class="figure align-center">
 <a class="reference internal image-reference" href="../_images/StartButton.jpg"><img alt="../_images/StartButton.jpg" src="../_images/StartButton.jpg" style="width: 300px;" /></a>
 </div>
-<p>ClimateStudio uses a <a class="reference external" href="https://www.solemma.com/Speed.html">progressive path-tracing</a> version of the Radiance raytracer to simulate illuminance distributions. While a simulation is in progress, new iterations are added to the simulation results until the user-specified number of passes has been reached. Details on the simulation settings can be found in the <a class="reference external" href="path-tracingSettings.html">Path-tracing Settings Subpanel.</a></p>
+<p>ClimateStudio uses a <a class="reference external" href="https://www.solemma.com/Speed.html">progressive path-tracing</a> version of the Radiance raytracer to simulate illuminance distributions. While a simulation is in progress, traced light paths accumulate until the user-specified number of passes has been reached. Details on the simulation settings can be found in the <a class="reference external" href="path-tracingSettings.html">Path-tracing Settings Subpanel.</a></p>
 </div>
 <div class="section" id="simulation-results">
 <h2>Simulation Results<a class="headerlink" href="#simulation-results" title="Permalink to this headline">¶</a></h2>
 <p>Upon completion of the first pass, the simulation automatically switches into the ClimateStudio results panel. A General overview of the Results panel is provided <a class="reference external" href="results.html">here.</a>
 The image below shows the LEED v4.1 option 1 results panel with the sDA300lux/50% distribution shown in the Rhino viewport on the left and various statistics on the right.
-In the example, the Southeast corner office (SE) and the conference room (conf) meet the sDA300lux/50% criterion in 42.3% of the area which awards the design three credits
-under LEED. The Rhino viewport results can be modified using the <a class="reference external" href="ViewportDisplay.html">Viewport Display</a> editor.</p>
+In the example, the two-zone office space achieves a daylit area of 40.3%, which makes it eligible for a maximum of one daylighing credit. The Rhino viewport results can be modified using the <a class="reference external" href="ViewportDisplay.html">Viewport Display</a> editor.</p>
 <div class="figure align-center">
 <a class="reference internal image-reference" href="../_images/daylightAvailability2.jpg"><img alt="../_images/daylightAvailability2.jpg" src="../_images/daylightAvailability2.jpg" style="width: 900px;" /></a>
 </div>
-<p>Apart from the overall, annual sDA300lux/50%, the graphs to the right show the mean variation of the sDA300lux/50% distribution by time of day (top) and day of the year (bottom). The top figure shows that the sDA rises in the morning after 4:30am and reaches values over 50% from 10:30am to 3:30pm. Daylight availability varies with season, with maximum values from May to the end of July.</p>
-<p>By default, the two figures on the right show average results for all sensors and times of day/year. The user can select a specific sensor, date and time of day to see the sDA distribution for any particular point in time.</p>
-<p>The user can also display other metrics such as ASE, illuminance distributions and  blind position by selecting the different quantities on the top.</p>
+<p>Apart from the annual daylit area (sDA300lux/50%), the graphs to the right show the mean dayit area (% of space &gt; 300lux) by time of day (top) and day of the year (bottom). The two figures show that the daylit area peaks in the middle of the day and the summer season, respectively.</p>
+<p>By default, the two figures on the right show average results for all sensors and times of day/year. However the user can also isolate a specific specific sensor by selecting it in the viewport, or scrub through time steps to see the daylight distribution at specific dates and times.</p>
+<p>The user can also display other metrics such as ASE, illuminance distributions and blind position by selecting the different quantities on the top.</p>
 <div class="figure align-center">
 <a class="reference internal image-reference" href="../_images/daylightAvailability3.png"><img alt="../_images/daylightAvailability3.png" src="../_images/daylightAvailability3.png" style="width: 900px;" /></a>
 </div>

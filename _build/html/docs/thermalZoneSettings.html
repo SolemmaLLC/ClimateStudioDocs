@@ -91,7 +91,7 @@
 <li class="toctree-l1"><a class="reference internal" href="installation.html">Installation</a></li>
 <li class="toctree-l1"><a class="reference internal" href="learningClimateStudio.html">Learning ClimateStudio</a></li>
 </ul>
-<p class="caption"><span class="caption-text">ClimateStudio Work Flows</span></p>
+<p class="caption"><span class="caption-text">ClimateStudio Workflows</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="siteAnalysis.html">Site Analysis</a></li>
 <li class="toctree-l1"><a class="reference internal" href="point-in-timeIlluminance.html">Point-in-Time Illuminance</a></li>
@@ -229,21 +229,45 @@
 <div class="section" id="hvac">
 <h2>HVAC<a class="headerlink" href="#hvac" title="Permalink to this headline">¶</a></h2>
 <p>Comming soon.</p>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="../_images/ZoneHVAC.PNG"><img alt="../_images/ZoneHVAC.PNG" src="../_images/ZoneHVAC.PNG" style="width: 900px;" /></a>
+</div>
 </div>
 <div class="section" id="ventilation">
 <h2>Ventilation<a class="headerlink" href="#ventilation" title="Permalink to this headline">¶</a></h2>
-<p>Comming soon.</p>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="../_images/ZoneVentilation.PNG"><img alt="../_images/ZoneVentilation.PNG" src="../_images/ZoneVentilation.PNG" style="width: 900px;" /></a>
+</div>
+<p>This section controls three different approaches to model natural ventilation or infiltration. Note: These controls do not have an effect when you select the “AirflowNetwork” options in the advances Simulation Settings.
+Scheduled Ventilation:
+Scheduled ventilation allows modelers to control hourly air change rates using a schedule.
+This option is useful if you know the flow rate already (i.e., because you ran an external CFD or CONTAM simulation). Otherwise, it is advisable to refer to the modeling approach below.
+Natural Ventilation:
+The natural ventilation section provides a simple approach to simulate natural ventilation. You can select the driving force for the flow to be either buoyancy-driven flow only, wind-driven, or both together. A conservative, worst-case scenario is to assess natural ventilation with just buoyancy-driven flow. This driving force is more reliable than wind. Wind patterns can fluctuate drastically based on the location and context of the site. When “wind-driven flow” is selected, the simulation model assumes an ideal exhaust and that you can cross-ventilate. You can read more about these models in the EnergyPlus InputOutput reference in the “ZoneVentilation:WindandStackOpenArea” section.
+Infiltration:
+This section models infiltration rates using the “ZoneInfiltration:DesignFlowRate” model.
+The question of typical values for these coefficients is subject to debate. Ideally, one should do a detailed analysis of the infiltration situation and then determine a custom set of coefficients using methods such as those laid out in Chapter 26 of the ASHRAE Handbook of Fundamentals. The EnergyPlus defaults are 1,0,0,0 which give a constant volume flow of infiltration under all conditions [EnergyPlus InputOutput reference].</p>
 </div>
 <div class="section" id="water">
 <h2>Water<a class="headerlink" href="#water" title="Permalink to this headline">¶</a></h2>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="../_images/ZoneWater.PNG"><img alt="../_images/ZoneWater.PNG" src="../_images/ZoneWater.PNG" style="width: 900px;" /></a>
+</div>
 <p>Comming soon.</p>
 </div>
 <div class="section" id="materials">
 <h2>Materials<a class="headerlink" href="#materials" title="Permalink to this headline">¶</a></h2>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="../_images/ZoneMaterials.PNG"><img alt="../_images/ZoneMaterials.PNG" src="../_images/ZoneMaterials.PNG" style="width: 900px;" /></a>
+</div>
 <p>Comming soon.</p>
 </div>
 <div class="section" id="settings">
 <h2>Settings<a class="headerlink" href="#settings" title="Permalink to this headline">¶</a></h2>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="../_images/ZoneSettings.PNG"><img alt="../_images/ZoneSettings.PNG" src="../_images/ZoneSettings.PNG" style="width: 900px;" /></a>
+</div>
+<p>Comming soon.</p>
 <p><strong>Carbon And Cost Factors</strong></p>
 <p>Under the settings tab the user can specify carbon and cost factors for heating, cooling, hot water use and electricity. These conversion factors are then used to translate the different loads into equivalent
 carbon emissions or energy costs. For example, an electricity price of 0.106 $/kWh corresponds to the 2019 average US retail price for electricity. At the same time, the approximate US retail price for natural

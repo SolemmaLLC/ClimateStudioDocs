@@ -91,7 +91,7 @@
 <li class="toctree-l1"><a class="reference internal" href="installation.html">Installation</a></li>
 <li class="toctree-l1"><a class="reference internal" href="learningClimateStudio.html">Learning ClimateStudio</a></li>
 </ul>
-<p class="caption"><span class="caption-text">ClimateStudio Work Flows</span></p>
+<p class="caption"><span class="caption-text">ClimateStudio Workflows</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="siteAnalysis.html">Site Analysis</a></li>
 <li class="toctree-l1"><a class="reference internal" href="point-in-timeIlluminance.html">Point-in-Time Illuminance</a></li>
@@ -110,10 +110,7 @@
 <li class="toctree-l1"><a class="reference internal" href="addLuminaires.html">Add Luminaires</a></li>
 <li class="toctree-l1"><a class="reference internal" href="addAreas.html">Add Areas</a></li>
 <li class="toctree-l1"><a class="reference internal" href="sky.html">Sky</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Add Blinds</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#simulation-details">Simulation Details</a></li>
-</ul>
-</li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Add Blinds</a></li>
 <li class="toctree-l1"><a class="reference internal" href="addObjects.html">Add Objects</a></li>
 <li class="toctree-l1"><a class="reference internal" href="path-tracingSettings.html">Path-tracing Settings</a></li>
 <li class="toctree-l1"><a class="reference internal" href="manageLibrary.html">Manage Library Menu</a></li>
@@ -210,7 +207,7 @@
 <p><strong>Schedule:</strong> The schedule input sets the dynamic shading control strategy for the shading, i.e when it is opened or closed.  The following controls are currently supported:</p>
 <ul class="simple">
 <li><p><strong>Default (LEEDv4 2% Rule):</strong> According to this control algorithm, a shading system is closed if more than 2% of an occupied area associated with a window is illuminated by more than 1000lux of direct sunlight. For dynamic glass, the transmittance of the glass is lowered until either the 1000lux criterion is not met anymore or the glass is in its darkest tint state.</p></li>
-<li><p><strong>Custom (CSV file):</strong> Alternatively, the user can provide a simple CSV file with 8760 values for every hour of the year.</p></li>
+<li><p><strong>Custom (CSV file):</strong> Alternatively, the user can provide a CSV (comma seperated value ) file with 8760 values for every hour of the year. The file format is single column. The dynamic shading state is 0 for wide open and an integer depending on the number of shading states supported, i.e. 1 for up/down blinds or 1, 2 and 3 for dynamic glass with one clear and three tinted states.</p></li>
 </ul>
 <div class="figure align-center">
 <a class="reference internal image-reference" href="../_images/blinds2.png"><img alt="../_images/blinds2.png" src="../_images/blinds2.png" style="width: 900px;" /></a>
@@ -219,13 +216,14 @@
 <div class="figure align-center">
 <a class="reference internal image-reference" href="../_images/blinds3.png"><img alt="../_images/blinds3.png" src="../_images/blinds3.png" style="width: 900px;" /></a>
 </div>
-<div class="section" id="simulation-details">
-<h2>Simulation Details<a class="headerlink" href="#simulation-details" title="Permalink to this headline">¶</a></h2>
-<p>Once a simulation involving dynamic shading has started, ClimateStudio organizes all dynamic shading systems into blind groups. These groups depend on shading type and schedule, as well as on window orientation, proximity to nearby <em>Occupied Areas</em> and any external shading from neighboring objects. Once a simulation has been run, the shading group number of each shading system is shown along with the surface normal. For example, the image below shows that the three windows have been divided into three blind groups. The blind group number has no specific meaning.</p>
-<div class="figure align-center">
-<a class="reference internal image-reference" href="../_images/blinds4.png"><img alt="../_images/blinds4.png" src="../_images/blinds4.png" style="width: 900px;" /></a>
-</div>
-</div>
+<dl class="simple">
+<dt>Simulation Details2,3,</dt><dd><dl class="field-list simple">
+<dt class="field-odd">align</dt>
+<dd class="field-odd"><p>center</p>
+</dd>
+</dl>
+</dd>
+</dl>
 </div>
 
 
