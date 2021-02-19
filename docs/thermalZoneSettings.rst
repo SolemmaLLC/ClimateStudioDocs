@@ -1,7 +1,7 @@
 
 Thermal Zone Settings
 ================================================
-When a zone template is first assigned to a zone object (brep), hundreds of zone settings are assigned to the zone object based on a template. ClimateStudio comes with hundreds of pre-populated zone templates based on vetted data sets such as the US Department of Energy Commercial Prototype Building Models that are stored in a `Template Libary`_. Once assigned to a zone, all zone information can be reviewed and edited by selecting the edit button in the thermal model object table. 
+When a zone template is first assigned to a zone object (brep), hundreds of zone settings are set based on a zone template. ClimateStudio comes with hundreds of pre-populated zone templates based on vetted data sets such as the US Department of Energy's Commercial Prototype Building Models that are stored in a `Template Libary`_. Once assigned to a zone, all zone information can be reviewed and edited by selecting the edit button in the thermal model object table. 
 
 .. _Template Libary: manageLibrary.html
 
@@ -9,7 +9,9 @@ When a zone template is first assigned to a zone object (brep), hundreds of zone
    :width: 900px
    :align: center
    
-Zone infomation are assigned to each zone individually, meaning that if the user changes the properties of one zone from the default template value, those properties remain unchanges for other zones in the model with the same base template. To edit multiple zones at a time, select those zones using control or shift in the thermal model properties tab before invoking the zone settings panel. As shown below, the panel is organized into six tabs: Loads, HVAC, Ventilation, Water, Material and Settings. 
+Zone infomation are assigned to each zone individually, meaning that if the user changes the properties of one zone from the default template value, those properties remain unchanges for other zones in the model with the same base template. To edit multiple zones at a time, select those zones using control or shift in the thermal model properties tab before selecting the edit button. As shown below, the Zone Settings panel is organized into six tabs: Loads, HVAC, Ventilation, Water, Material and Settings. 
+
+
 
 .. figure:: images/thermalZoneSettings2.png
    :width: 600px
@@ -32,9 +34,11 @@ To visualize/edit a schedule, left-click on the schdule name to open the `Schedu
 
 **People Density** is a positive number that describes the number of occupants per m2 at peak density. 
 
-**Metabolic Rate** A person’s metabolic rate corresponds to the speed at which chemical energy that is converted into heat. Metabolic rate depends on activity level (sitting, walking,…) as well as environmental factors such as ambient temperature and relative humidity. Metabolic rate is expressed in a unit called "met" with 1 met = 58.2 W/m2, which roughly corresponds to the heat emitted per unit surface area of an average person seated at rest. The surface area of an average adult is 1.8m2 meaning that a sitting adult emits around 58.2 W/m2 x 1.8m2 = 104W. Metabolic rates range from about 0.7met for sleeping to 2.0met or more for walking, lifting heavy objects etc. 
+**Metabolic Rate** A person’s metabolic rate corresponds to the speed at which chemical energy that is converted into heat. Metabolic rate depends on activity level (sitting, walking,…) as well as environmental factors such as ambient temperature and relative humidity. Metabolic rate is expressed in a unit called "met" with 1 met = 58.2 W/m2, which roughly corresponds to the heat emitted per unit surface area of an average person seated at rest. The body surface area of an average adult is 1.8m2 meaning that a sitting adult emits around 58.2 W/m2 x 1.8m2 = 104W. Metabolic rates range from about 0.7met for sleeping to 2.0met or more for walking, lifting heavy objects etc. 
 
 **Occupancy Schedule** is the schedule used to describe occupancy in the zone over time. Occupancy can range from zero to peak occupancy. 
+
+**Airspeed Schedule** is the schedule used to local air movement in m/s within the zone which may be caused be caused by a combination of natural air movement from open windows, personal comfort fans or nearby air outlets. This air speed has not impact on energy use but modifies thermal comfort metrics such as Predicted Mean Vote and Adaptive Thermal Comfort for the zone.    
 
 **Equipment Power Density** is a positive number that describes the peak energy emitted from all equipment in the zone such as computers, printers, coffee machines etc. It is provided in W per unit of floor area.
 
@@ -44,9 +48,9 @@ To visualize/edit a schedule, left-click on the schdule name to open the `Schedu
 
 **Lighting Schedule** is the schedule used to describe when the electric light is switched on. A fraction such as 0.3 indicates that 30% of the luminaires in the zone are turned on.
  
-**Target Illuminance** sets the work plane illumiance used if the zone has a photocell controlled diming system. EnergyPlus places an upward facing photosensor in the center of the zone and calculates indoor illuminance levels due to daylight at every simulation time step using the so-called "split flux methood."
+**Target Illuminance** sets the work plane illuminance used if the zone has a photocell controlled dimming system. EnergyPlus places an upward facing photosensor in the center of the zone and calculates indoor illuminance levels due to daylight at every simulation time step using the so-called "split flux method."
 
-**Dimming Type** is used to specify the presence of a photocell controlled diming system. When switched "off," the electric lighting energy corresponds to the product of the zone's lighting power density and the schedule value for that hour. If a dimming system is switched on, the value is further scaled down depending on the horizontal work plane illuminance due to daylight: If it is above the target illuminance, the lighting gets switched off. For a "stepped" dimming system it is fully on once the daylighting level falls below the target illuminance. For "continuous dimming," the level linearly scales down from one at  night to zero at target illuminance.
+**Dimming Type** is used to specify the presence of a photocell controlled dimming system. When switched "off," the electric lighting energy corresponds to the product of the zone's lighting power density and the schedule value for that hour. If a dimming system is switched on, the value is further scaled down depending on the horizontal work plane illuminance due to daylight: If it is above the target illuminance, the lighting gets switched off. For a "stepped" dimming system it is fully on once the daylighting level falls below the target illuminance. For "continuous dimming," the level linearly scales down from one at  night to zero at target illuminance.
   
 
 
