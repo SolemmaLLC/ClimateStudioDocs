@@ -27,7 +27,7 @@ Once all window surfaces with a shading system have been selected, the *Edit Dyn
 
 - **Default (LEEDv4 2% Rule):** According to this control algorithm, a shading system is closed if more than 2% of an occupied area associated with a window is illuminated by more than 1000lux of direct sunlight. For dynamic glass, the transmittance of the glass is lowered until either the 1000lux criterion is not met anymore or the glass is in its darkest tint state.
 
-- **Custom (CSV file):** Alternatively, the user can provide a CSV (comma seperated value ) file with 8760 values for every hour of the year. The file format is single column. The dynamic shading state is 0 for wide open and an integer depending on the number of shading states supported, i.e. 1 for up/down blinds or 1, 2 and 3 for dynamic glass with one clear and three tinted states.
+- **Custom (CSV file):** Alternatively, the user can provide a CSV (comma seperated value ) file with 8760 values for every hour of the year. The file format is single column. The dynamic shading state is 0 for wide open and an integer depending on the number of shading states supported, i.e. 1 for up/down blinds or 1, 2 and 3 for dynamic glass with one clear and three tint states.
 
 .. figure:: images/blinds2.png
    :width: 900px

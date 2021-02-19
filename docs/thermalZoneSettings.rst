@@ -1,13 +1,15 @@
 
 Thermal Zone Settings
 ================================================
-When a zone template is first assigned to a zone object (brep), hundreds of zone settings are assigned to the zone based on the template. All zone information can be reviewed and edited by selecting the edit button in the thermal model object table. 
+When a zone template is first assigned to a zone object (brep), hundreds of zone settings are assigned to the zone object based on a template. ClimateStudio comes with hundreds of pre-populated zone templates based on vetted data sets such as the US Department of Energy Commercial Prototype Building Models that are stored in a `Template Libary`_. Once assigned to a zone, all zone information can be reviewed and edited by selecting the edit button in the thermal model object table. 
+
+.. _Template Libary: manageLibrary.html
 
 .. figure:: images/thermalZoneSettings.png
    :width: 900px
    :align: center
    
-The Zone Settings panel is organized into six tabs: Loads, HVAC, Ventilation, Water, Material and Settings. 
+Zone infomation are assigned to each zone individually, meaning that if the user changes the properties of one zone from the default template value, those properties remain unchanges for other zones in the model with the same base template. To edit multiple zones at a time, select those zones using control or shift in the thermal model properties tab before invoking the zone settings panel. As shown below, the panel is organized into six tabs: Loads, HVAC, Ventilation, Water, Material and Settings. 
 
 .. figure:: images/thermalZoneSettings2.png
    :width: 600px
@@ -15,27 +17,38 @@ The Zone Settings panel is organized into six tabs: Loads, HVAC, Ventilation, Wa
    
 Loads
 -----------
-Under this tab, the internal loads of a zone are specified due to people, equipment and electric lighting. The user should make sure that the numbers selected for a given zone constitute a meaningful approximation of how a modeled space is being used or will most likely be used in the case of a design model. For each internal load type, there is a peak load (density) normalized by floor area that indicates the heat added to a space at maximum occupancy or when all equipment and lighting is being switched on. Each internal load is further described by a schedule that consists of 8760 values for each hour of the year between zero and one. The figure below shows the Schedules Editor with the default occupancy schedule for a medium office.  The top figure shows the hourly schedule for the first day of the year. The lower figure shows the schedule for all hours in the year. Clearly visible is the high occupancy on weekdays from 8am to 6pm, with a lunch period from noon until 2pm. A schedule value of 0.5 at 1pm on weekdays shows that half of the occupants are at lunch at that time. Between the weekdays, the weekends with markedly lower occupancy are clearly visible.
+Under this tab, the internal loads of a zone are specified due to people, equipment and electric lighting. The user should make sure that the numbers selected for a given zone constitute a meaningful approximation of how a modeled space is being used or will most likely be used in the case of a design model. For each internal load type, there is a peak load (density) normalized by floor area that indicates the heat added to a space at maximum occupancy or when all equipment and lighting is being switched on. Each internal load is further described by a schedule that consists of 8760 values for each hour of the year between zero and one. 
+To visualize/edit a schedule, left-click on the schdule name to open the `Schedules Editor`_. The different load entry fields are described below.
 
-.. figure:: images/thermalZoneSettings3.png
-   :width: 900px
-   :align: center
-   
-Schedules that come with the ClimateStudio library are locked. To modify a schedule, create a copy and rename it. Select the edit icon to modify the new schedule (see image below).
 
-.. figure:: images/thermalZoneSettings4.png
-   :width: 900px
-   :align: center
-   
-As shown below, year schedules can be edited in two ways:
 
-- Based on individual days that can then be assigned to any particular day in the year or to all weekdays/weekends, etc. Same as for annual schedules, to modify a day schedule, create a copy of an existing day schedule and modify the 24 hours values for the day as needed. 
+.. _Schedules Editor: ScheduleEditor.html
 
-- Another option is to import a custom series of 8760 values from the clipboard. 
+**Zone Name** is a unique string to define the name of the zone. The same name will be attached to a zone's thermal results. It is recommended to name zones based its orientation, floor and program type such as "South Office 1stFloor".  
 
-.. figure:: images/thermalZoneSettings5.png
-   :width: 900px
-   :align: center
+**Program Description** is a string that describes the general nature of the zone. This input is not used in the actual simulation. 
+
+**Use Type** acts as a tag to describe the programmtic use of a zone. Zones can be grouped in the template libary based on their program type.  
+
+**People Density** is a positive number that describes the number of occupants per m2 at peak density. 
+
+**Metabolic Rate** A person’s metabolic rate corresponds to the speed at which chemical energy that is converted into heat. Metabolic rate depends on activity level (sitting, walking,…) as well as environmental factors such as ambient temperature and relative humidity. Metabolic rate is expressed in a unit called "met" with 1 met = 58.2 W/m2, which roughly corresponds to the heat emitted per unit surface area of an average person seated at rest. The surface area of an average adult is 1.8m2 meaning that a sitting adult emits around 58.2 W/m2 x 1.8m2 = 104W. Metabolic rates range from about 0.7met for sleeping to 2.0met or more for walking, lifting heavy objects etc. 
+
+**Occupancy Schedule** is the schedule used to describe occupancy in the zone over time. Occupancy can range from zero to peak occupancy. 
+
+**Equipment Power Density** is a positive number that describes the peak energy emitted from all equipment in the zone such as computers, printers, coffee machines etc. It is provided in W per unit of floor area.
+
+**Equipment Schedule** is the schedule used to describe equipment load in the zone over time. 
+
+**Lighting Power Density** is a positive number that describes the peak electricity load per unit of floor area when all luminaires in the zone are switched on.
+
+**Lighting Schedule** is the schedule used to describe when the electric light is switched on. A fraction such as 0.3 indicates that 30% of the luminaires in the zone are turned on.
+ 
+**Target Illuminance** sets the work plane illumiance used if the zone has a photocell controlled diming system. EnergyPlus places an upward facing photosensor in the center of the zone and calculates indoor illuminance levels due to daylight at every simulation time step using the so-called "split flux methood."
+
+**Dimming Type** is used to specify the presence of a photocell controlled diming system. When switched "off," the electric lighting energy corresponds to the product of the zone's lighting power density and the schedule value for that hour. If a dimming system is switched on, the value is further scaled down depending on the horizontal work plane illuminance due to daylight: If it is above the target illuminance, the lighting gets switched off. For a "stepped" dimming system it is fully on once the daylighting level falls below the target illuminance. For "continuous dimming," the level linearly scales down from one at  night to zero at target illuminance.
+  
+
 
 HVAC
 -----------

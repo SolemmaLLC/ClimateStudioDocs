@@ -54,6 +54,7 @@ The Getting Started section provides a quick overview a ClimateStudio interface.
    Manage Library Menu<docs/manageLibrary.rst>
    EnergyPlus Simulation Settings<docs/EnergyPlus.rst>
    Thermal Zone Settings<docs/thermalZoneSettings.rst>
+   Schedule Editor <docs/ScheduleEditor.rst>
    CS Settings <docs/CS_Settings.rst>
 
 .. toctree::

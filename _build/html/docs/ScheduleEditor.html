@@ -7,7 +7,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Add Blinds &mdash; ClimateStudio latest documentation</title>
+  <title>Schedule Editor &mdash; ClimateStudio latest documentation</title>
   
 
   
@@ -39,8 +39,8 @@
     
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Add Objects" href="addObjects.html" />
-    <link rel="prev" title="Sky" href="sky.html" /> 
+    <link rel="next" title="CS Settings" href="CS_Settings.html" />
+    <link rel="prev" title="Thermal Zone Settings" href="thermalZoneSettings.html" /> 
 </head>
 
 <body class="wy-body-for-nav">
@@ -110,13 +110,13 @@
 <li class="toctree-l1"><a class="reference internal" href="addLuminaires.html">Add Luminaires</a></li>
 <li class="toctree-l1"><a class="reference internal" href="addAreas.html">Add Areas</a></li>
 <li class="toctree-l1"><a class="reference internal" href="sky.html">Sky</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Add Blinds</a></li>
+<li class="toctree-l1"><a class="reference internal" href="addBlinds.html">Add Blinds</a></li>
 <li class="toctree-l1"><a class="reference internal" href="addObjects.html">Add Objects</a></li>
 <li class="toctree-l1"><a class="reference internal" href="path-tracingSettings.html">Path-tracing Settings</a></li>
 <li class="toctree-l1"><a class="reference internal" href="manageLibrary.html">Manage Library Menu</a></li>
 <li class="toctree-l1"><a class="reference internal" href="EnergyPlus.html">EnergyPlus Simulation Settings</a></li>
 <li class="toctree-l1"><a class="reference internal" href="thermalZoneSettings.html">Thermal Zone Settings</a></li>
-<li class="toctree-l1"><a class="reference internal" href="ScheduleEditor.html">Schedule Editor</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Schedule Editor</a></li>
 <li class="toctree-l1"><a class="reference internal" href="CS_Settings.html">CS Settings</a></li>
 </ul>
 <p class="caption"><span class="caption-text">Results</span></p>
@@ -173,7 +173,7 @@
     
       <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
         
-      <li>Add Blinds</li>
+      <li>Schedule Editor</li>
     
     
       <li class="wy-breadcrumbs-aside">
@@ -190,41 +190,25 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="add-blinds">
-<h1>Add Blinds<a class="headerlink" href="#add-blinds" title="Permalink to this headline">¶</a></h1>
-<p>Several workflows including <a class="reference external" href="daylightAvailability.html">Daylight Availability</a>  support the setting of dynamic shading systems, such as fabric shades or switchable glazings. Specifying such a system requires identifying windows that have a dynamic shading system and specifying a shading type and control strategy for each window. The process is initiated via the Add Blinds subpanel. Left-click on the Add Blind button and select one or more window surfaces.</p>
+  <div class="section" id="schedule-editor">
+<h1>Schedule Editor<a class="headerlink" href="#schedule-editor" title="Permalink to this headline">¶</a></h1>
+<p>The Schedule Editor is used to view, select and edit schedules for a variety of inputs that consist of hourly time series such as internal loads from people, equipment and lighting or temperature set points.
+The figure below shows the default occupancy schedule for the US DOOE Medium Office.  The top graph shows the hourly schedule for the first day of the year. The lower graph shows the schedule for all hours in the year. Clearly visible is the high occupancy on weekdays from 8am to 6pm, with a lunch period from noon until 2pm. A schedule value of 0.5 at 1pm on weekdays shows that half of the occupants are at lunch at that time. Between the weekdays, the weekends with markedly lower occupancy are clearly visible.</p>
 <div class="figure align-center">
-<a class="reference internal image-reference" href="../_images/AddBlinds.jpg"><img alt="../_images/AddBlinds.jpg" src="../_images/AddBlinds.jpg" style="width: 900px;" /></a>
+<a class="reference internal image-reference" href="../_images/thermalZoneSettings3.png"><img alt="../_images/thermalZoneSettings3.png" src="../_images/thermalZoneSettings3.png" style="width: 900px;" /></a>
 </div>
-<p>In the example below, three window surfaces, one in the conference room and two in the corner office have been selected.</p>
-<blockquote>
-<div><p><strong>Tip:</strong> A quick way to select mutiple windows is to pick all objects on the <em>glazing</em> layer.</p>
-</div></blockquote>
+<p>Schedules that come with the ClimateStudio library are locked. To modify a schedule, create a copy and rename it. Select the edit icon to modify the new schedule (see image below).</p>
 <div class="figure align-center">
-<a class="reference internal image-reference" href="../_images/blinds1.png"><img alt="../_images/blinds1.png" src="../_images/blinds1.png" style="width: 900px;" /></a>
+<a class="reference internal image-reference" href="../_images/thermalZoneSettings4.png"><img alt="../_images/thermalZoneSettings4.png" src="../_images/thermalZoneSettings4.png" style="width: 900px;" /></a>
 </div>
-<p>Once all window surfaces with a shading system have been selected, the <em>Edit Dynamic Windows</em> panel opens.</p>
-<p><strong>Type:</strong> As shown below, the dialogue allows setting the shading type and control strategy, <em>operable blinds</em> and <em>dynamic glass.</em> For both cases, ClimateStudio comes with a list of actual materials. For operable blinds, it is assumed that the shading system is either fully opened or fully closed. For dynamic glass, several intermediate tint states, as provided by the manufacturer, are supported. In the example below, Halio Black comes with one clear and six tint states ranging from 50.6% to 0.1% visual light transmittance.</p>
-<p><strong>Schedule:</strong> The schedule input sets the dynamic shading control strategy for the shading, i.e when it is opened or closed.  The following controls are currently supported:</p>
+<p>As shown below, annual schedules can be edited in two ways:</p>
 <ul class="simple">
-<li><p><strong>Default (LEEDv4 2% Rule):</strong> According to this control algorithm, a shading system is closed if more than 2% of an occupied area associated with a window is illuminated by more than 1000lux of direct sunlight. For dynamic glass, the transmittance of the glass is lowered until either the 1000lux criterion is not met anymore or the glass is in its darkest tint state.</p></li>
-<li><p><strong>Custom (CSV file):</strong> Alternatively, the user can provide a CSV (comma seperated value ) file with 8760 values for every hour of the year. The file format is single column. The dynamic shading state is 0 for wide open and an integer depending on the number of shading states supported, i.e. 1 for up/down blinds or 1, 2 and 3 for dynamic glass with one clear and three tint states.</p></li>
+<li><p>Based on individual days that can then be assigned to any particular day in the year or to all weekdays/weekends, etc. Same as for annual schedules, to modify a day schedule, create a copy of an existing day schedule and modify the 24 hours values for the day as needed.</p></li>
+<li><p>Another option is to import a custom series of 8760 values from the clipboard.</p></li>
 </ul>
 <div class="figure align-center">
-<a class="reference internal image-reference" href="../_images/blinds2.png"><img alt="../_images/blinds2.png" src="../_images/blinds2.png" style="width: 900px;" /></a>
+<a class="reference internal image-reference" href="../_images/thermalZoneSettings5.png"><img alt="../_images/thermalZoneSettings5.png" src="../_images/thermalZoneSettings5.png" style="width: 900px;" /></a>
 </div>
-<p>Once all dynamic shading systems have been specified, they appear in the <em>Add Blinds</em> subpanel table as shown below. Same as <em>Occupied Areas,</em> the different window shading systems can be organized via tags and selections can be edited.</p>
-<div class="figure align-center">
-<a class="reference internal image-reference" href="../_images/blinds3.png"><img alt="../_images/blinds3.png" src="../_images/blinds3.png" style="width: 900px;" /></a>
-</div>
-<dl class="simple">
-<dt>Simulation Details2,3,</dt><dd><dl class="field-list simple">
-<dt class="field-odd">align</dt>
-<dd class="field-odd"><p>center</p>
-</dd>
-</dl>
-</dd>
-</dl>
 </div>
 
 
@@ -235,10 +219,10 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="addObjects.html" class="btn btn-neutral float-right" title="Add Objects" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="CS_Settings.html" class="btn btn-neutral float-right" title="CS Settings" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="sky.html" class="btn btn-neutral float-left" title="Sky" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="thermalZoneSettings.html" class="btn btn-neutral float-left" title="Thermal Zone Settings" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   
