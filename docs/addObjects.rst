@@ -104,7 +104,10 @@ Shading surfaces may represent an overhang or parts of a neighboring building th
 
 Boundary Conditions
 -----------------------
-Boundary conditions are surfaces such as interior adiabatic surfaces or the ground. They have to be defined  as 3 or 4 corner surface objects in Rhino that are coincident with a thermal zone surface. If a surface is defined as adiabatic, no heat flow will go through it during a simulation.
+Boundary conditions are surfaces such as interior adiabatic surfaces or the ground. They have to be defined  as 3 or 4 corner surface objects in Rhino that are coincident with a thermal zone surface. 
+
+Adiabatic
+	If a surface is defined as `adiabatic`, no heat flow will go through it during a simulation. Adiabatic surfaces are colored in red..
 
 .. figure:: images/addObjects12.png
    :width: 500px
@@ -116,14 +119,18 @@ In the case of the ClimateStudio demo file, one may assume that the model only r
    :width: 900px
    :align: center
 
-Note: 
-	As shown above, the model assumes that the building is single story. If the model rather represents a typical corner part of a multi story building, roof and floor surfaces would also have to be modeled as adiabatic.   
+Ground
+	If a surface is defined as `ground`, it is assumed that it touches ground at the constant monthy temperature set under `Advanced EnergyPlus settings`_. Ground surfaces are colored in green. Please note that nearly every thermal model needs ground surfaces as the building otherwise floats above the ground as if on stilts.
+
+.. _Advanced EnergyPlus settings: EnergyPlus.html	
+
+Ground FC
+	If a surface is defined as `ground FC`, it is assumed that it touches if uses the so-called FC method from the ASHRAE Handbook of Fundamental as explained in the `EnergyPlus Engineering Reference`_.   
+	
+.. _EnergyPlus Engineering Reference: https://bigladdersoftware.com/epx/docs/8-7/engineering-reference/ground-heat-transfer-calculations-using-c.html	
 
 
-
-
-
-
-
-
+Ground in KIVA (Grasshopper only)
+	If a surface is assigned a 'KIVA' boundary condition object, it uses the KIVA source ground heat transfer calculation tool in EnergyPlus as documented under
+	https://bigladdersoftware.com/epx/docs/8-7/engineering-reference/ground-heat-transfer-calculations-using-kiva.html and https://kiva.readthedocs.io/en/stable/.
 

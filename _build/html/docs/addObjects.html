@@ -267,7 +267,11 @@
 </div>
 <div class="section" id="boundary-conditions">
 <h2>Boundary Conditions<a class="headerlink" href="#boundary-conditions" title="Permalink to this headline">¶</a></h2>
-<p>Boundary conditions are surfaces such as interior adiabatic surfaces or the ground. They have to be defined  as 3 or 4 corner surface objects in Rhino that are coincident with a thermal zone surface. If a surface is defined as adiabatic, no heat flow will go through it during a simulation.</p>
+<p>Boundary conditions are surfaces such as interior adiabatic surfaces or the ground. They have to be defined  as 3 or 4 corner surface objects in Rhino that are coincident with a thermal zone surface.</p>
+<dl class="simple">
+<dt>Adiabatic</dt><dd><p>If a surface is defined as <cite>adiabatic</cite>, no heat flow will go through it during a simulation. Adiabatic surfaces are colored in red..</p>
+</dd>
+</dl>
 <div class="figure align-center">
 <a class="reference internal image-reference" href="../_images/addObjects12.png"><img alt="../_images/addObjects12.png" src="../_images/addObjects12.png" style="width: 500px;" /></a>
 </div>
@@ -276,7 +280,16 @@
 <a class="reference internal image-reference" href="../_images/addObjects13.png"><img alt="../_images/addObjects13.png" src="../_images/addObjects13.png" style="width: 900px;" /></a>
 </div>
 <dl class="simple">
-<dt>Note:</dt><dd><p>As shown above, the model assumes that the building is single story. If the model rather represents a typical corner part of a multi story building, roof and floor surfaces would also have to be modeled as adiabatic.</p>
+<dt>Ground</dt><dd><p>If a surface is defined as <cite>ground</cite>, it is assumed that it touches ground at the constant monthy temperature set under <a class="reference external" href="EnergyPlus.html">Advanced EnergyPlus settings</a>. Ground surfaces are colored in green. Please note that nearly every thermal model needs ground surfaces as the building otherwise floats above the ground as if on stilts.</p>
+</dd>
+</dl>
+<dl class="simple">
+<dt>Ground FC</dt><dd><p>If a surface is defined as <cite>ground FC</cite>, it is assumed that it touches if uses the so-called FC method from the ASHRAE Handbook of Fundamental as explained in the <a class="reference external" href="https://bigladdersoftware.com/epx/docs/8-7/engineering-reference/ground-heat-transfer-calculations-using-c.html">EnergyPlus Engineering Reference</a>.</p>
+</dd>
+</dl>
+<dl class="simple">
+<dt>Ground in KIVA (Grasshopper only)</dt><dd><p>If a surface is assigned a ‘KIVA’ boundary condition object, it uses the KIVA source ground heat transfer calculation tool in EnergyPlus as documented under
+<a class="reference external" href="https://bigladdersoftware.com/epx/docs/8-7/engineering-reference/ground-heat-transfer-calculations-using-kiva.html">https://bigladdersoftware.com/epx/docs/8-7/engineering-reference/ground-heat-transfer-calculations-using-kiva.html</a> and <a class="reference external" href="https://kiva.readthedocs.io/en/stable/">https://kiva.readthedocs.io/en/stable/</a>.</p>
 </dd>
 </dl>
 </div>
