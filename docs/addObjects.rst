@@ -49,7 +49,7 @@ The `Thermal Zone Settings`_ page gives a description of all modeling inputs.
 
 Once a zone template has been assigned, the zones appear in the objects table on the right. The image below shows a two-zone model representing the conference room and open office in the `ClimateStudio example file.`_ 
 
-.. _ClimateStudio example file.: https://solemma.com/tutorial/CS%20Two%20Zone%20Office.3dm
+.. _ClimateStudio example file.: https://climatestudiodocs.com/ExampleFiles/CS_Two_Zone_Office.3dm
 
 It is worthwhile pointing out that it is assumed that the thermal model is built separately from the daylighting model in ClimateStudio. Both models can be stored on separate layers in the same Rhino file.  
 

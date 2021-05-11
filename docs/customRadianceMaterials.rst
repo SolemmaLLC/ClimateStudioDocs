@@ -11,7 +11,7 @@ Step 1: Create a Library Directory
 Step 2: Create a Radiance Material File
 	An example file for a bright red material can be downloaded from `here.`_ Download and copy the file into your library directory.
 	
-.. _here.: https://www.solemma.com/tutorial/BrightRed.rad
+.. _here.: https://climatestudiodocs.com/ExampleFiles/BrightRed.rad
 
 Step 3: Link the Material Library to ClimateStudio
 	Under *Assign materials,* open the Edit Layer Material dialogue and add your custom library.

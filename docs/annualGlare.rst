@@ -43,7 +43,7 @@ If you have not done any lighting simulations in ClimateStudio, it is recommende
 
 .. _Annual Glare Analysis.: https://vimeo.com/392380942
 
-.. _download.: https://solemma.com/tutorial/CS%20Two%20Zone%20Office.3dm
+.. _download.: https://climatestudiodocs.com/ExampleFiles/CS_Two_Zone_Office.3dm
 
 Run Simulation
 ------------------

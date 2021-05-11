@@ -29,7 +29,7 @@ If you have not done any lighting simulations in ClimateStudio, it is recommende
 
 .. _Lighting Model Setup video tutorial: https://vimeo.com/392379928
 
-.. _download.: https://solemma.com/tutorial/CS%20Two%20Zone%20Office.3dm
+.. _download.: https://climatestudiodocs.com/ExampleFiles/CS_Two_Zone_Office.3dm
 
 Once all required input subpanels have been populated, the rendering panel is invoked via the “Render Window” button. The panel consists of a render view on the left and the control settings on the right.
 
@@ -59,7 +59,7 @@ Start Rendering
 ---------------------
 Once all required input subpanels have been populated, a simulation is invoked by pressing the start button. ClimateStudio uses a `progressive path-tracing`_ version of Radiance so the viewport rendering is updated after each simulation pass. Details on the simulation settings can be found in the `Path-tracing Settings Subpanel.`_
 
-.. _progressive path-tracing: https://www.solemma.com/Speed.html
+.. _progressive path-tracing: https://www.solemma.com/blog/why-is-climatestudio-so-fast
 
 .. _Path-tracing Settings Subpanel.: path-tracingSettings.html
 

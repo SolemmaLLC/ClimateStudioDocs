@@ -30,7 +30,7 @@ If you have not done any lighting simulations in ClimateStudio, it is recommende
 The Rhino file used in the tutorial is available for `download`_.
 
 .. _Lighting Model Setup: https://vimeo.com/392379928 
-.. _download: https://solemma.com/tutorial/CS%20Two%20Zone%20Office.3dm
+.. _download: https://climatestudiodocs.com/ExampleFiles/CS_Two_Zone_Office.3dm
  
 
 Once all required input subpanels have been populated, a simulation is invoked by pressing the start button. 

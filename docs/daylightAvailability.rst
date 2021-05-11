@@ -93,7 +93,7 @@ If you have not done any lighting simulations in ClimateStudio, it is recommende
 
 .. _LEEDv4 Daylight Simulation - Iterative.: https://vimeo.com/392380721
 
-.. _download.: https://solemma.com/tutorial/CS%20Two%20Zone%20Office.3dm
+.. _download.: https://climatestudiodocs.com/ExampleFiles/CS_Two_Zone_Office.3dm
 
 Once all required input subpanels have been populated, a simulation is invoked by pressing the start button.
 
