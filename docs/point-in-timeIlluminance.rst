@@ -3,17 +3,18 @@ Point-in-Time Illuminance
 ================================================
 This workflow supports the calculation of illuminance distributions for electric lighting and/or daylight at specific moments in time.
 
-.. figure:: images/Point-in-TimeIlluminace_GUI.jpg
+.. figure:: images/Point-in-TimeIlluminace_GUI.png
    :width: 900px
    :align: center
 
-The workflow relies on five subpanels: 
+The workflow relies on six subpanels: 
 
 - `Location`_ 
 - `Sky`_
 - `Assign Materials`_
 - `Add Luminaires`_
 - `Add Areas`_ 
+- `Add Tubular Daylighting Devices`_
 
 .. _Location: Location.html
 
@@ -24,6 +25,8 @@ The workflow relies on five subpanels:
 .. _Add Luminaires: addLuminaires.html
 
 .. _Add Areas: addAreas.html
+
+.. _Add Tubular Daylighting Devices: addTDDs.html
 
 
 If you have not done any lighting simulations in ClimateStudio, it is recommended that you initially go through the `Lighting Model Setup`_ video tutorial (5 minutes). 

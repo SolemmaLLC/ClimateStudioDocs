@@ -4,11 +4,11 @@ Daylight Availability
 This workflow supports the calculation of a variety of illuminance-based daylight availability metrics. As the name suggests, these metrics are based on indoor illuminance distributions due to daylight under 
 either a few select sky conditions, such as 9am/3pm on equinox days or all hours in the year. The purpose of these metrics is to devide an occupied area into daylit and non-daylit portions.
 
-.. figure:: images/DaylightAvailability_GUI.jpg
+.. figure:: images/DaylightAvailability_GUI.png
    :width: 900px
    :align: center
 
-The workflow relies on four subpanels: 
+The workflow relies on five subpanels: 
 
 - `Location`_
 
@@ -18,6 +18,8 @@ The workflow relies on four subpanels:
 
 - `Add Areas`_
 
+- `Add Tubular Daylighting Devices`_
+
 .. _Location: Location.html
 
 .. _Assign Materials: assignMaterials.html
@@ -25,6 +27,8 @@ The workflow relies on four subpanels:
 .. _Add Blinds: addBlinds.html
 
 .. _Add Areas: addAreas.html
+
+.. _Add Tubular Daylighting Devices: addTDDs.html
 
 This workflow is organized into several “sub-workflows” for a variety of daylight availability standards. Depending on the standard chosen, the number of required input subpanels varies. The following standards are supported.
  

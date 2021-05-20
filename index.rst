@@ -2,9 +2,9 @@
 
 Welcome to the ClimateStudio User Guide
 ===================================================
-ClimateStudio is an advanced daylighting, electric lighting, and conceptual thermal simulation software developed by `Solemma LLC`_. It supports a series of environmental analysis workflows for building and neighborhoods including annual illuminance simulations for LEED v4 daylighting credits, glare and thermal comfort distributions in daylit and artificially lit spaces as well as annual and seasonal radiation map analysis for urban massing and shading design studies.
+ClimateStudio is an advanced daylighting, electric lighting, and conceptual thermal simulation software developed by `Solemma LLC`_. It supports a series of environmental analysis workflows for buildings and neighborhoods including annual illuminance simulations for LEED v4 daylighting credits, glare and thermal comfort distributions in daylit and artificially lit spaces, as well as annual and seasonal radiation map analysis for urban massing and shading design studies.
 	
-ClimateStudio is a plugin for the `Rhinoceros (Rhino)`_ 3d modelling software developed and distributed by Robert McNeel & Associates. An installed version of Rhino 6 or 7 with a license or `free evaluation`_ is required to run ClimateStudio.
+ClimateStudio is a plugin for the `Rhinoceros (Rhino)`_ 3d modeling software developed and distributed by Robert McNeel & Associates. An installed version of Rhino 6 or 7 with a license or `free evaluation`_ is required to run ClimateStudio.
 	
 The Getting Started section provides a quick overview a ClimateStudio interface. The following sections explore the individual features and analysis workflows.
  
@@ -49,6 +49,7 @@ The Getting Started section provides a quick overview a ClimateStudio interface.
    Add Areas<docs/addAreas.rst>
    Sky<docs/sky.rst>
    Add Blinds<docs/addBlinds.rst>
+   Add Tubular Daylighting Devices<docs/addTDDs.rst>
    Add Objects<docs/addObjects.rst>
    Path-tracing Settings<docs/path-tracingSettings.rst>
    Manage Library Menu<docs/manageLibrary.rst>

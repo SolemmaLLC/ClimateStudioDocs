@@ -38,9 +38,6 @@ Once all dynamic shading systems have been specified, they appear in the *Add Bl
 .. figure:: images/blinds3.png
    :width: 900px
    :align: center
-   
-Simulation Details2,3,
-   :align: center
 
 
 

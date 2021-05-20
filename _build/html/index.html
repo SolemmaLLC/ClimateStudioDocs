@@ -3,9 +3,9 @@
 <!DOCTYPE html>
 <html class="writer-html5" lang="en" >
 <head>
-  <meta charset="utf-8">
+  <meta charset="utf-8" />
   
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   
   <title>Welcome to the ClimateStudio User Guide &mdash; ClimateStudio latest documentation</title>
   
@@ -13,13 +13,18 @@
   
   <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="_static/theme_overrides.css" type="text/css" />
 
   
   
     <link rel="shortcut icon" href="_static/favicon.ico"/>
   
+
   
+  
+
   
 
   
@@ -29,10 +34,10 @@
   
     
       <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
         <script src="_static/jquery.js"></script>
         <script src="_static/underscore.js"></script>
         <script src="_static/doctools.js"></script>
-        <script src="_static/language_data.js"></script>
     
     <script type="text/javascript" src="_static/js/theme.js"></script>
 
@@ -53,7 +58,7 @@
           
 
           
-            <a href="#" class="icon icon-home" alt="Documentation Home"> ClimateStudio
+            <a href="#" class="icon icon-home"> ClimateStudio
           
 
           
@@ -110,6 +115,7 @@
 <li class="toctree-l1"><a class="reference internal" href="docs/addAreas.html">Add Areas</a></li>
 <li class="toctree-l1"><a class="reference internal" href="docs/sky.html">Sky</a></li>
 <li class="toctree-l1"><a class="reference internal" href="docs/addBlinds.html">Add Blinds</a></li>
+<li class="toctree-l1"><a class="reference internal" href="docs/addTDDs.html">Add Tubular Daylighting Devices</a></li>
 <li class="toctree-l1"><a class="reference internal" href="docs/addObjects.html">Add Objects</a></li>
 <li class="toctree-l1"><a class="reference internal" href="docs/path-tracingSettings.html">Path-tracing Settings</a></li>
 <li class="toctree-l1"><a class="reference internal" href="docs/manageLibrary.html">Manage Library Menu</a></li>
@@ -166,6 +172,8 @@
 
 
 
+
+
 <div role="navigation" aria-label="breadcrumbs navigation">
 
   <ul class="wy-breadcrumbs">
@@ -177,7 +185,7 @@
     
       <li class="wy-breadcrumbs-aside">
         
-            
+          
         
       </li>
     
@@ -191,8 +199,8 @@
             
   <div class="section" id="welcome-to-the-climatestudio-user-guide">
 <h1>Welcome to the ClimateStudio User Guide<a class="headerlink" href="#welcome-to-the-climatestudio-user-guide" title="Permalink to this headline">¶</a></h1>
-<p>ClimateStudio is an advanced daylighting, electric lighting, and conceptual thermal simulation software developed by <a class="reference external" href="https://www.solemma.com">Solemma LLC</a>. It supports a series of environmental analysis workflows for building and neighborhoods including annual illuminance simulations for LEED v4 daylighting credits, glare and thermal comfort distributions in daylit and artificially lit spaces as well as annual and seasonal radiation map analysis for urban massing and shading design studies.</p>
-<p>ClimateStudio is a plugin for the <a class="reference external" href="https://www.rhino3d.com/">Rhinoceros (Rhino)</a> 3d modelling software developed and distributed by Robert McNeel &amp; Associates. An installed version of Rhino 6 or 7 with a license or <a class="reference external" href="https://www.rhino3d.com/download/">free evaluation</a> is required to run ClimateStudio.</p>
+<p>ClimateStudio is an advanced daylighting, electric lighting, and conceptual thermal simulation software developed by <a class="reference external" href="https://www.solemma.com">Solemma LLC</a>. It supports a series of environmental analysis workflows for buildings and neighborhoods including annual illuminance simulations for LEED v4 daylighting credits, glare and thermal comfort distributions in daylit and artificially lit spaces, as well as annual and seasonal radiation map analysis for urban massing and shading design studies.</p>
+<p>ClimateStudio is a plugin for the <a class="reference external" href="https://www.rhino3d.com/">Rhinoceros (Rhino)</a> 3d modeling software developed and distributed by Robert McNeel &amp; Associates. An installed version of Rhino 6 or 7 with a license or <a class="reference external" href="https://www.rhino3d.com/download/">free evaluation</a> is required to run ClimateStudio.</p>
 <p>The Getting Started section provides a quick overview a ClimateStudio interface. The following sections explore the individual features and analysis workflows.</p>
 <blockquote>
 <div></div></blockquote>
@@ -252,6 +260,10 @@
 <li class="toctree-l1"><a class="reference internal" href="docs/addAreas.html">Add Areas</a></li>
 <li class="toctree-l1"><a class="reference internal" href="docs/sky.html">Sky</a></li>
 <li class="toctree-l1"><a class="reference internal" href="docs/addBlinds.html">Add Blinds</a></li>
+<li class="toctree-l1"><a class="reference internal" href="docs/addTDDs.html">Add Tubular Daylighting Devices</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="docs/addTDDs.html#how-it-works">How It Works</a></li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="docs/addObjects.html">Add Objects</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="docs/addObjects.html#thermal-zones">Thermal Zones</a></li>
 <li class="toctree-l2"><a class="reference internal" href="docs/addObjects.html#windows">Windows</a></li>
@@ -316,27 +328,20 @@
            
           </div>
           <footer>
-  
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
-      
-        <a href="docs/requirements.html" class="btn btn-neutral float-right" title="Requirements" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
-      
-      
+        <a href="docs/requirements.html" class="btn btn-neutral float-right" title="Requirements" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
-  
 
   <hr/>
 
   <div role="contentinfo">
     <p>
-        
-        &copy; Copyright 2020, Solemma LLC
+        &#169; Copyright 2020, Solemma LLC.
 
     </p>
   </div> 
 
 </footer>
-
         </div>
       </div>
 

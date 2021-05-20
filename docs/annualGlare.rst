@@ -14,14 +14,16 @@ The image below shows an interior office view on May 25 at 10:30am facing East a
 .. figure:: images/annualGlare2.png
    :width: 900px
    :align: center
+   
+For annual DPG simulations, ClimateStudio relies on the vertical illuminance portion of the DGP formula, plus contrast from the solar disc.
 
 Simulation Setup
 -----------------------
-For annual DPG simulations, ClimateStudio relies on the vertical illuminance portion of the DGP formula, DGPs.  To set up an annual glare simulation, the following subpanel inputs are required:
-
-.. figure:: images/AnnualGlare_GUI.jpg
+.. figure:: images/AnnualGlare_GUI.png
    :width: 900px
    :align: center
+   
+Annual glare simulations make use of the following four subpanels:
 
 - `Location`_ 
 
@@ -29,11 +31,15 @@ For annual DPG simulations, ClimateStudio relies on the vertical illuminance por
 
 - `Add Areas`_
 
+- `Add Tubular Daylighting Devices`_
+
 .. _Location: Location.html
 
 .. _Assign Materials: assignMaterials.html
 
 .. _Add Areas: addAreas.html
+
+.. _Add Tubular Daylighting Devices: addTDDs.html
 
 Please note that at this point, ClimateStudio does not support annual glare calculations that consider the use of dynamic shading systems.
 

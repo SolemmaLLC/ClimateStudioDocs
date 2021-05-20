@@ -1,11 +1,11 @@
 
 Radiance Render
 ================================================
-.. figure:: images/RadianceRender_GUI.jpg
+.. figure:: images/RadianceRender_GUI.png
    :width: 900px
    :align: center
 
-The ClimateStudio Radiance Render workflow supports the creation of physically based renderings using a path tracing version of the `Radiance`_ light backwards raytracer. The workflow relies on four subpanels: 
+The ClimateStudio Radiance Render workflow supports the creation of physically based renderings using a path tracing version of the `Radiance`_ light backwards raytracer. The workflow relies on five subpanels: 
 
 .. _Radiance: https://www.radiance-online.org/
 
@@ -17,6 +17,8 @@ The ClimateStudio Radiance Render workflow supports the creation of physically b
 
 - `Add Luminaires`_
 
+- `Add Tubular Daylighting Devices`_
+
 .. _Location: Location.html
 
 .. _Sky: sky.html
@@ -24,6 +26,8 @@ The ClimateStudio Radiance Render workflow supports the creation of physically b
 .. _Assign Materials: assignMaterials.html
 
 .. _Add Luminaires: addLuminaires.html
+
+.. _Add Tubular Daylighting Devices: addTDDs.html
 
 If you have not done any lighting simulations in ClimateStudio, it is recommended that you go through the `Lighting Model Setup video tutorial`_ (5 minutes). The Rhino file used in the tutorial is available for `download.`_
 
