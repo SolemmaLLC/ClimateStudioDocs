@@ -10,10 +10,10 @@ Wind Rose diagram displays a radial bar chart showing the occurrence frequency o
    :width: 900px
    :align: center
 
-4 filters can be applied to Wind Speed/Direction Data: 
+4 `filters`_ can be applied to Wind Speed/Direction Data: 
 
 - **Days** of the year as a range (wraps around)
-- **Hours** of day as a range (wraps around)
+- **Hours** of the day as a range (wraps around)
 - **Wind speed** as a range
 - **Temperature** as a range
 
@@ -30,3 +30,6 @@ The 2D Wind Rose diagram is customizable:
 .. figure:: images/windrose-customizable.jpg
    :width: 900px
    :align: center
+
+
+.. _filters: doubleSliderFilters.html
