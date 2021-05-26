@@ -12,6 +12,13 @@ Search Weather Dialog
    :width: 900px
    :align: center
 
+If a file is available locally, the **Source** column will display "LocalFile". Else it will require an internet connection to access that weather data. 
+
+Once a weather file is selected, click the "OK" or "Download" button to either load the file if it was already downloaded as a local file or download and load it from the respective source. 
+
+
+Filtering for type and location
+----------------------------------------------------
 The drop-down menu next to the search bar filters for the `type of weather data`_. By default, it is set to only display TMYx.2004-2018 data as those are the most up-to-date and should be used for most analysis. 
 More options are available by expanding the drop-down. 
 
@@ -29,9 +36,20 @@ The search will try to match every sub-string separated by space. The search is 
    :width: 900px
    :align: center
 
-If a file is available locally, the **Source** column will display "LocalFile". Else it will require an internet connection to access that weather data. 
 
-Once a weather file is selected, click the "OK" or "Download" button to either load the file if it was already downloaded as a local file or download and load it from the respective source. 
+Add to Favorites
+----------------------------------------------------
+Click on the star to add/remote from the favorates collection. Add most used files to the favorate collection to easily find them. 
+
+.. figure:: images/weathersearch5.jpg
+   :width: 900px
+   :align: center
+
+Sort any of the columns by clicking on the column headers
+
+Load a downloaded .epw file
+----------------------------------------------------
+click on the file button on the right of the drop-down menu to load a local file. 
 
 
 .. _type of weather data: location.html
