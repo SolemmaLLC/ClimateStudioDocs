@@ -33,3 +33,14 @@ The 2D Wind Rose diagram is customizable:
 
 
 .. _filters: doubleSliderFilters.html
+
+3D Wind Rose
+----------------------------------------------------
+
+.. figure:: images/3dWindRose.jpg
+   :width: 900px
+   :align: center
+
+Turn on the 3D wind rose by clicking on the **checkbox**. The filters, y-axis maximum, 10-30 degree bins, color will mirror that of the 2D wind rose. 
+
+Click on button **"Set Position"** to re-set the center of the 3D wind rose. Change the Inner Radius and Outter Radius of the windrose by typing in the text boxes. 
