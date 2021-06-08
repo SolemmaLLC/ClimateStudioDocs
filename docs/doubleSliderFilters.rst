@@ -29,9 +29,10 @@ the **Wind Speed** filter's last number represents positive infinity.
 In this example, we are filtering for data during **summer nights**. 
 
 
-All four filters are applied to `Wind Rose`_, while only the **Days** and **Hours** filters are applied to `Psychrometric Chart`_. 
+All four filters are applied to `Wind Rose`_, while only the **Days** and **Hours** filters are applied to `Psychrometric Chart`_ and `Hourly Heatmap`_. 
 Moving the slider for **Days** and **Hours** filters will update the data displayed for both **Wind Rose** and **Psychrometric Chart**. 
 
 
 .. _Wind Rose: windRose.html
 .. _Psychrometric Chart: psychrometricChart.html
+.. _Hourly Heatmap: hourlyHeatmap.html

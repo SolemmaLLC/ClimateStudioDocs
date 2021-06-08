@@ -7,9 +7,12 @@ Sun Path
 
 The sun path subpanel controls how the current sun position and the 3D sun path diagram are displayed in the Rhino viewport. 
 
+
 .. figure:: images/SunPath.jpg
    :width: 900px
    :align: center
+
+The projection from 3D to 2D can be changed from **Angular** to **Hemispheric** or **Stereographic** through the drop down menu. 
 
 3D Sun Path
 ----------------------------------------------------

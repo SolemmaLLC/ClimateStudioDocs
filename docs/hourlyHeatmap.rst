@@ -27,3 +27,12 @@ Changing the min/max number above the legend will update the graph's colors.
 .. figure:: images/hourly_heatmap_dorpdown.jpg
    :width: 900px
    :align: center
+
+
+2 `filters`_ may be applied to the Hourly Heatmap: 
+
+- **Days** of the year as a range (wraps around)
+- **Hours** of the day as a range (wraps around)
+
+
+.. _filters: doubleSliderFilters.html

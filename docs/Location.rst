@@ -20,6 +20,17 @@ The default site is the TMY3 file for Boston, Logan International Airport.
 To select another file, left-click on the file selector icon next to the name of the current TMY file. A `search dialog`_ should pop up. 
 
 
+Climate Summary
+----------------------------------------------------
+A summary of the climate selected is displayed on this page. Note that the accuracy of this summary entirely depends on the climate file selected. 
+
+- **Climate Zone** is based on the **koppen climate classification**. 
+- **Coldest/Hottest Month** are calculated through the average dry bulb tempearture of each month. 
+- **Coldest/Hottest/Typical Week** are taken from the headers of the climate file. 
+- **Annual HDH/CDH** are **Heating Degree Hour** and **Cooling Degree Hour** which are calculated as the sum of the negative or positive difference between the target tempearture and the dry bulb temperature. 
+
+Click on the Menu button to **Copy Climate Summary Text to ClipBoard** or switch between **Unit Systems**
+
 Climate File Formats
 ----------------------------------------------------
 ClimateStudio uses the widely used `EnergyPlus weather file format`_ (file extension EPW). EPW files are available for thousands of sites worldwide and can be downloaded from the following websites. 
