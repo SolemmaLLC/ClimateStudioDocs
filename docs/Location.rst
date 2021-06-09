@@ -24,10 +24,13 @@ Climate Summary
 ----------------------------------------------------
 A summary of the climate selected is displayed on this page. Note that the accuracy of this summary entirely depends on the climate file selected. 
 
-- **Climate Zone** is based on the **koppen climate classification**. 
+- **Koppen Climate Zone** is based on the **Köppen climate classification** which divides the climate into five main groups, then into various subgroups based on temperature and seasonal patterns. 
+- **ASHRAE climate zone** is based on **ASHRAE standard 169** which classifies climate data into nine climate zones, labeled 0 Extreme hot to 8 Extreme cold, based on annual heating and cooling degree days.
+- **Average annual temperature** is the annual average dry bulb temperature. 
+- **Annual total solar radiation** is the sum of global horizontal irradiance.  
 - **Coldest/Hottest Month** are calculated through the average dry bulb tempearture of each month. 
 - **Coldest/Hottest/Typical Week** are taken from the headers of the climate file. 
-- **Annual HDH/CDH** are **Heating Degree Hour** and **Cooling Degree Hour** which are calculated as the sum of the negative or positive difference between the target tempearture and the dry bulb temperature. 
+- **Annual HDD/CDD** are **Heating Degree Days** and **Cooling Degree Days** which are calculated as the sum of the negative or positive difference between the target tempearture and the daily average dry bulb temperature. 
 
 Click on the Menu button to **Copy Climate Summary Text to ClipBoard** or switch between **Unit Systems**
 
