@@ -44,7 +44,7 @@ The Getting Started section provides a quick overview a ClimateStudio interface.
    Location<docs/Location.rst>
    Assign Materials<docs/assignMaterials.rst>
    Add Analysis Surfaces<docs/addAnalysisSurfaces.rst>
-   3D Sun Path<docs/sunPath.rst>
+   Climate Charts<docs/climateCharts.rst>
    Add Luminaires<docs/addLuminaires.rst>
    Add Areas<docs/addAreas.rst>
    Sky<docs/sky.rst>

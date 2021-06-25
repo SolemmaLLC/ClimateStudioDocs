@@ -1,13 +1,21 @@
 
-3D Sun Path
+Sun Path
 ================================================
+
+2D Sun Path
+----------------------------------------------------
+
 The sun path subpanel controls how the current sun position and the 3D sun path diagram are displayed in the Rhino viewport. 
+
 
 .. figure:: images/SunPath.jpg
    :width: 900px
    :align: center
 
-**3D Sun Path**
+The projection from 3D to 2D can be changed from **Angular** to **Hemispheric** or **Stereographic** through the drop down menu. 
+
+3D Sun Path
+----------------------------------------------------
 
 The toggle changes the Rhino viewport from its current setting to a ClimateStudio-specific render mode that shows the different 3D Sun Path elements as well as 
 the shadow created by all scene objects on the ground and neighboring objects. 
@@ -33,3 +41,4 @@ The 3D Sun Path diagram is highly customizable:
 **Radius:** Sets the radius of the 3D Sun Path in model units
 
 *Date* and *time of day* can be set using the slider option, using preset dates and times or by manually entering the Julian date or time of day.
+

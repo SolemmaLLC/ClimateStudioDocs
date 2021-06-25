@@ -10,8 +10,8 @@ This information may be used for multiple purposes such as to determine when in 
 how to size an overhang or where to place photovoltaic cells or solar hot water collectors. The workflow relies on two input subpanels:
 
 - `Location`_
-- `Sun Path`_
+- `Climate Charts`_
 
 .. _Location: Location.html
 
-.. _Sun Path: sunPath.html
+.. _Climate Charts: climateCharts.html
