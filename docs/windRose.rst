@@ -4,7 +4,7 @@ Wind Rose
 2D Wind Rose
 ----------------------------------------------------
 
-Wind Rose diagram displays a radial bar chart showing the occurrence frequency of wind speed across all directions. 
+The Wind Rose diagram displays a radial bar chart showing the occurrence frequency of wind speed across all directions. 
 
 .. figure:: images/BostonLoganIntLArpt_WindRose.png
    :width: 900px
@@ -41,6 +41,6 @@ The 2D Wind Rose diagram is customizable:
    :width: 900px
    :align: center
 
-Turn on the 3D wind rose by clicking on the **checkbox**. The filters, y-axis maximum, 10-30 degree bins, color will mirror that of the 2D wind rose. 
+Turn on the 3D wind rose by clicking on the **checkbox**. The filters, y-axis maximum, 10-30 degree bins, and color palette will mirror that of the 2D wind rose. 
 
 Click on button **"Set Position"** to re-set the center of the 3D wind rose. Change the Inner Radius and Outter Radius of the windrose by typing in the text boxes. 

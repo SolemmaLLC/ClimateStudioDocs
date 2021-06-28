@@ -2,9 +2,9 @@
 Hourly Heatmap
 ================================================
 
-Hourly Heatmap graphs every single hour of the year by color on a given data set. 
+The Hourly Heatmap plot shows every single hour of the year by color for a given data set. 
 
-It supports graphing of the following data: 
+It supports the following data: 
 
 - **Dry Bulb Temperature**
 - **Relative Humidity**
@@ -29,7 +29,7 @@ Changing the min/max number above the legend will update the graph's colors.
    :align: center
 
 
-2 `filters`_ may be applied to the Hourly Heatmap: 
+Two `filters`_ may be applied to the Hourly Heatmap: 
 
 - **Days** of the year as a range (wraps around)
 - **Hours** of the day as a range (wraps around)

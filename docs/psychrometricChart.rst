@@ -1,7 +1,7 @@
 Psychrometric Chart
 ================================================
 
-Psychrometric Chart shows the distribution of hours in terms of both humidity and temperature. 
+The Psychrometric Chart shows the distribution of hours in terms of both humidity and temperature. 
 
 .. figure:: images/BostonLoganIntLArpt_PsychrometricChart.png
    :width: 900px

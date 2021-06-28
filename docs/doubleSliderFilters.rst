@@ -9,7 +9,7 @@ Double Slider Filters
 
 Double Sliders will select a range with a start value, an end value, and the range in between. 
 
-There are currently 4 uses of the double slider filter: 
+There are currently four uses of the double slider filter: 
 
 - **Days** of the year as a range (wraps around)
 - **Hours** of the day as a range (wraps around)

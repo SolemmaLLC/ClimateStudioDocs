@@ -1,7 +1,7 @@
 
 Location
 ================================================
-The location subpanel is used to specify the position of the site on earth by selecting the closest available typical meteorological year (TMY). 
+The location subpanel is used to specify the position of the site on earth by selecting the closest available typical meteorological year (TMY) weather file. 
 A TMY file contains hourly measured data for a variety of physical quantities that are required for an environmental performance analysis, 
 including direct and diffuse solar radiation, temperature and relative humidity levels as well as wind speed and direction.  
 
@@ -16,7 +16,7 @@ including direct and diffuse solar radiation, temperature and relative humidity 
 **Display size:** Changes the relative size of the North arrow compared to other scene objects
 
 
-The default site is the TMY3 file for Boston, Logan International Airport. 
+The default site is the Boston, Logan International Airport. 
 To select another file, left-click on the file selector icon next to the name of the current TMY file. A `search dialog`_ should pop up. 
 
 

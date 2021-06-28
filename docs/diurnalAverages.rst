@@ -2,7 +2,7 @@
 Diurnal Averages
 ================================================
 
-Diurnal Averages Graph displays monthly averages of temperature and radiation across the 24 hours of the day. It shows what a "typical day" would look like in a particular month. 
+The Diurnal Averages plot displays monthly averages of temperature and radiation across the 24 hours of the day. It shows what a "typical day" looks like in a particular month. 
 
 .. figure:: images/BostonLoganIntLArpt_DiurnalAverages.png
    :width: 900px

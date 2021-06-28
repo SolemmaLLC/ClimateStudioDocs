@@ -5,9 +5,7 @@ Site Analysis
    :width: 900px
    :align: center
 
-This workflow supports direct shading studies, i.e. an evaluation of how a given scene geometry interacts with direct sunlight over the course of the year. 
-This information may be used for multiple purposes such as to determine when in the year a given site or building is shaded by neighboring objects, 
-how to size an overhang or where to place photovoltaic cells or solar hot water collectors. The workflow relies on two input subpanels:
+This workflow supports several types of site and climate analysis, including sun path and wind diagrams, shadow studies, psychrometric charts, and hourly/diurnal plots of weather data. The workflow relies on two subpanels:
 
 - `Location`_
 - `Climate Charts`_

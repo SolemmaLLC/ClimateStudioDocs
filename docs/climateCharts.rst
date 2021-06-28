@@ -7,7 +7,7 @@ Climate Charts
    :align: center
 
 
-Climate Graph contains 5 graphs that help with visualizing, comprehending, and analyzing the local climate: 
+The Climate Charts panel contains five tabs that help with visualizing, comprehending, and analyzing the local site and climate: 
 
 - `Sun Path`_
 
@@ -19,15 +19,14 @@ Climate Graph contains 5 graphs that help with visualizing, comprehending, and a
 
 - `Hourly Heatmap`_
 
-A general control menu is located at the upper right corner of the panel where a drop-down is present when clicked. 
-The drop-down menu provides the following functionalities: 
+A general control menu is located at the upper right corner of each tab, providing the following functionalities: 
 
 - `Export Plots`_
 
-- **Switch Unit System** between imperial and metric systems
+- **Switch Unit System** between imperial and metric
 
 
-All these Plots described  above are also available as `grasshopper components`_. 
+All the plots described above are also available as `grasshopper components`_. 
 
 
 .. _Sun Path: SunPath.html
