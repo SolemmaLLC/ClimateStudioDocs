@@ -9,21 +9,23 @@ ClimateStudio supports multi zone thermal simulations using the US Department of
    :width: 900px
    :align: center
    
+
+Sub-panels:
+
 - `Location`_ 
 
 - `Thermal Model`_
 
-- `Thermal Model Settings`_
+Menus:
 
 - `Manage Library Menu`_
 
 - `EnergyPlus Simulation Settings`_
 
+
 .. _Location: Location.html
 
 .. _Thermal Model: addObjects.html
-
-.. _Thermal Model Settings: thermalZoneSettings.html
 
 .. _Manage Library Menu: manageLibrary.html 
 
