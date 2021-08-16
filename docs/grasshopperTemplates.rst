@@ -18,9 +18,7 @@ Site Analysis
 -------------
 
 - Diurnal Averages
-
 - Sun Hours on Surface
-
 - UTCI
 
 
@@ -60,39 +58,23 @@ Thermal Model
 	Glazing Construction Workflows
 
 - Green Roof Example
-
 - Massing Analysis with Autozoner
-
 - Massing Analysis
-
-- Natural Vnetilation	
-
+- Natural Ventilation	
 - Parametrize Zone Settings
-
 - Shading Masks for Urban Context 
-
 - Shoebox Model
-
 - Simulation Game
-
-- Spatial Therma Comfort
-
-- Zone From Surfaces
-	
+- Spatial Thermal Comfort
+- Zone From Surfaces	
 
 Radiation Map & PV
 ------------------
 
 - PV Simulation
-
 - System with battery
-
 - Urban Context - Radiation Map (Hourly Data)
-
 - Urban Context - Radiation Map 
-
-
-
 
 View Analysis
 -------------
