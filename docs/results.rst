@@ -22,9 +22,9 @@ Clicking on the Icon with the colored bar chart on top of the result files table
 
 Currently only Energy results are supported for comparing. 
 
-Comparison uses the first (left most) result as the baseline. 
+Comparison uses the first (left most) result as the baseline. In the table, small triangles anre drawn to show the deviation from baseline, the darker the triangle, the greater the deviation. 
 
-Results can also be re-ordered by dragging and dropping in the graph and the table. 
+Results can be re-ordered by dragg-and-dropp in the graph and the table, which ever result on the left-most is going to be used as the baseline. 
 
 .. figure:: images/compareInput.jpg
    :width: 900px
