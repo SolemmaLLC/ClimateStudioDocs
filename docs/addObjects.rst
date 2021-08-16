@@ -11,6 +11,8 @@ This subpanel is used to build up a multi-zone EnergyPlus model. ClimateStudio s
    :width: 200px
    :align: center
 
+These Icons from left to right represent: Zone, Exterior Window (openings to outside), Interior Windows (openings between zones), Shading, Ground Surfaces, and Adiabatic Surfaces. 
+
 Thermal Zones
 ----------------
 Thermal zones are modeled as closed breps in Rhino. Thermal zones are the fundamental building blocks of thermal simulation programs. They consist of areas within a building that are conditioned to the same temperature, have the same programmatic use (such as office or classroom) and experience comparable loads from solar radiation etc. A thermal zone is not necessarily the same as a room. A row of identical, south facing classrooms can be treated as a single zone since there will be no heat flow between the classrooms if they are used in the same way. On the other hand, a large open office area should be divided into perimeter zones bordering the building envelope with a depth of around 5m (15 feet)  and a core zone (see below). Combining core and perimeter zones into a single zone leads to an underprediction of conditioning loads since a surplus of solar gains in an equator facing zones is credited to heating required on the non equator-facing side whereas in reality, local cooling and heating may be required at the same time. 
@@ -81,18 +83,25 @@ Once all windows have been selected, the Windows dialogue appears.
 Under **Ventilation Settings,** the user can specify whether a window is operable for natural ventilation purposes, the fraction of the window area that is operable and at what indoor zone temperature the window will be opened. 
 
 .. figure:: images/addObjects9.png
-   :width: 900px
+   :width: 500px
    :align: center
 
 **Window Frame:** By default, EnergyPlus assumes that the thermal properties of a glazing unit extend across the rough opening of the window. To consider the thermal properties of a frame, its outer frame width and U value can be set to account for heat losses across the frame.
 
 **Shading System:** Dynamic shading systems can be modeled by setting a shading plus shading control. The schedule determines when the control is being activated throughout the year.  
 
-Once all window surfaces have been selected, they are added to the thermal zone object table and are marked as turquoise in the viewport.
+Once all window surfaces have been selected, they are added to the thermal zone object table and are marked as turquoise in the viewport. If the window geometry is valid and is placed on a surface of a zone, it will appear as a child object of that surface of the zone. 
 
 .. figure:: images/addObjects10.png
    :width: 900px
    :align: center
+
+If the window geometry cannot be assigned to a zone-surface, it will be considered to be an invalid object and will be outlines in red. 
+
+.. figure:: images/addObjects15.png
+   :width: 900px
+   :align: center
+
 
 Shading
 --------------
@@ -129,8 +138,15 @@ Ground FC
 	
 .. _EnergyPlus Engineering Reference: https://bigladdersoftware.com/epx/docs/8-7/engineering-reference/ground-heat-transfer-calculations-using-c.html	
 
+.. figure:: images/addObjects17.png
+   :width: 500px
+   :align: center
+
 
 Ground in KIVA (Grasshopper only)
 	If a surface is assigned a 'KIVA' boundary condition object, it uses the KIVA source ground heat transfer calculation tool in EnergyPlus as documented under
 	https://bigladdersoftware.com/epx/docs/8-7/engineering-reference/ground-heat-transfer-calculations-using-kiva.html and https://kiva.readthedocs.io/en/stable/.
 
+.. figure:: images/addObjects16.png
+   :width: 500px
+   :align: center

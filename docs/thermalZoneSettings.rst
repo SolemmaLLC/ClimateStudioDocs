@@ -1,7 +1,9 @@
 
 Thermal Zone Settings
 ================================================
-When a zone template is first assigned to a zone object (brep), hundreds of zone settings are set based on a zone template. ClimateStudio comes with hundreds of pre-populated zone templates based on vetted data sets such as the US Department of Energy's Commercial Prototype Building Models that are stored in a `Template Libary`_. Once assigned to a zone, all zone information can be reviewed and edited by selecting the edit button in the thermal model object table. 
+When a zone template is first assigned to a zone object (brep), hundreds of zone settings are set based on a zone template. 
+ClimateStudio comes with hundreds of pre-populated zone templates based on vetted data sets such as the US Department of Energy's Commercial Prototype Building Models that are stored in a `Template Libary`_. 
+Once assigned to a zone, all zone information can be reviewed and edited by selecting the edit button in the thermal model object table. 
 
 .. _Template Libary: manageLibrary.html
 
@@ -9,17 +11,20 @@ When a zone template is first assigned to a zone object (brep), hundreds of zone
    :width: 900px
    :align: center
    
-Zone infomation are assigned to each zone individually, meaning that if the user changes the properties of one zone from the default template value, those properties remain unchanges for other zones in the model with the same base template. To edit multiple zones at a time, select those zones using control or shift in the thermal model properties tab before selecting the edit button. As shown below, the Zone Settings panel is organized into six tabs: Loads, HVAC, Ventilation, Water, Material and Settings. 
+Zone infomation are assigned to each zone individually, meaning that if the user changes the properties of one zone from the default template value, those properties remain unchanges for other zones in the model with the same base template. 
+To edit multiple zones at a time, select those zones using control or shift in the thermal model properties tab before selecting the edit button. 
 
+As shown below, the Zone Settings panel is organized into four tabs: Loads, Conditioning, Envelope, and Settings. 
 
 
 .. figure:: images/thermalZoneSettings2.png
    :width: 600px
    :align: center
    
+
 Loads
 -----------
-Under this tab, the internal loads of a zone are specified due to people, equipment and electric lighting. The user should make sure that the numbers selected for a given zone constitute a meaningful approximation of how a modeled space is being used or will most likely be used in the case of a design model. For each internal load type, there is a peak load (density) normalized by floor area that indicates the heat added to a space at maximum occupancy or when all equipment and lighting is being switched on. Each internal load is further described by a schedule that consists of 8760 values for each hour of the year between zero and one. 
+Under this tab, the internal loads of a zone are specified due to people, equipment, electric lighting, and hot water. The user should make sure that the numbers selected for a given zone constitute a meaningful approximation of how a modeled space is being used or will most likely be used in the case of a design model. For each internal load type, there is a peak load (density) normalized by floor area that indicates the heat added to a space at maximum occupancy or when all equipment and lighting is being switched on. Each internal load is further described by a schedule that consists of 8760 values for each hour of the year between zero and one. 
 To visualize/edit a schedule, left-click on the schdule name to open the `Schedules Editor`_. The different load entry fields are described below.
 
 
@@ -54,49 +59,84 @@ To visualize/edit a schedule, left-click on the schdule name to open the `Schedu
   
 
 
-HVAC
+Conditioning
 -----------
-Comming soon.
+Heating, Cooling, Humidity, and Ventilation Controls are all under the Conditioning tab. 
+
 
 .. figure:: images/ZoneHVAC.PNG
-   :width: 900px
+   :width: 600px
    :align: center
 
-Ventilation
------------
 
 .. figure:: images/ZoneVentilation.PNG
-   :width: 900px
+   :width: 600px
    :align: center
 
 This section controls three different approaches to model natural ventilation or infiltration. Note: These controls do not have an effect when you select the “AirflowNetwork” options in the advances Simulation Settings. 
-Scheduled Ventilation:
-Scheduled ventilation allows modelers to control hourly air change rates using a schedule.
-This option is useful if you know the flow rate already (i.e., because you ran an external CFD or CONTAM simulation). Otherwise, it is advisable to refer to the modeling approach below.
-Natural Ventilation:
-The natural ventilation section provides a simple approach to simulate natural ventilation. You can select the driving force for the flow to be either buoyancy-driven flow only, wind-driven, or both together. A conservative, worst-case scenario is to assess natural ventilation with just buoyancy-driven flow. This driving force is more reliable than wind. Wind patterns can fluctuate drastically based on the location and context of the site. When “wind-driven flow” is selected, the simulation model assumes an ideal exhaust and that you can cross-ventilate. You can read more about these models in the EnergyPlus InputOutput reference in the “ZoneVentilation:WindandStackOpenArea” section.
-Infiltration:
-This section models infiltration rates using the “ZoneInfiltration:DesignFlowRate” model.
-The question of typical values for these coefficients is subject to debate. Ideally, one should do a detailed analysis of the infiltration situation and then determine a custom set of coefficients using methods such as those laid out in Chapter 26 of the ASHRAE Handbook of Fundamentals. The EnergyPlus defaults are 1,0,0,0 which give a constant volume flow of infiltration under all conditions [EnergyPlus InputOutput reference].
+
+1. Scheduled Ventilation
+   
+   Scheduled ventilation allows modelers to control hourly air change rates using a schedule.
+   This option is useful if you know the flow rate already (i.e., because you ran an external CFD or CONTAM simulation). Otherwise, it is advisable to refer to the modeling approach below.
+
+2. Natural Ventilation
+  
+   The natural ventilation section provides a simple approach to simulate natural ventilation. You can select the driving force for the flow to be either buoyancy-driven flow only, wind-driven, or both together. A conservative, worst-case scenario is to assess natural ventilation with just buoyancy-driven flow. This driving force is more reliable than wind. Wind patterns can fluctuate drastically based on the location and context of the site. When “wind-driven flow” is selected, the simulation model assumes an ideal exhaust and that you can cross-ventilate. You can read more about these models in the EnergyPlus InputOutput reference in the “ZoneVentilation:WindandStackOpenArea” section.
+
+3. Infiltration
+   
+   This section models infiltration rates using the “ZoneInfiltration:DesignFlowRate” model.
+   The question of typical values for these coefficients is subject to debate. Ideally, one should do a detailed analysis of the infiltration situation and then determine a custom set of coefficients using methods such as those laid out in Chapter 26 of the ASHRAE Handbook of Fundamentals. The EnergyPlus defaults are 1,0,0,0 which give a constant volume flow of infiltration under all conditions [EnergyPlus InputOutput reference].
 
 
-Water
+Envelope
 -----------
 
-.. figure:: images/ZoneWater.PNG
-   :width: 900px
-   :align: center
-
-Comming soon.
-
-Materials
------------
+This tab defines the construction of each zone. 
 
 .. figure:: images/ZoneMaterials.PNG
    :width: 900px
    :align: center
 
-Comming soon.
+A **Construction** meterial is set for the different types of surfaces each zone may have: 
+
+- **Roof**: exterior top surfaces
+- **Facade**: exterior side surfaces
+- **Partition**: interior walls
+- **Slab**: interior floors (this will be used for interior floors and interior ceilings)
+- **External Floor**: exterior bottom surfaces (that does not touch the ground)
+- **Ground Salb**: exterior bottom surfaces that touches the ground surface
+- **Ground Wall**: exterior surfaces that is below the ground surface that is not a ground slab. 
+
+Any other **internal masses** will also has it's material. Internal thermal walls or large beams and columns will be accounted for here. 
+
+**Foundation** settings for the ground is calculated based on 3 different methods. 
+
+1. Ground
+	If a surface is defined as `ground`, it is assumed that it touches ground at the constant monthy temperature set under `Advanced EnergyPlus settings`_. Ground surfaces are colored in green. Please note that nearly every thermal model needs ground surfaces as the building otherwise floats above the ground as if on stilts.
+
+.. _Advanced EnergyPlus settings: EnergyPlus.html	
+
+2. Ground FC
+	If a surface is defined as `ground FC`, it is assumed that it touches if uses the so-called FC method from the ASHRAE Handbook of Fundamental as explained in the `EnergyPlus Engineering Reference`_.   
+	
+.. _EnergyPlus Engineering Reference: https://bigladdersoftware.com/epx/docs/8-7/engineering-reference/ground-heat-transfer-calculations-using-c.html	
+
+.. figure:: images/addObjects17.png
+   :width: 500px
+   :align: center
+
+
+3. Ground in KIVA (Grasshopper only)
+	If a surface is assigned a 'KIVA' boundary condition object, it uses the KIVA source ground heat transfer calculation tool in EnergyPlus as documented under
+	https://bigladdersoftware.com/epx/docs/8-7/engineering-reference/ground-heat-transfer-calculations-using-kiva.html and https://kiva.readthedocs.io/en/stable/.
+
+.. figure:: images/addObjects16.png
+   :width: 500px
+   :align: center
+
+
 
 Settings
 -----------
@@ -105,11 +145,14 @@ Settings
    :width: 900px
    :align: center
 
-Comming soon.
-
 **Carbon And Cost Factors**
 
-Under the settings tab the user can specify carbon and cost factors for heating, cooling, hot water use and electricity. These conversion factors are then used to translate the different loads into equivalent 
-carbon emissions or energy costs. For example, an electricity price of 0.106 $/kWh corresponds to the 2019 average US retail price for electricity. At the same time, the approximate US retail price for natural 
-gas was 0.04 $/kWh. The ClimateStudio default values for electricity (cooling and electricity) of 0.612 CO2e kg/kWh correspond to the 2017 average value for the US grid. It is worth pointing out that these 
+Under the settings tab the user can specify carbon and cost factors for heating, cooling, hot water use and electricity. 
+These conversion factors are then used to translate the different loads into equivalent 
+carbon emissions or energy costs. 
+
+For example, an electricity price of 0.106 $/kWh corresponds to the 2019 average US retail price for electricity. 
+At the same time, the approximate US retail price for natural gas was 0.04 $/kWh. 
+
+The ClimateStudio default values for electricity (cooling and electricity) of 0.612 CO2e kg/kWh correspond to the 2017 average value for the US grid. It is worth pointing out that these 
 numbers are highly variable both over time and regionally. Up to date numbers for different US zip codes are provided by the Energy Protection Agency’s Power Profiler https://www.epa.gov/energy/power-profiler#/.
