@@ -108,10 +108,14 @@
 </ul>
 <p class="caption"><span class="caption-text">Subpanels</span></p>
 <ul class="current">
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Location</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Location</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#climate-summary">Climate Summary</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#climate-file-formats">Climate File Formats</a></li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="assignMaterials.html">Assign Materials</a></li>
 <li class="toctree-l1"><a class="reference internal" href="addAnalysisSurfaces.html">Add Analysis Surfaces</a></li>
-<li class="toctree-l1"><a class="reference internal" href="sunPath.html">3D Sun Path</a></li>
+<li class="toctree-l1"><a class="reference internal" href="climateCharts.html">Climate Charts</a></li>
 <li class="toctree-l1"><a class="reference internal" href="addLuminaires.html">Add Luminaires</a></li>
 <li class="toctree-l1"><a class="reference internal" href="addAreas.html">Add Areas</a></li>
 <li class="toctree-l1"><a class="reference internal" href="sky.html">Sky</a></li>
@@ -200,21 +204,39 @@
             
   <div class="section" id="location">
 <h1>Location<a class="headerlink" href="#location" title="Permalink to this headline">¶</a></h1>
-<p>The location subpanel is used to specify the position of the site on earth by selecting the closest available typical meteorological year (TMY).
+<p>The location subpanel is used to specify the position of the site on earth by selecting the closest available typical meteorological year (TMY) weather file.
 A TMY file contains hourly measured data for a variety of physical quantities that are required for an environmental performance analysis,
-including direct and diffuse solar radiation, temperature and relative humidity levels as well as wind speed and direction. The default site
-is the TMY3 file for Boston, Logan International Airport. To select another file, left-click on the file selector icon next to the name of the current TMY file.</p>
+including direct and diffuse solar radiation, temperature and relative humidity levels as well as wind speed and direction.</p>
 <div class="figure align-center">
 <a class="reference internal image-reference" href="../_images/Location.jpg"><img alt="../_images/Location.jpg" src="../_images/Location.jpg" style="width: 900px;" /></a>
 </div>
-<p>ClimateStudio uses the widely used <a class="reference external" href="https://energyplus.net/weather/simulation">EnergyPlus weather file format</a> (file extension EPW). EPW files are available for thousands of sites worldwide and can be downloaded from the following web sites.</p>
+<p><strong>North Offset:</strong> By default, North is along the positive y-axis. To adjust the North direction, use the slider or manually enter an angle.</p>
+<p><strong>Show Compass:</strong> Toggle to show the North arrow</p>
+<p><strong>Display size:</strong> Changes the relative size of the North arrow compared to other scene objects</p>
+<p>The default site is the Boston, Logan International Airport.
+To select another file, left-click on the file selector icon next to the name of the current TMY file. A <a class="reference external" href="searchWeather.html">search dialog</a> should pop up.</p>
+<div class="section" id="climate-summary">
+<h2>Climate Summary<a class="headerlink" href="#climate-summary" title="Permalink to this headline">¶</a></h2>
+<p>A summary of the climate selected is displayed on this page. Note that the accuracy of this summary entirely depends on the climate file selected.</p>
+<ul class="simple">
+<li><p><strong>Koppen Climate Zone</strong> is based on the <strong>Köppen climate classification</strong> which divides the climate into five main groups, then into various subgroups based on temperature and seasonal patterns.</p></li>
+<li><p><strong>ASHRAE climate zone</strong> is based on <strong>ASHRAE standard 169</strong> which classifies climate data into nine climate zones, labeled 0 Extreme hot to 8 Extreme cold, based on annual heating and cooling degree days.</p></li>
+<li><p><strong>Average annual temperature</strong> is the annual average dry bulb temperature.</p></li>
+<li><p><strong>Annual total solar radiation</strong> is the sum of global horizontal irradiance.</p></li>
+<li><p><strong>Coldest/Hottest Month</strong> are calculated through the average dry bulb tempearture of each month.</p></li>
+<li><p><strong>Coldest/Hottest/Typical Week</strong> are taken from the headers of the climate file.</p></li>
+<li><p><strong>Annual HDD/CDD</strong> are <strong>Heating Degree Days</strong> and <strong>Cooling Degree Days</strong> which are calculated as the sum of the negative or positive difference between the target tempearture and the daily average dry bulb temperature.</p></li>
+</ul>
+<p>Click on the Menu button to <strong>Copy Climate Summary Text to ClipBoard</strong> or switch between <strong>Unit Systems</strong></p>
+</div>
+<div class="section" id="climate-file-formats">
+<h2>Climate File Formats<a class="headerlink" href="#climate-file-formats" title="Permalink to this headline">¶</a></h2>
+<p>ClimateStudio uses the widely used <a class="reference external" href="https://energyplus.net/weather/simulation">EnergyPlus weather file format</a> (file extension EPW). EPW files are available for thousands of sites worldwide and can be downloaded from the following websites.</p>
 <ul class="simple">
 <li><p><a class="reference external" href="https://energyplus.net/weather">Department of Energy EPW files</a></p></li>
 <li><p><a class="reference external" href="http://climate.onebuilding.org/">Climate.OneBuilding.org</a></p></li>
 </ul>
-<p><strong>North Offset:</strong> By default, North is along the positive y-axis. To adjust the North direction, use the slider or manually enter an angle.</p>
-<p><strong>Show Compass:</strong> Toggle to show the North arrow</p>
-<p><strong>Display size:</strong> Changes the relative size of the North arrow compared to other scene objects</p>
+</div>
 </div>
 
 

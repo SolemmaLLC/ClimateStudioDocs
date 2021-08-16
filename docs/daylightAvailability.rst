@@ -176,7 +176,7 @@ Follow the procedure below during submission. The LEED Online form will soon be 
 
 	
 
-.. _downloaded here: https://solemma.com/Daylight_LEEDv4.1Report.pdf
+.. _downloaded here: https://climatestudiodocs.com/ExampleFiles/SampleProject_LEEDv4.1_Daylighting_Report.pdf
 
 
 
