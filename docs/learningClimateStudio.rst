@@ -1,7 +1,9 @@
 
 Learning ClimateStudio
 ================================================
-Watching the short video tuotirals on the `Solemma web site`_ will get you up and running with ClimateStudio in less than an hour.
+Watching the short video tutorials on the `Solemma web site`_ will get you up and running with ClimateStudio in less than an hour. 
+
+Most new users learn ClimateStudio through the graphical user interface (GUI) within Rhinoceros 3D. However, if you prefer working in Grasshopper, we have prepared dozens of `GH definitions`_ to get you started quickly. 
 
 Begin with the 3 minute `Interface Overview`_. After that you are ready to explore any of the workflows:
 
@@ -30,6 +32,8 @@ Begin with the 3 minute `Interface Overview`_. After that you are ready to explo
 .. _Radiance Render: radianceRender.html
 
 .. _Thermal Model: thermalModel.html
+
+.. _GH definitions: grasshopperTemplates.html 
 
 ================================================
 

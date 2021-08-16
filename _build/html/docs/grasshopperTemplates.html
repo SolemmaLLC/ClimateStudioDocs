@@ -7,7 +7,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   
-  <title>Climate Charts &mdash; ClimateStudio latest documentation</title>
+  <title>Grasshopper Workflow Templates &mdash; ClimateStudio latest documentation</title>
   
 
   
@@ -44,8 +44,8 @@
     
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Add Luminaires" href="addLuminaires.html" />
-    <link rel="prev" title="Add Analysis Surfaces" href="addAnalysisSurfaces.html" /> 
+    <link rel="next" title="Location" href="Location.html" />
+    <link rel="prev" title="Radiation Map" href="radiationMap.html" /> 
 </head>
 
 <body class="wy-body-for-nav">
@@ -97,7 +97,7 @@
 <li class="toctree-l1"><a class="reference internal" href="learningClimateStudio.html">Learning ClimateStudio</a></li>
 </ul>
 <p class="caption"><span class="caption-text">ClimateStudio Workflows</span></p>
-<ul>
+<ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="siteAnalysis.html">Site Analysis</a></li>
 <li class="toctree-l1"><a class="reference internal" href="point-in-timeIlluminance.html">Point-in-Time Illuminance</a></li>
 <li class="toctree-l1"><a class="reference internal" href="daylightAvailability.html">Daylight Availability</a></li>
@@ -105,14 +105,24 @@
 <li class="toctree-l1"><a class="reference internal" href="radianceRender.html">Radiance Render</a></li>
 <li class="toctree-l1"><a class="reference internal" href="thermalModel.html">Thermal Model</a></li>
 <li class="toctree-l1"><a class="reference internal" href="radiationMap.html">Radiation Map</a></li>
-<li class="toctree-l1"><a class="reference internal" href="grasshopperTemplates.html">Grasshopper Workflows</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Grasshopper Workflow Templates</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#site-analysis">Site Analysis</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#point-in-time-illuminace">Point-in-time illuminace</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#daylight-availability">Daylight Availability</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#annual-glare">Annual Glare</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#radiance-rendering">Radiance Rendering</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#thermal-model">Thermal Model</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#radiation-map-pv">Radiation Map &amp; PV</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#view-analysis">View Analysis</a></li>
+</ul>
+</li>
 </ul>
 <p class="caption"><span class="caption-text">Subpanels</span></p>
-<ul class="current">
+<ul>
 <li class="toctree-l1"><a class="reference internal" href="Location.html">Location</a></li>
 <li class="toctree-l1"><a class="reference internal" href="assignMaterials.html">Assign Materials</a></li>
 <li class="toctree-l1"><a class="reference internal" href="addAnalysisSurfaces.html">Add Analysis Surfaces</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Climate Charts</a></li>
+<li class="toctree-l1"><a class="reference internal" href="climateCharts.html">Climate Charts</a></li>
 <li class="toctree-l1"><a class="reference internal" href="addLuminaires.html">Add Luminaires</a></li>
 <li class="toctree-l1"><a class="reference internal" href="addAreas.html">Add Areas</a></li>
 <li class="toctree-l1"><a class="reference internal" href="sky.html">Sky</a></li>
@@ -182,7 +192,7 @@
     
       <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
         
-      <li>Climate Charts</li>
+      <li>Grasshopper Workflow Templates</li>
     
     
       <li class="wy-breadcrumbs-aside">
@@ -199,25 +209,84 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="climate-charts">
-<h1>Climate Charts<a class="headerlink" href="#climate-charts" title="Permalink to this headline">¶</a></h1>
+  <div class="section" id="grasshopper-workflow-templates">
+<h1>Grasshopper Workflow Templates<a class="headerlink" href="#grasshopper-workflow-templates" title="Permalink to this headline">¶</a></h1>
+<p>Most ClimateStudio workflows can be run via the Graphical User Interface in Rhino as well as using Rhino’s algorithmic modeling environment Grasshopper. In case you are not already familiar with Grasshopper, please refer to the <a class="reference external" href="https://www.grasshopper3d.com/">McNeel website</a>. Otherwise, try out one of our many GH workflow templates.</p>
+<p>To get started, type “grasshopper” in the Rhino command prompt and load the CS Workflow Templates component (see below). Follow the instructions provided on the Grasshopper canvas. In most instances you just have to press “run”.</p>
 <div class="figure align-center">
-<a class="reference internal image-reference" href="../_images/cliamte-plots-panel-header.jpg"><img alt="../_images/cliamte-plots-panel-header.jpg" src="../_images/cliamte-plots-panel-header.jpg" style="width: 900px;" /></a>
+<a class="reference internal image-reference" href="../_images/GH_WorkflowTemplates.jpg"><img alt="../_images/GH_WorkflowTemplates.jpg" src="../_images/GH_WorkflowTemplates.jpg" style="width: 900px;" /></a>
 </div>
-<p>The Climate Charts panel contains five tabs that help with visualizing, comprehending, and analyzing the local site and climate:</p>
+<div class="section" id="site-analysis">
+<h2>Site Analysis<a class="headerlink" href="#site-analysis" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
-<li><p><a class="reference external" href="SunPath.html">Sun Path</a></p></li>
-<li><p><a class="reference external" href="windRose.html">Wind Rose</a></p></li>
-<li><p><a class="reference external" href="diurnalAverages.html">Diurnal Averages</a></p></li>
-<li><p><a class="reference external" href="psychrometricChart.html">Psychrometric Chart</a></p></li>
-<li><p><a class="reference external" href="hourlyHeatmap.html">Hourly Heatmap</a></p></li>
+<li><p>Diurnal Averages</p></li>
+<li><p>Sun Hours on Surface</p></li>
+<li><p>UTCI</p></li>
 </ul>
-<p>A general control menu is located at the upper right corner of each tab, providing the following functionalities:</p>
+</div>
+<div class="section" id="point-in-time-illuminace">
+<h2>Point-in-time illuminace<a class="headerlink" href="#point-in-time-illuminace" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
-<li><p><a class="reference external" href="exportPlots.html">Export Plots</a></p></li>
-<li><p><strong>Switch Unit System</strong> between imperial and metric</p></li>
+<li><p>Simple Office - Electric Lighting</p></li>
+<li><p>Tubular Daylighting Devices - Clear Sky</p></li>
 </ul>
-<p>All the plots described above are also available as <a class="reference external" href="climateChartsGrasshopper.html">grasshopper components</a>.</p>
+</div>
+<div class="section" id="daylight-availability">
+<h2>Daylight Availability<a class="headerlink" href="#daylight-availability" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Simple Office - LEED Daylight</p></li>
+</ul>
+</div>
+<div class="section" id="annual-glare">
+<h2>Annual Glare<a class="headerlink" href="#annual-glare" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Simple Office - Annual Glare</p></li>
+</ul>
+</div>
+<div class="section" id="radiance-rendering">
+<h2>Radiance Rendering<a class="headerlink" href="#radiance-rendering" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Simple Office - Rendering</p></li>
+</ul>
+</div>
+<div class="section" id="thermal-model">
+<h2>Thermal Model<a class="headerlink" href="#thermal-model" title="Permalink to this headline">¶</a></h2>
+<ul>
+<li><p>Airflow network Model</p></li>
+<li><p>Add to Library</p>
+<blockquote>
+<div><p>Create Material and Construction</p>
+<p>Create Schedules</p>
+<p>Glazing Construction Workflows</p>
+</div></blockquote>
+</li>
+<li><p>Green Roof Example</p></li>
+<li><p>Massing Analysis with Autozoner</p></li>
+<li><p>Massing Analysis</p></li>
+<li><p>Natural Vnetilation</p></li>
+<li><p>Parametrize Zone Settings</p></li>
+<li><p>Shading Masks for Urban Context</p></li>
+<li><p>Shoebox Model</p></li>
+<li><p>Simulation Game</p></li>
+<li><p>Spatial Therma Comfort</p></li>
+<li><p>Zone From Surfaces</p></li>
+</ul>
+</div>
+<div class="section" id="radiation-map-pv">
+<h2>Radiation Map &amp; PV<a class="headerlink" href="#radiation-map-pv" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>PV Simulation</p></li>
+<li><p>System with battery</p></li>
+<li><p>Urban Context - Radiation Map (Hourly Data)</p></li>
+<li><p>Urban Context - Radiation Map</p></li>
+</ul>
+</div>
+<div class="section" id="view-analysis">
+<h2>View Analysis<a class="headerlink" href="#view-analysis" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Simple Office - LEED Quality Views</p></li>
+</ul>
+</div>
 </div>
 
 
@@ -226,8 +295,8 @@
           </div>
           <footer>
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
-        <a href="addLuminaires.html" class="btn btn-neutral float-right" title="Add Luminaires" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
-        <a href="addAnalysisSurfaces.html" class="btn btn-neutral float-left" title="Add Analysis Surfaces" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="Location.html" class="btn btn-neutral float-right" title="Location" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="radiationMap.html" class="btn btn-neutral float-left" title="Radiation Map" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
     </div>
 
   <hr/>
