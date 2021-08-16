@@ -1,5 +1,4 @@
-
-Add Objects
+Thermal Model
 ================================================
 .. figure:: images/AddObjects.jpg
    :width: 900px
@@ -133,20 +132,3 @@ Ground
 
 .. _Advanced EnergyPlus settings: EnergyPlus.html	
 
-Ground FC
-	If a surface is defined as `ground FC`, it is assumed that it touches if uses the so-called FC method from the ASHRAE Handbook of Fundamental as explained in the `EnergyPlus Engineering Reference`_.   
-	
-.. _EnergyPlus Engineering Reference: https://bigladdersoftware.com/epx/docs/8-7/engineering-reference/ground-heat-transfer-calculations-using-c.html	
-
-.. figure:: images/addObjects17.png
-   :width: 500px
-   :align: center
-
-
-Ground in KIVA (Grasshopper only)
-	If a surface is assigned a 'KIVA' boundary condition object, it uses the KIVA source ground heat transfer calculation tool in EnergyPlus as documented under
-	https://bigladdersoftware.com/epx/docs/8-7/engineering-reference/ground-heat-transfer-calculations-using-kiva.html and https://kiva.readthedocs.io/en/stable/.
-
-.. figure:: images/addObjects16.png
-   :width: 500px
-   :align: center
