@@ -5,7 +5,7 @@ ClimateStudio supports multi zone thermal simulations using the US Department of
 
 .. _EnergyPlus: https://energyplus.net/
 
-.. figure:: images/ThermalModel_GUI.jpg
+.. figure:: images/workflowPanel_thermal.png
    :width: 900px
    :align: center
    

@@ -1,7 +1,7 @@
 
 Site Analysis
 ================================================
-.. figure:: images/SiteAnalysis_GUI.jpg
+.. figure:: images/workflowPanel_site.png
    :width: 900px
    :align: center
 

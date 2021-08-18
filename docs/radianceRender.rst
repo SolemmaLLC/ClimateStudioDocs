@@ -1,7 +1,7 @@
 
 Radiance Render
 ================================================
-.. figure:: images/RadianceRender_GUI.png
+.. figure:: images/workflowPanel_render.png
    :width: 900px
    :align: center
 

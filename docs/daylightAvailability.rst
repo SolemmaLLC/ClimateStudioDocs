@@ -1,54 +1,91 @@
 
 Daylight Availability
 ================================================
-This workflow supports the calculation of a variety of illuminance-based daylight availability metrics. As the name suggests, these metrics are based on indoor illuminance distributions due to daylight under 
-either a few select sky conditions, such as 9am/3pm on equinox days or all hours in the year. The purpose of these metrics is to devide an occupied area into daylit and non-daylit portions.
+This workflow supports the calculation of a variety of daylight availability metrics. As the name suggests, these metrics assess indoor illuminance distributions due to daylight -- either under select conditions or throughout the entire year. Their purpose is to evaluate the sufficiency of daylight for carrying out work tasks and other indoor activities.
 
-.. figure:: images/DaylightAvailability_GUI.png
+Simulation Setup
+-----------------------
+There are numerous conventions, compliance guidelines, and accreditation systems centered on the measurement of daylight availability. To cover these bases, ClimateStudio offers several sub-workflows (available via dropdown 8 in the figure below). If you don't have a specific standard in mind, the LEED Option 1 setting is a reasonable place to start.
+
+.. figure:: images/workflowPanel_daylight.png
    :width: 900px
    :align: center
 
-The workflow relies on five subpanels: 
+Depending on the sub-workflow selected, you will see up to five subpanels (labeled 1-5 in the figure above). To prepare a model for simulation, work your way through the available subpanels, entering site and material data as required.
 
-- `Location`_
-
-- `Assign Materials`_
-
-- `Add Blinds`_
-
-- `Add Areas`_
-
-- `Add Tubular Daylighting Devices`_
+| 1 - `Location`_
+| 2 - `Materials`_
+| 3 - `Blinds`_
+| 4 - `Occupied Areas`_ 
+| 5 - `Tubular Daylighting Devices`_ (optional)
 
 .. _Location: Location.html
 
-.. _Assign Materials: assignMaterials.html
+.. _Materials: assignMaterials.html
 
-.. _Add Blinds: addBlinds.html
+.. _Blinds: addBlinds.html
 
-.. _Add Areas: addAreas.html
+.. _Occupied Areas: addAreas.html
 
-.. _Add Tubular Daylighting Devices: addTDDs.html
+.. _Tubular Daylighting Devices: addTDDs.html
 
-This workflow is organized into several “sub-workflows” for a variety of daylight availability standards. Depending on the standard chosen, the number of required input subpanels varies. The following standards are supported.
+Please note that **modeling blinds is required** for achieving the LEED Option 1 credit, and for simulating the annual daylighting of buildings realistically.
+
+If you have not done any lighting simulations in ClimateStudio, it is recommended that you initially go through the `Lighting Model Setup`_ video tutorial (5 minutes). 
+The Rhino file used in the tutorial is available for `download`_.
+
+.. _Lighting Model Setup: https://vimeo.com/392379928 
+.. _download: https://climatestudiodocs.com/ExampleFiles/CS_Two_Zone_Office.3dm
+
+Once all required inputs have been populated, a simulation is invoked by pressing the start button (6). ClimateStudio uses a `progressive path tracing`_ version of the Radiance raytracer to simulate illuminance distributions. While a simulation is in progress, traced light paths accumulate until the user-specified number of passes has been reached. Details on the simulation settings can be found by opening the `settings dialog`_ (7).
  
-.. figure:: images/daylightAvailability.png
-   :width: 900px
-   :align: center
-   
-LEED version 4 Environmental Quality Credit 8
-----------------------------------------------------
-According to the US Green Building Council, the intent of Environmental Credit 8, `Daylighting and View,`_ is to “provide building occupants with a connection between indoor spaces and the outdoors through 
-the introduction of daylight and views into the regularly occupied areas of the building.” ClimateStudio supports various compliance paths for both LEED version 4.0 and 4.1. 
+.. _progressive path tracing: https://www.solemma.com/blog/why-is-climatestudio-so-fast
+.. _settings dialog: path-tracingSettings.html
 
-.. _Daylighting and View,: https://www.usgbc.org/credits/?Version=%22v4.1%22&Rating+System=%22New+Construction%22
 
-- **Option 1** calculates spatial daylight autonomy (sDA) for a target illuminance of 300lux and occupant hours from 8am to 6pm daily. sDA is defined as the percentage of occupied hours during which the target illuminance is met through daylight alone. sDA calculations are based on annual, climate-based simulations of thousands of different sky conditions throughout the year. Dynamic shading devices such as blinds or electrochromic glazings have to be specified for all window units. Another metric called annual solar exposure (ASE), corresponds to the percentage of occupied time when the illuminance at a point due to direct sunlight is above 1000lux. The design goal is usually to maximize the daylit area with an sDA above 50%, meaning that there is daylight at a space for at least half of the year. At the same time, the ASE has to be kept below 10% of the occupeid area to avoid glare and overheating. LEED versions 4.0 and 4.1 differ in how strict ASE calculations are being handled. It is worthwhile pointing out that ASE is calculated for the dynamic shading system fully opened all year whereas sDA takes the actual use of dynamic shading into account. 
+Simulation Results
+------------------------
+Daylight availability results vary depending on the sub-workflow selected prior to simulation. Use the links below to skip ahead to the option of interest:
 
-- **Option 2** is based on two point-in-time illuminance distributions on equinox days at 9am and 3pm under CIE clear sky conditions. The daylit area corresponds to the part of the space with more than 300lux and less than 3000lux at both 9am and 3pm. 
+- `LEED Option 1 (v4.0/4.1)`_
+- `LEED Option 2`_
+- `BREEAM UK/Intl 4a/c`_
+- `BREEAM UK/Intl 4b`_
+- `Daylight Factor`_
+- `Custom`_
+
+.. _LEED Option 1 (v4.0/4.1): daylightAvailability.html#leed-option-1
+
+.. _LEED Option 2: daylightAvailability.html#leed-option-2
+
+.. _BREEAM UK/Intl 4a/c: daylightAvailability.html#breeam
+
+.. _BREEAM UK/Intl 4b: daylightAvailability.html#breeam
+
+.. _Daylight Factor: daylightAvailability.html#daylight-factor
+
+.. _Custom: daylightAvailability.html#custom
+
+LEED
+^^^^^^^^^^^^^^^^^^^^^^^
+LEED (Leadership in Energy and Environmental Design) is a green building rating system maintained by US Green Building Council (`USGBC`_). The system offers two simulation-based options for achieving its Daylight Credit.
+
+
+.. _USGBC: https://www.usgbc.org/
+
+LEED Option 1
+"""""""""""""""""
+This option simulates daylight availability throughout the entire year, and awards credits based on a metric called Spatial Daylight Autonomy (sDA).
+
+- **Spatial Daylight Autonomy (sDA)**: for a target illuminance of 300lux and occupant hours from 8am to 6pm daily. sDA is defined as the percentage of occupied hours during which the target illuminance is met through daylight alone. sDA calculations are based on annual, climate-based simulations of thousands of different sky conditions throughout the year. Dynamic shading devices such as blinds or electrochromic glazings have to be specified for all window units. 
+- **Annual Sunlight Exposure (ASE)**: corresponds to the percentage of occupied time when the illuminance at a point due to direct sunlight is above 1000lux. The design goal is usually to maximize the daylit area with an sDA above 50%, meaning that there is daylight at a space for at least half of the year. At the same time, the ASE has to be kept below 10% of the occupeid area to avoid glare and overheating. LEED versions 4.0 and 4.1 differ in how strict ASE calculations are being handled. It is worthwhile pointing out that ASE is calculated for the dynamic shading system fully opened all year whereas sDA takes the actual use of dynamic shading into account. 
+
+LEED Option 2
+"""""""""""""""""
+is based on two point-in-time illuminance distributions on equinox days at 9am and 3pm under CIE clear sky conditions. The daylit area corresponds to the part of the space with more than 300lux and less than 3000lux at both 9am and 3pm. 
 
 BREEAM
-------------
+^^^^^^^^^^^^^^^^^^^^^^^
 BREEAM is a UK-based green building rating system maintained by the Building Research Establishment Group (`BRE`_). ClimateStudio supports the calculation of BREEAM credits for the achievement of good-practice daylighting levels. The user can choose among five 
 pathways to the credit:
 
@@ -65,51 +102,16 @@ The daylight factor pathways impose thresholds for average daylight factor and d
 The targets are building and space-type specific, and are documented in detail here: https://www.breeam.com/discover/technical-standards/newconstruction/
 
 
-**Daylight Factor:** The daylight factor is defined as the ratio between the illuminance at a point in a building divided by the illuminance at an upward facing, unshaded outside sensor. The reference sky for the daylight factor is the CIE overcast sky.  The daylight factor serves as a daylight availability metric in multiple building standards world-wide with minimum requirements typically ranging between 2% and 5%.  
+Daylight Factor
+^^^^^^^^^^^^^^^^^^^^^^^
+The daylight factor is defined as the ratio between the illuminance at a point in a building divided by the illuminance at an upward facing, unshaded outside sensor. The reference sky for the daylight factor is the CIE overcast sky.  The daylight factor serves as a daylight availability metric in multiple building standards world-wide with minimum requirements typically ranging between 2% and 5%.  
 
-**Custom:** This sub-workflow allows users to conduct a climate-based annual illuminance calculation including dynamic shading systems. Rather than following a particular standard, the workflow allows users to set custom minimum, target and exceeding illuminance levels to calculate, for example, the useful daylight illuminance (UDI) between 300lux and 1000lux. The levels can be set through the `Add Areas subpanel.`_
+Custom
+^^^^^^^^^^^^^^^^^^^^^^^
+This sub-workflow allows users to conduct a climate-based annual illuminance calculation including dynamic shading systems. Rather than following a particular standard, the workflow allows users to set custom minimum, target and exceeding illuminance levels to calculate, for example, the useful daylight illuminance (UDI) between 300lux and 1000lux. The levels can be set through the `Add Areas subpanel.`_
 
 .. _Add Areas subpanel.: addAreas.html
 
-Depending on the sub-workflow selected, a varying number of input subpanels are required, namely: 
-
-- The `Location Subpanel`_ (LEED option 1, BREEAM 4b  and custom only)
-
-- The `Assign Materials Subpanel`_
-
-- The `Add Blinds Subpanel`_ (LEED and custom only)
-
-- The `Add Areas Subpanel`_
-
-.. _Location Subpanel: Location.html
-
-.. _Assign Materials Subpanel: assignMaterials.html
-
-.. _Add Blinds Subpanel: addBlinds.html
-
-.. _Add Areas Subpanel: addAreas.html
-
-If you have not done any lighting simulations in ClimateStudio, it is recommended that you go through the `Lighting Model Setup video tutorial`_ (5 minutes) followed by two video tutorials specifically focussed on daylight availability simulations, namely `Daylight Availability Study`_ and `LEEDv4 Daylight Simulation - Iterative.`_ The Rhino file used in the tutorials is available for `download.`_
-
-.. _Lighting Model Setup video tutorial: https://vimeo.com/392379928
-
-.. _Daylight Availability Study: https://vimeo.com/392380513
-
-.. _LEEDv4 Daylight Simulation - Iterative.: https://vimeo.com/392380721
-
-.. _download.: https://climatestudiodocs.com/ExampleFiles/CS_Two_Zone_Office.3dm
-
-Once all required input subpanels have been populated, a simulation is invoked by pressing the start button.
-
-.. figure:: images/StartButton.jpg
-   :width: 300px
-   :align: center
-
-ClimateStudio uses a `progressive path-tracing`_ version of the Radiance raytracer to simulate illuminance distributions. While a simulation is in progress, traced light paths accumulate until the user-specified number of passes has been reached. Details on the simulation settings can be found in the `Path-tracing Settings Subpanel.`_
-
-.. _progressive path-tracing: https://www.solemma.com/Speed.html
-
-.. _Path-tracing Settings Subpanel.: path-tracingSettings.html
 
 Simulation Results
 --------------------

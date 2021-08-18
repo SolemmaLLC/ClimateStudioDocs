@@ -3,7 +3,9 @@ View Analysis
 ================================================
 This workflow assesses occupant views and computes eligibilty for the LEED v4 Quality Views credit.
 
-*[inputs image]*
+.. figure:: images/workflowPanel_view.png
+   :width: 900px
+   :align: center
 
 The workflow relies on two subpanels: 
 

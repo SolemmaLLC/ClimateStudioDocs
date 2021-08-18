@@ -19,7 +19,7 @@ For annual DPG simulations, ClimateStudio relies on the vertical illuminance por
 
 Simulation Setup
 -----------------------
-.. figure:: images/AnnualGlare_GUI.png
+.. figure:: images/workflowPanel_glare.png
    :width: 900px
    :align: center
    

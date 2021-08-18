@@ -7,7 +7,7 @@ ClimateStudio supports the calculation of annual or monthly solar radiation fall
 
 To set up a radiation map, the following subpanel inputs are required:
 
-.. figure:: images/RadiationMap_GUI.jpg
+.. figure:: images/workflowPanel_radmap.png
    :width: 900px
    :align: center
 
