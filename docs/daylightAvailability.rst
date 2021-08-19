@@ -29,7 +29,7 @@ Depending on the sub-workflow selected, you will see up to five subpanels (label
 
 .. _Tubular Daylighting Devices: addTDDs.html
 
-Please note that **modeling blinds is required** for achieving the LEED Option 1 credit, and for simulating the annual daylighting of buildings realistically.
+Please note that **modeling blinds is required** for the LEED Option 1 credit, and for achieving realistic predictions of annual daylight levels in buildings. Dynamic blinds are not considered for sub-workflows that assess point-in-time conditions (LEED Option 2, Daylight Factor, and BREEAM 4a/c). 
 
 If you have not done any lighting simulations in ClimateStudio, it is recommended that you initially go through the `Lighting Model Setup`_ video tutorial (5 minutes). 
 The Rhino file used in the tutorial is available for `download`_.
@@ -54,31 +54,18 @@ Daylight availability results vary depending on the sub-workflow selected prior 
 - `Daylight Factor`_
 - `Custom`_
 
-.. _LEED Option 1 (v4.0/4.1): daylightAvailability.html#leed-option-1
+.. _LEED Option 1 (v4.0/4.1): daylightLEEDOpt1.html
 
-.. _LEED Option 2: daylightAvailability.html#leed-option-2
+.. _LEED Option 2: daylightLEEDOpt2.html
 
-.. _BREEAM UK/Intl 4a/c: daylightAvailability.html#breeam
+.. _BREEAM UK/Intl 4a/c: daylightBREEAMa.html
 
-.. _BREEAM UK/Intl 4b: daylightAvailability.html#breeam
+.. _BREEAM UK/Intl 4b: daylightBREEAMb.html
 
-.. _Daylight Factor: daylightAvailability.html#daylight-factor
+.. _Daylight Factor: daylightFactor.html
 
-.. _Custom: daylightAvailability.html#custom
+.. _Custom: daylightCustom.html
 
-LEED
-^^^^^^^^^^^^^^^^^^^^^^^
-LEED (Leadership in Energy and Environmental Design) is a green building rating system maintained by US Green Building Council (`USGBC`_). The system offers two simulation-based options for achieving its Daylight Credit.
-
-
-.. _USGBC: https://www.usgbc.org/
-
-LEED Option 1
-"""""""""""""""""
-This option simulates daylight availability throughout the entire year, and awards credits based on a metric called Spatial Daylight Autonomy (sDA).
-
-- **Spatial Daylight Autonomy (sDA)**: for a target illuminance of 300lux and occupant hours from 8am to 6pm daily. sDA is defined as the percentage of occupied hours during which the target illuminance is met through daylight alone. sDA calculations are based on annual, climate-based simulations of thousands of different sky conditions throughout the year. Dynamic shading devices such as blinds or electrochromic glazings have to be specified for all window units. 
-- **Annual Sunlight Exposure (ASE)**: corresponds to the percentage of occupied time when the illuminance at a point due to direct sunlight is above 1000lux. The design goal is usually to maximize the daylit area with an sDA above 50%, meaning that there is daylight at a space for at least half of the year. At the same time, the ASE has to be kept below 10% of the occupeid area to avoid glare and overheating. LEED versions 4.0 and 4.1 differ in how strict ASE calculations are being handled. It is worthwhile pointing out that ASE is calculated for the dynamic shading system fully opened all year whereas sDA takes the actual use of dynamic shading into account. 
 
 LEED Option 2
 """""""""""""""""
