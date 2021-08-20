@@ -10,7 +10,14 @@ This subpanel is used to build up a multi-zone EnergyPlus model. ClimateStudio s
    :width: 200px
    :align: center
 
-These Icons from left to right represent: Zone, Exterior Window (openings to outside), Interior Windows (openings between zones), Shading, Ground Surfaces, and Adiabatic Surfaces. 
+These Icons from left to right represent: 
+
+   Zone
+   Exterior Window (openings to outside)
+   Interior Windows (openings between zones)
+   Shading
+   Ground Surfaces
+   Adiabatic Surfaces. 
 
 Thermal Zones
 ----------------
