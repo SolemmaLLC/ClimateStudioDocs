@@ -53,7 +53,7 @@ using the `Viewport Display`_ editor.
    :width: 900px
    :align: center
 
-.. _here: results.html
+.. _results panel: results.html
 .. _Viewport Display: ViewportDisplay.html
 
 

@@ -29,7 +29,7 @@ Upon completion of the first simulation pass (`setup instructions here`_), or up
    :width: 900px
    :align: center
 
-3. **Annual Sunlight Exposure (ASE)**: The percentage of the regularly occupied floor area that is "overlit." In this context, "overlit" locations are those receiving direct sunlight (>1000 lux directly from the solar disc)  for more than 250 occupied hours. LEED versions 4.0 and 4.1 differ in how strictly ASE limits are enforced. It is worth pointing out that ASE is calculated for the dynamic shading system fully opened all year, whereas sDA takes the operation of dynamic shading into account. This distinction can cause confusion, but is meant to encourage passive solar design strategies, which can minimize visual and thermal discomfort without relying on manual shade operation. Spaces with automated systems such as motorized blinds or electrochromic glazings are exempted from the ASE requirement.
+3. **Annual Sunlight Exposure (ASE)**: The percentage of the regularly occupied floor area that is "overlit." In this context, "overlit" locations are those receiving direct sunlight (>1000 lux directly from the solar disc)  for more than 250 occupied hours. LEED versions 4.0 and 4.1 differ in how strictly ASE limits are enforced. It is worth pointing out that ASE is calculated for the dynamic shading system fully opened all year, whereas sDA takes the operation of dynamic shading into account. This distinction can cause confusion, but is meant to encourage passive solar design strategies. 
 
 .. figure:: images/result_viewportASE.png
    :width: 900px
@@ -41,16 +41,16 @@ Upon completion of the first simulation pass (`setup instructions here`_), or up
    :width: 900px
    :align: center
    
-5. **Blinds Open**: The average percentage of dynamic window area that is *unshaded* during occupied hours. This metric is an important indication of the frequency of blinds use in response to direct solar exposure. Lower numbers here indicate higher rates of blinds use, which correspond to lower daylight levels and reduced views to the outside. As with ASE, blinds operation can be minimized through passive design strategies such as building orientation, static shading, and reduced window-to-wall ratio.
+5. **Blinds Open**: The average percentage of dynamic window area that is *unshaded* during occupied hours. This metric is an important indication of the frequency of blinds use in response to direct solar exposure. Lower numbers here indicate higher rates of blinds use, which correspond to lower daylight levels and reduced views to the outside. As with ASE, blinds operation can be minimized through passive design strategies such as orientation, static shading, and reduced window-to-wall ratio.
 
-Interface Components
+Outputs Interface
 --------------------------
 
 .. figure:: images/result_panelLEEDOpt1.png
    :width: 900px
    :align: center
 
-The results interface has five sections:
+The LEED Option 1 result UI has five sections:
 
 
 - The **Header** includes the result name, an information dialog (6), which provides an accounting of simulation inputs, a CSV export (7), and a `report generator`_ (8), which produces a PDF report for accreditation submission.
