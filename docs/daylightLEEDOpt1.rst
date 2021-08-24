@@ -25,19 +25,19 @@ Upon completion of the first simulation pass (`setup instructions here`_), or up
 
 2. **Spatial Daylight Autonomy (sDA)**: The percentage of the regularly occupied floor area that is "daylit." In this context, "daylit" locations are those meeting target illuminance levels (300 lux) using daylight alone for at least 50% of occupied hours. Such locations are said to be 50% *daylight autonomous*. sDA calculations are based on annual, climate-based simulations of thousands of different sky conditions throughout the year. Per LM-83 guidelines, dynamic shading devices such as blinds or electrochromic glazings **must** be specified for all exterior window units.
 
-.. figure:: images/result_viewportSDA.png
+.. figure:: images/result_viewportLEEDsDA.png
    :width: 900px
    :align: center
 
-3. **Annual Sunlight Exposure (ASE)**: The percentage of the regularly occupied floor area that is "overlit." In this context, "overlit" locations are those receiving direct sunlight (>1000 lux directly from the solar disc)  for more than 250 occupied hours. LEED versions 4.0 and 4.1 differ in how strictly ASE limits are enforced. It is worth pointing out that ASE is calculated for the dynamic shading system fully opened all year, whereas sDA takes the operation of dynamic shading into account. This distinction can cause confusion, but is meant to encourage passive solar design strategies, which can minimize visual and thermal discomfort without relying on manual shade operation. Spaces with automated systems such as motorized blinds or electrochromic glazings are exempted from the ASE requirement.
+3. **Annual Sunlight Exposure (ASE)**: The percentage of the regularly occupied floor area that is "overlit." In this context, "overlit" locations are those receiving direct sunlight (>1000 lux directly from the solar disc) for more than 250 occupied hours. LEED versions 4.0 and 4.1 differ in how strictly ASE limits are enforced. It is worth pointing out that ASE is calculated for the dynamic shading system fully opened all year, whereas sDA takes the operation of dynamic shading into account. This distinction can cause confusion, but is meant to encourage passive design strategies that minimize visual and thermal discomfort without relying on manual shade operation. In the displayed model, the static brise soleil were augmented to reduce ASE to acceptable levels. Another strategy might involve specifying automated blinds or electrochromic glazing systems, which trigger ASE exemptions for adjoining rooms.
 
-.. figure:: images/result_viewportASE.png
+.. figure:: images/result_viewportLEEDASE.png
    :width: 900px
    :align: center
 
 4. **Mean Illuminance**: The average illuminance over the regularly occupied floor area over all occupied hours. Selecting the metric in the dashboard enables perusal of both mean and hourly illuminance data in the Rhino viewport.
  
-.. figure:: images/result_viewportIllum.png
+.. figure:: images/result_viewportLEEDIllum.png
    :width: 900px
    :align: center
    
@@ -61,7 +61,7 @@ The results interface has five sections:
 
 .. _report generator: #reporting
 
-- The **Temporal Graphs** show daylight levels or blinds operation binned by hour of day and day of year. The sDA and ASE graphs show the percentage of floor area that is daylit (300 lux) or overit (1000 lux direct), respectively, for each temporal bin. The graphed floor area(s) can be altered using the dropdown (10) or by filtering and/or selecting areas in the Room Table. The rightmost dropdown (11) permits switching between annual and single-day statistics. In the latter mode, time sliders let you scrub through individual hours of year, which causes timestep illuminance data and shading states to be previewed in the Rhino viewport:
+- The **Temporal Graphs** show daylight levels or blinds operation binned by hour of day and day of year. The sDA and ASE graphs show the percentage of floor area that is daylit (300 lux) or overit (1000 lux direct), respectively, for each temporal bin. The graphed floor area(s) can be altered using the dropdown (10) or by filtering and/or selecting areas in the Room Table. The rightmost dropdown (11) permits switching between annual and single-day statistics. In the latter mode, time sliders let you scrub through individual hours of year, which causes timestep illuminance data and shading states to be previewed in the Rhino viewport.
 
 .. _report generator: #reporting
 
