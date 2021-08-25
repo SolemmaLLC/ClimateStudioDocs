@@ -1,5 +1,5 @@
 
-LEED Daylight Option 1
+LEED v4 Daylight Option 1
 ================================================
 Leadership in Energy and Environmental Design (`LEED`_) is a green building rating system maintained by the US Green Building Council (`USGBC`_). The system offers two simulation-based options for achieving its Daylight Credit. Option 1, described here, simulates daylight availability throughout the entire year, while `Option 2`_ simulates daylight availability at two specific moments in time. Option 1 yields a more complete description of daylighting performance, offers more potential points under the USGBC's rating system, and is the recommended compliance pathway for the LEED Daylight Credit.
 
@@ -71,17 +71,23 @@ The results interface has five sections:
 
 - The **Viewport Settings** bar contains a viewport preview legend and viewport settings menu (14), which provides options for customizing the falsecolor display.
 
+
 Reporting
 -----------
+
+.. figure:: images/result_reportLEEDDaylight.png
+   :width: 900px
+   :align: center
+
 A key ClimateStudio feature is its ability to create automated simulation reports in PDF format. To generate a report, click the PDF button (8) in the result header. 
 
-.. figure:: images/daylightAvailability5.png
+.. figure:: images/result_reportBarLEEDDaylight.png
    :width: 900px
    :align: center
 
 The report generator allows you to customize your report by adding your company logo. You may also be prompted to provide a reason for ASE exceedance, if applicable.
 
-.. figure:: images/daylightAvailability6.png
+.. figure:: images/reportDialogDaylight.png
    :width: 400px
    :align: center
 
@@ -96,7 +102,7 @@ An example report can be `downloaded here`_. As of summer 2020, the US Green Bui
 
 	
 
-.. _downloaded here: https://climatestudiodocs.com/ExampleFiles/SampleProject_LEEDv4.1_Daylighting_Report.pdf
+.. _downloaded here: https://climatestudiodocs.com/ExampleFiles/RAC_Enhanced_Brise_Soleil-LEEDv4.1_Daylight_Report.pdf
 
 
 

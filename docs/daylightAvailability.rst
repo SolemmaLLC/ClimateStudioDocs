@@ -47,21 +47,12 @@ Simulation Results
 ------------------------
 Daylight availability results vary depending on the sub-workflow selected prior to simulation. Use the links below to skip ahead to the option of interest:
 
-- `LEED Option 1 (v4.0/4.1)`_
-- `LEED Option 2`_
-- `BREEAM UK/Intl 4a/c`_
-- `BREEAM UK/Intl 4b`_
-- `Daylight Factor`_
-- `Custom`_
-
-.. _LEED Option 1 (v4.0/4.1): daylightLEEDOpt1.html
-
-.. _LEED Option 2: daylightLEEDOpt2.html
-
-.. _BREEAM UK/Intl 4a/c: daylightBREEAM4a.html
-
-.. _BREEAM UK/Intl 4b: daylightBREEAM4b.html
-
-.. _Daylight Factor: daylightFactor.html
-
-.. _Custom: daylightCustom.html
+.. toctree::
+   :maxdepth: 1
+   
+   LEED v4 Option 1<daylightLEEDOpt1.rst>
+   LEED v4 Option 2<daylightLEEDOpt2.rst>
+   BREEAM UK/Intl 4a/c<daylightBREEAM4a.rst>
+   BREEAM UK/Intl 4b<daylightBREEAM4b.rst>
+   Daylight Factor<daylightFactor.rst>
+   Custom<daylightCustom.rst>
