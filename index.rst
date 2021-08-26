@@ -49,7 +49,7 @@ The Getting Started section provides a quick overview a ClimateStudio interface.
    
 .. toctree::
    :maxdepth: 1
-   :caption: Ratings Systems
+   :caption: Rating Systems
    
    LEED<docs/LEED.rst>
    BREEAM<docs/BREEAM.rst>

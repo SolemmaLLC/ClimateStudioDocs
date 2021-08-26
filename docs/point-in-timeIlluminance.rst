@@ -45,15 +45,19 @@ Once all required inputs have been populated, a simulation is invoked by pressin
 
 Simulation Results
 ------------------------
-Upon completion of the first pass, the ClimateStudio `results panel`_ will open. The image below shows a point-in-time illuminance result, with an illuminance distribution 
-shown in the Rhino viewport to the left and overall statistics (mean and median illuminances) displayed in the panel to the right. The Rhino viewport results can be modified 
-using the `Viewport Display`_ editor. 
+Upon completion of the first pass, or upon loading a saved result, the `results panel`_ will show a dashboard with the mean and median illuminance for all simulated floor areas. 
 
-.. figure:: images/IlluminanceResults.jpg
+.. _results panel: results.html
+
+.. figure:: images/result_panelIllum.png
    :width: 900px
    :align: center
 
-.. _results panel: results.html
-.. _Viewport Display: ViewportDisplay.html
+At the top of the panel, an info dialog (9) reports simulation inputs, while a CSV export (10) saves results to an Excel-readable format. At the bottom, a legend and settings menu (11) provide options for customizing the falsecolor display, which is shown in the Rhino viewport:
+
+.. figure:: images/result_viewportIllum.png
+   :width: 900px
+   :align: center
+
 
 

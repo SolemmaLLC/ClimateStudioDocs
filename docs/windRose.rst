@@ -1,46 +1,29 @@
 Wind Rose
 ================================================
+The wind rose tab generates 2D and 3D wind rose diagrams, which plot the frequency of wind by speed and direction.
 
-2D Wind Rose
-----------------------------------------------------
-
-The Wind Rose diagram displays a radial bar chart showing the occurrence frequency of wind speed across all directions. 
-
-.. figure:: images/BostonLoganIntLArpt_WindRose.png
+.. figure:: images/result_panelWindRose.png
    :width: 900px
    :align: center
+   
+You can rescale the radial axis by moving your cursor near the North label ("N") at the top of the plot. Small +/- buttons will appear (7) that increment or decrement the range. You can also toggle between 10 and 30 degree bin sizes (8). To change the falsecolor palette, hover over the legend and click the gray arrow (9), which opens an options dialog. Use the menu (5) to change units, or `export`_ the 2D plot to PNG or PDF.
 
-4 `filters`_ can be applied to Wind Speed/Direction Data: 
+.. _export: exportPlots.html
 
-- **Days** of the year as a range (wraps around)
-- **Hours** of the day as a range (wraps around)
-- **Wind speed** as a range
-- **Temperature** as a range
+A key feature of the wind rose diagram is its filtering capacity. To isolate a particular set of conditions, use the range sliders at the top of the panel, which constrain the data by date (1), hour (2), wind speed (3) and dry bulb temperature (4). The date and hour sliders are *wrappable*, meaning the start and end anchors can be dragged past one another to select winter or nighttime periods. For example, one can quickly isolate daytime winter conditions in which high winds are undesirable for thermal comfort. For the Boston weather file, these winds are coming predominantly from the West/Northwest:
 
-.. figure:: images/windspeed_range.jpg
-   :width: 900px
-   :align: center
-
-The 2D Wind Rose diagram is customizable: 
-
-- **Y-axis** increase / decrease of bar chart maximum
-- **10 - 30 degrees** bin switching
-- **Color** gradient selection
-
-.. figure:: images/windrose-customizable.jpg
+.. figure:: images/result_panelWindRoseFilter.png
    :width: 900px
    :align: center
 
 
-.. _filters: doubleSliderFilters.html
+To visualize the wind rose in the Rhino viewport, check the 3d wind rose option (3). Use the Set Position button to relocate the center of the wind rose, and the inner and outer radii to adjust its size.
 
-3D Wind Rose
-----------------------------------------------------
-
-.. figure:: images/3dWindRose.jpg
+.. figure:: images/result_panelWindRose3d.png
    :width: 900px
    :align: center
+   
 
-Turn on the 3D wind rose by clicking on the **checkbox**. The filters, y-axis maximum, 10-30 degree bins, and color palette will mirror that of the 2D wind rose. 
-
-Click on button **"Set Position"** to re-set the center of the 3D wind rose. Change the Inner Radius and Outter Radius of the windrose by typing in the text boxes. 
+.. figure:: images/viewportWindRose.png
+   :width: 900px
+   :align: center
