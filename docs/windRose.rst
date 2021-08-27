@@ -6,7 +6,7 @@ The wind rose tab generates 2D and 3D wind rose diagrams, which plot the frequen
    :width: 900px
    :align: center
    
-You can rescale the radial axis by moving your cursor near the North label ("N") at the top of the plot. Small +/- buttons will appear (7) that increment or decrement the range. You can also toggle between 10 and 30 degree bin sizes (8). To change the falsecolor palette, hover over the legend and click the gray arrow (9), which opens an options dialog. Use the menu (5) to change units, or `export`_ the 2D plot to PNG or PDF.
+You can rescale the radial axis by moving your cursor near the North label ("N") at the top of the plot. Small +/- buttons will appear (7) that increment or decrement the range. You can also toggle between 10 and 30 degree bin sizes (8). To change the falsecolor palette, hover over the legend and click the gray arrow (9), which opens an options dialog. Use the menu (5) to change units or `export`_ the 2D plot to PNG or PDF.
 
 .. _export: exportPlots.html
 

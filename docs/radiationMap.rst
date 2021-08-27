@@ -1,67 +1,66 @@
 
 Radiation Map
 ================================================
-ClimateStudio supports the calculation of annual or monthly solar radiation falling on select surfaces in the scene. The simulation uses direct and diffuse irradiation values from the EPW weather file (selected under location) and bins solar radiation coming from different parts of the sky for every month of the year. The underlying monthly cumulative skies are then used as the reference sky under which solar radiation levels are being calculated. The purpose of a solar radiation calculation varies from identifying suitable positions for placing solar cells or to design a static shading system. These simulations complement `Direct Shading`_ studies. 
+ClimateStudio supports the calculation of annual and monthly solar radiation falling on select surfaces in the scene. (For hourly timesteps, see the `Grasshopper Workflows`_.) The simulation uses sun and sky radiances derived from weather-file data, which represent historically typical meteorological conditions. The purpose of a solar radiation calculation varies from identifying suitable positions for placing solar cells to designing a static shading system. These simulations complement `Direct Shading`_ studies. 
 
+.. _Grasshopper Workflows: grasshopperTemplates.html
 .. _Direct Shading: sunPath.html
 
-To set up a radiation map, the following subpanel inputs are required:
-
+Simulation Setup
+-----------------------
 .. figure:: images/workflowPanel_radmap.png
    :width: 900px
    :align: center
+   
+To prepare a model for simulation, work your way through the three subpanels labeled 1-3 in the figure above.
 
-- `Location`_ 
-
-- `Assign Materials`_
-
-- `Add Analysis Surfaces`_
+| 1 - `Location`_
+| 2 - `Materials`_
+| 3 - `Analysis Surfaces`_ 
 
 .. _Location: Location.html
 
-.. _Assign Materials: assignMaterials.html
+.. _Materials: assignMaterials.html
 
-.. _Add Analysis Surfaces: addAnalysisSurfaces.html 
-
-Once all required input subpanels have been populated, a simulation is invoked by pressing the start button. 
-
-.. figure:: images/StartButton.jpg
-   :width: 300px
-   :align: center
-
-ClimateStudio uses a `progressive path-tracing`_ version of the Radiance raytracer to simulate radiation maps distributions. While a simulation is in progress, new iterations are added to the simulation results until the user-specified number of passes has been reached.  Details on the simulation settings can be found in the `Path-tracing Settings Subpanel`_. The Radiation Map workflow has some additional options under simulation settings.  
-
-.. _Path-tracing Settings Subpanel: path-tracingSettings.html
-.. _progressive path-tracing: https://www.solemma.com/Speed.html
+.. _Analysis Surfaces: addAnalysisSurfaces.html
 
 
-	**Low/High outdoor temperature threshold [oC]:** Defines a results bin that only considers solar radiation for hours when the ambient temperature is above/below the threshold temperature.
-	
-	
+Once all required inputs have been populated, a simulation is invoked by pressing the start button (4). ClimateStudio uses a `progressive path-tracing`_ version of the Radiance raytracer to simulate irradiance distributions. While a simulation is in progress, traced light paths accumulate until the user-specified number of passes has been reached. Details on the simulation settings can be found by opening the `settings dialog`_ (5). For radiation maps, the dialog includes **low/high outdoor temperature thresholds**, which can be used to bin radiation occurring during hot or cold hours throughout the year.
+
+.. _progressive path-tracing: https://www.solemma.com/blog/why-is-climatestudio-so-fast
+.. _settings dialog: path-tracingSettings.html	
 
 
 Simulation Results
 -------------------------
-Upon completion of the first pass, the simulation automatically switches into the `ClimateStudio results panel.`_ 
+Upon completion of the first simulation pass, or upon loading a saved result, a falsecolor preview will appear in the Rhino viewport, showing cumulative radiation values for the selected analysis surfaces:
 
-.. _ClimateStudio results panel.: results.html
-
-The image below shows a radiation map analysis of an urban setting. All scene elements that have been selected as analysis surfaces and are colored according to the annual solar radiation that they are exposed to in the viewport on the left. On the right, monthly radiation values for the sensor selected in the viewport are shown. The table on the lower right provides summary statistics for all selected surfaces. 
-
-.. figure:: images/RadiationMapExample.png
+.. figure:: images/result_viewportRadMap.png
    :width: 900px
    :align: center
 
-Annual and monthly radiation levels can be filtered as follows:
+The `results panel`_ will show a monthly data plot, table, and viewport legend, as follows:
 
-- **Total/Direct/Indirect Solar Exposure:** Toggle to show all solar radiation incident on a sensor or just direct or diffuse contributions.
-	
-- **All Hours/Warm Hours/ Cold Hours:** All or a subset of hours are selected based on the threshold temperatures set under simulation settings (see above).
+.. _results panel: results.html
 
-- **All Surfaces:** By default mean radiation levels are shown for all surfaces. Results for an individual sensor can be selected by hovering over the viewport.
+.. figure:: images/result_panelRadMap.png
+   :width: 900px
+   :align: center
 
+- The **Header** includes the result name, a CSV export (7), and an information dialog (6), which provides an accounting of simulation inputs.
 
-**Tips:** 
-	- In order to get radiation values for individual roof surfaces, the building breps have to be “exploded” in Rhino and roof surfaces have to be defined as individual surfaces. 
-	- All results may be exports via the CSV export menue on the top right of the radiation map results.
+.. _report generator: #reporting
 
+- The **Filters** allow binning radiation by type or temperature. The **Radiation Type Filter** (8) lets you toggle between *total*, *direct*, or *indirect* solar exposure. Direct radiation is that coming directly from the sun, without scattering or reflection. The **Temperature Filter** (9) lets you isolate hours where the outdoor temperature is above or below the high and low temperature thresholds set prior to the run. The filters determine the data displayed in both the viewport and the monthly graph.
+
+.. _report generator: #reporting
+
+- The **Monthly Graph** shows mean cumulative exposure data for each month of the year. By default these are area-weighted averages for all analysis surfaces, but a subset of surfaces can be isolated using the Surface Table. Data for an individual sensor can be displayed by hovering over the sensor in the viewport. The graph can be exported to PNG using the dropdown menu (10).
+
+.. _report generator: #reporting
+
+- The **Surface Table** lists the mean total and normalized solar exposure, as well as min and max sensor values, for each analysis surface. Selecting surfaces by filtration (11) or row selection isolates their preview in the monthly graph and the Rhino viewport, and updates the statistics in the "Totals" row at the bottom of the table.
+
+.. _report generator: #reporting
+
+- The **Viewport Settings** bar contains a viewport preview legend and settings menu (12), which provides options for customizing the falsecolor display.

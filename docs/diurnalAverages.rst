@@ -2,11 +2,12 @@
 Diurnal Averages
 ================================================
 
-The Diurnal Averages plot displays monthly averages of temperature and radiation across the 24 hours of the day. It shows what a "typical day" looks like in a particular month. 
+The Diurnal Averages tab displays monthly averages of temperature and radiation across the 24 hours of the day. It shows what a "typical day" looks like in a particular month. 
 
-.. figure:: images/BostonLoganIntLArpt_DiurnalAverages.png
+.. figure:: images/result_panelDiurnalAvg.png
    :width: 900px
    :align: center
 
-- **Hovering** on specific data points will show precise data
-- **Clicking** on the rectangle of legend color blocks can hide/display the respective category of data
+Hover over specific data points to show precise values. To hide or show data series, click on the legend color swatches in the upper right. Use the menu (1) to change units or `export`_ the plot to PNG or PDF.
+
+.. _export: exportPlots.html
