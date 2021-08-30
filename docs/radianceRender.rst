@@ -1,33 +1,33 @@
 
 Radiance Render
 ================================================
+The ClimateStudio Radiance Render workflow supports the creation of physically based renderings using a path tracing version of the `Radiance`_ raytracer.
+
+.. _Radiance: https://www.radiance-online.org/
+
+Simulation Setup
+-----------------------
 .. figure:: images/workflowPanel_render.png
    :width: 900px
    :align: center
 
-The ClimateStudio Radiance Render workflow supports the creation of physically based renderings using a path tracing version of the `Radiance`_ light backwards raytracer. The workflow relies on five subpanels: 
+To prepare a model for rendering, work your way through the five subpanels labeled 1-5 in the figure above.
 
-.. _Radiance: https://www.radiance-online.org/
-
-- `Location`_ 
-
-- `Sky`_
-
-- `Assign Materials`_
-
-- `Add Luminaires`_
-
-- `Add Tubular Daylighting Devices`_
+| 1 - `Location`_
+| 2 - `Sky`_
+| 3 - `Materials`_
+| 4 - `Luminaires`_ (optional)
+| 5 - `Tubular Daylighting Devices`_ (optional)
 
 .. _Location: Location.html
 
 .. _Sky: sky.html
 
-.. _Assign Materials: assignMaterials.html
+.. _Materials: assignMaterials.html
 
-.. _Add Luminaires: addLuminaires.html
+.. _Luminaires: addLuminaires.html
 
-.. _Add Tubular Daylighting Devices: addTDDs.html
+.. _Tubular Daylighting Devices: addTDDs.html
 
 If you have not done any lighting simulations in ClimateStudio, it is recommended that you go through the `Lighting Model Setup video tutorial`_ (5 minutes). The Rhino file used in the tutorial is available for `download.`_
 
@@ -35,43 +35,66 @@ If you have not done any lighting simulations in ClimateStudio, it is recommende
 
 .. _download.: https://climatestudiodocs.com/ExampleFiles/CS_Two_Zone_Office.3dm
 
-Once all required input subpanels have been populated, the rendering panel is invoked via the “Render Window” button. The panel consists of a render view on the left and the control settings on the right.
+Once all required inputs have been populated, click the Render Window button (6), which opens a form with a render view on the left and camera settings on the right. The render view displays renderings that are complete or in progress, so this area will remain blank until the Start button is clicked.
 
-.. figure:: images/radianceRender.jpg
-   :width: 300px
+.. figure:: images/result_renderWindow.png
+   :width: 900px
    :align: center
 
-The camera settings offer a series of input parameters.
+Camera Setup
+^^^^^^^^^^^^^^^^^^^^^^
 
-**Projection:** Radiance supports a series of camera models that determine how a rendering of the surrounding scene is projected onto a two-dimensional image. For more details consult the `Radiance rpict manual pages.`_ The “Rotating Angular Fisheye” projection is the default camera setting. It displays a camera view with a 180 degree opening angle while simulating a 360 degree view. This allows users to rotate the view while the rendering is being generated.
+- **Projection:** Radiance supports a series of lens types that determine how a the surrounding scene is projected onto a two-dimensional image. For more details consult the `Radiance rpict manual pages.`_ The default projection -- the *Rotating Fisheye* -- is a custom type available only in ClimateStudio. For a given camera location, it generates a 360-degree panorama, which is remapped onto an oriented 180-degree angular fisheye on the screen in real time. This allows the user to rotate the view direction without having to start a new rendering. 
 
 .. _Radiance rpict manual pages.: https://floyd.lbl.gov/radiance/man_html/rpict.1.html
 
-**Position:** Corresponds to the location of the camera in the scene. 
+- **Position:** Corresponds to the location of the camera in the scene. 
 
-**Rotation and Tilt:** Controls the direction in which the camera is facing.
+.. _Radiance: https://www.radiance-online.org/
 
-**Width/ Height (pixels):** Sets the pixel resolution of the rendering.
+- **Rotation and Tilt:** Controls the direction the camera is facing. Rotation is measured in degrees counterclockwise from East, and Tilt in degrees above or below the horizon.
 
-**Lens Length (mm):** Only applies to select projections and sets the opening angle of the camera, which in turn determines the extent of the scene shown on the rendering.
+.. _Radiance: https://www.radiance-online.org/
 
-Radiance renderings are in so-called high dynamic range (HDR) format. An HDR image contains the regular red, green and blue color channels for each pixel as any regular image format plus an absolute luminance level per pixel that determines its absolute brightness. The benefit of HDR images is that exposure levels can be re-adjusted to highlight different regions of an image. The scheme input displays images either in full color (RGB) or in grayscale. A falsecolor display mode is also supported. 
+- **Width/ Height (pixels):** Sets the pixel resolution of the image.
 
-In order to identify pixels that may act as glare sources, all pixels above a user defined value (by default 2000 cd/m2) can be colored separately.    
+.. _Radiance: https://www.radiance-online.org/
 
-Start Rendering
----------------------
-Once all required input subpanels have been populated, a simulation is invoked by pressing the start button. ClimateStudio uses a `progressive path-tracing`_ version of Radiance so the viewport rendering is updated after each simulation pass. Details on the simulation settings can be found in the `Path-tracing Settings Subpanel.`_
+- **Lens Length (mm):** Only applies to perspective projections. Sets the opening angle of the camera, which in turn determines the extent of the scene shown on the rendering.
 
+Position and view direction may be set manually, or by using the "Pick" button, which allows setting the camera using a saved Rhino view or ClimateStudio sensor. Once the camera is set, a rendering is invoked by pressing the Start button. ClimateStudio uses a `progressive path-tracing`_ version of the Radiance raytracer. While a rendering is in progress, pixels are sampled until the user-specified number of samples has been reached, or the Stop button is pressed. Details on the simulation settings can be found by clicking the `Settings`_ button.
+ 
 .. _progressive path-tracing: https://www.solemma.com/blog/why-is-climatestudio-so-fast
+.. _Settings: path-tracingSettings.html
 
-.. _Path-tracing Settings Subpanel.: path-tracingSettings.html
+Simulation Results
+------------------------
 
-While the simulation is running, the user may adjust rendering Exposure, Gamma correction and Scheme. For the rotating fisheye projection, ClimateStudio calculates the daylight glare probability (DGP) for the current view and classifies it as either imperceptible, perceptible, disturbing or intolerable glare. Details can be found under the `Annual Glare`_ workflow.
+.. figure:: images/RadianceRender.gif
+   :width: 900px
+   :align: center
+
+Radiance renderings are high dynamic range (HDR) images. For each pixel, an HDR image contains red, green, and blue color channels similar to a traditional bitmap, plus a luminance value that determines the pixel's absolute brightness. Because it contains absolute luminances, an HDR image can record physical lighting conditions and serve as the basis for predicting human visual comfort responses, which low-dynamic range (LDR) images cannot. Another benefit of HDR images is that exposure levels can be re-adjusted to highlight different regions of the image in post-processing. 
+
+The **Image Display** section contains settings responsible for converting the HDR image into the LDR representation that appears on the screen:
+
+- **Scheme** determines the type of mapping. Options include RGB and Greyscale, which mimic the response of a traditional photographic film, or Falsecolor, which maps luminance values onto a color scale.
+
+.. _Settings: path-tracingSettings.html
+
+- **Exposure** and **Gamma** work in concert to determine the brightness of pixels under RGB or Greyscale mapping. Exposure is a scalar that adjusts the overall brightness of the displayed image, while Gamma is a parameter that describes the nonlinearity of the tone scale. A gamma of 2.2 is a reasonable default for mimicking the power responses of photographic film and the human eye.
+
+.. _Settings: path-tracingSettings.html
+
+- **Glare Pixels** may be enabled to flag all pixels above a user-defined luminance (by default 2000 cd/m2) with a distinctive color.
+
+Luminance values for individual pixels or rectangular regions may be tagged by clicking or clicking-and-dragging (respectively) over the image. For rotating fisheye projections, *right* clicks are used (to distinguish from rotation); otherwise, left clicks are used.
+
+For the rotating fisheye projection, ClimateStudio calculates the daylight glare probability (DGP) for the current view and classifies it as either imperceptible, perceptible, disturbing or intolerable. Details can be found under the `Annual Glare`_ workflow.
 
 .. _Annual Glare: annualGlare.html
 
-Once the simulation has been stopped, the resulting rendering can be saved within the ClimateStudio project or exported in a variety of formats.
+Once the simulation has been stopped, the rendering can be saved as a ClimateStudio result file and/or exported to HDR or LDR image formats.
 
 
 

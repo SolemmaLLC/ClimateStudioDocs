@@ -43,6 +43,7 @@ The Getting Started section provides a quick overview a ClimateStudio interface.
 .. toctree::
    :maxdepth: 1
    :caption: Results
+   :titlesonly:
   
    Results Panel<docs/results.rst>
    
