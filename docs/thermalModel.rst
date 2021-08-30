@@ -1,5 +1,5 @@
 
-Thermal Model
+Thermal Analysis
 ================================================
 ClimateStudio supports multi zone thermal simulations using the US Department of Energy’s `EnergyPlus`_ whole building simulation program. The workflow has two simulation subpanels plus a detailed *Manage Library* menu and *EnergyPlus Simulation Settings.*
 
@@ -9,17 +9,23 @@ ClimateStudio supports multi zone thermal simulations using the US Department of
    :width: 900px
    :align: center
    
+
+Sub-panels:
+
 - `Location`_ 
 
-- `Add Objects`_
+- `Thermal Model`_
+
+Menus:
 
 - `Manage Library Menu`_
 
 - `EnergyPlus Simulation Settings`_
 
+
 .. _Location: Location.html
 
-.. _Add Objects: addObjects.html
+.. _Thermal Model: addObjects.html
 
 .. _Manage Library Menu: manageLibrary.html 
 
