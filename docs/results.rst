@@ -1,9 +1,9 @@
 
 Results Panel
 ================================================
-Simulation results in ClimateStudio are saved as files with the extension **CSR**. The Results Panel provides an interface for loading CSR files and displaying their contents. When a file is loaded into the table and selected, its contents are shown in the Selected Result Panel below (and, if applicable, the Rhino viewport):
+Simulation results in ClimateStudio are saved as files with the extension **CSR**. The Results Panel provides an interface for loading CSR files and displaying their contents. When a file is loaded into the table and selected, its contents are shown in the Selected Result region below (and, if applicable, the Rhino viewport):
 
-.. figure:: images/resultsPanel.png
+.. figure:: images/result_panelResults.png
    :width: 900px
    :align: center
 
