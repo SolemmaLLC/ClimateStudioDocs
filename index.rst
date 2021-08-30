@@ -50,10 +50,12 @@ The Getting Started section provides a quick overview a ClimateStudio interface.
    
 .. toctree::
    :maxdepth: 1
-   :caption: Rating Systems
+   :caption: Standards and Rating Systems
    
-   LEED<docs/LEED.rst>
    BREEAM<docs/BREEAM.rst>
+   EN 17037<docs/EN17037.rst>
+   LEED<docs/LEED.rst>
+   
    
    
 .. toctree::

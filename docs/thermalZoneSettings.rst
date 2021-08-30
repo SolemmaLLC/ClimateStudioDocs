@@ -60,7 +60,7 @@ To visualize/edit a schedule, left-click on the schdule name to open the `Schedu
 
 
 Conditioning
------------
+----------------------
 Heating, Cooling, Humidity, and Ventilation Controls are all under the Conditioning tab. 
 
 

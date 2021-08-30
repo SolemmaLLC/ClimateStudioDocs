@@ -54,5 +54,6 @@ Daylight availability results vary depending on the sub-workflow selected prior 
    LEED v4 Option 2<daylightLEEDOpt2.rst>
    BREEAM UK/Intl 4a/c<daylightBREEAM4a.rst>
    BREEAM UK/Intl 4b<daylightBREEAM4b.rst>
+   EN 17037<daylightEN17037.rst>
    Daylight Factor<daylightFactor.rst>
    Custom<daylightCustom.rst>
