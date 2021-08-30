@@ -1,5 +1,4 @@
-
-Add Objects
+Thermal Model
 ================================================
 .. figure:: images/AddObjects.jpg
    :width: 900px
@@ -10,6 +9,15 @@ This subpanel is used to build up a multi-zone EnergyPlus model. ClimateStudio s
 .. figure:: images/addObjects.png
    :width: 200px
    :align: center
+
+These Icons from left to right represent: 
+
+   Zone
+   Exterior Window (openings to outside)
+   Interior Windows (openings between zones)
+   Shading
+   Ground Surfaces
+   Adiabatic Surfaces. 
 
 Thermal Zones
 ----------------
@@ -81,18 +89,25 @@ Once all windows have been selected, the Windows dialogue appears.
 Under **Ventilation Settings,** the user can specify whether a window is operable for natural ventilation purposes, the fraction of the window area that is operable and at what indoor zone temperature the window will be opened. 
 
 .. figure:: images/addObjects9.png
-   :width: 900px
+   :width: 500px
    :align: center
 
 **Window Frame:** By default, EnergyPlus assumes that the thermal properties of a glazing unit extend across the rough opening of the window. To consider the thermal properties of a frame, its outer frame width and U value can be set to account for heat losses across the frame.
 
 **Shading System:** Dynamic shading systems can be modeled by setting a shading plus shading control. The schedule determines when the control is being activated throughout the year.  
 
-Once all window surfaces have been selected, they are added to the thermal zone object table and are marked as turquoise in the viewport.
+Once all window surfaces have been selected, they are added to the thermal zone object table and are marked as turquoise in the viewport. If the window geometry is valid and is placed on a surface of a zone, it will appear as a child object of that surface of the zone. 
 
 .. figure:: images/addObjects10.png
    :width: 900px
    :align: center
+
+If the window geometry cannot be assigned to a zone-surface, it will be considered to be an invalid object and will be outlines in red. 
+
+.. figure:: images/addObjects15.png
+   :width: 900px
+   :align: center
+
 
 Shading
 --------------
@@ -123,14 +138,4 @@ Ground
 	If a surface is defined as `ground`, it is assumed that it touches ground at the constant monthy temperature set under `Advanced EnergyPlus settings`_. Ground surfaces are colored in green. Please note that nearly every thermal model needs ground surfaces as the building otherwise floats above the ground as if on stilts.
 
 .. _Advanced EnergyPlus settings: EnergyPlus.html	
-
-Ground FC
-	If a surface is defined as `ground FC`, it is assumed that it touches if uses the so-called FC method from the ASHRAE Handbook of Fundamental as explained in the `EnergyPlus Engineering Reference`_.   
-	
-.. _EnergyPlus Engineering Reference: https://bigladdersoftware.com/epx/docs/8-7/engineering-reference/ground-heat-transfer-calculations-using-c.html	
-
-
-Ground in KIVA (Grasshopper only)
-	If a surface is assigned a 'KIVA' boundary condition object, it uses the KIVA source ground heat transfer calculation tool in EnergyPlus as documented under
-	https://bigladdersoftware.com/epx/docs/8-7/engineering-reference/ground-heat-transfer-calculations-using-kiva.html and https://kiva.readthedocs.io/en/stable/.
 
