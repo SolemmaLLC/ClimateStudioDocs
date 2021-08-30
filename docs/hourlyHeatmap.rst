@@ -1,10 +1,15 @@
 
 Hourly Heatmap
 ================================================
+The Hourly Heatmap tab plots weather data using a gridded falscolor map, which displays a data cell for every hour of the year. Hours of day are plotted along the y-axis, and days of year along the x-axis.
 
-The Hourly Heatmap plot shows every single hour of the year by color for a given data set. 
+.. figure:: images/result_panelHeatmap.png
+   :width: 900px
+   :align: center
 
-It supports the following data: 
+To isolate time periods in the weather file, use the range sliders at the top of the panel, which constrain the data by date (1) and hour (2). The sliders are *wrappable*, meaning the start and end anchors can be dragged past one another to select winter or nighttime periods. Use the display settings (3) to change the falsecolor scale, and the menu (5) to change units or `export`_ the plot to PNG or PDF. The metric dropdown (4) lets you select among the following parameters:
+
+.. _export: exportPlots.html
 
 - **Dry Bulb Temperature**
 - **Relative Humidity**
@@ -12,27 +17,10 @@ It supports the following data:
 - **Direct Normal Radiation**
 - **Diffuse Horizontal Radiation**
 - **Global Horizontal Radiaion**
-- **UTCI** including filters for with/without wind protection, and with/without sun shading
+- **UTCI** 
 
-.. figure:: images/BostonLoganIntLArpt_HourlyHeatmap.png
+UTCI, or Universal Thermal Climate Index, measures the heat stress on the human body induced by a set of climatic conditions -- including air temperature, humidity, wind, and radiation. The metric includes filters for wind protection and sun shading, which remove the impact of wind and direct solar radiation, respectively, for each timestep in the weather file:
+
+.. figure:: images/result_panelHeatmapUTCI.png
    :width: 900px
    :align: center
-
-Clicking on the drop-down menu switches between different data sets. 
-
-Clicking on the button to the left of the legend switches the false color used for data visualization. 
-
-Changing the min/max number above the legend will update the graph's colors. 
-
-.. figure:: images/hourly_heatmap_dorpdown.jpg
-   :width: 900px
-   :align: center
-
-
-Two `filters`_ may be applied to the Hourly Heatmap: 
-
-- **Days** of the year as a range (wraps around)
-- **Hours** of the day as a range (wraps around)
-
-
-.. _filters: doubleSliderFilters.html

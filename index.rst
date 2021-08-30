@@ -25,46 +25,34 @@ The Getting Started section provides a quick overview a ClimateStudio interface.
    Learning ClimateStudio<docs/learningClimateStudio.rst>
    
 .. toctree::
-   :maxdepth: 3
-   :caption: ClimateStudio Workflows
+   :maxdepth: 1
+   :caption: Workflows
+   :titlesonly:
    
    Site Analysis<docs/siteAnalysis.rst>
    Point-in-Time Illuminance<docs/point-in-timeIlluminance.rst>
    Daylight Availability<docs/daylightAvailability.rst>
    Annual Glare<docs/annualGlare.rst>
    Radiance Render<docs/radianceRender.rst>
-   Thermal Model<docs/thermalModel.rst>
+   Thermal Analysis<docs/thermalModel.rst>
    Radiation Map<docs/radiationMap.rst>
+   View Analysis<docs/viewAnalysis.rst>
    Grasshopper Workflow Templates<docs/grasshopperTemplates.rst>
    
-   
-.. toctree::
-   :maxdepth: 3
-   :caption: Subpanels
-   
-   Location<docs/Location.rst>
-   Assign Materials<docs/assignMaterials.rst>
-   Add Analysis Surfaces<docs/addAnalysisSurfaces.rst>
-   Climate Charts<docs/climateCharts.rst>
-   Add Luminaires<docs/addLuminaires.rst>
-   Add Areas<docs/addAreas.rst>
-   Sky<docs/sky.rst>
-   Add Blinds<docs/addBlinds.rst>
-   Add Tubular Daylighting Devices<docs/addTDDs.rst>
-   Add Objects<docs/addObjects.rst>
-   Path-tracing Settings<docs/path-tracingSettings.rst>
-   Manage Library Menu<docs/manageLibrary.rst>
-   EnergyPlus Simulation Settings<docs/EnergyPlus.rst>
-   Thermal Zone Settings<docs/thermalZoneSettings.rst>
-   Schedule Editor <docs/ScheduleEditor.rst>
-   CS Settings <docs/CS_Settings.rst>
 
 .. toctree::
-   :maxdepth: 3
+   :maxdepth: 1
    :caption: Results
   
    Results Panel<docs/results.rst>
-   Viewport Display<docs/ViewportDisplay.rst>
+   
+   
+.. toctree::
+   :maxdepth: 1
+   :caption: Rating Systems
+   
+   LEED<docs/LEED.rst>
+   BREEAM<docs/BREEAM.rst>
    
    
 .. toctree::

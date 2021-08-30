@@ -3,30 +3,32 @@ Point-in-Time Illuminance
 ================================================
 This workflow supports the calculation of illuminance distributions for electric lighting and/or daylight at specific moments in time.
 
-.. figure:: images/Point-in-TimeIlluminace_GUI.png
+Simulation Setup
+-----------------------
+.. figure:: images/workflowPanel_illum.png
    :width: 900px
    :align: center
 
-The workflow relies on six subpanels: 
+To prepare a model for simulation, work your way through the six subpanels labeled 1-6 in the figure above.
 
-- `Location`_ 
-- `Sky`_
-- `Assign Materials`_
-- `Add Luminaires`_
-- `Add Areas`_ 
-- `Add Tubular Daylighting Devices`_
+| 1 - `Location`_
+| 2 - `Sky`_
+| 3 - `Materials`_
+| 4 - `Luminaires`_ (optional)
+| 5 - `Occupied Areas`_ 
+| 6 - `Tubular Daylighting Devices`_ (optional)
 
 .. _Location: Location.html
 
 .. _Sky: sky.html
 
-.. _Assign Materials: assignMaterials.html
+.. _Materials: assignMaterials.html
 
-.. _Add Luminaires: addLuminaires.html
+.. _Luminaires: addLuminaires.html
 
-.. _Add Areas: addAreas.html
+.. _Occupied Areas: addAreas.html
 
-.. _Add Tubular Daylighting Devices: addTDDs.html
+.. _Tubular Daylighting Devices: addTDDs.html
 
 
 If you have not done any lighting simulations in ClimateStudio, it is recommended that you initially go through the `Lighting Model Setup`_ video tutorial (5 minutes). 
@@ -36,29 +38,26 @@ The Rhino file used in the tutorial is available for `download`_.
 .. _download: https://climatestudiodocs.com/ExampleFiles/CS_Two_Zone_Office.3dm
  
 
-Once all required input subpanels have been populated, a simulation is invoked by pressing the start button. 
-
-.. figure:: images/StartButton.jpg
-   :width: 300px
-   :align: center
-
-ClimateStudio uses a `progressive path-tracing`_ version of the Radiance raytracer to simulate illuminance distributions. While a simulation is in progress, traced light paths accumulate until the user-specified number of passes has been reached. Details on the simulation settings can be found in the `Path-tracing Settings Subpanel`_.
+Once all required inputs have been populated, a simulation is invoked by pressing the start button (7). ClimateStudio uses a `progressive path-tracing`_ version of the Radiance raytracer to simulate illuminance distributions. While a simulation is in progress, traced light paths accumulate until the user-specified number of passes has been reached. Details on the simulation settings can be found by opening the `settings dialog`_ (8).
  
-.. _progressive path-tracing: https://www.solemma.com/Speed.html
-.. _Path-tracing Settings Subpanel: path-tracingSettings.html
+.. _progressive path-tracing: https://www.solemma.com/blog/why-is-climatestudio-so-fast
+.. _settings dialog: path-tracingSettings.html
 
 Simulation Results
 ------------------------
-Upon completion of the first pass, the simulation automatically switches into the ClimateStudio results panel. 
-An overview of the results panel is provided `here`_. The image below shows the point-in-time illuminance results panel with an illuminance distribution 
-shown in the Rhino viewport to the left and overall statistics (mean and median illuminances) displayed on the right. The Rhino viewport results can be modified 
-using the `Viewport Display`_ editor. 
+Upon completion of the first pass, or upon loading a saved result, the `results panel`_ will show a dashboard with the mean and median illuminance for all simulated floor areas. 
 
-.. figure:: images/IlluminanceResults.jpg
+.. _results panel: results.html
+
+.. figure:: images/result_panelIllum.png
    :width: 900px
    :align: center
 
-.. _here: results.html
-.. _Viewport Display: ViewportDisplay.html
+At the top of the panel, an info dialog (9) reports simulation inputs, while a CSV export (10) saves results to an Excel-readable format. At the bottom, a legend and settings menu (11) provide options for customizing the falsecolor display, which is shown in the Rhino viewport:
+
+.. figure:: images/result_viewportIllum.png
+   :width: 900px
+   :align: center
+
 
 
