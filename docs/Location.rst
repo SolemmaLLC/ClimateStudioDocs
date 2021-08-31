@@ -1,50 +1,31 @@
 
 Location
 ================================================
-The location subpanel is used to specify the position of the site on earth by selecting the closest available typical meteorological year (TMY) weather file. 
-A TMY file contains hourly measured data for a variety of physical quantities that are required for an environmental performance analysis, 
-including direct and diffuse solar radiation, temperature and relative humidity levels as well as wind speed and direction.  
+The Location panel is used to specify the site's geolocation and weather data, based on the closest available weather file. ClimateStudio uses Typical Meteorological Year (TMY) weather files, which contain measured hourly data for a variety of physical quantities that are required for environmental performance analysis, including direct and diffuse solar radiation, temperature, relative humidity, and wind speed and direction.
 
-.. figure:: images/Location.jpg
+.. _EPW: https://energyplus.net/weather/simulation
+
+.. figure:: images/subPanel_location.png
    :width: 900px
    :align: center
+  
+To choose a weather file, click the Browse Files button (1), which launches a `Weather Browser`_ containing over 30,000 TMY files.
 
-**North Offset:** By default, North is along the positive y-axis. To adjust the North direction, use the slider or manually enter an angle.
+.. _Weather Browser: searchWeather.html
 
-**Show Compass:** Toggle to show the North arrow
-
-**Display size:** Changes the relative size of the North arrow compared to other scene objects
-
-
-The default site is the Boston, Logan International Airport. 
-To select another file, left-click on the file selector icon next to the name of the current TMY file. A `search dialog`_ should pop up. 
-
+The selected file will be used by ClimateStudio's simulation workflows when referencing weather conditions and sun angles. By default, ClimateStudio assumes the site's North arrow lies along Rhino's positive y-axis, but this can be adjusted using the **North Offset** control (2). A **compass** indicating the current direction will appear in the lower right corner of the Rhino viewport. It can be hidden (3) or resized (4).
+ 
 
 Climate Summary
 ----------------------------------------------------
-A summary of the climate selected is displayed on this page. Note that the accuracy of this summary entirely depends on the climate file selected. 
+Below the weather and compass settings is a climate summary table (5), which includes climate type classifications and typical/extreme heating and cooling design conditions for the selected weather file. Note that the accuracy of this summary depends entirely on the weather file's contents. 
 
-- **Koppen Climate Zone** is based on the **Köppen climate classification** which divides the climate into five main groups, then into various subgroups based on temperature and seasonal patterns. 
-- **ASHRAE climate zone** is based on **ASHRAE standard 169** which classifies climate data into nine climate zones, labeled 0 Extreme hot to 8 Extreme cold, based on annual heating and cooling degree days.
+- **Köppen Climate Zone** is based on the *Köppen climate classification*, which divides the climate into five main groups, then into various subgroups based on temperature and seasonal patterns. 
+- **ASHRAE climate zone** is based on *ASHRAE standard 169* which classifies climate data into nine climate zones, labeled 0 Extreme hot to 8 Extreme cold, based on annual heating and cooling degree days.
 - **Average annual temperature** is the annual average dry bulb temperature. 
-- **Annual total solar radiation** is the sum of global horizontal irradiance.  
-- **Coldest/Hottest Month** are calculated through the average dry bulb tempearture of each month. 
-- **Coldest/Hottest/Typical Week** are taken from the headers of the climate file. 
-- **Annual HDD/CDD** are **Heating Degree Days** and **Cooling Degree Days** which are calculated as the sum of the negative or positive difference between the target tempearture and the daily average dry bulb temperature. 
+- **Annual total solar radiation** is the cumilative global horizontal irradiation.  
+- **Coldest/Hottest Month** are calculated using the average dry bulb tempearture of each month. 
+- **Coldest/Hottest/Typical Week** are taken from the header of the climate file. 
+- **Annual HDD/CDD** are *Heating Degree Days* and *Cooling Degree Days* which are calculated as the sum of the negative or positive difference between the target tempearture and the daily average dry bulb temperature. 
 
-Click on the Menu button to **Copy Climate Summary Text to ClipBoard** or switch between **Unit Systems**
-
-Climate File Formats
-----------------------------------------------------
-ClimateStudio uses the widely used `EnergyPlus weather file format`_ (file extension EPW). EPW files are available for thousands of sites worldwide and can be downloaded from the following websites. 
-
-- `Department of Energy EPW files`_ 
-- `Climate.OneBuilding.org`_ 
-
-.. _EnergyPlus weather file format: https://energyplus.net/weather/simulation
-
-.. _Department of Energy EPW files: https://energyplus.net/weather
-
-.. _Climate.OneBuilding.org: http://climate.onebuilding.org/
-
-.. _search dialog: searchWeather.html
+To copy the climate summary to the clipboard or switch unit systems, use the menu (6).

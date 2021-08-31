@@ -1,21 +1,19 @@
 
 Sky
 ================================================
-.. figure:: images/Sky.jpg
+.. figure:: images/subPanel_sky.png
    :width: 900px
    :align: center
 
-The sky subpanel facilitates the specification of a single sky luminance distribution for either a `point-in-time illuminance`_
-calculation or a `Radiance Rendering`_. The sky condition can be set as follows:
+The Sky panel sets the sky luminance distribution for `point-in-time illuminance`_ calculations and `Radiance renderings`_. The sky condition can be set as follows:
 	
-	**Type:** The sky type determines the sky model being used such as the CIE clear, intermediate or overcast skies. In the case of the Perez all-weather sky 
-	model direct and diffuse irradiances are taken from the weather file for the date and time of day selected.
+	**Type:** Determines the sky model being used, such as the CIE Standard Clear, Intermediate or Overcast sky. In the case of the Perez all-weather sky model, direct and diffuse irradiances are drawn from the weather file based on the date and time selected.
 	
-	**Month, Day and Hour:** Set the date and time of day for which the sky luminance distribution should be calculated.
+	**Month, Day and Hour:** Sets the date and time of day for which the sky luminance distribution is calculated.
 	
-	**Ground Albedo:** Sets the diffuse reflectance of the lower hemisphere in the scene. If a ray leaves the scene through the lower hemisphere without hitting an explicitly model ground object, 
-	this value is being used to estimate the luminance of the ground which will vary with the prevailing sky condition.  A typical ground albedo 
-	is 20%. The user is encouraged to explicitly model any relevant nearby ground objects such as a street or lawn and to assign a specific material to these ground objects.
+	**Ground Albedo:** Sets the diffuse reflectance of the lower hemisphere. If a ray exits the scene through the lower hemisphere without hitting a scene object, this value is used to estimate the luminance of the ground under the given sky condition.  A typical ground albedo is 20%. The user is encouraged to explicitly model any nearby ground surfaces, such as sidewalks, roads, and lawns, and to assign appropriate materials to these layers.
+	
+	**Include Lambertian Ground Source:** This option enforces a constant luminance over the lower hemisphere based on the ground albedo and sky condition. It creates a distintive horizon line (appropriate for an observer near the ground), and improves the lower-hemisphere luminances returned by the native sky models, which are sometimes inaccurate. Enabling this option is recommended.
 	
 .. _point-in-time illuminance: point-in-timeIlluminance.html
-.. _Radiance Rendering: radianceRender.html
+.. _Radiance renderings: radianceRender.html
