@@ -2,7 +2,7 @@ Occupied Areas
 ================================================
 This panel is used to specify regularly occupied floor areas within a building. Many standards and green-building rating systems rely on the concept of regularly occupied areas when assessing access to daylight and views. Generally speaking, these areas are spaces that people occupy for significant periods of time -- e.g. more than an hour per person per day, according to the LEED v4 BD+C Reference guide. 
 
-In ClimateStudio, occupied areas are defined via reference surfaces. We recommend modeling these surfaces coincident with the finish floor, as separate objects on their own material-less layer. This allows precision in setting room boundaries independently from floor surfaces (which, depending on model construction, may span multiple rooms or slide beneath walls and columns). To define an occupied area, left-click the Add Area button (1) and select one or more reference surfaces.  
+In ClimateStudio, occupied areas are defined via reference surfaces. We recommend modeling these surfaces at the finish floor, as separate objects on their own material-less layer. This allows precision in setting room boundaries independently from floor surfaces (which, depending on model construction, may span multiple rooms or slide beneath walls and columns). To define an occupied area, left-click the Add Area button (1) and select one or more reference surfaces.  
 
 .. figure:: images/subPanel_areas.png
    :width: 900px
@@ -40,7 +40,7 @@ In order to be used by lighting simulation and view analysis workflows, occupied
 	
 .. _Custom: daylightCustom.html
 	
-Once the occupied areas have been created, they appear in the Rhino viewport and the Occupied Areas Table. The table provides statistics for all occupied areas in the model, as well as the ability to rename, tag, edit or delete them. For larger buildings, which may include hundreds of occupied areas, use of the *Tag* feature may prove useful for binning rooms by floor, program type, and/or orientation. Once tagged, groups of rooms can be isolated using the filter functions (2) above the table. The sensor grid display style can be edited using the viewport settings dialog (3).
+Once the occupied areas have been created, they appear in the Rhino viewport and the Occupied Areas Table. The table provides statistics for all occupied areas in the model, as well as the ability to rename, tag, edit or delete them. For larger buildings, which may include hundreds of occupied areas, use of the *Tag* feature may prove useful for binning rooms by floor, program type, and/or orientation. Once tagged, groups of rooms can be isolated using the filter functions (2) above the table. The sensor grid display style can be edited using the viewport settings dropdown (3).
 	
 .. figure:: images/subPanel_areasTable.png
    :width: 900px
