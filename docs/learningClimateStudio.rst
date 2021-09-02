@@ -17,7 +17,8 @@ Begin with the 3 minute `Interface Overview`_. After that you are ready to explo
 - `Daylight Availability`_
 - `Annual Glare`_
 - `Radiance Render`_
-- `Thermal Model`_ 
+- `Thermal Analysis`_ 
+- `View Analysis`_ 
 
 .. _Site Analysis: siteAnalysis.html 
 
@@ -31,7 +32,9 @@ Begin with the 3 minute `Interface Overview`_. After that you are ready to explo
 
 .. _Radiance Render: radianceRender.html
 
-.. _Thermal Model: thermalModel.html
+.. _Thermal Analysis: thermalModel.html
+
+.. _View Analysis: viewAnalysis.html
 
 .. _GH definitions: grasshopperTemplates.html 
 

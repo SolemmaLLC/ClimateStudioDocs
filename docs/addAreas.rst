@@ -28,7 +28,11 @@ In order to be used by lighting simulation and view analysis workflows, occupied
 	
 	**Sensor Spacing:** Distance between sensors in model units. For the LEED Daylight credit, spacing must be no more than 2 feet (0.6096 meters). Reducing spacing increases the number of sensors, which increases simulation time.
 	
-	**Sensor Inset:** Distance of sensors from the edge of the surface area. Some standards and lighting measurement specifications invoke minimum sensor distance ranges from walls and windows. The *target* inset determines the initial placement of sensors relative to the untrimmed surface edge. The *minimum* inset removes any sensors too close to the trimmed surface edge. The minimum should be less than the target to avoid cropping the first row of sensors. The default settings (18 and 12 inches respectively) generally maintain a 1-2 foot swath around the room perimeter sensor free, per LEED requirements.
+	**Sensor Inset:** Distance of sensors from the edge of the surface area. Some standards and lighting measurement specifications invoke minimum sensor distance ranges from walls and windows. The *target* inset determines the initial placement of sensors relative to the untrimmed surface edge. The *minimum* inset removes any sensors too close to the trimmed surface edge. The minimum should be less than the target to avoid cropping the first row of sensors. The default settings (18 and 12 inches respectively) aim to maintain a 1-2 foot swath around the room perimeter sensor free, per LEED requirements.
+	
+	.. figure:: images/subPanel_areaInset.png
+	   :width: 900px
+           :align: center
 	
 	**Workplane Offset:** Distance between the reference surface and the sensor plane. Assuming the reference surface is placed at the finish floor, this distance should be the height of desks or other work surfaces (30 inches by default).
 	
