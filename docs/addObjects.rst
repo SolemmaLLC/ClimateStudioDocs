@@ -4,7 +4,7 @@ Thermal Model
    :width: 900px
    :align: center
 
-This subpanel is used to build up a multi-zone EnergyPlus model for `Thermal Analysis`_. ClimateStudio supports the following geometric objects: Zones, Windows, Adiabatic/Ground and Shading. The icons (1) from left to right represent: 
+This panel is used to build up a multi-zone EnergyPlus model for `Thermal Analysis`_. ClimateStudio supports the following geometric objects: Zones, Windows, Adiabatic/Ground and Shading. The icons (1) from left to right represent: 
 
 .. _Thermal Analysis: thermalModel.html
 
@@ -17,7 +17,7 @@ This subpanel is used to build up a multi-zone EnergyPlus model for `Thermal Ana
 
 Thermal Zones
 ----------------
-Thermal zones are modeled as closed breps in Rhino. Thermal zones are the fundamental building blocks of thermal simulations. They consist of areas within a building that are conditioned to the same temperature, have the same programmatic use (such as office or classroom) and experience comparable loads from solar radiation, etc. A thermal zone is not necessarily the same as a room. A row of identical, south facing classrooms can be treated as a single zone since there will be no heat flow between the classrooms if they are used in the same way. On the other hand, a large open office area should be divided into perimeter zones bordering the building envelope with a depth of around 5m (15 feet) and a core zone (see below). Combining core and perimeter zones into a single zone leads to an underprediction of conditioning loads since a surplus of solar gains in one zone may be credited to the heating required in another. In reality, local cooling and heating may be required at the same time. 
+Thermal zones are modeled as closed breps in Rhino. Thermal zones are the fundamental building blocks of thermal simulations. They consist of areas within a building that are conditioned to the same temperature, have the same programmatic use (such as office or classroom) and experience comparable loads from solar radiation, etc. A thermal zone is not necessarily the same as a room. A row of identical, south facing classrooms can be treated as a single zone since there will be no heat flow between the classrooms if they are used in the same way. On the other hand, a large open office area should be divided into perimeter zones bordering the building envelope with a depth of around 5m (15 feet) and a core zone (see below). Combining core and perimeter zones into a single zone leads to an under prediction of conditioning loads since a surplus of solar gains in one zone may be credited to the heating required in another. In reality, local cooling and heating may be required at the same time. 
 
 .. figure:: images/addObjects2.png
    :width: 400px
@@ -127,7 +127,7 @@ Adiabatic
 .. _Thermal Analysis: thermalModel.html
 
 Ground
-	If a surface is defined as `ground`, it is assumed that it touches ground at the constant monthy temperature set under `Advanced EnergyPlus settings`_. Ground surfaces are colored in green. Please note that nearly every thermal model needs ground surfaces as the building otherwise floats above the ground as if on stilts.
+	If a surface is defined as `ground`, it is assumed that it touches ground at the constant monthly temperature set under `Advanced EnergyPlus settings`_. Ground surfaces are colored in green. Please note that nearly every thermal model needs ground surfaces as the building otherwise floats above the ground as if on stilts.
 
 .. _Advanced EnergyPlus settings: EnergyPlus.html	
 

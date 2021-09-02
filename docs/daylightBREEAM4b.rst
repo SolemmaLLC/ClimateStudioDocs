@@ -22,7 +22,7 @@ The scoring matrix will depend on the region, the type of building, and the type
   1. The room must achieve the required **average illuminance** (e.g. 300 lux) for the required number of hours (e.g. 2000 over the course of the year).
   2. The room must achieve the required **minimum point illuminance** (e.g. 90 lux) for the required number of hours (e.g. 2000 over the course of the year).
 
-Once all rooms are assessed, the rooms are binned by space type. For each type, it must be shown that the compliant rooms make up at least a minimum percentage of the floor area (usually 80%). If all space types meet this requirement, the building is eligble for 1-2 daylight credits. The compliance status of each room is color-coded in the Rhino viewport:
+Once all rooms are assessed, the rooms are binned by space type. For each type, it must be shown that the compliant rooms make up at least a minimum percentage of the floor area (usually 80%). If all space types meet this requirement, the building is eligible for 1-2 daylight credits. The compliance status of each room is color-coded in the Rhino viewport:
 
 .. figure:: images/result_viewportBREEAM4b.png
    :width: 900px
@@ -30,7 +30,7 @@ Once all rooms are assessed, the rooms are binned by space type. For each type, 
 
 For full documentation of region, building, and space-specific targets, please refer to BREEAM's `Technical Standards`_ for UK and International projects.
 
-.. _Technical Standards: New Constrictionhttps://www.breeam.com/discover/technical-standards/newconstruction/
+.. _Technical Standards: https://www.breeam.com/discover/technical-standards/newconstruction/
 
 
 Interface Components

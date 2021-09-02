@@ -22,7 +22,7 @@ Once selection is complete, press the *Enter* key, and a dialog will appear:
    :width: 550px
    :align: center
    
-In order to be used by the Radiadion Map workflow, the analysis surfaces must be divided into a discrete set of sensor points. The positioning and spacing of these sensors, along with surface descriptors, can be set in the dialog:
+In order to be used by the Radiation Map workflow, the analysis surfaces must be divided into a discrete set of sensor points. The positioning and spacing of these sensors, along with surface descriptors, can be set in the dialog:
 
   **ID:** Surface identifier (e.g. "Tower East Facade").
 

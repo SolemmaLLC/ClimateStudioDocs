@@ -1,7 +1,7 @@
 
 View Analysis
 ================================================
-This workflow assesses occupant views and computes eligibilty for the LEED v4 Quality Views credit. It can also be used to calculate view factors and view distances to specific model layers or objects of interest.
+This workflow assesses occupant views and computes eligibility for the LEED v4 Quality Views credit. It can also be used to calculate view factors and view distances to specific model layers or objects of interest.
 
 Simulation Setup
 --------------------

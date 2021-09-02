@@ -57,7 +57,7 @@ Upon completion of the first simulation pass, or upon loading a saved result, th
    :width: 900px
    :align: center
    
-- **Spatial Distrubing Glare (sDG)**: The percentage of views across the regularly occupied floor area that experience Disturbing or Intolerable Glare (DGP > 38%) for at least 5% of occupied hours. The calculation is based on hourly DGP values for eight different view directions at each position in the building. The default view height is 1.2 meters off the finish floor (eye height for a seated observer). The frequency of disturbing glare is visualized in the Rhino viewport using eight directional pie slices, with the color indicating frequency from 0 to 5%:
+- **Spatial Disturbing Glare (sDG)**: The percentage of views across the regularly occupied floor area that experience Disturbing or Intolerable Glare (DGP > 38%) for at least 5% of occupied hours. The calculation is based on hourly DGP values for eight different view directions at each position in the building. The default view height is 1.2 meters off the finish floor (eye height for a seated observer). The frequency of disturbing glare is visualized in the Rhino viewport using eight directional pie slices, with the color indicating frequency from 0 to 5%:
    
  .. figure:: images/result_viewportGlare.png
     :width: 900px
@@ -80,7 +80,7 @@ The results interface has five sections:
 
 .. _report generator: #reporting
 
-- The **Temporal Graphs** show the frequency of each DGP bin across all views, grouped by hour of day and day of year. In this example, the occurence of perceptible, disturbing, and intolerable glare is unsurprisingly higher in the afternoons, since the building features rooms with Western but not Eastern exposures. The floor area(s) included in the graph can be altered using the dropdown (4) or by filtering and/or selecting areas in the Room Table. The rightmost dropdown (5) permits switching between annual and single-day statistics. In the latter mode, time sliders let you scrub through individual hours of year, which causes timestep DGP data to be previewed in the Rhino viewport.
+- The **Temporal Graphs** show the frequency of each DGP bin across all views, grouped by hour of day and day of year. In this example, the occurrence of perceptible, disturbing, and intolerable glare is unsurprisingly higher in the afternoons, since the building features rooms with Western but not Eastern exposures. The floor area(s) included in the graph can be altered using the dropdown (4) or by filtering and/or selecting areas in the Room Table. The rightmost dropdown (5) permits switching between annual and single-day statistics. In the latter mode, time sliders let you scrub through individual hours of year, which causes timestep DGP data to be previewed in the Rhino viewport.
 
 .. _report generator: #reporting
 
@@ -109,7 +109,7 @@ In this case, the selected view faces the Western glazing, and has severe issues
    :align: center
 
 
-The brightest pixels in the image can be flagged (color and threshold are editable). Here the red pixels show the sun and circumsolar region positioned straight ahead, near the center of the glazing. Unless the building is reoriented, this condition is likely unsolvable without movable shades or dynamic glazing. Rotating the rendering shows that turning the observer away from the glazing (e.g by facing North) can reduce discomfort glare, though veiling glare is likely to remain an issue. 
+The brightest pixels in the image can be flagged (color and threshold are editable). Here the red pixels show the sun and circumsolar region positioned straight ahead, near the center of the glazing. Unless the building is reoriented, this condition is likely unsolvable without movable shades or dynamic glazing. Rotating the rendering shows that turning the observer away from the glazing (e.g. by facing North) can reduce discomfort glare, though veiling glare is likely to remain an issue. 
   
 .. figure:: images/result_glareRenderNorth.png
    :width: 900px

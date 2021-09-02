@@ -14,7 +14,7 @@ To prepare a model for simulation, work your way through the following subpanels
 | 1 - `Location`_
 | 2 - `Thermal Model`_
 
-Output variables and other simulation settings may be adjusted prior to the run using the `settings dialog`_ (3). The `library manager`_ (4) facilitates browsing and/or modifiying various library assets, including templates, constructions, and schedules -- all of which are also accessible when editing the Thermal Model. Once all inputs have been populated, a simulation is invoked by pressing the start button (5). A DOS window should appear, showing the progress of the EnergyPlus simulation. The run may take several minutes. 
+Output variables and other simulation settings may be adjusted prior to the run using the `settings dialog`_ (3). The `library manager`_ (4) facilitates browsing and/or modifying various library assets, including templates, constructions, and schedules -- all of which are also accessible when editing the Thermal Model. Once all inputs have been populated, a simulation is invoked by pressing the start button (5). A DOS window should appear, showing the progress of the EnergyPlus simulation. The run may take several minutes. 
 
 .. _Location: Location.html
 
@@ -53,7 +53,7 @@ Building
 
 .. _results panel.: results.html
 
-- **Zone Temperature Curves** show the number of hours for each zone that the operative temperature is below (red) or above (blue) a given temperature. In the example below, the operative temperature of the Open Office zone is 673h per year above 26 degrees celcius, indicating a propensity of the space for overheating. 
+- **Zone Temperature Curves** show the number of hours for each zone that the operative temperature is below (red) or above (blue) a given temperature. In the example below, the operative temperature of the Open Office zone is 673h per year above 26 degrees Celsius, indicating a propensity of the space for overheating. 
 
 .. figure:: images/result_thermalZoneTemp.png
    :width: 900px

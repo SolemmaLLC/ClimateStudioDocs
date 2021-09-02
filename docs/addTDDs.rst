@@ -1,7 +1,7 @@
 
 Tubular Daylighting Devices
 ================================================
-ClimateStudio's daylighting workflows support the modeling of tubular daylighting devices (TDDs). These devices harvest daylight at a rooftop collector and transfer it along a highly reflective tube to a diffuser at the ceiling, allowing even distribution to interior spaces. To insert a TDD into the scene, open the TDD subpanel and left-click on the *Add Tubular Daylighting Device* button (1):
+ClimateStudio's daylighting workflows support the modeling of tubular daylighting devices (TDDs). These devices harvest daylight at a rooftop collector and transfer it along a highly reflective tube to a diffuser at the ceiling, allowing even distribution to interior spaces. To insert a TDD into the scene, open the TDD panel and left-click on the *Add Tubular Daylighting Device* button (1):
 
 .. figure:: images/subPanel_TDDs.png
    :width: 900px

@@ -39,7 +39,7 @@ The search will try to match every sub-string separated by space. The search is 
 
 Add to Favorites
 ----------------------------------------------------
-Click on the star to add/remote from the favorates collection. Add most used files to the favorate collection to easily find them. 
+Click on the star to add/remote from the favorites collection. Add most used files to the favorite collection to easily find them. 
 
 .. figure:: images/weathersearch5.jpg
    :width: 900px

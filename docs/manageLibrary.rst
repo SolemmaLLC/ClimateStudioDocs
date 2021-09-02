@@ -10,15 +10,15 @@ To modify a zone template, the library can be accessed via the manage library bu
    :align: center
 
 The library comes with a series of elements that make up a zone template including the actual templates, schedules, material definitions and construction assemblies. For example, 
-an opaque element such as concrete is defined through its material properties including its specfic heat and thermal conductivity. A construction assembly for a wall is then defined
+an opaque element such as concrete is defined through its material properties including its specific heat and thermal conductivity. A construction assembly for a wall is then defined
 through a series of materials of different thickness that make up the wall.  
 
 .. figure:: images/Library.jpg
    :width: 900px
    :align: center
    
-By default, all elements in the ClimateStudio library are locked. By selecting a given object and "creating a new librabry object" a copy of the object is added to the library which is  
+By default, all elements in the ClimateStudio library are locked. By selecting a given object and "creating a new library object" a copy of the object is added to the library which is  
 unlocked (editable). The process works well if only a few objects are to be modified. If a large number of objects is to be added, the user may choose to export/import a library 
-as a collection of comma seperated value (CSV) files. 
+as a collection of comma separated value (CSV) files. 
  
 

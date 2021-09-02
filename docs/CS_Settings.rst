@@ -11,7 +11,7 @@ Units
 ------------------------
 **Solar Exposure** toggles radiation map results between kWh/m2 and kBTU/ft2 
 
-**Illuminance** toggles point-in-time illumiance results between lux and foot candle
+**Illuminance** toggles point-in-time illuminance results between lux and foot candle
 
 **EUI** toggles energy use intensity results in the thermal model results panel between kWh/m2 and kBTU/ft2
 

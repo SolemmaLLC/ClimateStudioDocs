@@ -1,7 +1,7 @@
 
 Custom Daylight Availability
 ================================================
-The "custom" daylight availability workflow is useful if the design team isn't targeting a specific accredtitation, or needs to adjust annual metrics to comply with a standard not listed in the sub-workflows drowdown. Of all the sub-workflows, it provides the widest set of annual daylight statistics, and the most flexibility in defining lighting thresholds and occupancy schedules (which are set in the `occupied areas panel`_).
+The "custom" daylight availability workflow is useful if the design team isn't targeting a specific accreditation, or needs to adjust annual metrics to comply with a standard not listed in the sub-workflows dropdown. Of all the sub-workflows, it provides the widest set of annual daylight statistics, and the most flexibility in defining lighting thresholds and occupancy schedules (which are set in the `occupied areas panel`_).
 
 .. _occupied areas panel: addAreas.html
 
@@ -23,7 +23,7 @@ Upon completion of the first simulation pass (`setup instructions here`_), or up
   
 .. _results panel: results.html
 
-  For a particlar location, the frequency of each bin is reported as a percentage of occupied hours. This is visualized in the Rhino viewport using four color-coded bands around each sensor, where the width of the band is proportional to the bin's time share.
+  For a particular location, the frequency of each bin is reported as a percentage of occupied hours. This is visualized in the Rhino viewport using four color-coded bands around each sensor, where the width of the band is proportional to the bin's time share.
    
 .. figure:: images/result_viewportCustomUDI.png
    :width: 900px

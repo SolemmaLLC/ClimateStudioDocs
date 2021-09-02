@@ -1,6 +1,6 @@
 LEED v4 Quality Views
 =========================
-The LEED v4 Quality Views credit is computed as part of the View Analysis workflow (see `setup instructions`_). It is an Indoor Environmental Quality credit within the Leadership in Energy and Environmental Design (`LEED`_) green building rating system, maintained by the US Green Building Council (`USGBC`_). At the top of the View result's LEED tab is a dropdown offerering two versions of the Quality Views credit (4.0 and 4.1), followed by a dashboard with up to four metrics, which correspond to four types of view:
+The LEED v4 Quality Views credit is computed as part of the View Analysis workflow (see `setup instructions`_). It is an Indoor Environmental Quality credit within the Leadership in Energy and Environmental Design (`LEED`_) green building rating system, maintained by the US Green Building Council (`USGBC`_). At the top of the View result's LEED tab is a dropdown offering two versions of the Quality Views credit (4.0 and 4.1), followed by a dashboard with up to four metrics, which correspond to four types of view:
 
 .. _setup instructions: viewAnalysis.html
 .. _LEED: https://www.usgbc.org/leed
@@ -12,7 +12,7 @@ The LEED v4 Quality Views credit is computed as part of the View Analysis workfl
    
 The value listed next to each metric is the percentage of the regularly occupied building floor area possessing a view of the given type. The types are defined as follows:
    
-- **Quaity Views**: The definition of a Quality View differs beetween LEED versions 4.0 and 4.1. In version 4.0, a Quality View is a location possessing two of the three view types that follow (Types 1-3). In version 4.1, a Quality View is a location possessing *both* Type 2 and Type 3 views (Type 1 is not considered). To qualify for a credit, at least 75% of the regularly occupied building floor area must have a Quailty View. For each view type, clicking on the dashborad row displays a map of qualfying view locations in the Rhino viewport:
+- **Quality Views**: The definition of a Quality View differs between LEED versions 4.0 and 4.1. In version 4.0, a Quality View is a location possessing two of the three view types that follow (Types 1-3). In version 4.1, a Quality View is a location possessing *both* Type 2 and Type 3 views (Type 1 is not considered). To qualify for a credit, at least 75% of the regularly occupied building floor area must have a Quality View. For each view type, clicking on the dashboard row displays a map of qualifying view locations in the Rhino viewport:
    
 .. figure:: images/result_viewportViewQuality.png
    :width: 900px
@@ -30,13 +30,13 @@ The value listed next to each metric is the percentage of the regularly occupied
    :width: 900px
    :align: center
 
-- **Type 3: Unobstructed**: A view location with a line of sight to vision glazing from within three times its head hight.
+- **Type 3: Unobstructed**: A view location with a line of sight to vision glazing from within three times its head height.
 
 .. figure:: images/result_viewportViewType3.png
    :width: 900px
    :align: center
 
-LEED v4.0 also specifies a fourth type of view that is *not* assessed by ClimateStudio, involving angular factors defined in *Windows and Offices: A Study of Office Worker Performance and the Indoor Environment*. Below the dashoard is the Room Table, which lists view type percentages for each regularly occupied floor area, and a Viewport Settings bar, which contains a legend and settings button (5) for adjusting the display:
+LEED v4.0 also specifies a fourth type of view that is *not* assessed by ClimateStudio, involving angular factors defined in *Windows and Offices: A Study of Office Worker Performance and the Indoor Environment*. Below the dashboard is the Room Table, which lists view type percentages for each regularly occupied floor area, and a Viewport Settings bar, which contains a legend and settings button (5) for adjusting the display:
 
 .. figure:: images/result_panelLEEDViewTable.png
    :width: 900px

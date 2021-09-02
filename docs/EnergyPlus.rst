@@ -21,7 +21,7 @@ Users should consult the `EnergyPlus Engineering Reference`_ before adjusting an
 **Natural Ventilation Simulation**
 	ClimateStudio supports three modes of modeling natural airflow in buildings, simple airflow objects, airflow network and airflow network with CP input.
 
-- `Simple airflow` This is the default meode in which zone air is only  exchanged with the outside and estimated based on empirical formulae that rely on window opening sizes and orientation vis-à-vis current wind direction.
+- `Simple airflow` This is the default mode in which zone air is only  exchanged with the outside and estimated based on empirical formulae that rely on window opening sizes and orientation vis-à-vis current wind direction.
 
 - `Airflow network` In this mode multi-zone airflow between zones can be modeled and visualized as well.
  

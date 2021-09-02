@@ -7,7 +7,7 @@ The sun path tab generates 2D and 3D sun path diagrams and direct shading studie
    :width: 900px
    :align: center
    
-The date and time settings (2 and 3) control the day arc and sun position. To fine tune the slider position, try using the left and right arrows on your keyboard. The projection dropdown (4) can be used to switch between angluar, hemispheric, and stereographic 2D projections. Use the menu (5) to `export`_ the 2D plot to PNG or PDF.
+The date and time settings (2 and 3) control the day arc and sun position. To fine tune the slider position, try using the left and right arrows on your keyboard. The projection dropdown (4) can be used to switch between angular, hemispheric, and stereographic 2D projections. Use the menu (5) to `export`_ the 2D plot to PNG or PDF.
 
 .. _export: exportPlots.html
 

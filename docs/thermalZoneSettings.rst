@@ -2,16 +2,16 @@
 Thermal Zone Settings
 ================================================
 When a zone template is first assigned to a zone object (brep), hundreds of zone settings are set based on a zone template. 
-ClimateStudio comes with hundreds of pre-populated zone templates based on vetted data sets such as the US Department of Energy's Commercial Prototype Building Models that are stored in a `Template Libary`_. 
+ClimateStudio comes with hundreds of pre-populated zone templates based on vetted data sets such as the US Department of Energy's Commercial Prototype Building Models that are stored in a `Template Library`_. 
 Once assigned to a zone, all zone information can be reviewed and edited by selecting the edit button in the thermal model object table. 
 
-.. _Template Libary: manageLibrary.html
+.. _Template Library: manageLibrary.html
 
 .. figure:: images/thermalZoneSettings.png
    :width: 900px
    :align: center
    
-Zone infomation are assigned to each zone individually, meaning that if the user changes the properties of one zone from the default template value, those properties remain unchanges for other zones in the model with the same base template. 
+Zone information are assigned to each zone individually, meaning that if the user changes the properties of one zone from the default template value, those properties remain unchanged for other zones in the model with the same base template. 
 To edit multiple zones at a time, select those zones using control or shift in the thermal model properties tab before selecting the edit button. 
 
 As shown below, the Zone Settings panel is organized into four tabs: Loads, Conditioning, Envelope, and Settings. 
@@ -25,7 +25,7 @@ As shown below, the Zone Settings panel is organized into four tabs: Loads, Cond
 Loads
 -----------
 Under this tab, the internal loads of a zone are specified due to people, equipment, electric lighting, and hot water. The user should make sure that the numbers selected for a given zone constitute a meaningful approximation of how a modeled space is being used or will most likely be used in the case of a design model. For each internal load type, there is a peak load (density) normalized by floor area that indicates the heat added to a space at maximum occupancy or when all equipment and lighting is being switched on. Each internal load is further described by a schedule that consists of 8760 values for each hour of the year between zero and one. 
-To visualize/edit a schedule, left-click on the schdule name to open the `Schedules Editor`_. The different load entry fields are described below.
+To visualize/edit a schedule, left-click on the schedule name to open the `Schedules Editor`_. The different load entry fields are described below.
 
 
 
@@ -35,7 +35,7 @@ To visualize/edit a schedule, left-click on the schdule name to open the `Schedu
 
 **Program Description** is a string that describes the general nature of the zone. This input is not used in the actual simulation. 
 
-**Use Type** acts as a tag to describe the programmtic use of a zone. Zones can be grouped in the template libary based on their program type.  
+**Use Type** acts as a tag to describe the programmatic use of a zone. Zones can be grouped in the template library based on their program type.  
 
 **People Density** is a positive number that describes the number of occupants per m2 at peak density. 
 
@@ -99,14 +99,14 @@ This tab defines the construction of each zone.
    :width: 900px
    :align: center
 
-A **Construction** meterial is set for the different types of surfaces each zone may have: 
+A **Construction** material is set for the different types of surfaces each zone may have: 
 
 - **Roof**: exterior top surfaces
 - **Facade**: exterior side surfaces
 - **Partition**: interior walls
 - **Slab**: interior floors (this will be used for interior floors and interior ceilings)
 - **External Floor**: exterior bottom surfaces (that does not touch the ground)
-- **Ground Salb**: exterior bottom surfaces that touches the ground surface
+- **Ground Slab**: exterior bottom surfaces that touches the ground surface
 - **Ground Wall**: exterior surfaces that is below the ground surface that is not a ground slab. 
 
 Any other **internal masses** will also has it's material. Internal thermal walls or large beams and columns will be accounted for here. 
@@ -114,7 +114,7 @@ Any other **internal masses** will also has it's material. Internal thermal wall
 **Foundation** settings for the ground is calculated based on 3 different methods. 
 
 1. Ground
-	If a surface is defined as `ground`, it is assumed that it touches ground at the constant monthy temperature set under `Advanced EnergyPlus settings`_. Ground surfaces are colored in green. Please note that nearly every thermal model needs ground surfaces as the building otherwise floats above the ground as if on stilts.
+	If a surface is defined as `ground`, it is assumed that it touches ground at the constant monthly temperature set under `Advanced EnergyPlus settings`_. Ground surfaces are colored in green. Please note that nearly every thermal model needs ground surfaces as the building otherwise floats above the ground as if on stilts.
 
 .. _Advanced EnergyPlus settings: EnergyPlus.html	
 

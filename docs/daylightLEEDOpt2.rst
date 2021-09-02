@@ -1,7 +1,7 @@
 
 LEED v4 Daylight Option 2
 ================================================
-Leadership in Energy and Environmental Design (`LEED`_) is a green building rating system maintained by the US Green Building Council (`USGBC`_). The system offers two simulation-based options for achieving its Daylight Credit. `Option 1`_ simulates daylight availability throughout the entire year. Option 2, described here, simulates daylight availability at two specific moments in time: 9am and 3pm on the equinox. In each case, the sky condition assumes the brightest day in the weather file within 15 days of March 21 or Sepetember 21. 
+Leadership in Energy and Environmental Design (`LEED`_) is a green building rating system maintained by the US Green Building Council (`USGBC`_). The system offers two simulation-based options for achieving its Daylight Credit. `Option 1`_ simulates daylight availability throughout the entire year. Option 2, described here, simulates daylight availability at two specific moments in time: 9am and 3pm on the equinox. In each case, the sky condition assumes the brightest day in the weather file within 15 days of March 21 or September 21. 
 
 .. _LEED: https://www.usgbc.org/leed
 .. _USGBC: https://www.usgbc.org/

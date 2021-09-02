@@ -23,9 +23,9 @@ Below the weather and compass settings is a climate summary table (5), which inc
 - **Köppen Climate Zone** is based on the *Köppen climate classification*, which divides the climate into five main groups, then into various subgroups based on temperature and seasonal patterns. 
 - **ASHRAE climate zone** is based on *ASHRAE standard 169* which classifies climate data into nine climate zones, labeled 0 Extreme hot to 8 Extreme cold, based on annual heating and cooling degree days.
 - **Average annual temperature** is the annual average dry bulb temperature. 
-- **Annual total solar radiation** is the cumilative global horizontal irradiation.  
-- **Coldest/Hottest Month** are calculated using the average dry bulb tempearture of each month. 
+- **Annual total solar radiation** is the cumulative global horizontal irradiation.  
+- **Coldest/Hottest Month** are calculated using the average dry bulb temperature of each month. 
 - **Coldest/Hottest/Typical Week** are taken from the header of the climate file. 
-- **Annual HDD/CDD** are *Heating Degree Days* and *Cooling Degree Days* which are calculated as the sum of the negative or positive difference between the target tempearture and the daily average dry bulb temperature. 
+- **Annual HDD/CDD** are *Heating Degree Days* and *Cooling Degree Days* which are calculated as the sum of the negative or positive difference between the target temperature and the daily average dry bulb temperature. 
 
 To copy the climate summary to the clipboard or switch unit systems, use the menu (6).

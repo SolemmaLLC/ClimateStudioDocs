@@ -1,7 +1,7 @@
 
 Hourly Heatmap
 ================================================
-The Hourly Heatmap tab plots weather data using a gridded falscolor map, which displays a data cell for every hour of the year. Hours of day are plotted along the y-axis, and days of year along the x-axis.
+The Hourly Heatmap tab plots weather data using a gridded falsecolor map, which displays a data cell for every hour of the year. Hours of day are plotted along the y-axis, and days of year along the x-axis.
 
 .. figure:: images/result_panelHeatmap.png
    :width: 900px
@@ -16,7 +16,7 @@ To isolate time periods in the weather file, use the range sliders at the top of
 - **Wind Speed**
 - **Direct Normal Radiation**
 - **Diffuse Horizontal Radiation**
-- **Global Horizontal Radiaion**
+- **Global Horizontal Radiation**
 - **UTCI** 
 
 UTCI, or Universal Thermal Climate Index, measures the heat stress on the human body induced by a set of climatic conditions -- including air temperature, humidity, wind, and radiation. The metric includes filters for wind protection and sun shading, which remove the impact of wind and direct solar radiation, respectively, for each timestep in the weather file:
