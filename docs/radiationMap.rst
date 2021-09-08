@@ -18,17 +18,17 @@ To prepare a model for simulation, work your way through the three subpanels lab
 | 2 - `Materials`_
 | 3 - `Analysis Surfaces`_ 
 
-.. _Location: Location.html
+.. _Location: location.html
 
-.. _Materials: assignMaterials.html
+.. _Materials: materials.html
 
-.. _Analysis Surfaces: addAnalysisSurfaces.html
+.. _Analysis Surfaces: analysisSurfaces.html
 
 
 Once all required inputs have been populated, a simulation is invoked by pressing the start button (4). ClimateStudio uses a `progressive path-tracing`_ version of the Radiance raytracer to simulate irradiance distributions. While a simulation is in progress, traced light paths accumulate until the user-specified number of passes has been reached. Details on the simulation settings can be found by opening the `settings dialog`_ (5). For radiation maps, the dialog includes **low/high outdoor temperature thresholds**, which can be used to bin radiation occurring during hot or cold hours throughout the year.
 
 .. _progressive path-tracing: https://www.solemma.com/blog/why-is-climatestudio-so-fast
-.. _settings dialog: path-tracingSettings.html	
+.. _settings dialog: pathTracingSettings.html	
 
 
 Simulation Results

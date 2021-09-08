@@ -26,7 +26,7 @@ The collector and diffuser should be placed in their actual installed locations.
 
 As with `Luminaires`_, copy-pasting a TDD block instance will create another instance of the same device. This is useful for generating arrays of devices of the same type, with the exact same positioning of diffuser relative to collector. To insert a new type of device, or one with different relative positioning, simply repeat the steps above, starting with the *Add Tubular Daylighting Device* button.
 
-.. _Luminaires: addLuminaires.html
+.. _Luminaires: luminaires.html
 
 How It Works
 ------------------

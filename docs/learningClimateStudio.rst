@@ -7,7 +7,7 @@ Most new users learn ClimateStudio through the graphical user interface (GUI) wi
 
 Begin with the 3 minute `Interface Overview`_. After that you are ready to explore any of the workflows:
 
-.. _Solemma web site: https://solemma.com/TrainingClimateStudio.html
+.. _Solemma web site: https://www.solemma.com/climatestudio-tutorial-videos
 
 .. _Interface Overview: https://vimeo.com/392379382
 
@@ -24,7 +24,7 @@ Begin with the 3 minute `Interface Overview`_. After that you are ready to explo
 
 .. _Radiation Map: radiationMap.html 
 
-.. _Point-in-time Illuminance: point-in-timeIlluminance.html
+.. _Point-in-time Illuminance: illuminance.html
 
 .. _Daylight Availability: daylightAvailability.html 
 
@@ -32,7 +32,7 @@ Begin with the 3 minute `Interface Overview`_. After that you are ready to explo
 
 .. _Radiance Render: radianceRender.html
 
-.. _Thermal Analysis: thermalModel.html
+.. _Thermal Analysis: thermalAnalysis.html
 
 .. _View Analysis: viewAnalysis.html
 

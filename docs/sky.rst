@@ -15,5 +15,5 @@ The Sky panel sets the sky luminance distribution for `point-in-time illuminance
 	
 	**Include Lambertian Ground Source:** This option enforces a constant luminance over the lower hemisphere based on the ground albedo and sky condition. It creates a distinctive horizon line (appropriate for an observer near the ground), and improves the lower-hemisphere luminances returned by the native sky models, which are sometimes inaccurate. Enabling this option is recommended.
 	
-.. _point-in-time illuminance: point-in-timeIlluminance.html
+.. _point-in-time illuminance: illuminance.html
 .. _Radiance renderings: radianceRender.html

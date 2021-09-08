@@ -9,7 +9,7 @@ This workflow supports several types of site and climate analysis, including sun
 
 1. The `Location`_ subpanel, which is used to select a weather file and summarize its climate zone and heating and cooling design conditions.
 
-.. _Location: Location.html
+.. _Location: location.html
 
 2. The **Site Analysis** subpanel, which is described below:
 
@@ -19,12 +19,12 @@ This workflow supports several types of site and climate analysis, including sun
    :align: center
 
 
-The Site Analysis subpanel contains five tabs that help with visualizing, comprehending, and analyzing the local site and climate: 
+The Site Analysis subpanel contains five tabs that help with visualizing, comprehending, and analyzing the local site and climate. 
 
 .. toctree::
    :maxdepth: 1
    
-   Sun Path<SunPath.rst>
+   Sun Path<sunPath.rst>
    Wind Rose<windRose.rst>
    Diurnal Averages<diurnalAverages.rst>
    Psychrometric Chart<psychrometricChart.rst>

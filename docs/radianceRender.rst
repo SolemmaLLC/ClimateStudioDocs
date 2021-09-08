@@ -19,15 +19,15 @@ To prepare a model for rendering, work your way through the five subpanels label
 | 4 - `Luminaires`_ (optional)
 | 5 - `Tubular Daylighting Devices`_ (optional)
 
-.. _Location: Location.html
+.. _Location: location.html
 
 .. _Sky: sky.html
 
-.. _Materials: assignMaterials.html
+.. _Materials: materials.html
 
-.. _Luminaires: addLuminaires.html
+.. _Luminaires: luminaires.html
 
-.. _Tubular Daylighting Devices: addTDDs.html
+.. _Tubular Daylighting Devices: TDDs.html
 
 If you have not done any lighting simulations in ClimateStudio, it is recommended that you go through the `Lighting Model Setup video tutorial`_ (5 minutes). The Rhino file used in the tutorial is available for `download.`_
 
@@ -65,7 +65,7 @@ Camera Setup
 Position and view direction may be set manually, or by using the "Pick" button, which allows setting the camera using a saved Rhino view or ClimateStudio sensor. Once the camera is set, a rendering is invoked by pressing the Start button. ClimateStudio uses a `progressive path-tracing`_ version of the Radiance raytracer. While a rendering is in progress, pixels are sampled until the user-specified number of samples has been reached, or the Stop button is pressed. Details on the simulation settings can be found by clicking the `Settings`_ button.
  
 .. _progressive path-tracing: https://www.solemma.com/blog/why-is-climatestudio-so-fast
-.. _Settings: path-tracingSettings.html
+.. _Settings: pathTracingSettings.html
 
 Simulation Results
 ------------------------
@@ -80,11 +80,11 @@ The **Image Display** section contains settings responsible for converting the H
 
 - **Scheme** determines the type of mapping. Options include RGB and Greyscale, which mimic the response of a traditional photographic film, or Falsecolor, which maps luminance values onto a color scale.
 
-.. _Settings: path-tracingSettings.html
+.. _Settings: pathTracingSettings.html
 
 - **Exposure** and **Gamma** work in concert to determine the brightness of pixels under RGB or Greyscale mapping. Exposure is a scalar that adjusts the overall brightness of the displayed image, while Gamma is a parameter that describes the nonlinearity of the tone scale. A gamma of 2.2 is a reasonable default for mimicking the power responses of photographic film and the human eye.
 
-.. _Settings: path-tracingSettings.html
+.. _Settings: pathTracingSettings.html
 
 - **Glare Pixels** may be enabled to flag all pixels above a user-defined luminance (by default 2000 cd/m2) with a distinctive color.
 

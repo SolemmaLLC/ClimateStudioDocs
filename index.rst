@@ -30,11 +30,11 @@ The Getting Started section provides a quick overview a ClimateStudio interface.
    :titlesonly:
    
    Site Analysis<docs/siteAnalysis.rst>
-   Point-in-Time Illuminance<docs/point-in-timeIlluminance.rst>
+   Point-in-Time Illuminance<docs/illuminance.rst>
    Daylight Availability<docs/daylightAvailability.rst>
    Annual Glare<docs/annualGlare.rst>
    Radiance Render<docs/radianceRender.rst>
-   Thermal Analysis<docs/thermalModel.rst>
+   Thermal Analysis<docs/thermalAnalysis.rst>
    Radiation Map<docs/radiationMap.rst>
    View Analysis<docs/viewAnalysis.rst>
    Grasshopper Workflow Templates<docs/grasshopperTemplates.rst>

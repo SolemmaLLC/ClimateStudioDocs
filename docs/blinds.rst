@@ -41,7 +41,7 @@ Once selection is complete, press the *Enter* key, and a dialog will appear with
    
 Once a system and control strategy have been specified, the dynamic shading surfaces area added to Blinds Table, which list all blinds in the building. Similar to `occupied areas`_, the blinds can be organized using tags and filtered (3). The display style can be edited using the viewport settings dropdown (4).
 
-.. _occupied areas: addAreas.html
+.. _occupied areas: occupiedAreas.html
 
 .. figure:: images/subPanel_blindsTable.png
    :width: 900px

@@ -29,7 +29,7 @@ To visualize/edit a schedule, left-click on the schedule name to open the `Sched
 
 
 
-.. _Schedules Editor: ScheduleEditor.html
+.. _Schedules Editor: scheduleEditor.html
 
 **Zone Name** is a unique string to define the name of the zone. The same name will be attached to a zone's thermal results. It is recommended to name zones based its orientation, floor and program type such as "South Office 1stFloor".  
 
@@ -116,7 +116,7 @@ Any other **internal masses** will also has it's material. Internal thermal wall
 1. Ground
 	If a surface is defined as `ground`, it is assumed that it touches ground at the constant monthly temperature set under `Advanced EnergyPlus settings`_. Ground surfaces are colored in green. Please note that nearly every thermal model needs ground surfaces as the building otherwise floats above the ground as if on stilts.
 
-.. _Advanced EnergyPlus settings: EnergyPlus.html	
+.. _Advanced EnergyPlus settings: energyPlus.html	
 
 2. Ground FC
 	If a surface is defined as `ground FC`, it is assumed that it touches if uses the so-called FC method from the ASHRAE Handbook of Fundamental as explained in the `EnergyPlus Engineering Reference`_.   

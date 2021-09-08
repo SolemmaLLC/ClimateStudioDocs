@@ -15,9 +15,9 @@ To prepare a model for simulation, work your way though the materials and occupi
 | 1 - `Materials`_
 | 2 - `Occupied Areas`_ 
 
-.. _Materials: assignMaterials.html
+.. _Materials: materials.html
 
-.. _Occupied Areas: addAreas.html
+.. _Occupied Areas: occupiedAreas.html
 
 
 When assigning materials, a **VisionGlass** tag must be attached to layers that represent exterior vision glazing. Although the materials specified in the Material column determine the optical behavior of surfaces in the model (and hence what can be seen from any vantage), a separate View Tag is required to distinguish the "vision glazing," because it is specifically through these surfaces that views and view distances are measured.

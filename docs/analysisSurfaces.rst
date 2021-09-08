@@ -34,7 +34,7 @@ In order to be used by the Radiation Map workflow, the analysis surfaces must be
 
 Once the analysis surfaces have been created, they appear in the Rhino viewport and the Analysis Surfaces Table. The table lists all analysis surfaces in the model, and allows renaming, tagging, editing or deleting them. As with `occupied areas`_, the surfaces can be organized using filters (2). The display style can be edited using the viewport settings dropdown (3).
 
-.. _occupied areas: addAreas.html
+.. _occupied areas: occupiedAreas.html
 
 .. figure:: images/subPanel_surfacesTable.png
    :width: 900px

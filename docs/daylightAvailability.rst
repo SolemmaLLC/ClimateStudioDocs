@@ -19,15 +19,15 @@ Depending on the sub-workflow selected, you will see up to five subpanels (label
 | 4 - `Occupied Areas`_ 
 | 5 - `Tubular Daylighting Devices`_ (optional)
 
-.. _Location: Location.html
+.. _Location: location.html
 
-.. _Materials: assignMaterials.html
+.. _Materials: materials.html
 
-.. _Blinds: addBlinds.html
+.. _Blinds: blinds.html
 
-.. _Occupied Areas: addAreas.html
+.. _Occupied Areas: occupiedAreas.html
 
-.. _Tubular Daylighting Devices: addTDDs.html
+.. _Tubular Daylighting Devices: TDDs.html
 
 Please note that **modeling blinds is required** for the LEED Option 1 credit, and for achieving realistic predictions of annual daylight levels in buildings. Dynamic blinds are not considered for sub-workflows that assess point-in-time conditions (LEED Option 2, Daylight Factor, and BREEAM 4a/c). 
 
@@ -40,7 +40,7 @@ The Rhino file used in the tutorial is available for `download`_.
 Once all required inputs have been populated, a simulation is invoked by pressing the start button (6). ClimateStudio uses a `progressive path tracing`_ version of the Radiance raytracer to simulate illuminance distributions. While a simulation is in progress, traced light paths accumulate until the user-specified number of passes has been reached. Details on the simulation settings can be found by opening the `settings dialog`_ (7).
  
 .. _progressive path tracing: https://www.solemma.com/blog/why-is-climatestudio-so-fast
-.. _settings dialog: path-tracingSettings.html
+.. _settings dialog: pathTracingSettings.html
 
 
 Simulation Results

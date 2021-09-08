@@ -3,7 +3,7 @@ Custom Daylight Availability
 ================================================
 The "custom" daylight availability workflow is useful if the design team isn't targeting a specific accreditation, or needs to adjust annual metrics to comply with a standard not listed in the sub-workflows dropdown. Of all the sub-workflows, it provides the widest set of annual daylight statistics, and the most flexibility in defining lighting thresholds and occupancy schedules (which are set in the `occupied areas panel`_).
 
-.. _occupied areas panel: addAreas.html
+.. _occupied areas panel: occupiedAreas.html
 
 Upon completion of the first simulation pass (`setup instructions here`_), or upon loading a saved result, the `results panel`_ will show a dashboard with five key metrics:
 

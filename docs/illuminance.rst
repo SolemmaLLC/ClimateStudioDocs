@@ -18,17 +18,17 @@ To prepare a model for simulation, work your way through the six subpanels label
 | 5 - `Occupied Areas`_ 
 | 6 - `Tubular Daylighting Devices`_ (optional)
 
-.. _Location: Location.html
+.. _Location: location.html
 
 .. _Sky: sky.html
 
-.. _Materials: assignMaterials.html
+.. _Materials: materials.html
 
-.. _Luminaires: addLuminaires.html
+.. _Luminaires: luminaires.html
 
-.. _Occupied Areas: addAreas.html
+.. _Occupied Areas: occupiedAreas.html
 
-.. _Tubular Daylighting Devices: addTDDs.html
+.. _Tubular Daylighting Devices: TDDs.html
 
 
 If you have not done any lighting simulations in ClimateStudio, it is recommended that you initially go through the `Lighting Model Setup`_ video tutorial (5 minutes). 
@@ -41,7 +41,7 @@ The Rhino file used in the tutorial is available for `download`_.
 Once all required inputs have been populated, a simulation is invoked by pressing the start button (7). ClimateStudio uses a `progressive path-tracing`_ version of the Radiance raytracer to simulate illuminance distributions. While a simulation is in progress, traced light paths accumulate until the user-specified number of passes has been reached. Details on the simulation settings can be found by opening the `settings dialog`_ (8).
  
 .. _progressive path-tracing: https://www.solemma.com/blog/why-is-climatestudio-so-fast
-.. _settings dialog: path-tracingSettings.html
+.. _settings dialog: pathTracingSettings.html
 
 Simulation Results
 ------------------------
