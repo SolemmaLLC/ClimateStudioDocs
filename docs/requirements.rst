@@ -17,8 +17,8 @@ Software
 .. _boot camp: https://support.apple.com/boot-camp
 .. _Rhinoceros 3D NURBS modeler: https://www.rhino3d.com/
 .. _Rhino 6 or 7: https://www.rhino3d.com/
-.. _requested here: https://solemma.com/Download-ClimateStudio.html
-.. _educational licensing program: https://solemma.com/EducationalClimateStudio.html
+.. _requested here: https://www.solemma.com/cs-trial
+.. _educational licensing program: https://www.solemma.com/educational-climatestudio
 
 Knowledge
 	If you are unfamiliar with computer aided design (CAD) software in general or Rhino in particular, you can find `tutorials on the web`_ or online training such as the `Lynda tutorials for Rhino`_.
