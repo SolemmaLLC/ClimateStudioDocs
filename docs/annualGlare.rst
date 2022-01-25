@@ -23,6 +23,8 @@ To prepare a model for simulation, work your way through the four subpanels labe
 | 2 - `Materials`_
 | 3 - `Occupied Areas`_ 
 | 4 - `Tubular Daylighting Devices`_ (optional)
+| 5 - `Import .cse file from Revit`_ (optional)
+
 
 .. _Location: location.html
 
@@ -31,6 +33,9 @@ To prepare a model for simulation, work your way through the four subpanels labe
 .. _Occupied Areas: occupiedAreas.html
 
 .. _Tubular Daylighting Devices: TDDs.html
+
+.. _Import .cse file from Revit: revitImporter.html
+
 
 Please note that at this point, ClimateStudio does not support annual glare calculations that consider the use of dynamic shading systems.
 
@@ -42,7 +47,7 @@ If you have not done any lighting simulations in ClimateStudio, it is recommende
 
 .. _download.: https://climatestudiodocs.com/ExampleFiles/CS_Two_Zone_Office.3dm
 
-Once all required inputs have been populated, a simulation is invoked by pressing the start button (5). ClimateStudio uses a `progressive path-tracing`_ version of the Radiance raytracer to simulate luminance distributions. While a simulation is in progress, traced light paths accumulate until the user-specified number of passes has been reached. Details on the simulation settings can be found by opening the `settings dialog`_ (6).
+Once all required inputs have been populated, a simulation is invoked by pressing the start button (6). ClimateStudio uses a `progressive path-tracing`_ version of the Radiance raytracer to simulate luminance distributions. While a simulation is in progress, traced light paths accumulate until the user-specified number of passes has been reached. Details on the simulation settings can be found by opening the `settings dialog`_ (7).
  
 .. _progressive path-tracing: https://www.solemma.com/blog/why-is-climatestudio-so-fast
 .. _settings dialog: pathTracingSettings.html
@@ -72,7 +77,7 @@ Interface Components
 The results interface has five sections:
 
 
-- The **Header** includes the result name, a CSV export (2), and an information dialog (1), which provides an accounting of simulation inputs.
+- The **Header** includes the result name, a CSV export (9), and an information dialog (8), which provides an accounting of simulation inputs.
 
 .. _report generator: #reporting
 
@@ -80,15 +85,15 @@ The results interface has five sections:
 
 .. _report generator: #reporting
 
-- The **Temporal Graphs** show the frequency of each DGP bin across all views, grouped by hour of day and day of year. In this example, the occurrence of perceptible, disturbing, and intolerable glare is unsurprisingly higher in the afternoons, since the building features rooms with Western but not Eastern exposures. The floor area(s) included in the graph can be altered using the dropdown (4) or by filtering and/or selecting areas in the Room Table. The rightmost dropdown (5) permits switching between annual and single-day statistics. In the latter mode, time sliders let you scrub through individual hours of year, which causes timestep DGP data to be previewed in the Rhino viewport.
+- The **Temporal Graphs** show the frequency of each DGP bin across all views(10), grouped by hour of day and day of year. In this example, the occurrence of perceptible, disturbing, and intolerable glare is unsurprisingly higher in the afternoons, since the building features rooms with Western but not Eastern exposures. The floor area(s) included in the graph can be altered using the dropdown (11) or by filtering and/or selecting areas in the Room Table. The rightmost dropdown (12) permits switching between annual and single-day statistics. In the latter mode, time sliders let you scrub through individual hours of year, which causes timestep DGP data to be previewed in the Rhino viewport. Export graph as bitmap with button on top right of graph (13). 
 
 .. _report generator: #reporting
 
-- The **Room Table** lists results for each regularly occupied floor area in the building. Selecting rooms by filtration (7) or row selection isolates their preview in the temporal graphs and the Rhino viewport, and updates the statistics in the "Totals" row at the bottom of the table.
+- The **Room Table** lists results for each regularly occupied floor area in the building. Selecting rooms by filtration (14) or row selection isolates their preview in the temporal graphs and the Rhino viewport, and updates the statistics in the "Totals" row at the bottom of the table.
 
 .. _report generator: #reporting
 
-- The **Viewport Settings** bar contains a viewport preview legend and viewport settings menu (8), which provides options for customizing the falsecolor display. Altering the upper bound of the falsecolor will also change the time percentage threshold used by the sDG metric in the Building Dashboard.
+- The **Viewport Settings** bar contains a viewport preview legend and viewport settings menu (15), which provides options for customizing the falsecolor display. Altering the upper bound of the falsecolor will also change the time percentage threshold used by the sDG metric in the Building Dashboard.
 
 .. _report generator: #reporting
 
@@ -100,7 +105,7 @@ Hovering over a view slice in the Rhino viewport will update the temporal graphs
    
 .. _report generator: #reporting
    
-In this case, the selected view faces the Western glazing, and has severe issues with afternoon glare throughout the entire year. To better understand cause and directionality of glare at any particular moment in time, you can select a point in the lower graph, which corresponds to a specific date and hour (9). Subsequently clicking on the camera icon (10) will initiate a `Radiance Rendering`_ using the sky condition for the corresponding step in the weather file:
+In this case, the selected view faces the Western glazing, and has severe issues with afternoon glare throughout the entire year. To better understand cause and directionality of glare at any particular moment in time, you can select a point in the lower graph, which corresponds to a specific date and hour (16). Subsequently clicking on the camera icon (17) will initiate a `Radiance Rendering`_ using the sky condition for the corresponding step in the weather file:
 
 .. _Radiance Rendering: radianceRender.html
 
