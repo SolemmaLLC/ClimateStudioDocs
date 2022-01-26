@@ -3,7 +3,7 @@ Revit Import Trouble Shoot
 
 Checking Imported Model
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-- Check all glazing geometry are single plane meshes. 
+- Check all glazing geometries are single plane meshes. 
 - Check all exterior windows are on the exterior window layer. 
 - Check all exterior windows with blinds have normals that point outside. 
 - Check all occupied areas have normals that point up. 
@@ -50,6 +50,6 @@ Cleaning Exported Model
    :width: 900px
    :align: center
 
-3D windows and Rooms are not baked into Rhino on import by default, as only their single-plane representations are needed for daylight simulations. 
+During a regular import, 3D windows and Rooms are not baked into Rhino since only their single-plane representations are needed for daylight simulations. 
 
-The `CSImportRevitDiscardedGeometries` command will import those 3D Windows and Rooms. This can be used if single plane windows or occupied areas are not created correctly. 
+To retrieve these 3D windows and rooms, run `CSImportRevitDiscardedGeometries` command will import those 3D Windows and Rooms. Use this if single plane windows or occupied areas are not created correctly. 

@@ -4,6 +4,8 @@ This workflow imports a .cse file created by Climate Studio `Revit Exporter Plug
 
 .. _Revit Exporter Plug-in: revitExporter.html
 
+Currently the Revit Export workflow is still in Beta release, please email us if you run into any issues. Update your Climate Studio to v1.7 to use it.  
+
 
 Import .cse file from Revit
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -21,11 +23,11 @@ Select a .cse file to import.
    :width: 900px
    :align: center
 
-If this Rhino file contains Rhino Objects with RevitElementID attached, this dialog will pop up to ask if you want to overwrite the existing import. 
+This pops up if Rhino file contains Objects with RevitElementID attached. 
 
-| 2 - Selecting **Overwrite** will Delete all Rhino Objects with Revit ElementIDs attached as a user-dictionary. It will remember the Rhino Layer each Revit Element is placed in. Later, the plug-in will place newly imported Revit Element with the same ID into the remembered Rhino Layer. 
+| 2 - **Overwrite** deletes all current Objects with Revit ElementIDs attached. Importer will remember Revit ElementID and their layer placement. Later, the plug-in will place newly imported Element with same ID into the remembered Layer. 
 
-| 3 - Selecting **Keep** will keep current Rhino Objects and Import the new model. 
+| 3 - **Keep** keeps current Rhino Objects and import new model. 
 
 .. figure:: images/revit_importing.png
    :width: 900px
@@ -41,13 +43,13 @@ If this Rhino file contains Rhino Objects with RevitElementID attached, this dia
 
 Elements from Revit are placed into different Rhino layers depending on their **Demolished Phases, Design Option, Category, and Family Type.** In the example above there is neither Design Option nor Phases information so Categories like "Walls" "Floors" are the top-most layers. Sub-layers like "Exterior - Insulation on Masonry" are family-types. By exploding a category into sub-layers, we can assign different materials to each sub-type. 
 
-Below is an abstract example of how layers nesting works with Phases and Design Option information. 
+Below is an abstract example of how nesting works with Phases and Design Option information. 
 
 .. figure:: images/revit_exampleLayers.png
    :width: 300px
    :align: center
 
-We especially recommend `checking your model`_ if Rooms are Not Imported, multiple phases exist in this model, complex window geometries exist, or you are overwriting the current model. 
+We especially recommend `checking your model`_ if Rooms are Not Imported, multiple phases exist in this model, complex window geometry exists, or you are overwriting the current model. 
 
 .. _checking your model: revitImportTroubleShoot.html
 
@@ -59,7 +61,7 @@ Set up Daylight Simulation
    :width: 900px
    :align: center
 
-In the `Materials`_ panel Default LM83 materials are assigned on Import (to a fresh Rhino file). 
+In the `Materials`_ panel Default LM83 materials are assigned on Import. 
 
 .. figure:: images/revit_occupiedareas.png
    :width: 900px
@@ -90,7 +92,7 @@ Combining Multiple Revit Models
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 We Recommend Import each Revit model in their own Rhino file, make changes to layer organization as needed, then combine the Rhino Files. This way, when re-importing (overwriting) each Revit file to their own Rhino file, the manual layer organization will be remembered. 
 
-Alternatively you may Import another .cse file and select **Keep Current Model** when asked. The combined Rhino file CANNOT run a overwrite import as multiple Rhino Objects are attached with the same Revit Element IDs. 
+Alternatively you may Import another .cse file and select **Keep Current Model** when asked. The combined Rhino file CANNOT run a overwrite import as multiple Rhino Objects are identified with the same Revit Element ID. 
 
 
 Trouble Shoot Your Import
