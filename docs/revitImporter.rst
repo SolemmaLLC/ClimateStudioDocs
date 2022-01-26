@@ -46,7 +46,7 @@ Elements from Revit are placed into different Rhino layers depending on their **
 Below is an abstract example of how nesting works with Phases and Design Option information. 
 
 .. figure:: images/revit_exampleLayers.png
-   :width: 300px
+   :width: 900px
    :align: center
 
 We especially recommend `checking your model`_ if Rooms are Not Imported, multiple phases exist in this model, complex window geometry exists, or you are overwriting the current model. 

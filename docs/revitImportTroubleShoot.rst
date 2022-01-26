@@ -13,7 +13,7 @@ Tips on Filtering Objects in Rhino
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. figure:: images/revit_attributetext.png
-   :width: 450px
+   :width: 900px
    :align: center
 
 Open Properties panel (1) in Rhino and open (2) **Attribute User Text** Panel. Rhino Objects are tagged with **Attribute User Text** based on data exported from Revit. 

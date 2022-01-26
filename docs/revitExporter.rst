@@ -21,7 +21,7 @@ Open Revit model.
 | 1,2 - Navigate to **Climate Studio** (1) tab, and click on **Export Daylight Model** (2). 
 
 .. figure:: images/revit_viewfilter.png
-   :width: 500px
+   :width: 900px
    :align: center
 
 | 3 - **Export Entire Model** exports all 3D model elements in this model
@@ -46,7 +46,7 @@ The **Categories table** is a list of all the categories present in this model. 
 Click **OK** to export .cse file. 
 
 .. figure:: images/revit_exporting.png
-   :width: 500px
+   :width: 900px
    :align: center
 
 Elements are exporting. When completed, select Location to save .cse file. 
