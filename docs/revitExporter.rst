@@ -1,8 +1,8 @@
 Revit Export Daylight Model
 -------------------------
-This workflow exports Revit model elements to a .cse file for `importing a Climate Studio Rhino Daylight model`_. 
+This workflow exports Revit model elements to a .cse file for `importing a Climate Studio Daylight model in Rhino`_. 
 
-.. _importing a Climate Studio Rhino Daylight model: revitImporter.html
+.. _importing a Climate Studio Daylight model in Rhino: revitImporter.html
 
 
 The exporter attaches Revit **ElementID**, **Category**, **Family Type**, **Design Option**, and **Phases** data to the geometries. This information will be used to organize geometries into Rhino layers on Import. 
