@@ -4,12 +4,12 @@ This workflow imports a .cse file created by Climate Studio `Revit Exporter Plug
 
 .. _Revit Exporter Plug-in: revitExporter.html
 
-Currently the Revit Export workflow is still in Beta release, please email us if you run into any issues. Update your Climate Studio to v1.7 to use it.  
+Currently the Revit Export workflow is still in Beta release, please email us if you run into any issues. This feature is only available in Climate Studio v1.7 or newer.  
 
 
 Import .cse file from Revit
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-We recommend starting with an **Empty File**.
+Start with an **Empty File**.
 
 .. figure:: images/revit_importbutton.png
    :width: 900px
@@ -41,7 +41,7 @@ This pops up if Rhino file contains Objects with RevitElementID attached.
    :width: 900px
    :align: center
 
-Elements from Revit are placed into different Rhino layers depending on their **Demolished Phases, Design Option, Category, and Family Type.** In the example above there is neither Design Option nor Phases information so Categories like "Walls" "Floors" are the top-most layers. Sub-layers like "Exterior - Insulation on Masonry" are family-types. By exploding a category into sub-layers, we can assign different materials to each sub-type. 
+Elements from Revit are placed into different Rhino layers depending on their **Demolished Phases, Design Option, Category, and Family Type.** In the example above there is neither Design Option nor Phases information so Categories like "Walls" "Floors" are the top-most layers. Sub-layers like "Exterior - Insulation on Masonry" are family-types. By exploding a category into sub-layers, sub-types can have different materials. 
 
 Below is an abstract example of how nesting works with Phases and Design Option information. 
 
@@ -49,9 +49,9 @@ Below is an abstract example of how nesting works with Phases and Design Option 
    :width: 900px
    :align: center
 
-We especially recommend `checking your model`_ if Rooms are Not Imported, multiple phases exist in this model, complex window geometry exists, or you are overwriting the current model. 
+`Check your model`_ if Rooms are Not Imported, multiple phases exist in this model, complex window geometry exists, or you are overwriting the current model. 
 
-.. _checking your model: revitImportTroubleShoot.html
+.. _Check your model: revitImportTroubleShoot.html
 
 
 Set up Daylight Simulation
@@ -90,7 +90,7 @@ The Imported Revit Model can be used to run the following analysis:
 
 Combining Multiple Revit Models
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-We Recommend Import each Revit model in their own Rhino file, make changes to layer organization as needed, then combine the Rhino Files. This way, when re-importing (overwriting) each Revit file to their own Rhino file, the manual layer organization will be remembered. 
+Import each Revit model in their own Rhino file, make changes to layer organization as needed, then combine the Rhino Files. This way, when re-importing (overwriting) each Revit file to their own Rhino file, the manual layer organization will be remembered. 
 
 Alternatively you may Import another .cse file and select **Keep Current Model** when asked. The combined Rhino file CANNOT run a overwrite import as multiple Rhino Objects are identified with the same Revit Element ID. 
 

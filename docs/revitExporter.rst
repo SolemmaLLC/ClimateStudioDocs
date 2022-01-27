@@ -7,7 +7,7 @@ This workflow exports Revit model elements to a .cse file for `importing a Clima
 
 The exporter attaches Revit **ElementID**, **Category**, **Family Type**, **Design Option**, and **Phases** data to the geometries. This information will be used to organize geometries into Rhino layers on Import. 
 
-Currently the Revit Export workflow is still in Beta release, please email us if you run into any issues. Update your Climate Studio to v1.7 to use it.  
+Currently the Revit Export workflow is still in Beta release, please email us if you run into any issues. This feature is only available in Climate Studio v1.7 or newer.  
 
 
 Export Revit Model
@@ -18,7 +18,7 @@ Open Revit model.
    :width: 900px
    :align: center
    
-| 1,2 - Navigate to **Climate Studio** (1) tab, and click on **Export Daylight Model** (2). 
+| 1,2 - Navigate to **Climate Studio** (1) tab -> click on **Export Daylight Model** (2). 
 
 .. figure:: images/revit_viewfilter.png
    :width: 900px
@@ -26,7 +26,7 @@ Open Revit model.
 
 | 3 - **Export Entire Model** exports all 3D model elements in this model
 
-| 4 - **Export Visible** exports all visible elements in the active view. We recommend having a **3D View** as your current active view and use a **Section Box** to filter out elements. The Section Box cuts geometries intersecting the edge of selection, the exporter will export the entire geometry.  
+| 4 - **Export Visible** exports all visible elements in the active view. Use a **3D View** as your current active view and a **Section Box** to filter out elements. The Section Box cuts geometries intersecting the edge of selection, the exporter will export the entire geometry.  
 
 click **OK** and the Categories table will show up. 
 
@@ -44,7 +44,7 @@ The **Categories table** is a list of all the categories present in this model. 
 
 | 8 - **See Types:** Click on **...** to see Family Types of this category.  
 
-| 9 - **Types Table:** Pop-up List of Family Types.  
+| 9 - **Types Table:** Show list of Family Types.  
 
 | 10 - **Export Rooms:** All Rooms elements that are “Placed” are exported by default. **Rooms** are used to created **Occupied Areas** as simulation grids. Additionally, this information is required for distinguishing exterior windows from interior windows, and to correctly set the normals of exterior windows. Only un-check this if the rooms information is unreliable.  
 
