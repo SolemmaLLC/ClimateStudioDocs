@@ -1,19 +1,29 @@
 
 EN 17037
 ================================================
-EN 17037 is a unified daylighting standard published by the European Committee for Standardization (`CEN`_) in 2018 (CEN 17037:2018). It covers four aspects of daylight in buildings, including daylight provision, views, access to sunlight, and prevention of glare. As of version 1.5, ClimateStudio supports compliance calculations for the first of these: daylight provision. To run an assessment of your project, use the Daylight Availability workflow and select the EN 17037 sub-workflow. For detailed instructions, follow the links below:
+EN 17037 is a unified daylighting standard published by the European Committee for Standardization (`CEN`_) in 2018 (CEN 17037:2018). It covers four aspects of daylight in buildings, including daylight provision, views, access to sunlight, and prevention of glare. As of version 1.5, ClimateStudio supports compliance calculations for the first two of these: 
 
 .. _CEN: https://www.cen.eu/
 
+Daylight Provision
+~~~~~~~~~~~~~~~~~~~~~~
+To compute daylight provision compliance, use the Daylight Availability workflow and select the EN 17037 sub-workflow. For detailed instructions, follow the links below:
 
 - `Setup (Daylight Availability Workflow)`_
-- `EN 17037 Results`_
+- `EN 17037 Daylight Results`_
 
 .. _Setup (Daylight Availability Workflow): daylightAvailability.html
-.. _EN 17037 Results: daylightEN17037.html
+.. _EN 17037 Daylight Results: daylightEN17037.html
 
+View Out
+~~~~~~~~~~~~~~~~~~~~~~
+To compute view compliance, use the View Analysis workflow, which automatically runs an EN 17037 assessment. For detailed instructions, follow the links below:
 
+- `Setup (View Workflow)`_
+- `EN 17037 View Results`_
 
+.. _Setup (View Workflow): viewAnalysis.html
+.. _EN 17037 View Results: viewEN17037.html
 
 
 
