@@ -18,6 +18,7 @@ To prepare a model for rendering, work your way through the five subpanels label
 | 3 - `Materials`_
 | 4 - `Luminaires`_ (optional)
 | 5 - `Tubular Daylighting Devices`_ (optional)
+| 6 - `Import .cse file from Revit`_ (optional)
 
 .. _Location: location.html
 
@@ -29,13 +30,15 @@ To prepare a model for rendering, work your way through the five subpanels label
 
 .. _Tubular Daylighting Devices: TDDs.html
 
+.. _Import .cse file from Revit: revitImporter.html
+
 If you have not done any lighting simulations in ClimateStudio, it is recommended that you go through the `Lighting Model Setup video tutorial`_ (5 minutes). The Rhino file used in the tutorial is available for `download.`_
 
 .. _Lighting Model Setup video tutorial: https://vimeo.com/392379928
 
 .. _download.: https://climatestudiodocs.com/ExampleFiles/CS_Two_Zone_Office.3dm
 
-Once all required inputs have been populated, click the Render Window button (6), which opens a form with a render view on the left and camera settings on the right. The render view displays renderings that are complete or in progress, so this area will remain blank until the Start button is clicked.
+Once all required inputs have been populated, click the Render Window button (7), which opens a form with a render view on the left and camera settings on the right. The render view displays renderings that are complete or in progress, so this area will remain blank until the Start button is clicked.
 
 .. figure:: images/result_renderWindow.png
    :width: 900px

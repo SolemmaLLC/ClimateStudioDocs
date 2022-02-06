@@ -38,6 +38,7 @@ The Getting Started section provides a quick overview a ClimateStudio interface.
    Radiation Map<docs/radiationMap.rst>
    View Analysis<docs/viewAnalysis.rst>
    Grasshopper Workflow Templates<docs/grasshopperTemplates.rst>
+   Revit Daylight model Export<docs/revitExporter.rst>
    
 
 .. toctree::

@@ -4,10 +4,15 @@ Read the docs documentation repository for ClimateStudio
 Requirements
 To edit you first need to install the SPHINX package for Python (https://www.sphinx-doc.org/en/master/).
 Install python - make sure to check the path installation. pip installs from command line, not python interpreter.
+
 pip install -U -- sphinx
+
 pip install recommonmark
+
 pip install ipython
+
 pip install matplotlib
+
 pip install sphinx_rtd_theme
 
 To update text or image:
