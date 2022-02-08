@@ -23,6 +23,7 @@ The Getting Started section provides a quick overview a ClimateStudio interface.
    Requirements<docs/requirements.rst>
    Installation <docs/installation.rst>
    Learning ClimateStudio<docs/learningClimateStudio.rst>
+   Version Updates<docs/versionUpdates.rst>
    
 .. toctree::
    :maxdepth: 1
