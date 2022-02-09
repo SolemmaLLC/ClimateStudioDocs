@@ -6,7 +6,7 @@ ClimateStudio is an advanced daylighting, electric lighting, and conceptual ther
 	
 ClimateStudio is a plugin for the `Rhinoceros (Rhino)`_ 3d modeling software developed and distributed by Robert McNeel & Associates. An installed version of Rhino 6 or 7 with a license or `free evaluation`_ is required to run ClimateStudio.
 	
-The Getting Started section provides a quick overview a ClimateStudio interface. The following sections explore the individual features and analysis workflows.
+The Getting Started section provides a quick overview of the ClimateStudio interface. The following sections explore the individual features and analysis workflows.
  
 	.. _Solemma LLC: https://www.solemma.com
 	.. _free evaluation: https://www.rhino3d.com/download/

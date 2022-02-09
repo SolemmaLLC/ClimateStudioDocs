@@ -42,7 +42,7 @@ By default, each exported category becomes a single layer in the daylight model.
 Rooms
 <<<<<<<<
 
-The **Export Rooms** option (**6**) should be enabled except in rare cases. ClimateStudio uses rooms in Revit to automatically generate analysis surfaces for daylight simulation. It also uses room boundaries to guess whether windows are interior or exterior, and to set their surface normals. (These distinctions may prove useful when assigning assigning materials or blinds.) Disable this option only if the model's room data are unreliable.
+The **Export Rooms** option (**6**) should be enabled except in rare cases. ClimateStudio uses rooms in Revit to automatically generate analysis surfaces for daylight simulation. It also uses room boundaries to guess whether windows are interior or exterior, and to set their surface normals. (These distinctions may prove useful when assigning materials or blinds.) Disable this option only if the model's room data are unreliable.
 
 Phases
 <<<<<<<<
