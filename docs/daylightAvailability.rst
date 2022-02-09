@@ -11,7 +11,7 @@ There are numerous conventions, compliance guidelines, and accreditation systems
    :width: 900px
    :align: center
 
-Depending on the sub-workflow selected, you will see up to five subpanels (labeled 1-5 in the figure above). To prepare a model for simulation, work your way through the available subpanels, entering site and material data as required.
+Depending on the sub-workflow selected, you will see up to six subpanels (labeled 1-6 in the figure above). To prepare a model for simulation, work your way through the available subpanels, entering site and material data as required.
 
 | 1 - `Location`_
 | 2 - `Materials`_
