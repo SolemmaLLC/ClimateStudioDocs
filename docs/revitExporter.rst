@@ -16,17 +16,28 @@ In Revit, open your model and navigate to the **ClimateStudio Tab** (**1**). The
    :width: 900px
    :align: center
    
-A dialog will appear with two options:
+
+A dialog appears with export settings: 
 
 .. figure:: images/revit_viewfilter.png
    :width: 900px
    :align: center
 
-| 3 - **Entire Model** scans all 3D model elements in this model. **Active View Elements (this document)** considers only those visible in the active view. You must set a 3D view as your active view for this option to work. If using this option in conjunction with a Section Box, please note that elements partially intersecting the box will be exported in full.
+Export Scope
+<<<<<<<<
 
-| 4 - **This Document Only** will not include any linked document geometries. **All Linked Files** exports all linked documents under Revit Links in Revit Project Browser. Both "overlay" and "attached" first-order linked documents will be included, only "attached" nested-linked documents will be included. Export Linked Document is disabled when a view filter is selected (3). 
+**Entire Model** (**3**) scans all 3D model elements in this model. **Active View Elements (this document)** considers only those visible in the active view. You must set a 3D view as your active view for this option to work. If using this option in conjunction with a Section Box, please note that elements partially intersecting the box will be exported in full.
 
-| 5 - **Nurbs When Available** option will export as both Nurbs (if available) and Meshes. **Mesh Only** will only export Meshes. Exporting Nurbs will result in a .cse file approximately 4 times larger than that of a mesh only export file.  
+Linked Documents
+<<<<<<<<
+
+**This Document Only** (**4**) does not include any linked document geometries. **All Linked Files** scans all linked documents in Revit Project Browser: both "overlay" and "attached" first-order linked documents, and only "attached" nested-linked documents. Export Linked Document is disabled when a active view filter is selected (**3**). 
+
+Nurbs Geometries
+<<<<<<<<
+
+**Nurbs When Available** (**5**) exports as both Nurbs (if available) and Meshes. **Mesh Only** only exports Meshes. Nurbs .cse files are approximately 4 times larger than that of a mesh only export file.  
+
 
 Upon clicking **OK**, a Categories table will appear: 
 
@@ -34,23 +45,23 @@ Upon clicking **OK**, a Categories table will appear:
    :width: 900px
    :align: center
 
-The **Categories table** lists all the model's elements by category. Use the **Export** column (**3**) to specify the categories you'd like to export. Note that simulation speed depends, in part, on the number of elements in the exported model. The default pre-selection aims to exclude details (like railings) that tend to have minimal impact on overall light levels. However, models and their categorization vary, so discretion should be used to include the relevant components.
+The **Categories table** lists all the model's elements by category. Use the **Export** column (**6**) to specify the categories you'd like to export. Note that simulation speed depends, in part, on the number of elements in the exported model. The default pre-selection aims to exclude details (like railings) that tend to have minimal impact on overall light levels. However, models and their categorization vary, so discretion should be used to include the relevant components.
 
 Layers
 <<<<<<<<
 
-By default, each exported category becomes a single layer in the daylight model. However, if you enable **Explode Types** (**4**), a sub-layer will be created for each family type within the category. Once in Rhino, ClimateStudio uses layers for material assignment -- so resolving types is useful if you intend to assign different finishes to different families. A list of types for each category can be found by clicking the ellipses in the **See Types** column (**5**).
+By default, each exported category becomes a single layer in the daylight model. However, if you enable **Explode Types** (**7**), a sub-layer will be created for each family type within the category. Once in Rhino, ClimateStudio uses layers for material assignment -- so resolving types is useful if you intend to assign different finishes to different families. A list of types for each category can be found by clicking the ellipses in the **See Types** column (**8**).
 
 
 Rooms
 <<<<<<<<
 
-The **Export Rooms** option (**6**) should be enabled except in rare cases. ClimateStudio uses rooms in Revit to automatically generate analysis surfaces for daylight simulation. It also uses room boundaries to guess whether windows are interior or exterior, and to set their surface normals. (These distinctions may prove useful when assigning materials or blinds.) Disable this option only if the model's room data are unreliable.
+The **Export Rooms** option (**9**) should be enabled except in rare cases. ClimateStudio uses rooms in Revit to automatically generate analysis surfaces for daylight simulation. It also uses room boundaries to guess whether windows are interior or exterior, and to set their surface normals. (These distinctions may prove useful when assigning materials or blinds.) Disable this option only if the model's room data are unreliable.
 
 Phases
 <<<<<<<<
 
-Revit elements with a “Demolished Phase” tag will NOT be exported unless the **Export Demolished** option (**7**) is enabled. Exporting demolished geometries may result in overlapping geometries in the Rhino model, requiring manual clean-up.  
+Revit elements with a “Demolished Phase” tag will NOT be exported unless the **Export Demolished** option (**10**) is enabled. Exporting demolished geometries may result in overlapping geometries in the Rhino model, requiring manual clean-up.  
 
 Click **OK** to export the model.
 

@@ -26,14 +26,14 @@ Select a .cse file to import. If your Rhino model already contains Revit element
   
 .. _Revit Exporter Plug-in: revitExporter.html
 
+If your .cse file contains Nurbs geometry, you will be presented with: 
+
 .. figure:: images/revit_importnurbs.png
    :width: 900px
    :align: center
 
-This pops up if .cse file contains NURBS geometry. 
-Choose to either import Nurbs when successful or import meshes only. If an error occurs when importing Nurbs geometry, a mesh geometry will be created in it's place. 
-
-
+- **Import Nurbs** imports Nurbs Geometry when available, a mesh geometry are created otherwise. 
+- **Mesh Only** imports only mesh geometires. This will result in a lighter model. 
 
 .. figure:: images/revit_importing.png
    :width: 900px
