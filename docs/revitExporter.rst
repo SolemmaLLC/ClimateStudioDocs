@@ -24,9 +24,11 @@ Open Revit model.
    :width: 900px
    :align: center
 
-| 3 - **Export Entire Model** exports all 3D model elements in this model
+| 3 - **Entire Model** exports all 3D model elements in this model. **Active View Elements (this document)** exports visible elements in the active view from the current document. Use a **3D View** as your current active view and a **Section Box** to filter out elements. The Section Box cuts geometries intersecting the edge of selection, the exporter will export the entire geometry.  
 
-| 4 - **Export Visible** exports all visible elements in the active view. Use a **3D View** as your current active view and a **Section Box** to filter out elements. The Section Box cuts geometries intersecting the edge of selection, the exporter will export the entire geometry.  
+| 4 - **This Document Only** will not include any linked document geometries. **All Linked Files** exports all linked documents under Revit Links in Revit Project Browser. Both "overlay" and "attached" first-order linked documents will be included, only "attached" nested-linked documents will be included. Export Linked Document is disabled when a view filter is selected (3). 
+
+| 5 - **Nurbs When Available** option will export as both Nurbs (if available) and Meshes. **Mesh Only** will only export Meshes. Exporting Nurbs will result in a .cse file approximately 4 times larger than that of a mesh only export file.  
 
 click **OK** and the Categories table will show up. 
 
@@ -36,19 +38,19 @@ click **OK** and the Categories table will show up.
 
 The **Categories table** is a list of all the categories present in this model. A set of default categories to export are already selected. 
 
-| 5 - **Element Count:** The number of elements each category contains gives a hint to which categories are essential.  
+| 6 - **Element Count:** The number of elements each category contains gives a hint to which categories are essential.  
 
-| 6 - **Explode Types:** Check for each Family Type to export as individual Rhino sub-layers if types require different materials.  
+| 7 - **Explode Types:** Check for each Family Type to export as individual Rhino sub-layers if types require different materials.  
 
-| 7 - **Type Count:** Number of Family Types in this category.    
+| 8 - **Type Count:** Number of Family Types in this category.    
 
-| 8 - **See Types:** Click on **...** to see Family Types of this category.  
+| 9 - **See Types:** Click on **...** to see Family Types of this category.  
 
-| 9 - **Types Table:** Show list of Family Types.  
+| 10 - **Types Table:** Show list of Family Types.  
 
-| 10 - **Export Rooms:** All Rooms elements that are “Placed” are exported by default. **Rooms** are used to created **Occupied Areas** as simulation grids. Additionally, this information is required for distinguishing exterior windows from interior windows, and to correctly set the normals of exterior windows. Only un-check this if the rooms information is unreliable.  
+| 11 - **Export Rooms:** All Rooms elements that are “Placed” are exported by default. **Rooms** are used to created **Occupied Areas** as simulation grids. Additionally, this information is required for distinguishing exterior windows from interior windows, and to correctly set the normals of exterior windows. Only un-check this if the rooms information is unreliable.  
 
-| 11 - **Export Demolished:** Geometries with “Demolished Phase” will NOT be exported by default. Check **Export Demolished Geometries** to export them. Exporting demolished geometries might result in overlapping geometries in the Rhino model that requires manual clean-up.  
+| 12 - **Export Demolished:** Geometries with “Demolished Phase” will NOT be exported by default. Check **Export Demolished Geometries** to export them. Exporting demolished geometries might result in overlapping geometries in the Rhino model that requires manual clean-up.  
 
 Click **OK** to export .cse file. 
 

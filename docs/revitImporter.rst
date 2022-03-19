@@ -25,9 +25,19 @@ Select a .cse file to import.
 
 This pops up if Rhino file contains Objects with RevitElementID attached. 
 
+
 | 2 - **Overwrite** deletes all current Objects with Revit ElementIDs attached. Importer will remember Revit ElementID and their layer placement. Later, the plug-in will place newly imported Element with same ID into the remembered Layer. 
 
 | 3 - **Keep** keeps current Rhino Objects and import new model. 
+
+.. figure:: images/revit_importnurbs.png
+   :width: 900px
+   :align: center
+
+This pops up if .cse file contains NURBS geometry. 
+Choose to either import Nurbs when successful or import meshes only. If an error occurs when importing Nurbs geometry, a mesh geometry will be created in it's place. 
+
+
 
 .. figure:: images/revit_importing.png
    :width: 900px
