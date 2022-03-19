@@ -1,65 +1,65 @@
-Revit Export Daylight Model
--------------------------
-This workflow exports Revit model elements to a .cse file for `importing a Climate Studio Daylight model in Rhino`_. 
+Revit Daylight Model Export
+----------------------------
+This workflow facilitates the transfer of Revit models to Rhino for ClimateStudio daylighting analysis. The workflow automates several previously-cumbersome aspects of daylight-model exchange, including the filtering of model categories, the generation of analysis surfaces, and the conversion of glazing solids to single surfaces (as required for Radiance-based simulations). This document breaks the process into two steps. Revit export is described below, while `import into Rhino is covered here`_. An easy-to-follow `video tutorial`_ is also available.
 
-.. _importing a Climate Studio Daylight model in Rhino: revitImporter.html
+.. _import into Rhino is covered here: revitImporter.html
+.. _video tutorial: https://www.youtube.com/watch?v=bwuYouLKxn0
 
-
-The exporter attaches Revit **ElementID**, **Category**, **Family Type**, **Design Option**, and **Phases** data to the geometries. This information will be used to organize geometries into Rhino layers on Import. 
-
-Currently the Revit Export workflow is still in Beta release, please email us if you run into any issues. This feature is only available in Climate Studio v1.7 or newer.  
+The workflow is currently in beta, and requires ClimateStudio Service Release Candidate v1.7. Please contact the ClimateStudio support team if you encounter issues. Revit modeling practices vary widely, so sharing examples is helpful for improving the software.
 
 
 Export Revit Model
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Open Revit model. 
+In Revit, open your model and navigate to the **ClimateStudio Tab** (**1**). Then click the **Export Daylight Model** button (**2**):
 
 .. figure:: images/revit_toolbar.png
    :width: 900px
    :align: center
    
-| 1,2 - Navigate to **Climate Studio** (1) tab -> click on **Export Daylight Model** (2). 
+A dialog will appear with two options:
 
 .. figure:: images/revit_viewfilter.png
    :width: 900px
    :align: center
 
-| 3 - **Entire Model** exports all 3D model elements in this model. **Active View Elements (this document)** exports visible elements in the active view from the current document. Use a **3D View** as your current active view and a **Section Box** to filter out elements. The Section Box cuts geometries intersecting the edge of selection, the exporter will export the entire geometry.  
+| 3 - **Entire Model** scans all 3D model elements in this model. **Active View Elements (this document)** considers only those visible in the active view. You must set a 3D view as your active view for this option to work. If using this option in conjunction with a Section Box, please note that elements partially intersecting the box will be exported in full.
 
 | 4 - **This Document Only** will not include any linked document geometries. **All Linked Files** exports all linked documents under Revit Links in Revit Project Browser. Both "overlay" and "attached" first-order linked documents will be included, only "attached" nested-linked documents will be included. Export Linked Document is disabled when a view filter is selected (3). 
 
 | 5 - **Nurbs When Available** option will export as both Nurbs (if available) and Meshes. **Mesh Only** will only export Meshes. Exporting Nurbs will result in a .cse file approximately 4 times larger than that of a mesh only export file.  
 
-click **OK** and the Categories table will show up. 
+Upon clicking **OK**, a Categories table will appear: 
 
 .. figure:: images/revit_categoriestable.png
    :width: 900px
    :align: center
 
-The **Categories table** is a list of all the categories present in this model. A set of default categories to export are already selected. 
+The **Categories table** lists all the model's elements by category. Use the **Export** column (**3**) to specify the categories you'd like to export. Note that simulation speed depends, in part, on the number of elements in the exported model. The default pre-selection aims to exclude details (like railings) that tend to have minimal impact on overall light levels. However, models and their categorization vary, so discretion should be used to include the relevant components.
 
-| 6 - **Element Count:** The number of elements each category contains gives a hint to which categories are essential.  
+Layers
+<<<<<<<<
 
-| 7 - **Explode Types:** Check for each Family Type to export as individual Rhino sub-layers if types require different materials.  
+By default, each exported category becomes a single layer in the daylight model. However, if you enable **Explode Types** (**4**), a sub-layer will be created for each family type within the category. Once in Rhino, ClimateStudio uses layers for material assignment -- so resolving types is useful if you intend to assign different finishes to different families. A list of types for each category can be found by clicking the ellipses in the **See Types** column (**5**).
 
-| 8 - **Type Count:** Number of Family Types in this category.    
 
-| 9 - **See Types:** Click on **...** to see Family Types of this category.  
+Rooms
+<<<<<<<<
 
-| 10 - **Types Table:** Show list of Family Types.  
+The **Export Rooms** option (**6**) should be enabled except in rare cases. ClimateStudio uses rooms in Revit to automatically generate analysis surfaces for daylight simulation. It also uses room boundaries to guess whether windows are interior or exterior, and to set their surface normals. (These distinctions may prove useful when assigning materials or blinds.) Disable this option only if the model's room data are unreliable.
 
-| 11 - **Export Rooms:** All Rooms elements that are “Placed” are exported by default. **Rooms** are used to created **Occupied Areas** as simulation grids. Additionally, this information is required for distinguishing exterior windows from interior windows, and to correctly set the normals of exterior windows. Only un-check this if the rooms information is unreliable.  
+Phases
+<<<<<<<<
 
-| 12 - **Export Demolished:** Geometries with “Demolished Phase” will NOT be exported by default. Check **Export Demolished Geometries** to export them. Exporting demolished geometries might result in overlapping geometries in the Rhino model that requires manual clean-up.  
+Revit elements with a “Demolished Phase” tag will NOT be exported unless the **Export Demolished** option (**7**) is enabled. Exporting demolished geometries may result in overlapping geometries in the Rhino model, requiring manual clean-up.  
 
-Click **OK** to export .cse file. 
+Click **OK** to export the model.
 
 .. figure:: images/revit_exporting.png
    :width: 900px
    :align: center
 
-Elements are exporting. When completed, select Location to save .cse file. 
+Once elements are finished exporting, select a location to save the file. The resulting **ClimateStudio Exchange (.cse)** file can be imported to Rhino as described here:
 
-`Import .cse file to Climate Studio Rhino.`_
+- `Import .cse file to ClimateStudio Rhino`_
 
-.. _Import .cse file to Climate Studio Rhino.: revitImporter.html
+.. _Import .cse file to ClimateStudio Rhino: revitImporter.html

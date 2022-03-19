@@ -5,13 +5,13 @@ This workflow supports the calculation of a variety of daylight availability met
 
 Simulation Setup
 -----------------------
-There are numerous conventions, compliance guidelines, and accreditation systems centered on the measurement of daylight availability. To cover these bases, ClimateStudio offers several sub-workflows (available via dropdown 8 in the figure below). If you don't have a specific standard in mind, the LEED Option 1 setting is a reasonable place to start.
+There are numerous conventions, compliance guidelines, and accreditation systems centered on the measurement of daylight availability. To cover these bases, ClimateStudio offers several sub-workflows (available via dropdown 9 in the figure below). If you don't have a specific standard in mind, the LEED Option 1 setting is a reasonable place to start.
 
 .. figure:: images/workflowPanel_daylight.png
    :width: 900px
    :align: center
 
-Depending on the sub-workflow selected, you will see up to five subpanels (labeled 1-5 in the figure above). To prepare a model for simulation, work your way through the available subpanels, entering site and material data as required.
+Depending on the sub-workflow selected, you will see up to six subpanels (labeled 1-6 in the figure above). To prepare a model for simulation, work your way through the available subpanels, entering site and material data as required.
 
 | 1 - `Location`_
 | 2 - `Materials`_
