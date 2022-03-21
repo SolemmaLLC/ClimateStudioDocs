@@ -32,8 +32,8 @@ If your .cse file contains NURBS geometry, you will be presented with:
    :width: 900px
    :align: center
 
-- **Import NURBS** imports NURBS Geometry when available, mesh geometry is created otherwise. 
-- **Mesh Only** imports only mesh geometires. This will result in a lighter model. 
+- **Import NURBS** imports NURBS geometries when available, mesh geometries are created otherwise. 
+- **Mesh Only** imports only mesh geometries. This will result in a lighter model. 
 
 .. figure:: images/revit_importing.png
    :width: 900px
