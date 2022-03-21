@@ -31,12 +31,12 @@ Export Scope
 Linked Documents
 <<<<<<<<
 
-**This Document Only** (**4**) does not include any linked document geometries. **All Linked Files** scans all linked documents in Revit Project Browser: both "overlay" and "attached" first-order linked documents, and only "attached" nested-linked documents. Export Linked Document is disabled when a active view filter is selected (**3**). 
+**This Document Only** (**4**) does not include any linked document geometries. **All Linked Files** scans all linked documents in Revit Project Browser: both "overlay" and "attached" first-order linked documents, and only "attached" nested-linked documents. Export Linked Document is disabled when a active view filter is selected (**3**). This option only shows up if there are linked files. 
 
-Nurbs Geometries
+NURBS Geometries
 <<<<<<<<
 
-**Nurbs When Available** (**5**) exports as both Nurbs (if available) and Meshes. **Mesh Only** only exports Meshes. Nurbs .cse files are approximately 4 times larger than that of a mesh only export file.  
+**NURBS When Available** (**5**) exports as both NURBS (if available) and Meshes. **Mesh Only** only exports Meshes. NURBS .cse files are approximately 4 times larger than that of a mesh only export file.  
 
 
 Upon clicking **OK**, a Categories table will appear: 
