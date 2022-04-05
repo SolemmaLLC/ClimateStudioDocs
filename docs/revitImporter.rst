@@ -39,7 +39,7 @@ If your .cse file contains NURBS geometry, you will be presented with:
    :width: 900px
    :align: center
 
-**Window** solids are reduced to **single plane surfaces** during import. Windows are separated into “interior” or “exterior” layers depending on the host wall and room data provided in the Revit model. Exterior windows have normals facing outside, which is required when `assigning blinds`_ for annual daylight simulation. 
+**Window** solids with material class "Glass" are reduced to **single plane surfaces** during import. Windows are separated into “interior” or “exterior” layers depending on the host wall and room data provided in the Revit model. Exterior windows have normals facing outside, which is required when `assigning blinds`_ for annual daylight simulation. 
 
 .. _assigning blinds: blinds.html
 
