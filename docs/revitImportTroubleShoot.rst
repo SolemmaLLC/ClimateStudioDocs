@@ -53,3 +53,16 @@ Cleaning Exported Model
 During a regular import, 3D windows and Rooms are not baked into Rhino since only their single-plane representations are needed for daylight simulations. 
 
 To retrieve these 3D windows and rooms, run `CSImportRevitDiscardedGeometries` command will import those 3D Windows and Rooms. Use this if single plane windows or occupied areas are not created correctly. 
+
+
+Window Identified as solids
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Use a Revit material with material class "Glass" on all your Glazing Geometries. 
+
+Deprecated Room Geometries
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Make sure your Room Boundaries are set-up correctly in your Plan and Section views. 
+
+Rooms are only used to create Occupied Areas which are used as analysis surfaces and used to identify exterior windows thus are not required for your simulation. 

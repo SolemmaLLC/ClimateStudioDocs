@@ -31,7 +31,16 @@ Export Scope
 Linked Documents
 <<<<<<<<
 
-**This Document Only** (**4**) does not include any linked document geometries. **All Linked Files** scans all linked documents in Revit Project Browser: both "overlay" and "attached" first-order linked documents, and only "attached" nested-linked documents. Export Linked Document is disabled when a active view filter is selected (**3**). This option only shows up if there are linked files. 
+This option only shows up if there are linked files. When a active view filter is selected (**3**) only current document elements are exported. 
+
+**All Linked Files** (**4**) scans all linked documents in Revit Project Browser (both "overlay" and "attached" linked documents, and only "attached" nested-linked documents): 
+
+.. figure:: images/revit_revitlinks.png
+   :width: 900px
+   :align: center
+
+**This Document Only** scans current active document only. 
+
 
 NURBS Geometries
 <<<<<<<<
