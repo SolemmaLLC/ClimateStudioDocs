@@ -5,7 +5,7 @@ This workflow facilitates the transfer of Revit models to Rhino for ClimateStudi
 .. _import into Rhino is covered here: revitImporter.html
 .. _video tutorial: https://www.youtube.com/watch?v=bwuYouLKxn0
 
-The workflow is currently in beta, and requires ClimateStudio Service Release Candidate v1.7. Please contact the ClimateStudio support team if you encounter issues. Revit modeling practices vary widely, so sharing examples is helpful for improving the software.
+The workflow requires ClimateStudio v1.7. Please contact the ClimateStudio support team if you encounter issues. Revit modeling practices vary widely, so sharing examples is helpful for improving the software.
 
 
 Export Revit Model
@@ -24,28 +24,28 @@ A dialog appears with export settings:
    :align: center
 
 Export Scope
-<<<<<<<<
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
 
 **Entire Model** (**3**) scans all 3D model elements in this model. **Active View Elements (this document)** considers only those visible in the active view. You must set a 3D view as your active view for this option to work. If using this option in conjunction with a Section Box, please note that elements partially intersecting the box will be exported in full.
 
 Linked Documents
-<<<<<<<<
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
 
-This option only shows up if there are linked files. When a active view filter is selected (**3**) only current document elements are exported. 
+This option appears only if there are linked files. When an active view filter is selected (**3**), only elements from the current document are exported. 
 
-**All Linked Files** (**4**) scans all linked documents in Revit Project Browser (both "overlay" and "attached" linked documents, and only "attached" nested-linked documents): 
+**All Linked Files** (**4**) scans all linked documents in the Revit Project Browser (both "overlay" and "attached" linked documents, and only "attached" nested-linked documents): 
 
 .. figure:: images/revit_revitlinks.png
    :width: 900px
    :align: center
 
-**This Document Only** scans current active document only. 
+**This Document Only** scans the current active document only. 
 
 
 NURBS Geometries
-<<<<<<<<
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
 
-**NURBS When Available** (**5**) exports as both NURBS (if available) and Meshes. **Mesh Only** only exports Meshes. NURBS .cse files are approximately 4 times larger than that of a mesh only export file.  
+**NURBS When Available** (**5**) exports as both NURBS (if available) and meshes. **Mesh Only** exports only meshes. The NURBS option will produce larger .cse files than the mesh-only option.  
 
 
 Upon clicking **OK**, a Categories table will appear: 
@@ -57,18 +57,18 @@ Upon clicking **OK**, a Categories table will appear:
 The **Categories table** lists all the model's elements by category. Use the **Export** column (**6**) to specify the categories you'd like to export. Note that simulation speed depends, in part, on the number of elements in the exported model. The default pre-selection aims to exclude details (like railings) that tend to have minimal impact on overall light levels. However, models and their categorization vary, so discretion should be used to include the relevant components.
 
 Layers
-<<<<<<<<
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
 
 By default, each exported category becomes a single layer in the daylight model. However, if you enable **Explode Types** (**7**), a sub-layer will be created for each family type within the category. Once in Rhino, ClimateStudio uses layers for material assignment -- so resolving types is useful if you intend to assign different finishes to different families. A list of types for each category can be found by clicking the ellipses in the **See Types** column (**8**).
 
 
 Rooms
-<<<<<<<<
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
 
 The **Export Rooms** option (**9**) should be enabled except in rare cases. ClimateStudio uses rooms in Revit to automatically generate analysis surfaces for daylight simulation. It also uses room boundaries to guess whether windows are interior or exterior, and to set their surface normals. (These distinctions may prove useful when assigning materials or blinds.) Disable this option only if the model's room data are unreliable.
 
 Phases
-<<<<<<<<
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
 
 Revit elements with a “Demolished Phase” tag will NOT be exported unless the **Export Demolished** option (**10**) is enabled. Exporting demolished geometries may result in overlapping geometries in the Rhino model, requiring manual clean-up.  
 

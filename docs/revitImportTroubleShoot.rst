@@ -1,5 +1,5 @@
 Revit Import Trouble Shoot
--------------------------
+-----------------------------------
 
 Checking Imported Model
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -10,7 +10,7 @@ Checking Imported Model
 - Each layer in Rhino will be assigned a material, so make sure geometries in the same layer have the same material. Move them into different layers or create new layers if needed. These changes are remembered when running a overwrite import. 
 
 Tips on Filtering Objects in Rhino
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. figure:: images/revit_attributetext.png
    :width: 900px
@@ -55,7 +55,7 @@ During a regular import, 3D windows and Rooms are not baked into Rhino since onl
 To retrieve these 3D windows and rooms, run `CSImportRevitDiscardedGeometries` command will import those 3D Windows and Rooms. Use this if single plane windows or occupied areas are not created correctly. 
 
 
-Window Identified as solids
+Windows Imported as Solids
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Use a Revit material with material class "Glass" on all your Glazing Geometries. 
@@ -63,6 +63,6 @@ Use a Revit material with material class "Glass" on all your Glazing Geometries.
 Deprecated Room Geometries
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Make sure your Room Boundaries are set-up correctly in your Plan and Section views. 
+Make sure your Room Boundaries are set up correctly in your Plan and Section views. 
 
-Rooms are only used to create Occupied Areas which are used as analysis surfaces and used to identify exterior windows thus are not required for your simulation. 
+Rooms are used only to create Occupied Areas for simulation, and for identifying exterior windows. They are not strictly required for export.
