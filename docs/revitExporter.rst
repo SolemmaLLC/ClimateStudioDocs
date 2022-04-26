@@ -3,7 +3,7 @@ Revit Daylight Model Export
 This workflow facilitates the transfer of Revit models to Rhino for ClimateStudio daylighting analysis. The workflow automates several previously-cumbersome aspects of daylight-model exchange, including the filtering of model categories, the generation of analysis surfaces, and the conversion of glazing solids to single surfaces (as required for Radiance-based simulations). This document breaks the process into two steps. Revit export is described below, while `import into Rhino is covered here`_. An easy-to-follow `video tutorial`_ is also available.
 
 .. _import into Rhino is covered here: revitImporter.html
-.. _video tutorial: https://www.youtube.com/watch?v=bwuYouLKxn0
+.. _video tutorial: https://www.youtube.com/watch?v=kfx9iVHueD8
 
 The workflow requires ClimateStudio v1.7. Please contact the ClimateStudio support team if you encounter issues. Revit modeling practices vary widely, so sharing examples is helpful for improving the software.
 
