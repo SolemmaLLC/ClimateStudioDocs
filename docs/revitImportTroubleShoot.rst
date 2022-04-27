@@ -16,9 +16,9 @@ Tips on Filtering Objects in Rhino
    :width: 900px
    :align: center
 
-Open Properties panel (1) in Rhino and open (2) **Attribute User Text** Panel. Rhino Objects are tagged with **Attribute User Text** based on data exported from Revit. 
+Open Properties panel (**1**) in Rhino and open (**2**) **Attribute User Text** Panel. Rhino Objects are tagged with **Attribute User Text** based on data exported from Revit. 
 
-Right click (3) to select objects with the same Key and Value (4). 
+Right click (**3**) to select objects with the same Key and Value (**4**). 
 
 This is a good way to filter objects for reorganization. For example: select objects created in the same phase or objects on the same level. 
 
@@ -55,10 +55,16 @@ During a regular import, 3D windows and Rooms are not baked into Rhino since onl
 To retrieve these 3D windows and rooms, run `CSImportRevitDiscardedGeometries` command will import those 3D Windows and Rooms. Use this if single plane windows or occupied areas are not created correctly. 
 
 
-Windows Imported as Solids
+Window Glazing Imported as Solids
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Use a Revit material with material class "Glass" on all your Glazing Geometries. 
+Only geometry applied with a Revit material with material class "**Glass**" will be recognized and converted to single plane geometry. 
+
+This property can be set in Revit by going into the "**Manage**" tab (**1**) and then "**Materials**" (**2**). The **Revit Material Browser** will open. Select the material used on your glazing and go to "**Identity**" tab (**3**) and set the "**Class**" of material to "**Glass**" (**4**). Click "OK" or "Apply" to commit your changes. Run the export again.  
+
+.. figure:: images/revit_glazingrevitmaterial.png
+   :width: 900px
+   :align: center
 
 Deprecated Room Geometries
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
