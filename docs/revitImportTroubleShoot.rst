@@ -1,5 +1,5 @@
 Revit Import Trouble Shoot
--------------------------
+-----------------------------------
 
 Checking Imported Model
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -10,7 +10,7 @@ Checking Imported Model
 - Each layer in Rhino will be assigned a material, so make sure geometries in the same layer have the same material. Move them into different layers or create new layers if needed. These changes are remembered when running a overwrite import. 
 
 Tips on Filtering Objects in Rhino
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. figure:: images/revit_attributetext.png
    :width: 900px
@@ -69,6 +69,6 @@ This property can be set in Revit by going into the "Manage" tab (**1**) and the
 Deprecated Room Geometries
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Make sure your Room Boundaries are set-up correctly in your Plan and Section views. 
+Make sure your Room Boundaries are set up correctly in your Plan and Section views. 
 
-Rooms are only used to create Occupied Areas which are used as analysis surfaces and used to identify exterior windows thus are not required for your simulation. 
+Rooms are used only to create Occupied Areas for simulation, and for identifying exterior windows. They are not strictly required for export.

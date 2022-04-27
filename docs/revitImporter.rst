@@ -1,10 +1,10 @@
 Revit Daylight Model Import 
--------------------------
+----------------------------------
 This button imports a daylight model created by ClimateStudio's `Revit Exporter`_. 
 
 .. _Revit Exporter: revitExporter.html
 
-The Revit-to-Rhino workflow is currently in beta, and requires ClimateStudio Service Release Candidate v1.7. Please contact the ClimateStudio support team if you encounter issues. Revit modeling practices vary widely, so sharing examples is helpful for improving the software.
+The Revit-to-Rhino workflow requires ClimateStudio v1.7. Please contact the ClimateStudio support team if you encounter issues. Revit modeling practices vary widely, so sharing examples is helpful for improving the software.
 
 
 Import .cse file from Revit
@@ -32,8 +32,8 @@ If your .cse file contains NURBS geometry, you will be presented with:
    :width: 900px
    :align: center
 
-- **Import NURBS** imports NURBS geometries when available, mesh geometries are created otherwise. 
-- **Mesh Only** imports only mesh geometries. This will result in a lighter model. 
+- **Import NURBS** imports NURBS geometries when available. Mesh geometries are created otherwise. 
+- **Mesh Only** imports only mesh geometries.
 
 .. figure:: images/revit_importing.png
    :width: 900px
@@ -104,7 +104,7 @@ The imported Revit model can be used to run the following types of analysis:
 
 
 Combining Multiple Revit Models
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Import each Revit model into its own Rhino file, make changes to layer organization as needed, and then combine the Rhino files using links. This way, if you need to re-import (overwrite) one of the files, its manual layer organization can be preserved. 
 
 Alternatively you may import multiple .cse files into the same Rhino document by selecting the **Keep Current Model** option when asked. However, this option will not accommodate re-importing (overwriting), as all elements derived from Revit models besides the one being imported will be wiped. 
