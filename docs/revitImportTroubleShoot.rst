@@ -58,9 +58,9 @@ To retrieve these 3D windows and rooms, run `CSImportRevitDiscardedGeometries` c
 Window Glazing Imported as Solids
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Only geometry applied with a Revit material with material class "Glass" will be recognized and converted to single plane geometries. 
+Only geometry applied with a Revit material with material class "**Glass**" will be recognized and converted to single plane geometry. 
 
-This property can be set in Revit by going into the "Manage" tab (**1**) and then "Materials" (**2**). The Revit Material Browser will open. Select the material used on your glazing and go to "Identity" tab (**3**) and set the "Class" of material to "Glass" (**4**). Click "OK" or "Apply" to commit your changes. Run the export again.  
+This property can be set in Revit by going into the "**Manage**" tab (**1**) and then "**Materials**" (**2**). The **Revit Material Browser** will open. Select the material used on your glazing and go to "**Identity**" tab (**3**) and set the "**Class**" of material to "**Glass**" (**4**). Click "OK" or "Apply" to commit your changes. Run the export again.  
 
 .. figure:: images/revit_glazingrevitmaterial.png
    :width: 900px
