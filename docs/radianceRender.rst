@@ -1,7 +1,7 @@
 
 Radiance Render
 ================================================
-The ClimateStudio Radiance Render workflow supports the creation of physically based renderings using a path tracing version of the `Radiance`_ raytracer.
+The ClimateStudio Radiance Render workflow supports the creation of physically-based renderings using a path tracing version of the `Radiance`_ raytracer.
 
 .. _Radiance: https://www.radiance-online.org/
 
@@ -11,7 +11,7 @@ Simulation Setup
    :width: 900px
    :align: center
 
-To prepare a model for rendering, work your way through the five subpanels labeled 1-5 in the figure above.
+To prepare a model for rendering, work your way through the six subpanels labeled 1-6 in the figure above.
 
 | 1 - `Location`_
 | 2 - `Sky`_
@@ -38,24 +38,38 @@ If you have not done any lighting simulations in ClimateStudio, it is recommende
 
 .. _download.: https://climatestudiodocs.com/ExampleFiles/CS_Two_Zone_Office.3dm
 
-Once all required inputs have been populated, click the Render Window button (7), which opens a form with a render view on the left and camera settings on the right. The render view displays renderings that are complete or in progress, so this area will remain blank until the Start button is clicked.
+Once all required inputs have been populated, click the Render Window button (7), which opens a form with a camera viewport on the left and camera settings on the right.
 
-.. figure:: images/result_renderWindow.png
+
+Camera Setup
+-----------------------
+
+.. figure:: images/CameraSetup.gif
    :width: 900px
    :align: center
 
-Camera Setup
-^^^^^^^^^^^^^^^^^^^^^^
-
-- **Projection:** Radiance supports a series of lens types that determine how a the surrounding scene is projected onto a two-dimensional image. For more details consult the `Radiance rpict manual pages.`_ The default projection -- the *Rotating Fisheye* -- is a custom type available only in ClimateStudio. For a given camera location, it generates a 360-degree panorama, which is remapped onto an oriented 180-degree angular fisheye on the screen in real time. This allows the user to rotate the view direction without having to start a new rendering. 
-
-.. _Radiance rpict manual pages.: https://floyd.lbl.gov/radiance/man_html/rpict.1.html
-
-- **Position:** Corresponds to the location of the camera in the scene. 
+- **Metric:** ClimateStudio supports the creation of both luminance and illuminance images. The luminance option shows the photometric intensity of light arriving at the viewing position (per solid angle), as a theoretical physical camera would. The illuminance option shows the total photometric flux falling on surfaces visible in the scene. This is not something a camera (or human eye) could see from the stated vantage -- but is useful for displaying light levels falling onto task surfaces, e.g. when placing luminaires. 
 
 .. _Radiance: https://www.radiance-online.org/
 
-- **Rotation and Tilt:** Controls the direction the camera is facing. Rotation is measured in degrees counterclockwise from East, and Tilt in degrees above or below the horizon.
+- **View:** The View dropdown contains a list of standard Rhino views, as well as several non-perspective/non-parallel lens types supported by Radiance.
+
+.. _Radiance: https://www.radiance-online.org/
+
+  - **Rhino Views:** Includes standard views (Perspective, Top, Front, etc.) as well as any `named views`_ that are part of the document. Views are shown in a navigable viewport control, which supports pan (left-click) and rotate (right-click) actions. The control is limited vis-a-vis the native Rhino viewport in two important respects. First, it does not support ghosted display modes, so all surfaces are previewed as opaque. And second, the mouse-wheel does not dolly the camera location as you might expect. As a result, you may find it more convenient to drive the camera using the native Rhino viewport. To do so, select the **Active Rhino view (one way sync)** option.
+  
+  .. _Radiance: https://www.radiance-online.org/
+  
+  - **Radiance Projections:** In addition to perspective and parallel views, ClimateStudio supports several Radiance-style fisheye and panorama projections, including cylindrical (soup-can) and equirectangular (lat-lon) maps. For more details consult the `Radiance rpict manual pages.`_ When selecting one of these options, a non-navigable preview will appear for the current camera location and target.
+  
+  .. _Radiance: https://www.radiance-online.org/
+  
+  - **Fisheye (rotating):** Available only in ClimateStudio, the rotating fisheye generates a 360-degree panorama that is remapped onto an oriented 180-degree angular fisheye in real time. This allows changes in view direction without having to start a new rendering.
+
+.. _named views: https://floyd.lbl.gov/radiance/man_html/rpict.1.html
+.. _Radiance rpict manual pages.: https://floyd.lbl.gov/radiance/man_html/rpict.1.html
+
+- **Location and Target:** For all views, the camera location and target can be altered manually by setting XYZ coordinates or picking points in the native Rhino viewport. 
 
 .. _Radiance: https://www.radiance-online.org/
 
@@ -63,9 +77,9 @@ Camera Setup
 
 .. _Radiance: https://www.radiance-online.org/
 
-- **Lens Length (mm):** Only applies to perspective projections. Sets the opening angle of the camera, which in turn determines the extent of the scene shown on the rendering.
+- **Lens Length (mm):** Applies only to perspective projections. Sets the opening angle of the camera along the image's shortest edge, which in turn determines the extent of the scene shown in the rendering.
 
-Position and view direction may be set manually, or by using the "Pick" button, which allows setting the camera using a saved Rhino view or ClimateStudio sensor. Once the camera is set, a rendering is invoked by pressing the Start button. ClimateStudio uses a `progressive path-tracing`_ version of the Radiance raytracer. While a rendering is in progress, pixels are sampled until the user-specified number of samples has been reached, or the Stop button is pressed. Details on the simulation settings can be found by clicking the `Settings`_ button.
+Once the camera is set, a rendering is invoked by pressing the Start button. ClimateStudio uses a `progressive path-tracing`_ version of the Radiance raytracer. While a rendering is in progress, pixels are sampled until the user-specified number of samples has been reached, or the Stop button is pressed. Details on the simulation settings can be found by clicking the `Settings`_ button.
  
 .. _progressive path-tracing: https://www.solemma.com/blog/why-is-climatestudio-so-fast
 .. _Settings: pathTracingSettings.html
@@ -73,7 +87,7 @@ Position and view direction may be set manually, or by using the "Pick" button, 
 Simulation Results
 ------------------------
 
-.. figure:: images/RadianceRender.gif
+.. figure:: images/Render.gif
    :width: 900px
    :align: center
 
@@ -81,7 +95,7 @@ Radiance renderings are high dynamic range (HDR) images. For each pixel, an HDR 
 
 The **Image Display** section contains settings responsible for converting the HDR image into the LDR representation that appears on the screen:
 
-- **Scheme** determines the type of mapping. Options include RGB and Greyscale, which mimic the response of a traditional photographic film, or Falsecolor, which maps luminance values onto a color scale.
+- **Channel** determines the type data displayed. Options include RGB and Greyscale, which mimic the response of a traditional photographic film, or Falsecolor, which maps luminance values onto a color scale. Also available are two auxiliary images (Albedo and Normal), which are used by the AI denoiser.
 
 .. _Settings: pathTracingSettings.html
 
@@ -97,9 +111,35 @@ For the rotating fisheye projection, ClimateStudio calculates the daylight glare
 
 .. _Annual Glare: annualGlare.html
 
+.. figure:: images/RotatingRender.gif
+   :width: 900px
+   :align: center
+
 Once the simulation has been stopped, the rendering can be saved as a ClimateStudio result file and/or exported to HDR or LDR image formats.
 
+Denoising
+^^^^^^^^^^^^^^^^^^^
 
+ClimateStudio uses Intel's `Open Image Denoise (OIDN)`_ technology to remove noise from the raw HDR rendering, dramatically reducing the number of samples required to converge on a smooth result. The technology is built on a deep-learning convolutional neural network (CNN) trained to handle a wide range of images generated through stochastic ray tracing.
+
+.. _Open Image Denoise (OIDN): https://www.openimagedenoise.org/
+
+The denoiser engages after the rendering has reached one sample per pixel, and re-runs periodically while the ray trace is ongoing. ClimateStudio saves both the raw and denoised images. You can toggle between them using the **Denoising checkbox** during or after the run.
+
+.. figure:: images/NoisyRender.png
+   :width: 900px
+   :align: left
+
+   Unfiltered Radiance rendering @ 5 samples/pixel
+   
+.. figure:: images/DenoisedRender.png
+   :width: 900px
+   :align: left
+
+   Result after OIDN filtering
+
+Luminaire Group Post-Processing
+--------------------------------
 
 
 
