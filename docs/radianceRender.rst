@@ -56,17 +56,17 @@ Camera Setup
 
 .. _Radiance: https://www.radiance-online.org/
 
-  - **Rhino Views:** Includes standard views (Perspective, Top, Front, etc.) as well as any `named views`_ that are part of the document. Views are shown in a navigable viewport control, which supports pan (left-click) and rotate (right-click) actions. The control is limited vis-a-vis the native Rhino viewport in two important respects. First, it does not support ghosted display modes, so all surfaces are previewed as opaque. And second, the mouse-wheel does not dolly the camera location as you might expect. As a result, you may find it more convenient to drive the camera using the native Rhino viewport. To do so, select the **Active Rhino view (one way sync)** option.
+  - Rhino views include *Top*, *Bottom*, *Left*, *Right*, *Front*, *Back*, *Perspective*, and *Parallel*, as well as any `Named Views`_ that are part of the document. These views are shown in a navigable viewport control, which supports pan (left-click) and rotate (right-click) actions. The control is limited vis-a-vis the native Rhino viewport in two important respects. First, it does not support ghosted display modes, so all surfaces are previewed as opaque. And second, the mouse wheel does not dolly the camera location as one might expect. As a result, it may be more convenient to drive the camera using the native Rhino viewport. To do so, select the *Active Rhino view (one way sync)* option.
   
   .. _Radiance: https://www.radiance-online.org/
   
-  - **Radiance Projections:** In addition to perspective and parallel views, ClimateStudio supports several Radiance-style fisheye and panorama projections, including cylindrical (soup-can) and equirectangular (lat-lon) maps. For more details consult the `Radiance rpict manual pages.`_ When selecting one of these options, a non-navigable preview will appear for the current camera location and target.
+  - Radiance views include *Cylindrical* and *Equirectangular* panoramas, as well as *Angular*, *Hemispheric*, and *Stereographic* fisheyes. For more details consult the `Radiance rpict manual pages.`_ When selecting one of these views, a non-navigable preview will appear for the current camera location and target.
   
   .. _Radiance: https://www.radiance-online.org/
   
-  - **Fisheye (rotating):** Available only in ClimateStudio, the rotating fisheye generates a 360-degree panorama that is remapped onto an oriented 180-degree angular fisheye in real time. This allows changes in view direction without having to start a new rendering.
+  - Finally, a *Fisheye (rotating)* view generates a 360-degree panorama that is remapped onto an oriented 180-degree angular fisheye in real time. Unique to ClimateStudio, this option allows changes in view direction without having to start a new rendering.
 
-.. _named views: https://floyd.lbl.gov/radiance/man_html/rpict.1.html
+.. _Named Views: https://docs.mcneel.com/rhino/6/help/en-us/commands/namedview.htm
 .. _Radiance rpict manual pages.: https://floyd.lbl.gov/radiance/man_html/rpict.1.html
 
 - **Location and Target:** For all views, the camera location and target can be altered manually by setting XYZ coordinates or picking points in the native Rhino viewport. 
@@ -79,10 +79,10 @@ Camera Setup
 
 - **Lens Length (mm):** Applies only to perspective projections. Sets the opening angle of the camera along the image's shortest edge, which in turn determines the extent of the scene shown in the rendering.
 
-Once the camera is set, a rendering is invoked by pressing the Start button. ClimateStudio uses a `progressive path-tracing`_ version of the Radiance raytracer. While a rendering is in progress, pixels are sampled until the user-specified number of samples has been reached, or the Stop button is pressed. Details on the simulation settings can be found by clicking the `Settings`_ button.
+Once the camera is set, a rendering is invoked by pressing the Start button. ClimateStudio uses a `progressive path-tracing`_ version of the Radiance ray tracer, plus an AI denoising technology to achieve faster convergence. While a rendering is in progress, pixels are sampled until the user-specified number of samples has been reached, or the Stop button is pressed. Details on the simulation settings can be found by clicking the `Settings`_ button.
  
 .. _progressive path-tracing: https://www.solemma.com/blog/why-is-climatestudio-so-fast
-.. _Settings: pathTracingSettings.html
+.. _Settings: renderSettings.html
 
 Simulation Results
 ------------------------
@@ -97,11 +97,11 @@ The **Image Display** section contains settings responsible for converting the H
 
 - **Channel** determines the type data displayed. Options include RGB and Greyscale, which mimic the response of a traditional photographic film, or Falsecolor, which maps luminance values onto a color scale. Also available are two auxiliary images (Albedo and Normal), which are used by the AI denoiser.
 
-.. _Settings: pathTracingSettings.html
+.. _Settings: renderSettings.html
 
 - **Exposure** and **Gamma** work in concert to determine the brightness of pixels under RGB or Greyscale mapping. Exposure is a scalar that adjusts the overall brightness of the displayed image, while Gamma is a parameter that describes the nonlinearity of the tone scale. A gamma of 2.2 is a reasonable default for mimicking the power responses of photographic film and the human eye.
 
-.. _Settings: pathTracingSettings.html
+.. _Settings: renderSettings.html
 
 - **Glare Pixels** may be enabled to flag all pixels above a user-defined luminance (by default 2000 cd/m2) with a distinctive color.
 
