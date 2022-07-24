@@ -79,7 +79,7 @@ Camera Setup
 
 - **Lens Length (mm):** Applies only to perspective projections. Sets the opening angle of the camera along the image's shortest edge, which in turn determines the extent of the scene shown in the rendering.
 
-Once the camera is set, a rendering is invoked by pressing the Start button. ClimateStudio uses a `progressive path-tracing`_ version of the Radiance ray tracer, plus an AI denoising technology to achieve faster convergence. While a rendering is in progress, pixels are sampled until the user-specified number of samples has been reached, or the Stop button is pressed. Details on the simulation settings can be found by clicking the `Settings`_ button.
+Once the camera is set, a rendering is invoked by pressing the Start button. ClimateStudio uses a `progressive path-tracing`_ version of the Radiance ray tracer, plus an AI denoising technology to achieve faster convergence. While a rendering is in progress, pixels are sampled until the user-specified number of samples has been reached, or the Stop button is pressed. Details on the simulation settings can be found by clicking the `Settings`_ button. In contrast to other Radiance-based lighting softwares (including DIVA-for-Rhino), ClimateStudio's default settings are high-fidelity. You do not need to tinker with the settings to produce accurate results.
  
 .. _progressive path-tracing: https://www.solemma.com/blog/why-is-climatestudio-so-fast
 .. _Settings: renderSettings.html
@@ -138,10 +138,16 @@ The denoiser engages after the rendering has reached one sample per pixel, and r
 
    Result after OIDN filtering
 
-Luminaire Group Post-Processing
---------------------------------
+Post-Processing of Luminaire Groups
+-------------------------------------
 
+For scenes with luminaires, ClimateStudio is capable of storing separately the luminous contributions of different light sources. To set this up, `create luminaire groups and enable their Post-Process setting`_. This will cause multiple contribution images to be stored in the result, allowing sources to be switched on/off or dimmed after the rendering is complete. You may also adjust the lamp color, which will change the source spectrum without altering its luminous power. Two additional channels are reserved for daylight and other non-grouped sources, so you can easily isolate groups or flip between day and night conditions. Post-render adjustments can be made freely before or after saving the result, and all image-processing features (falsecolors, pixel tags, etc.) are valid for any adjusted image.
 
+.. _create luminaire groups and enable their Post-Process setting: luminaires.html#luminaire-group-for-post-processing
+
+.. figure:: images/LuminaireGroups.gif
+   :width: 900px
+   :align: center
 
 
 
