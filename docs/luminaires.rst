@@ -1,11 +1,11 @@
 
 Luminaires
 ================================================
-ClimateStudio supports lighting calculations for daylit and electrically lit scenes. Set daylight source in the `Sky panel`_. For electric-lighting-only simulations, the sky can simply be set to nighttime. 
+ClimateStudio supports lighting calculations for daylit and electrically lit scenes. The daylight source is defined in the `Sky panel`_. For electric-lighting-only simulations, the sky can simply be set to nighttime. 
 
 .. _Sky panel: sky.html
 
-The Luminaires panel is used to select real-world luminaire products and place them in the Rhino model, either individually or in groups. To place a luminaire, left-click on the *Add Luminaire* icon (**1**).
+The Luminaires panel is used to select real-world luminaire products and place them in the Rhino model, either individually or in groups. To place a luminaire, left-click on the *Add Luminaire* button (**1**).
 
 .. figure:: images/luminaires.png
    :width: 900px
@@ -32,10 +32,10 @@ Luminaire Color
 Click on the RGB value (**4**) to change the luminaire's color. 
 
 
-A dialog will appear with a drop-down to switch between RGB color space and CCT color space (**7**). 
-Select RGB color by clicking on the color box (**8**) and a color wheel will appear. 
-Select CCT color either by typing the color temperature value or by adjusting the slider (**9**). 
-Click on *Update Luminaire Color* (**10**) to commit changes to luminaire color. 
+A dialog will appear with a drop-down (**7**) to switch between RGB color space and CCT, which generates a Planckian-locus color at the specified temperature. 
+RGB colors are edited by clicking on the color box (**8**). 
+CCT colors are set by typing a color temperature value or adjusting the slider (**9**). Color changes will affect the spectrum of the luminaire but not its luminous power.
+Click *Update Luminaire Color* (**10**) to commit changes. 
 
 .. figure:: images/selectLuminaireColor.png
    :width: 900px
@@ -45,19 +45,18 @@ Click on *Update Luminaire Color* (**10**) to commit changes to luminaire color.
 Once luminaire selection is complete, click the *Place in Rhino Model* button (**6**), 
 which places the luminaire in the Rhino model at a user-specified point.
 To create additional copies of the luminaire, simply use the *copy* or *array* commands in Rhino. 
-Copying luminaires places them in the same lighting object as the original luminaire (using block instances), 
-which means the entire object can be edited in concert. 
+Copying luminaires creates multiple instances of the same object (using block instances), 
+allowing the entire set of instances to be edited in concert. 
 
 
-Luminaire Table
+Luminaires Table
 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
 
 .. figure:: images/luminairesTable.png
    :width: 900px
    :align: center
 
-The Luminaires Table lists all luminaire objects in the model, 
-and facilitates editing and deleting groups, as well as controlling their display in the viewport. 
+The Luminaires Table lists all luminaire objects in the model, and facilitates editing and deleting groups, as well as controlling their display in the viewport. 
 
 The checkbox in the table's far left column (**11**), along with the visibility of the luminaire blocks in Rhino, 
 determines whether a luminaire is included in renderings and point-in-time illuminance calculations. 
@@ -65,25 +64,30 @@ determines whether a luminaire is included in renderings and point-in-time illum
 
 The *hWeb* (**13**) and *vWeb* (**14**) toggles control the visibility of the 3d photometric web preview, while the *webScale* (**15**) column controls its size. 
 
-In the scene above, eight instances of Luminaire 1 object have been arranged in a 4x2 grid in the larger office space, 
-three instances of Luminaire 3 are spaced out at the center of the larger office space, 
-and four instances of Luminaire 2 are arranged in the small meeting room. 
+In the scene above, eight instances of *Luminaire 1* have been arranged in a 4x2 grid in the larger office space, 
+three instances of *Luminaire 3* are placed at the center of the larger office space, 
+and four instances of *Luminaire 2* are arranged in the small meeting room. 
 
 
-Luminaire Group for Post-Processing
-<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+Luminaire Groups for Post-Processing
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
 
+.. figure:: images/luminairePostProcess.png
+   :width: 900px
+   :align: center
 
-Luminaires can be grouped to better organize the model or to control different luminaire objects together in the post-processing of a rendered scene (**16**). 
-In the scene above, Luminaire 1 and Luminaire 3 are placed into group 1, and Luminaire 2 is placed into group 2. 
-The two groups' brightness and color can be controlled independently during post-processing.  
+Luminaires can be grouped to better organize the model or to control different luminaire objects together in the post-processing of a rendered scene. 
+In the model above, *Luminaire 1* and *Luminaire 3* are placed into group 1, and *Luminaire 2* is placed into group 2. 
+If a group's *Post-Process* box (**16**) is checked, its rendered brightness and color will be independently controllable during post-processing, as described `here`_.
 
-Select luminaire objects from the table and click on the group luminaire button (**12**) to create, add to, or remove from a group. 
+.. _here: radianceRender.html#post-processing-of-luminaire-groups
+
+To assign luminaires to a group, select the luminaire item(s) in the table and click the *Assign to Luminaire Group* button (**12**). 
 
 .. figure:: images/LuminaireGroup.png
    :width: 900px
    :align: center
 
-A dialog will appear. Choose an existing group by clicking on the drop-down or create a new group by typing in a new group name (**17**).
+A dialog will appear, allowing you to set, edit, or clear group assignments. Choose an existing group by clicking on the drop-down or create a new group by typing in a new group name (**17**).
 Click on *Set Luminaire Group* (**18**) to commit changes or click on *Clear Group* (**19**) to remove the luminaire from any group. 
 
