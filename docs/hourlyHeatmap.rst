@@ -23,7 +23,7 @@ To isolate time periods in the weather file, use the range sliders at the top of
 
 UTCI, or Universal Thermal Climate Index, measures the heat stress on the human body induced by a set of climatic conditions -- including air temperature, humidity, wind, and radiation. The metric includes filters for wind protection and sun shading, which remove the impact of wind and direct solar radiation, respectively, for each timestep in the weather file:
 
-.. figure:: images/result_panelHeatmapUTCI.png
+.. figure:: images/result_panelHeatmapUTCI_v1.8Update.jpg
    :width: 900px
    :align: center
    
