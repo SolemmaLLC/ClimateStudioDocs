@@ -138,12 +138,12 @@ The denoiser engages after the rendering has reached one sample per pixel, and r
 
    Result after OIDN filtering
 
-Post-Processing of Luminaire Groups
+Post-Processing of Lighting Zones
 -------------------------------------
 
-For scenes with luminaires, ClimateStudio is capable of storing separately the luminous contributions of different light sources. To set this up, `create luminaire groups and enable their Post-Process setting`_. This will cause multiple contribution images to be stored in the result, allowing sources to be switched on/off or dimmed after the rendering is complete. You may also adjust the lamp color, which will change the source spectrum without altering its luminous power. Two additional channels are reserved for daylight and other non-grouped sources, so you can easily isolate groups or flip between day and night conditions. Post-render adjustments can be made freely before or after saving the result, and all image-processing features (falsecolors, pixel tags, etc.) are valid for any adjusted image.
+For scenes with luminaires, ClimateStudio is capable of storing separately the luminous contributions of different light sources. To set this up, `create lighting zones and enable their Post-Process setting`_. This will cause multiple contribution images to be stored in the result, allowing sources to be switched on/off or dimmed after the rendering is complete. You may also adjust the lamp color, which will change the source spectrum without altering its luminous power. Two additional channels are reserved for daylight and any remaining non-adjustable sources in the scene, so you can easily isolate zones or flip between day and night conditions. Post-render adjustments can be made freely before or after saving the result, and all image-processing features (falsecolors, pixel tags, etc.) are valid for any adjusted image.
 
-.. _create luminaire groups and enable their Post-Process setting: luminaires.html#luminaire-group-for-post-processing
+.. _create lighting zones and enable their Post-Process setting: luminaires.html#lighting-zone
 
 .. figure:: images/LuminaireGroups.gif
    :width: 900px
