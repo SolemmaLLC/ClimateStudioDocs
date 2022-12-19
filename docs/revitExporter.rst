@@ -71,7 +71,7 @@ Additionally, glazing can be identified with:
 
 If multiple glazing identification methods are selected, satisfying any of the selected conditions will qualify the geometry as glazing. 
 
-Upon clicking **OK**, if document contains multiple design options, the Design Options table will appear, else the Categories table will appear.  
+Upon clicking **Next**, if document contains multiple design options, the Design Options table will appear, else the Categories table will appear.  
 
 
 Design Options
@@ -91,7 +91,7 @@ In this example,
 *Option 1 <primary>* is exported into layer *Option 1 <primary>* nested inside *Option Set 1* which is further nested inside *Design Options* layer. 
 Categories and Types will be further nested under their respective option layers as shown under *Option 1 <primary>* layer. 
 
-Upon clicking **OK**, a Categories table will appear: 
+Upon clicking **Next**, a Categories table will appear: 
 
 
 
