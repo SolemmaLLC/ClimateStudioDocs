@@ -56,11 +56,22 @@ NURBS Geometries
 Glazing Identification
 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
 
-**Glazing** is identified (**6**) with **Material Class is "Glass"** (and other equivalents depending on language) by default, and will be converted into single plane geometry on import. 
-Additionally, glazing can be identified with **Material Transparency Greater than 10%**, or with **Material NameCcontaining the text "glass"** (case insensitive). 
+**Glazing** is identified (**6**) with **Material Class is "Glass"** (and other equivalents depending on language) by default, and will be converted into single plane geometry on import. This reads the `Identity > Class information for this Revit Material`_. 
+
+
+Additionally, glazing can be identified with:  
+
+- **Material Transparency Greater than 10%**
+- **Material Name Containing the text "glass"** (case insensitive)
+- **Material Name Contains any text separated by ,** (case insensitive)
+- **SubCategory Name Contains any text separated by ,** (case insensitive) SubCategory is based on Revit `Object Styles`_.
+
+.. _Object Styles: https://knowledge.autodesk.com/support/revit/learn-explore/caas/CloudHelp/cloudhelp/2018/ENU/Revit-Customize/files/GUID-8C1F9882-E4AB-4E03-A735-8C44F19E194B-htm.html
+.. _Identity > Class information for this Revit Material: revitImportTroubleShoot.html#window-glazing-imported-as-solids
+
 If multiple glazing identification methods are selected, satisfying any of the selected conditions will qualify the geometry as glazing. 
 
-Upon clicking **OK**, if document contains multiple design options, the Design Options table will appear, else the Categories table will appear.  
+Upon clicking **Next**, if document contains multiple design options, the Design Options table will appear, else the Categories table will appear.  
 
 
 Design Options
@@ -80,7 +91,7 @@ In this example,
 *Option 1 <primary>* is exported into layer *Option 1 <primary>* nested inside *Option Set 1* which is further nested inside *Design Options* layer. 
 Categories and Types will be further nested under their respective option layers as shown under *Option 1 <primary>* layer. 
 
-Upon clicking **OK**, a Categories table will appear: 
+Upon clicking **Next**, a Categories table will appear: 
 
 
 
