@@ -7,7 +7,7 @@ Most new users learn ClimateStudio through the graphical user interface (GUI) wi
 
 Begin with the 3 minute `Interface Overview`_. After that you are ready to explore any of the workflows:
 
-.. _Solemma web site: https://www.solemma.com/climatestudio-tutorial-videos
+.. _Solemma web site: https://www.solemma.com/learn
 
 .. _Interface Overview: https://vimeo.com/392379382
 
