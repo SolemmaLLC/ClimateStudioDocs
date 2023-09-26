@@ -1,7 +1,16 @@
 Energy Sources and Emission Factors
 ================================================
 
+.. figure:: images/subPanel_emission.png
+   :width: 900px
+   :align: center
+   
+
 This panel sets global energy sources and emission factors for `Thermal Analysis`_. 
+
+Double click on cels in *Fuel Name*, *PE*, *CO2*, and *Price* columns to edit values. 
+
+Click on unit switch icon on the top right corner of the table to toggle between SI and Imperial unit systems. 
 
 .. _Thermal Analysis: thermalAnalysis.html
 
