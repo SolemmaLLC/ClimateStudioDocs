@@ -26,7 +26,7 @@ The gasoline price is from `2022 New York State Weekly Motor gasoline prices`_  
 
 **Diesel** is assumed to be equavalent to Fuel Oil (distillate) from ASHRAE table. 
 
-**Wood Pellets** The PE factor is assumed to be 1 and the CO2 conversion factor is assumed to be 0 (wood from sustainable sources with 0 carbon emissions). 
+**Wood Pellets** The PE factor is assumed to be 1.1 and the CO2 conversion factor is assumed to be 0 (wood from sustainable sources with 0 carbon emissions). 
 
 Resources
 ----------------
