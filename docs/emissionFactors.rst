@@ -6,7 +6,7 @@ Energy Sources and Emission Factors
    :align: center
    
 
-This panel sets global energy sources and emission factors for `Thermal Analysis`_. 
+This panel sets global energy sources and emission factors for `Thermal Analysis`_. (This information used to be entered at the zone level.)
 
 Double click on cels in *Fuel Name*, *PE*, *CO2*, and *Price* columns to edit values. 
 
@@ -17,16 +17,16 @@ Click on unit switch icon on the top right corner of the table to toggle between
 Default Value Sources
 ----------------
 
-**PE** and **CO2** emission uses `ANSI/ASHRAE/ICC/USGBC/IES Standard I89.I-2020`_ *Table 7.5.2 Source Energy Conversion Factors and CO2e Emissions Factors*. 
+**PE** and **CO2** emission references `ANSI/ASHRAE/ICC/USGBC/IES Standard I89.I-2020`_ *Table 7.5.2 Source Energy Conversion Factors and CO2e Emissions Factors*. 
 
-**Prices** are highly volatile and region dependent. Our values uses `NYSERDA energy annual prices`_. 
-Most of our prices are from *New York State Residential Energy Prices in Nominal Dollars* from the year 2018 with the exception of Coal and Gasoline prices. 
+**Prices** are highly volatile and region dependent. Our values reference `NYSERDA energy annual prices`_. 
+Default prices are from *New York State Residential Energy Prices in Nominal Dollars* from the year 2018 with the exception of Coal and Gasoline prices. 
 Coal price is from 2007 adjusted to 2018 dollar value based on GDP deflator. 
-Gasoline price is from `2022 New York State Weekly Motor gasoline prices`_  for Dec. 2022 Statewide converted into $/kWh based on the assumption of 113.45 btu/gallon energy density of Gasoline as reported by `National Service Center for Environmental Publications Fuel Economy Impact Analysis of RFG`_. 
+The gasoline price is from `2022 New York State Weekly Motor gasoline prices`_  for Dec. 2022 Statewide converted into $/kWh based on the assumption of 113.45 btu/gallon energy density of Gasoline as reported by `National Service Center for Environmental Publications Fuel Economy Impact Analysis of RFG`_. 
 
 **Diesel** is assumed to be equavalent to Fuel Oil (distillate) from ASHRAE table. 
 
-**Wood Pellets** PE is assumed to be 1.1 while CO2 is assumed to be from sustainable sources with 0 carbon footprint. 
+**Wood Pellets** The PE factor is assumed to be 1 and the CO2 conversion factor is assumed to be 0 (wood from sustainable sources with 0 carbon emissions). 
 
 Resources
 ----------------
