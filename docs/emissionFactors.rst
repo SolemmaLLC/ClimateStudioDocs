@@ -8,7 +8,7 @@ Energy Sources and Emission Factors
 
 This panel sets global energy sources and emission factors for `Thermal Analysis`_. (This information used to be entered at the zone level.)
 
-Double click on cels in *Fuel Name*, *PE*, *CO2*, and *Price* columns to edit values. 
+Double click on cells in *Fuel Name*, *PE*, *CO2*, and *Price* columns to edit values. 
 
 Click on unit switch icon on the top right corner of the table to toggle between SI and Imperial unit systems. 
 
