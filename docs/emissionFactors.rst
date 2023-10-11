@@ -17,7 +17,7 @@ Click on unit switch icon on the top right corner of the table to toggle between
 Default Value Sources
 ----------------
 
-**PE** and **CO2** emission references `ANSI/ASHRAE/ICC/USGBC/IES Standard I89.I-2020`_ *Table 7.5.2 Source Energy Conversion Factors and CO2e Emissions Factors*. 
+**PE** and **CO2** emission references `ANSI/ASHRAE/ICC/USGBC/IES Standard I89.I-2020`_ *Table 7.5.2 Source Energy Conversion Factors and CO2e Emissions Factors*. and *Table 5-2b Primary Energy Conversion Factors*
 
 **Prices** are highly volatile and region dependent. Our values reference `NYSERDA energy annual prices`_. 
 Default prices are from *New York State Residential Energy Prices in Nominal Dollars* from the year 2018 with the exception of Coal and Gasoline prices. 
