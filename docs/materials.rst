@@ -104,7 +104,7 @@ Please note that in the 3D Rhino model, **window assemblies must be modeled as s
    :width: 900px
    :align: center
 
-**Tint states** in **annual simulations** are usually controlled by a sensor (Automated) but this can be changed in the "Tint Control" tab. "Tint Control" has of similar options as the "Shade Control" tab above (11).  
+**Tint states** in **annual simulations** are usually controlled by a sensor (Automated) but this can be changed in the "Tint Control" tab. "Tint Control" has similar options as the "Shade Control" tab mentioned above (11).  
 
 The state of the tint in **point-in-time simulations** is shown on the diagram with a black outline and arrow pointing to the selected tint. Click on another tint to change it's point-in-time state. 
 
@@ -140,9 +140,35 @@ Choose from the table below to apply material.
    :align: center
 
 
+Dynamic Leaves
+----------------------------------------------------
+
+Dynamic Leaf materials are created from species specific measured data provided in `Simulating the Impact of Deciduous Trees on Energy, Daylight, and Visual Comfort`_. 
+
+
+.. figure:: images/matBrowser_leaf.png
+   :width: 900px
+   :align: center
+   
+With the measured data for **leaf colors in summer and fall**, we interpolate by hue for a transition gradient between the two colors through the seasons. 
+
+**Leaf Schedule** (17) is calculated based on project location's length of day (latitude) and determines when the leaves change color and size. 
+
+The preview of a dynamic leaf material is a graph of leaf color throughout the year on the x-axis with leaf size from none to full size on the y-axis. Leaf mesh triangles are scaled based on leaf size to achieve gradual changes in density from leaf growth to leaf fall. 
+
+The arrow on the x-axis shows the **point-in-time state** selected. This can be changed by selecting a different date in the `Sky`_ Sub-panel. 
+
+Click on the table to select one of the species specific leaf material. 
+
+
+
 
 .. _custom Radiance materials: customRadianceMaterials.html
 
 .. _SageGlass: https://www.sageglass.com/
 
 .. _Kalwall: https://www.kalwall.com/
+
+.. _Simulating the Impact of Deciduous Trees on Energy, Daylight, and Visual Comfort: https://publications.ibpsa.org/proceedings/esim/2022/papers/esim2022_251.pdf
+
+.. _Sky: sky.html
