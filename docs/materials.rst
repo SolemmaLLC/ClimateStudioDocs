@@ -140,7 +140,7 @@ Choose from the table below to apply material.
    :align: center
 
 
-Dynamic Leaves
+Dynamic Leaf
 ----------------------------------------------------
 
 Dynamic Leaf materials are created from species specific measured data provided in `Simulating the Impact of Deciduous Trees on Energy, Daylight, and Visual Comfort`_. 
