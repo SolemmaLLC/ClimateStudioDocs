@@ -56,7 +56,7 @@ Click on a material in the table to select that material.
    :width: 900px
    :align: center
 
-**Shade Control** dictates the behavior of shades throughout the year. This will affect all **annual simulations**. 
+**Shade Control** (11) dictates the behavior of shades throughout the year. This will affect all **annual simulations**. 
 
 There are four Types for Shade Control (12): 
 
@@ -145,7 +145,6 @@ Dynamic Leaf
 
 Dynamic Leaf materials are created from species specific measured data provided in `Simulating the Impact of Deciduous Trees on Energy, Daylight, and Visual Comfort`_. 
 
-
 .. figure:: images/matBrowser_leaf.png
    :width: 900px
    :align: center
@@ -156,10 +155,101 @@ With the measured data for **leaf colors in summer and fall**, we interpolate by
 
 The preview of a dynamic leaf material is a graph of leaf color throughout the year on the x-axis with leaf size from none to full size on the y-axis. Leaf mesh triangles are scaled based on leaf size to achieve gradual changes in density from leaf growth to leaf fall. 
 
-The arrow on the x-axis shows the **point-in-time state** selected. This can be changed by selecting a different date in the `Sky`_ Sub-panel. 
+If a point-in-time workflow is selected, the arrow on the x-axis shows the **point-in-time state** selected. This can be changed by selecting a different date in the `Sky`_ Sub-panel. 
 
-Click on the table to select one of the species specific leaf material. 
+This material's behavior varies slightly based on the workflow selected. See details below. 
 
+This material's `behavior varies slightly based on the workflow selected`_. See details below. 
+
+
+Dynamic Snow
+----------------------------------------------------
+
+Dynamic Snow material mimics the reflectivity of snow in winter. 
+
+**Snow Schedule** is calculated based on project location's dry-bulb temperature. Snow will start to appear for consecutive days of below freezing and disappear for consecutive days of warmer temperature. 
+
+The preview of a dynamic snow material is a graph of the snow throughout the year on the x-axis and fraction of snow coverage in the y-axis. Currently the fraction represent the alpha transparency of the snow material in each day of the year. 
+
+If a point-in-time workflow is selected, the arrow on the x-axis shows the **point-in-time state** selected. This can be changed by selecting a different date in the `Sky`_ Sub-panel. 
+
+This material's `behavior varies slightly based on the workflow selected`_. See details below. 
+
+
+Scheduled Material
+----------------------------------------------------
+
+Scheduled material takes any non-dynamic material as input and changes it's behavior based on a hourly year-long schedule. 
+
+The preview of a scheduled material is a hourly heat map of the material's schedule with every day of the year on the x-axis and every hour of the day on the y-axis. The color of the graph is based on the material's color and the transparency represents the presence / or lack there of based on the schedule. 
+
+If a point-in-time workflow is selected, the arrow on the x-axis and the box highlighting the hour shows the **point-in-time state** selected. This can be changed by selecting a different date and time in the `Sky`_ Sub-panel. 
+
+Select any material from the "Material" tab by clicking on the materials table. 
+
+To change the schedule and the transparency fraction behavior, use the "Dynamic Behavior" tab: 
+
+  | 19 - Three options are provided for controlling the **Transparency Type**: 
+
+    - **Alpha Transparency** uses the fraction as alpha transparency of the material, where 0 is transparent and 1 is opaque. 
+
+    - **BinaryOnOff** rounds the fraction to 0 or 1 and shows the material only on 1. 
+
+    - **MeshFaceScaling** renders the material as is while using the fraction to scale all mesh faces around their first vertex to achieve the global transparent effect. 0 means no mesh faces (scaled by 0 to nonexistent) and 1 means full (original) sized mesh faces. 
+
+  | 20 - Click on the **Schedule button** to change schedules in the `schedule editor`_. 
+
+This material's `behavior varies slightly based on the workflow selected`_. See details below. 
+
+
+Dynamic Material Behavior Based on Workflow
+----------------------------------------------------
+
+Dynamic Materials like Leaf, Snow, and Scheduled Material's behavior differs slightly depending on the workflow. 
+
+There are three types of workflows: 
+
+- **Point-In-Time workflows**
+
+  - Point-in-time illuminance
+
+  - Radiance Rendering
+
+- **Annual workflows**
+
+  - Annual glare
+
+  - Radiation map
+
+  - Daylight availability
+
+    - all LEED (v4.1 Option 1, v4.0 Option 1, v4 Option 2)
+
+    - BREEAM UK 4.b
+
+    - BREEAM International 4b
+
+    - EN 17037
+
+    - Custom
+
+- **Other workflows**
+
+  - View analysis
+
+  - Daylight availability
+
+    - BREEAM UK 4.a, 4.c (Healthcare only)
+
+    - BREEAM International 4.a
+
+    - Daylight Factor
+
+For **Point-In-Time workflows**, material will behave based on the current schedule and the specific date and or time selected in the `Sky`_ Sub-panel. 
+
+For **Annual workflows**, material will behave based on the schedule and simulation timestep. 
+
+For **Other workflows**, material state is set only by layer visibility. The schedule is completely ignored. 
 
 
 
@@ -172,3 +262,7 @@ Click on the table to select one of the species specific leaf material.
 .. _Simulating the Impact of Deciduous Trees on Energy, Daylight, and Visual Comfort: https://publications.ibpsa.org/proceedings/esim/2022/papers/esim2022_251.pdf
 
 .. _Sky: sky.html
+
+.. _schedule editor: scheduleEditor.html
+
+.. _behavior varies slightly based on the workflow selected: materials.html#dynamic-material-behavior-based-on-workflow
