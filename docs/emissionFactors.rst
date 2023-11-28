@@ -36,6 +36,7 @@ Resources
 - `United States Environmental Protection Agency's power profiler`_ can look up fuel mix and CO2 emission by zip code. 
 - `ANSI/ASHRAE/ICC/USGBC/IES Standard 189.1-2020`_ *Standard for the Design of High-Performance Green Buildings - Table 7.5.2 Source Energy Conversion Factors and CO2e Emissions Factors* contains US CO2 emission for each individual grid. 
 - `Cambium NREL`_ data sets contain modeled possible futures of the U.S. electricity sector through 2050 for hourly emission and cost. 
+- `Electricity Maps`_ has data on many countries' electricity CO2 footprint.  
 
 **Electricity Prices**  
 
@@ -54,3 +55,4 @@ Resources
 .. _2022 New York State Weekly Motor gasoline prices: https://www.nyserda.ny.gov/Energy-Prices/Motor-Gasoline
 .. _National Service Center for Environmental Publications Fuel Economy Impact Analysis of RFG: https://nepis.epa.gov/Exe/ZyNET.exe/P100B3FL.TXT?ZyActionD=ZyDocument&Client=EPA&Index=1995+Thru+1999&Docs=&Query=&Time=&EndTime=&SearchMethod=1&TocRestrict=n&Toc=&TocEntry=&QField=&QFieldYear=&QFieldMonth=&QFieldDay=&IntQFieldOp=0&ExtQFieldOp=0&XmlQuery=&File=D%3A%5Czyfiles%5CIndex%20Data%5C95thru99%5CTxt%5C00000031%5CP100B3FL.txt&User=ANONYMOUS&Password=anonymous&SortMethod=h%7C-&MaximumDocuments=1&FuzzyDegree=0&ImageQuality=r75g8/r75g8/x150y150g16/i425&Display=hpfr&DefSeekPage=x&SearchBack=ZyActionL&Back=ZyActionS&BackDesc=Results%20page&MaximumPages=1&ZyEntry=1&SeekPage=x&ZyPURL
 .. _Cambium NREL: https://www.nrel.gov/analysis/cambium.html
+.. _Electricity Maps: https://app.electricitymaps.com/map
