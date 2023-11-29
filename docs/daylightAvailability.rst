@@ -15,10 +15,9 @@ Depending on the sub-workflow selected, you will see up to six subpanels (labele
 
 | 1 - `Location`_
 | 2 - `Materials`_
-| 3 - `Blinds`_
-| 4 - `Occupied Areas`_ 
-| 5 - `Tubular Daylighting Devices`_ (optional)
-| 6 - `Import .cse file from Revit`_ (optional)
+| 3 - `Occupied Areas`_ 
+| 4 - `Scene Objects`_ (optional): `Tubular Daylighting Devices`_ (6), and `Trees`_ (7)
+| 5 - `Import .cse file from Revit`_ (optional)
 
 
 .. _Location: location.html
@@ -33,6 +32,10 @@ Depending on the sub-workflow selected, you will see up to six subpanels (labele
 
 .. _Import .cse file from Revit: revitImporter.html
 
+.. _Trees: tree.html
+
+.. _Scene Objects: sceneObjects.html
+
 Please note that **modeling blinds is required** for the LEED Option 1 credit, and for achieving realistic predictions of annual daylight levels in buildings. Dynamic blinds are not considered for sub-workflows that assess point-in-time conditions (LEED Option 2, Daylight Factor, and BREEAM 4a/c). 
 
 If you have not done any lighting simulations in ClimateStudio, it is recommended that you initially go through the `Lighting Model Setup`_ video tutorial (5 minutes). 
@@ -41,7 +44,8 @@ The Rhino file used in the tutorial is available for `download`_.
 .. _Lighting Model Setup: https://vimeo.com/392379928 
 .. _download: https://climatestudiodocs.com/ExampleFiles/CS_Two_Zone_Office.3dm
 
-Once all required inputs have been populated, a simulation is invoked by pressing the start button (7). ClimateStudio uses a `progressive path tracing`_ version of the Radiance raytracer to simulate illuminance distributions. While a simulation is in progress, traced light paths accumulate until the user-specified number of passes has been reached. Details on the simulation settings can be found by opening the `settings dialog`_ (8).
+Once all required inputs have been populated, a simulation is invoked by pressing the start button (8). ClimateStudio uses a `progressive path tracing`_ version of the Radiance raytracer to simulate illuminance distributions. 
+While a simulation is in progress, traced light paths accumulate until the user-specified number of passes has been reached. Details on the simulation settings can be found by opening the `settings dialog`_ (9).
  
 .. _progressive path tracing: https://www.solemma.com/blog/why-is-climatestudio-so-fast
 .. _settings dialog: pathTracingSettings.html
@@ -49,7 +53,7 @@ Once all required inputs have been populated, a simulation is invoked by pressin
 
 Simulation Results
 ------------------------
-Daylight availability results vary depending on the sub-workflow selected prior to simulation (9). Use the links below to skip ahead to the option of interest:
+Daylight availability results vary depending on the sub-workflow selected prior to simulation (10). Use the links below to skip ahead to the option of interest:
 
 .. toctree::
    :maxdepth: 1

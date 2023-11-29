@@ -14,10 +14,9 @@ To prepare a model for simulation, work your way through the six subpanels label
 | 1 - `Location`_
 | 2 - `Sky`_
 | 3 - `Materials`_
-| 4 - `Luminaires`_ (optional)
+| 4 - `Scene Objects`_ (optional): `Luminaires`_ (7),  `Tubular Daylighting Devices`_ (8), and `Trees`_ (9)
 | 5 - `Occupied Areas`_ 
-| 6 - `Tubular Daylighting Devices`_ (optional)
-| 7 - `Import .cse file from Revit`_ (optional)
+| 6 - `Import .cse file from Revit`_ (optional)
 
 .. _Location: location.html
 
@@ -33,6 +32,10 @@ To prepare a model for simulation, work your way through the six subpanels label
 
 .. _Import .cse file from Revit: revitImporter.html
 
+.. _Trees: tree.html
+
+.. _Scene Objects: sceneObjects.html
+
 
 If you have not done any lighting simulations in ClimateStudio, it is recommended that you initially go through the `Lighting Model Setup`_ video tutorial (5 minutes). 
 The Rhino file used in the tutorial is available for `download`_.
@@ -41,7 +44,9 @@ The Rhino file used in the tutorial is available for `download`_.
 .. _download: https://climatestudiodocs.com/ExampleFiles/CS_Two_Zone_Office.3dm
  
 
-Once all required inputs have been populated, a simulation is invoked by pressing the start button (8). ClimateStudio uses a `progressive path-tracing`_ version of the Radiance raytracer to simulate illuminance distributions. While a simulation is in progress, traced light paths accumulate until the user-specified number of passes has been reached. Details on the simulation settings can be found by opening the `settings dialog`_ (9).
+Once all required inputs have been populated, a simulation is invoked by pressing the start button (10). ClimateStudio uses a `progressive path-tracing`_ version of the Radiance raytracer to simulate illuminance distributions. 
+While a simulation is in progress, traced light paths accumulate until the user-specified number of passes has been reached. 
+Details on the simulation settings can be found by opening the `settings dialog`_ (11).
  
 .. _progressive path-tracing: https://www.solemma.com/blog/why-is-climatestudio-so-fast
 .. _settings dialog: pathTracingSettings.html
@@ -56,7 +61,7 @@ Upon completion of the first pass, or upon loading a saved result, the `results 
    :width: 900px
    :align: center
 
-At the top of the panel, an info dialog (10) reports simulation inputs, while a CSV export (11) saves results to an Excel-readable format. At the bottom, a legend and settings menu (12) provide options for customizing the falsecolor display, which is shown in the Rhino viewport:
+At the top of the panel, an info dialog (12) reports simulation inputs, while a CSV export (13) saves results to an Excel-readable format. At the bottom, a legend and settings menu (14) provide options for customizing the falsecolor display, which is shown in the Rhino viewport:
 
 .. figure:: images/result_viewportIllum.png
    :width: 900px

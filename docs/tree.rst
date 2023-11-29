@@ -1,6 +1,6 @@
 Trees
 ================================================
-ClimateStudio comes with a set of 9 pre-made trees that can be placed into the model. These trees are pre-processed for our `radiance render engine`_. 
+ClimateStudio v2.0 comes with a set of 9 pre-made trees that can be placed into the model. These trees are pre-processed for our `radiance render engine`_. 
 
 The Tree Panel is used to place the pre-made trees, either individually or in groups. 
 
