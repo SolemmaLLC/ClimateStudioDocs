@@ -7,7 +7,7 @@ Scene objects are geometries that can be placed in Rhino model as a Rhino block.
    :width: 900px
    :align: center
 
-As of v2.0 There are three different scene objects (assets) that can be placed: 
+As of v2.0 there are three different scene objects (assets) that can be placed: 
 
 | 1 - `Luminaires`_ (optional)
 | 2 - `Tubular Daylighting Devices`_ (optional)
