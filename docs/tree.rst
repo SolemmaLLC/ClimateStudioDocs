@@ -86,5 +86,5 @@ The leaves layers are pre-applied with ClimateStudio's `dynamic leaf material`_.
 The material of the leaves or tree trunk layer can be edited in `materials panel`_ just like any other Rhino layer. 
 
 .. _radiance render engine: radianceRender.html
-.. _dynamic leaf material: materials.html#dynamic-leaf
+.. _dynamic leaf material: materials_dynamicLeaf.html
 .. _materials panel: materials.html
