@@ -22,7 +22,7 @@ To prepare a model for simulation, work your way through the four subpanels labe
 | 1 - `Location`_
 | 2 - `Materials`_
 | 3 - `Occupied Areas`_ 
-| 4 - `Scene Objects`_ (optional): `Tubular Daylighting Devices`_ (6), and `Trees`_ (7)
+| 4 - `Scene Assets`_ (optional): `Tubular Daylighting Devices`_ (6), and `Trees`_ (7)
 | 5 - `Import .cse file from Revit`_ (optional)
 
 
@@ -38,7 +38,7 @@ To prepare a model for simulation, work your way through the four subpanels labe
 
 .. _Trees: tree.html
 
-.. _Scene Objects: sceneObjects.html
+.. _Scene Assets: sceneObjects.html
 
 
 Please note that at this point, ClimateStudio does not support annual glare calculations that consider the use of dynamic shading systems.

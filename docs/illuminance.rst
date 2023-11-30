@@ -14,7 +14,7 @@ To prepare a model for simulation, work your way through the six subpanels label
 | 1 - `Location`_
 | 2 - `Sky`_
 | 3 - `Materials`_
-| 4 - `Scene Objects`_ (optional): `Luminaires`_ (7),  `Tubular Daylighting Devices`_ (8), and `Trees`_ (9)
+| 4 - `Scene Assets`_ (optional): `Luminaires`_ (7),  `Tubular Daylighting Devices`_ (8), and `Trees`_ (9)
 | 5 - `Occupied Areas`_ 
 | 6 - `Import .cse file from Revit`_ (optional)
 
@@ -34,7 +34,7 @@ To prepare a model for simulation, work your way through the six subpanels label
 
 .. _Trees: tree.html
 
-.. _Scene Objects: sceneObjects.html
+.. _Scene Assets: sceneObjects.html
 
 
 If you have not done any lighting simulations in ClimateStudio, it is recommended that you initially go through the `Lighting Model Setup`_ video tutorial (5 minutes). 

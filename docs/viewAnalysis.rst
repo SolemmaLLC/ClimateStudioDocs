@@ -14,7 +14,7 @@ To prepare a model for simulation, work your way though the materials and occupi
 
 | 1 - `Materials`_
 | 2 - `Occupied Areas`_ 
-| 3 - `Scene Objects`_ (optional): `Trees`_ (5)
+| 3 - `Scene Assets`_ (optional): `Trees`_ (5)
 | 4 - `Import .cse file from Revit`_ (optional)
 
 .. _Materials: materials.html
@@ -25,7 +25,7 @@ To prepare a model for simulation, work your way though the materials and occupi
 
 .. _Trees: tree.html
 
-.. _Scene Objects: sceneObjects.html
+.. _Scene Assets: sceneObjects.html
 
 When assigning materials, a **VisionGlass** tag must be attached to layers that represent exterior vision glazing. Although the materials specified in the Material column determine the optical behavior of surfaces in the model (and hence what can be seen from any vantage), a separate View Tag is required to distinguish the "vision glazing," because it is specifically through these surfaces that views and view distances are measured. Please note that **layers not given a material (left column) will not be included in the simulation**.
  

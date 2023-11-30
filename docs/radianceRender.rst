@@ -16,7 +16,7 @@ To prepare a model for rendering, work your way through the six subpanels labele
 | 1 - `Location`_
 | 2 - `Sky`_
 | 3 - `Materials`_
-| 4 - `Scene Objects`_ (optional): `Luminaires`_ (6),  `Tubular Daylighting Devices`_ (7), and `Trees`_ (8)
+| 4 - `Scene Assets`_ (optional): `Luminaires`_ (6),  `Tubular Daylighting Devices`_ (7), and `Trees`_ (8)
 | 5 - `Import .cse file from Revit`_ (optional)
 
 .. _Location: location.html
@@ -33,7 +33,7 @@ To prepare a model for rendering, work your way through the six subpanels labele
 
 .. _Trees: tree.html
 
-.. _Scene Objects: sceneObjects.html
+.. _Scene Assets: sceneObjects.html
 
 If you have not done any lighting simulations in ClimateStudio, it is recommended that you go through the `Lighting Model Setup video tutorial`_ (5 minutes). The Rhino file used in the tutorial is available for `download.`_
 

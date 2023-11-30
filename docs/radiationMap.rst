@@ -17,7 +17,7 @@ To prepare a model for simulation, work your way through the three subpanels lab
 | 1 - `Location`_
 | 2 - `Materials`_
 | 3 - `Analysis Surfaces`_ 
-| 4 - `Scene Objects`_ (optional): `Trees`_ (6)
+| 4 - `Scene Assets`_ (optional): `Trees`_ (6)
 | 5 - `Import .cse file from Revit`_ (optional)
 
 
@@ -31,7 +31,7 @@ To prepare a model for simulation, work your way through the three subpanels lab
 
 .. _Trees: tree.html
 
-.. _Scene Objects: sceneObjects.html
+.. _Scene Assets: sceneObjects.html
 
 Once all required inputs have been populated, a simulation is invoked by pressing the start button (7). 
 ClimateStudio uses a `progressive path-tracing`_ version of the Radiance raytracer to simulate irradiance distributions. 

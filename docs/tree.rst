@@ -56,8 +56,8 @@ After selecting size and or rotational jitter, trees are placed into the Rhino m
 
 Tree Block and Tree Block Instances
 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
-Every time the **Add One Tree** or the **Array Tree** button is pressed, a new block object is added to "CSTreeBlocks" layer, 
-and the block instance geometries for leaf and trunk are placed in the sub-layer of a layer named with the density and shape of the tree. 
+Every time the **Add One Tree** or the **Array Tree** button is pressed, a new block is added to "CSTreeBlocks" layer, 
+and the geometries for leaf and trunk are placed in the sub-layer of a layer named with the density and shape of the tree. 
 These sub-layers can be turned on and off just like any Rhino layer. 
 
 .. figure:: images/subPanel_trees_layer.png

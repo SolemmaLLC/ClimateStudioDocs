@@ -16,7 +16,7 @@ Depending on the sub-workflow selected, you will see up to six subpanels (labele
 | 1 - `Location`_
 | 2 - `Materials`_
 | 3 - `Occupied Areas`_ 
-| 4 - `Scene Objects`_ (optional): `Tubular Daylighting Devices`_ (6), and `Trees`_ (7)
+| 4 - `Scene Assets`_ (optional): `Tubular Daylighting Devices`_ (6), and `Trees`_ (7)
 | 5 - `Import .cse file from Revit`_ (optional)
 
 
@@ -34,7 +34,7 @@ Depending on the sub-workflow selected, you will see up to six subpanels (labele
 
 .. _Trees: tree.html
 
-.. _Scene Objects: sceneObjects.html
+.. _Scene Assets: sceneObjects.html
 
 Please note that **modeling blinds is required** for the LEED Option 1 credit, and for achieving realistic predictions of annual daylight levels in buildings. Dynamic blinds are not considered for sub-workflows that assess point-in-time conditions (LEED Option 2, Daylight Factor, and BREEAM 4a/c). 
 
