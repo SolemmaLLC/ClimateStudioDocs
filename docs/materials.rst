@@ -22,10 +22,11 @@ The library is divided into eight categories:
 - `Exterior Glass (Dynamic)`_
 - `Exterior Glass (Translucent Insulating)`_
 - `Interior Glass`_
-- Other
+- Opaque Material
 - `Dynamic Leaf`_
 - `Dynamic Snow`_
 - `Scheduled Material`_
+- `Custom Material`_
 
 .. _Exterior Glass: materials_exteriorGlass.html
 .. _Exterior Glass (Dynamic): materials_exteriorGlassDynamic.html
@@ -34,18 +35,17 @@ The library is divided into eight categories:
 .. _Dynamic Leaf: materials_dynamicLeaf.html
 .. _Dynamic Snow: materials_dynamicSnow.html
 .. _Scheduled Material: materials_scheduledMaterial.html
+.. _Custom Material: customRadianceMaterials.html
 
-Use the category dropdown (1) to switch between types of materials. 
+Use the **category dropdown (1)** to switch between types of materials. 
 
-Use library dropdown (2) to choose between different libraries or (for expert users) manage your `custom Radiance materials`_ libraries with the library button (3). 
+The top section of this dialog shows **visualization, diagrams, and properties** (physical characteristics and source data) of the material selected **(2)**. 
 
-The top section of this dialog shows visualization, diagrams, and properties (physical characteristics and source data) of the material selected (4). 
+Below the preview section are the **tabs (3)** controlling what is displayed in the table below (5).  
 
-Below the preview section are the tabs (5) controlling what is displayed in the table below (7).  
+Use the **search box (4)** to filter your options. The columns in the **table (5)** are sortable, which facilitates ordering items by material property. 
 
-Use the search box (6) to filter your options. The columns in the table (7) are sortable, which facilitates ordering items by material property. 
-
-Once selection is complete, choose either to "Cancel" (will not apply change), "Clear" (removes all material from selected layers), or "Select" (applies selected material to all selected layers) (8) to close the dialog.   
+Once selection is complete, choose either to **"Cancel"** (will not apply change), **"Clear"** (removes all material from selected layers), or **"Select"** (applies selected material to all selected layers) **(6)** to close the dialog.   
 
 
 Dynamic Material Behavior Based on Workflow

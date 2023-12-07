@@ -7,7 +7,7 @@ Dynamic Snow `material`_ mimics the reflectivity of snow in winter.
    :width: 900px
    :align: center
 
-**Snow Schedule** (1) is calculated based on project location's dry-bulb temperature. Snow will start to appear for consecutive days of below freezing and disappear for consecutive days of warmer temperature. 
+**Snow Schedule (1)** is calculated based on project location's dry-bulb temperature. Snow will start to appear for consecutive days of below freezing and disappear for consecutive days of warmer temperature. 
 
 The preview of a dynamic snow material is a graph of the snow throughout the year on the x-axis and fraction of snow coverage in the y-axis. Currently the fraction represents the alpha transparency of the snow material in each day of the year. 
 

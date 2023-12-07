@@ -1,6 +1,7 @@
 Blinds
 ================================================
-ClimateStudio supports modeling dynamic shading systems such as fabric blinds and switchable glazings. These systems and their operation are simulated by the `Daylight Availability`_ workflow when calculating hourly illuminance distributions. In many cases, the inclusion of dynamic shading is not optional. The calculation of Spatial Daylight Autonomy (sDA) and eligibility for the LEED v4 Daylight credit (Option 1) require dynamic shading to be modeled on all exterior windows. To assign a shading system to one or more glazing surfaces, left-click the Add Blind button (1) atop the Blinds panel and select the desired surfaces in the Rhino model.
+ClimateStudio supports modeling dynamic shading systems such as fabric blinds and switchable glazings. 
+These systems and their operation are simulated by the `Daylight Availability`_ workflow when calculating hourly illuminance distributions. In many cases, the inclusion of dynamic shading is not optional. The calculation of Spatial Daylight Autonomy (sDA) and eligibility for the LEED v4 Daylight credit (Option 1) require dynamic shading to be modeled on all exterior windows. To assign a shading system to one or more glazing surfaces, left-click the Add Blind button (1) atop the Blinds panel and select the desired surfaces in the Rhino model.
 
 .. _Daylight Availability: daylightAvailability.html
 

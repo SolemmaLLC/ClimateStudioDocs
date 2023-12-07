@@ -12,11 +12,11 @@ The color of the graph is based on the material's color and the transparency rep
 
 If a `point-in-time workflow`_ is selected, the arrow on the x-axis and the box highlighting the hour shows the **point-in-time state** selected. This can be changed by selecting a different date and time in the `Sky`_ Sub-panel. 
 
-Select any material from the **"Material"** tab (1) by clicking on the materials table. 
+Select any material from the **"Material" tab (1)** by clicking on the materials table. 
 
-To change the schedule and the transparency fraction behavior, use the **"Dynamic Behavior"** tab (2): 
+To change the schedule and the transparency fraction behavior, use the **"Dynamic Behavior" tab (2)**: 
 
-| 3 - Three different **Transparency Types**: 
+| **3** - Three different **Transparency Types**: 
 
   - **Alpha Transparency** uses the fraction as alpha transparency of the material, where 0 is transparent and 1 is opaque. 
 
@@ -24,7 +24,7 @@ To change the schedule and the transparency fraction behavior, use the **"Dynami
 
   - **MeshFaceScaling** renders the material as is while using the fraction to scale all mesh faces around their first vertex to achieve the global transparent effect. 0 means no mesh faces (scaled by 0 to nonexistent) and 1 means full (original) sized mesh faces. 
 
-| 4 - Click on the **Schedule button** to change schedules in the `schedule editor`_. 
+| **4** - Click on the **Schedule button** to change schedules in the `schedule editor`_. 
 
 This material's `behavior varies slightly based on the workflow selected`_. 
 

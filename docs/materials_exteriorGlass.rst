@@ -11,9 +11,9 @@ Please note that in the 3D Rhino model, **window assemblies must be modeled as s
 
 Exterior glazing consists of three components, use tabs to edit each component: 
 
-| 1 -  Glazing Materials
-| 2 -  Shade Materials
-| 3 -  Shade Control
+| **1 -  Glazing Materials**
+| **2 -  Shade Materials**
+| **3 -  Shade Control**
 
 Click on a material in the table to select glass material. 
 
@@ -23,7 +23,7 @@ Shading systems and their operation are simulated by the `Daylight Availability`
 
 This shade system will be applied to all surfaces in the Rhino layer this exterior glazing assembly is applied to. 
 
-Click on **Shade Materials** tab (2) to open shade materials table. 
+Click on **Shade Materials tab (2)**  to open shade materials table. 
 
 .. figure:: images/matBrowser_ex_shade.png
    :width: 900px
@@ -33,23 +33,23 @@ Click on a material in the table to select that material.
 
 Shades Control (Annual Workflows)
 ----------------------------------------------------
-**Shade Control** tab (3) controls the behavior of shades throughout the year. This will affect all `annual workflows`_. 
+**Shade Control tab (3)** controls the behavior of shades throughout the year. This will affect all `annual workflows`_. 
 
 .. figure:: images/matBrowser_ex_Control.png
    :width: 900px
    :align: center
 
-There are four **Types of Shade Controls** (4): 
+There are four **Types of Shade Controls (4)**: 
 
 - Manual
 
-  - Behavior (5)
+  - **Behavior (5)**
 
     - Default
 
     - LM83  
  
-  - Blinds reopen (6)
+  - **Blinds reopen (6)**
 
     - The following morning 
 
@@ -65,7 +65,7 @@ There are four **Types of Shade Controls** (4):
    :width: 900px
    :align: center
 
-Both Manual and Automated uses 2000 lux as sunlight threshold (7) for engaging the blinds by default. 
+Both Manual and Automated uses 2000 lux as **sunlight threshold (7)** for engaging the blinds by default. 
 
 Shades Control (Point-In-Time Workflows)
 ----------------------------------------------------

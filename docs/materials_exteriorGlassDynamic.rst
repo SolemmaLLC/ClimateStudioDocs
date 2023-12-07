@@ -12,9 +12,9 @@ Please note that in the 3D Rhino model, **window assemblies must be modeled as s
 Tint State (Annual Workflows)
 ----------------------------------------------------
 
-**Tint states** in `annual workflows`_ are usually controlled by a sensor (Automated) but this can be changed in the **"Tint Control"** tab (2). "Tint Control" has similar options as the **"Shade Control" tab** mentioned `here`_. 
+**Tint states** in `annual workflows`_ are usually controlled by a sensor (Automated) but this can be changed in the **"Tint Control" tab (2)**. "Tint Control" has similar options as the **"Shade Control" tab** mentioned `here`_. 
 
-There are four **Types of Tint Controls** (3): 
+There are four **Types of Tint Controls (3)**: 
 
 - Manual
 
@@ -36,7 +36,7 @@ There are four **Types of Tint Controls** (3):
 
 - Fixed - current point-in-time state - will affect `other workflows`_
 
-Both Manual and Automated uses 2000 lux as sunlight threshold (4) for engaging the blinds by default. 
+Both Manual and Automated uses 2000 lux as **sunlight threshold (4)** for engaging the blinds by default. 
 
 
 Tint State (Point-In-Time Workflows)

@@ -9,7 +9,7 @@ Dynamic Leaf `materials`_ are created from species-specific measured data provid
    
 With the measured data for **leaf colors in summer and fall**, we interpolate by hue for a transition gradient between the two colors through the seasons. 
 
-**Leaf Schedule** (1) is calculated based on project location's length of day (latitude) and determines when the leaves change color and size. 
+**Leaf Schedule (1)** is calculated based on project location's length of day (latitude) and determines when the leaves change color and size. 
 
 The preview of a dynamic leaf material is a graph of leaf color throughout the year on the x-axis with leaf size from none to full size on the y-axis. Leaf mesh triangles are scaled based on leaf size to achieve gradual changes in density from leaf growth to leaf fall. 
 
