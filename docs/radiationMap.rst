@@ -12,16 +12,19 @@ Simulation Setup
    :width: 900px
    :align: center
    
-To prepare a model for simulation, work your way through the three subpanels labeled 1-3 in the figure above.
+To prepare a model for simulation, work your way through the three subpanels labeled 1-4 in the figure above.
 
 | 1 - `Location`_
-| 2 - `Materials`_
-| 3 - `Analysis Surfaces`_ 
-| 4 - `Scene Assets`_ (optional): `Trees`_ (6)
-| 5 - `Import .cse file from Revit`_ (optional)
+| 2 - `Time Range`_
+| 3 - `Materials`_
+| 4 - `Analysis Surfaces`_ 
+| 5 - `Scene Assets`_ (optional): `Trees`_ (7)
+| 6 - `Import .cse file from Revit`_ (optional)
 
 
 .. _Location: location.html
+
+.. _Time Range: timerange.html
 
 .. _Materials: materials.html
 
@@ -33,10 +36,10 @@ To prepare a model for simulation, work your way through the three subpanels lab
 
 .. _Scene Assets: sceneObjects.html
 
-Once all required inputs have been populated, a simulation is invoked by pressing the start button (7). 
+Once all required inputs have been populated, a simulation is invoked by pressing the start button (8). 
 ClimateStudio uses a `progressive path-tracing`_ version of the Radiance raytracer to simulate irradiance distributions. 
 While a simulation is in progress, traced light paths accumulate until the user-specified number of passes has been reached. 
-Details on the simulation settings can be found by opening the `settings dialog`_ (8). 
+Details on the simulation settings can be found by opening the `settings dialog`_ (9). 
 For radiation maps, the dialog includes **low/high outdoor temperature thresholds**, 
 which can be used to bin radiation occurring during hot or cold hours throughout the year.
 
