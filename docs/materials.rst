@@ -9,20 +9,146 @@ The Materials panel is used to assign materials for lighting simulation. Each ob
 
 To assign a layer material, left-click on the material row next to the layer. An Edit Layer Material dialog will appear, letting you browse through ClimateStudio's extensive library of measured materials:
 
-.. figure:: images/materialBrowser.png
+Material Browser
+----------------------------------------------------
+
+.. figure:: images/matBrowser.png
    :width: 900px
    :align: center
 
-The library is divided into two categories: "Glazing Assembly" and "Other." Use the category dropdown and search box to filter your options. The columns in the table are sortable, which facilitates ordering items by material property. When an item is selected, the upper portion of the dialog shows a visualization of the selected material (left) along with its physical characteristics and source data (right). 
+The library is divided into eight categories: 
 
-For glazing assemblies, which are sourced from the International Glazing Database (IGDB), the material includes a section diagram of the real-world assembly. Please note that in the 3D Rhino model, **window assemblies must be modeled as single surfaces**. They should not include multiple surfaces (panes), and they should not contain any solids.
+- `Exterior Glass`_
+- `Exterior Glass (Dynamic)`_
+- `Exterior Glass (Translucent Insulating)`_
+- `Interior Glass`_
+- Opaque Material
+- `Dynamic Leaf`_
+- `Dynamic Snow`_
+- `Scheduled Material`_
+- `Custom Material`_
 
-.. figure:: images/materialBrowserGlazing.png
-   :width: 900px
-   :align: center
+.. _Exterior Glass: materials_exteriorGlass.html
+.. _Exterior Glass (Dynamic): materials_exteriorGlassDynamic.html
+.. _Exterior Glass (Translucent Insulating): materials_exteriorGlassTranslucent.html
+.. _Interior Glass: materials_interiorGlass.html
+.. _Dynamic Leaf: materials_dynamicLeaf.html
+.. _Dynamic Snow: materials_dynamicSnow.html
+.. _Scheduled Material: materials_scheduledMaterial.html
+.. _Custom Material: customRadianceMaterials.html
 
-Expert users may expand on the default library by adding links to their own `custom Radiance materials.`_ 
+Use the **category dropdown (1)** to switch between types of materials. 
 
-.. _custom Radiance materials.: customRadianceMaterials.html
+The top section of this dialog shows **visualization, diagrams, and properties** (physical characteristics and source data) of the material selected **(2)**. 
+
+Below the preview section are the **tabs (3)** controlling what is displayed in the table below (5).  
+
+Use the **search box (4)** to filter your options. The columns in the **table (5)** are sortable, which facilitates ordering items by material property. 
+
+Once selection is complete, choose either to **"Cancel"** (will not apply change), **"Clear"** (removes all material from selected layers), or **"Select"** (applies selected material to all selected layers) **(6)** to close the dialog.   
 
 
+Dynamic Material Behavior Based on Workflow
+----------------------------------------------------
+
+Dynamic Materials like  `Dynamic Leaf`_, `Dynamic Snow`_, `Scheduled Material`_, `Exterior Glass (Dynamic)`_, and `Exterior Glass (Translucent Insulating)`_ behave differs depending on the workflow. 
+
+There are three types of workflows: 
+
+- **Point-In-Time workflows**
+
+  - `Point-in-time Illuminance`_
+
+  - `Radiance Render`_
+
+- **Annual workflows**
+
+  - `Annual Glare`_
+
+  - `Radiation Map`_
+
+  - `Daylight Availability`_
+
+    - all LEED (v4.1 Option 1, v4.0 Option 1, v4 Option 2)
+
+    - BREEAM UK 4.b
+
+    - BREEAM International 4b
+
+    - EN 17037
+
+    - Custom
+
+- **Other workflows**
+
+  - `View Analysis`_ 
+
+  - `Daylight Availability`_
+
+    - BREEAM UK 4.a, 4.c (Healthcare only)
+
+    - BREEAM International 4.a
+
+    - Daylight Factor
+
+
+
+
+**Point-In-Time workflows**
+
+  | `Dynamic Leaf`_ , `Dynamic Snow`_ and `Scheduled Material`_ will behave based on the current schedule and the specific date and or time selected in the `Sky`_ Sub-panel. 
+
+  | `Exterior Glass Shades`_ and `Exterior Glass (Dynamic) Tint`_ will behave based on the selected point-in-time state. 
+
+**Annual workflows**
+
+  | `Dynamic Leaf`_ , `Dynamic Snow`_ and `Scheduled Material`_  will behave based on the schedule and simulation time-step. 
+
+  | `Exterior Glass Shades (annual)`_ and `Exterior Glass (Dynamic) Tint (annual)`_ will behave based on the their respective control settings. 
+
+**Other workflows** are "timeless" thus neither schedule nor control will apply be default
+
+  | `Dynamic Leaf`_ , `Dynamic Snow`_ and `Scheduled Material`_  state is set only by layer visibility. The schedule is completely ignored. 
+
+  | `Exterior Glass Shades`_ and `Exterior Glass (Dynamic) Tint`_ will assume an ALL OPEN state unless their control is set to "fixed" and a closed Point-In-Time state. 
+
+
+
+
+
+
+
+
+
+
+
+.. _custom Radiance materials: customRadianceMaterials.html
+
+
+.. _Sky: sky.html
+
+
+.. _Site Analysis: siteAnalysis.html 
+
+.. _Radiation Map: radiationMap.html 
+
+.. _Point-in-time Illuminance: illuminance.html
+
+.. _Daylight Availability: daylightAvailability.html 
+
+.. _Annual Glare: annualGlare.html
+
+.. _Radiance Render: radianceRender.html
+
+.. _Thermal Analysis: thermalAnalysis.html
+
+.. _View Analysis: viewAnalysis.html
+
+
+.. _Exterior Glass Shades: materials_exteriorGlass.html#shades-control-point-in-time-workflows
+
+.. _Exterior Glass (Dynamic) Tint: materials_exteriorGlassDynamic.html#tint-state-point-in-time-workflows
+
+.. _Exterior Glass Shades (annual): materials_exteriorGlass.html#shades-control-annual-workflows
+
+.. _Exterior Glass (Dynamic) Tint (annual): materials_exteriorGlassDynamic.html#tint-state-annual-workflows

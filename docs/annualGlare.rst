@@ -22,7 +22,7 @@ To prepare a model for simulation, work your way through the four subpanels labe
 | 1 - `Location`_
 | 2 - `Materials`_
 | 3 - `Occupied Areas`_ 
-| 4 - `Tubular Daylighting Devices`_ (optional)
+| 4 - `Scene Assets`_ (optional): `Tubular Daylighting Devices`_ (6), and `Trees`_ (7)
 | 5 - `Import .cse file from Revit`_ (optional)
 
 
@@ -36,10 +36,15 @@ To prepare a model for simulation, work your way through the four subpanels labe
 
 .. _Import .cse file from Revit: revitImporter.html
 
+.. _Trees: tree.html
+
+.. _Scene Assets: sceneObjects.html
+
 
 Please note that at this point, ClimateStudio does not support annual glare calculations that consider the use of dynamic shading systems.
 
-If you have not done any lighting simulations in ClimateStudio, it is recommended that you go through the `Lighting Model Setup video tutorial`_ (5 minutes) followed by a video tutorial specifically focused on `Annual Glare Analysis.`_ The Rhino file used in the tutorials is available for `download.`_
+If you have not done any lighting simulations in ClimateStudio, it is recommended that you go through the `Lighting Model Setup video tutorial`_ (5 minutes) followed by a video tutorial specifically focused on `Annual Glare Analysis.`_ 
+The Rhino file used in the tutorials is available for `download.`_
 
 .. _Lighting Model Setup video tutorial: https://vimeo.com/392379928
 
@@ -47,7 +52,9 @@ If you have not done any lighting simulations in ClimateStudio, it is recommende
 
 .. _download.: https://climatestudiodocs.com/ExampleFiles/CS_Two_Zone_Office.3dm
 
-Once all required inputs have been populated, a simulation is invoked by pressing the start button (6). ClimateStudio uses a `progressive path-tracing`_ version of the Radiance raytracer to simulate luminance distributions. While a simulation is in progress, traced light paths accumulate until the user-specified number of passes has been reached. Details on the simulation settings can be found by opening the `settings dialog`_ (7).
+Once all required inputs have been populated, a simulation is invoked by pressing the start button (8). 
+ClimateStudio uses a `progressive path-tracing`_ version of the Radiance raytracer to simulate luminance distributions. While a simulation is in progress, 
+traced light paths accumulate until the user-specified number of passes has been reached. Details on the simulation settings can be found by opening the `settings dialog`_ (9).
  
 .. _progressive path-tracing: https://www.solemma.com/blog/why-is-climatestudio-so-fast
 .. _settings dialog: pathTracingSettings.html
@@ -77,7 +84,7 @@ Interface Components
 The results interface has five sections:
 
 
-- The **Header** includes the result name, a CSV export (9), and an information dialog (8), which provides an accounting of simulation inputs.
+- The **Header** includes the result name, a CSV export (10), and an information dialog (11), which provides an accounting of simulation inputs.
 
 .. _report generator: #reporting
 
@@ -85,15 +92,15 @@ The results interface has five sections:
 
 .. _report generator: #reporting
 
-- The **Temporal Graphs** show the frequency of each DGP bin across all views(10), grouped by hour of day and day of year. In this example, the occurrence of perceptible, disturbing, and intolerable glare is unsurprisingly higher in the afternoons, since the building features rooms with Western but not Eastern exposures. The floor area(s) included in the graph can be altered using the dropdown (11) or by filtering and/or selecting areas in the Room Table. The rightmost dropdown (12) permits switching between annual and single-day statistics. In the latter mode, time sliders let you scrub through individual hours of year, which causes timestep DGP data to be previewed in the Rhino viewport. Export graph as bitmap with button on top right of graph (13). 
+- The **Temporal Graphs** show the frequency of each DGP bin across all views(12), grouped by hour of day and day of year. In this example, the occurrence of perceptible, disturbing, and intolerable glare is unsurprisingly higher in the afternoons, since the building features rooms with Western but not Eastern exposures. The floor area(s) included in the graph can be altered using the dropdown (13) or by filtering and/or selecting areas in the Room Table. The rightmost dropdown (14) permits switching between annual and single-day statistics. In the latter mode, time sliders let you scrub through individual hours of year, which causes timestep DGP data to be previewed in the Rhino viewport. Export graph as bitmap with button on top right of graph (15). 
 
 .. _report generator: #reporting
 
-- The **Room Table** lists results for each regularly occupied floor area in the building. Selecting rooms by filtration (14) or row selection isolates their preview in the temporal graphs and the Rhino viewport, and updates the statistics in the "Totals" row at the bottom of the table.
+- The **Room Table** lists results for each regularly occupied floor area in the building. Selecting rooms by filtration (16) or row selection isolates their preview in the temporal graphs and the Rhino viewport, and updates the statistics in the "Totals" row at the bottom of the table.
 
 .. _report generator: #reporting
 
-- The **Viewport Settings** bar contains a viewport preview legend and viewport settings menu (15), which provides options for customizing the falsecolor display. Altering the upper bound of the falsecolor will also change the time percentage threshold used by the sDG metric in the Building Dashboard.
+- The **Viewport Settings** bar contains a viewport preview legend and viewport settings menu (17), which provides options for customizing the falsecolor display. Altering the upper bound of the falsecolor will also change the time percentage threshold used by the sDG metric in the Building Dashboard.
 
 .. _report generator: #reporting
 
@@ -105,7 +112,7 @@ Hovering over a view slice in the Rhino viewport will update the temporal graphs
    
 .. _report generator: #reporting
    
-In this case, the selected view faces the Western glazing, and has severe issues with afternoon glare throughout the entire year. To better understand cause and directionality of glare at any particular moment in time, you can select a point in the lower graph, which corresponds to a specific date and hour (16). Subsequently clicking on the camera icon (17) will initiate a `Radiance Rendering`_ using the sky condition for the corresponding step in the weather file:
+In this case, the selected view faces the Western glazing, and has severe issues with afternoon glare throughout the entire year. To better understand cause and directionality of glare at any particular moment in time, you can select a point in the lower graph, which corresponds to a specific date and hour (18). Subsequently clicking on the camera icon (19) will initiate a `Radiance Rendering`_ using the sky condition for the corresponding step in the weather file:
 
 .. _Radiance Rendering: radianceRender.html
 

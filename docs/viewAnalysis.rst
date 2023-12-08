@@ -14,13 +14,18 @@ To prepare a model for simulation, work your way though the materials and occupi
 
 | 1 - `Materials`_
 | 2 - `Occupied Areas`_ 
-| 3 - `Import .cse file from Revit`_ (optional)
+| 3 - `Scene Assets`_ (optional): `Trees`_ (5)
+| 4 - `Import .cse file from Revit`_ (optional)
 
 .. _Materials: materials.html
 
 .. _Occupied Areas: occupiedAreas.html
 
 .. _Import .cse file from Revit: revitImporter.html
+
+.. _Trees: tree.html
+
+.. _Scene Assets: sceneObjects.html
 
 When assigning materials, a **VisionGlass** tag must be attached to layers that represent exterior vision glazing. Although the materials specified in the Material column determine the optical behavior of surfaces in the model (and hence what can be seen from any vantage), a separate View Tag is required to distinguish the "vision glazing," because it is specifically through these surfaces that views and view distances are measured. Please note that **layers not given a material (left column) will not be included in the simulation**.
  
@@ -37,7 +42,7 @@ The Rhino file used in the tutorial is available for `download`_.
 .. _download: https://climatestudiodocs.com/ExampleFiles/CS_Two_Zone_Office.3dm
  
 
-Once all required inputs have been populated, a simulation is invoked by pressing the start button (4). The number of CPU cores used can be adjusted via the settings dialog (5).
+Once all required inputs have been populated, a simulation is invoked by pressing the start button (6). The number of CPU cores used can be adjusted via the settings dialog (7).
  
 Simulation Results
 --------------------
