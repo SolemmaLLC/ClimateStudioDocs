@@ -9,7 +9,7 @@ A unique feature of ClimateStudio is its ability to calculate annual glare distr
    :width: 900px
    :align: center
    
-For annual DPG simulations, ClimateStudio relies on the vertical illuminance portion of the DGP formula, plus a contrast measurement from the solar disc.
+For annual DPG simulations, ClimateStudio relies on the vertical illuminance portion of the DGP formula, plus a contrast measurement from the solar disk.
 
 Simulation Setup
 -----------------------
@@ -17,7 +17,7 @@ Simulation Setup
    :width: 900px
    :align: center
    
-To prepare a model for simulation, work your way through the four subpanels labeled 1-4 in the figure above.
+To prepare a model for simulation, work your way through the five subpanels labeled 1-5 in the figure above.
 
 | 1 - `Location`_
 | 2 - `Materials`_
@@ -41,7 +41,7 @@ To prepare a model for simulation, work your way through the four subpanels labe
 .. _Scene Assets: sceneObjects.html
 
 
-Please note that at this point, ClimateStudio does not support annual glare calculations that consider the use of dynamic shading systems.
+As of v2.0, ClimateStudio supports annual glare calculations that consider the use of dynamic shading systems.
 
 If you have not done any lighting simulations in ClimateStudio, it is recommended that you go through the `Lighting Model Setup video tutorial`_ (5 minutes) followed by a video tutorial specifically focused on `Annual Glare Analysis.`_ 
 The Rhino file used in the tutorials is available for `download.`_

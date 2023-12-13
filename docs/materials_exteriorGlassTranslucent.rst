@@ -1,19 +1,20 @@
 Exterior Glass (Translucent Insulating)
 ================================================
 
-Translucent Insulating Glazing assemblies represent `Kalwall`_ facade glazing unit products with both light diffusing and heat insulating properties, and is a `material`_ that can be applied to a Rhino layer. 
+Translucent insulating glazing units are facade products with both light diffusing and heat insulating properties.
 
-Please note that in the 3D Rhino model, **window assemblies must be modeled as single surfaces**. They should not include multiple surfaces (panes), and they should not contain any solids.
+Please note that in the 3D Rhino model, **glazing units must be modeled as single surfaces**. They should not include multiple surfaces (e.g. multiple glass panes), and they should not contain any solids. 
 
-Choose from the table below to apply material. 
+ClimateStudio provides a collection of `Kalwall`_ insulated glazing products. Click on a row in the table to change the selection. 
 
 .. figure:: images/matBrowser_tr.png
    :width: 900px
    :align: center
 
 
+|
+Back to `Materials`_
 
+.. _Materials: materials.html
 
 .. _Kalwall: https://www.kalwall.com/
-
-.. _material: materials.html

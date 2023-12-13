@@ -1,62 +1,62 @@
 Exterior Glass (Dynamic)
 ================================================
 
-Dynamic Exterior Glazing assemblies represent `SageGlass`_ electrochromic glass products. Each `material`_ has several "tint states" to control glare while maximizing daylight. 
+Dynamic glazing systems consist of two components: 
 
-Please note that in the 3D Rhino model, **window assemblies must be modeled as single surfaces**. They should not include multiple surfaces (panes), and they should not contain any solids.
+| **1 -  Dynamic Glass System**
+| **2 -  Tint Control**
+
+Please note that in the 3D Rhino model, **glazing systems must be modeled as single surfaces**. They should not include multiple surfaces (e.g. multiple glass panes), and they should not contain any solids. The single surface is typically placed at the outside face of glass. The two components of the system may be edited using the corresponding tabs (1-2 below).
+
+
 
 .. figure:: images/matBrowser_dy.png
    :width: 900px
    :align: center
-
-Tint State (Annual Workflows)
+   
+|
+Dynamic Glass System
 ----------------------------------------------------
+Dynamic glass systems are switchable electrochromic glazing products that change tint to control glare while maintaining views to the outside. Click on a row in the table to select a product.
 
-**Tint states** in `annual workflows`_ are usually controlled by a sensor (Automated) but this can be changed in the **"Tint Control" tab (2)**. "Tint Control" has similar options as the **"Shade Control" tab** mentioned `here`_. 
-
-There are four **Types of Tint Controls (3)**: 
-
-- Manual
-
-  - Behavior
-
-    - Default
-
-    - LM83  
- 
-  - Blinds reopen
-
-    - The following morning 
-
-    - Custom number of days  
-
-- Automated  
-
-- Custom Schedule (CSV File)  (comma separated value) file with 8760 values for every hour of the year. The file format is single column. The dynamic shading state is 0 for wide open and an integer 1, 2 and 3 for dynamic glass with one clear and three tint states.
-
-- Fixed - current point-in-time state - will affect `other workflows`_
-
-Both Manual and Automated uses 2000 lux as **sunlight threshold (4)** for engaging the blinds by default. 
-
-
-Tint State (Point-In-Time Workflows)
+Tint Control (Point-in-Time Workflows)
 ----------------------------------------------------
-
-The state of the tint in `point-in-time workflows`_ is shown on the diagram with a black outline and arrow pointing to the selected tint. Click on another tint to change it's point-in-time state. 
+The tint state in `point-in-time workflows`_ is shown in the axon diagram, with a black outline and arrow pointing to the selected tint. Click on another tint to change the point-in-time state. 
 
 .. figure:: images/matBrowser_dy_click.png
    :width: 600px
    :align: center
 
-.. _SageGlass: https://www.sageglass.com/
+|
+Tint Control (Annual Workflows)
+----------------------------------------------------
+When running `annual workflows`_, the tint state changes from timestep to timestep. The logic controlling this behavior is specified in the **Tint Control tab (2)**.
 
 
-.. _other workflows: materials.html#dynamic-material-behavior-based-on-workflow
+There are four **Types of Tint Control (3)**: 
 
-.. _annual workflows: materials.html#dynamic-material-behavior-based-on-workflow
+- **Manual** controls mimic the behavior of dynamic glazings operated by building occupants using manual switches. Note that, apart from override features, dynamic glazing systems are typically automated, making manual control an atypical selection. ClimateStudio offers two flavors of manual control, available via the **Behavior Model** dropdown:
 
-.. _point-in-time workflows: materials.html#dynamic-material-behavior-based-on-workflow
+    - **LM-83** controls follow the strictures of dynamic glazing operation according to the IES-NA LM-83 standard. Specifically, dynamic glazings darken when more than 2% of sensors in a room receive direct sunlight (defined as direct horizontal illuminance in excess of 1000 lux). The tint selected is always the lightest one that brings DHI below the threshold. Tints lighten again the instance conditions allow. Note that ClimateStudio's engine knows which window groups are responsible for transmitting sunlight to a sensor, and darkens only responsible groups until the 2% criterion is met. 
 
-.. _material: materials.html
+    - **Default** controls differ from LM-83 controls in three important respects. First, the trigger is direct *normal* (rather than *horizontal*) illuminance, with an editable threshold defaulting to 2000 lux **(4)**. Second, triggering sensors are limited to portions of the workplane beyond a *permissible depth* from a window. This depth is assessed from room edges adjacent to windows, and can be set via the `occupied area's property panel`_. The default value of 5 feet allows a swath of permissible sun penetration along facade-facing room edges. Any sunlit sensor *not* in this swath will cause the responsible window group to darken. Finally, unlike the LM-83 model, the default control assumes a *latency period* before the glass can lighten again. The default reset occurs the following morning, but the user may specify a longer period of days or weeks.
+ 
 
-.. _here: materials_exteriorGlass.html#shades-control-annual-and-other-workflows
+- **Automated** controls mimic the behavior of switchable glazings driven by daylight sensors. Their logic mirrors that of the Default Manual model above, except without a latency period. I.e., the glass tint is lightened immediately once conditions allow.
+
+- **Custom Schedule (CSV File)** controls allow specification of a custom tint schedule via comma-separated value file. The format is a single column of 8760 hourly values with no header. The values indicate the tint state of the glass at each hour, with 0 representing the clearest tint, 1 the next lightest, and so on.
+
+- **Fixed** controls simply set the glass to a fixed tint state for all hours of the year. The tint is assumed to be the point-in-time tint, which is set using the interactive axon diagram (see `above`_).
+
+   
+Back to `Materials`_
+
+.. _Materials: materials.html
+
+.. _annual workflows: materials.html#dynamic-materials
+
+.. _point-in-time workflows: materials.html#dynamic-materials
+
+.. _occupied area's property panel: occupiedAreas.html
+
+.. _above: materials_exteriorGlassDynamic.html#tint-control-point-in-time-workflows
