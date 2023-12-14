@@ -5,16 +5,16 @@ This workflow supports the calculation of a variety of daylight availability met
 
 Simulation Setup
 -----------------------
-There are numerous conventions, compliance guidelines, and accreditation systems centered on the measurement of daylight availability. To cover these bases, ClimateStudio offers several sub-workflows (available via dropdown 9 in the figure below). If you don't have a specific standard in mind, the LEED Option 1 setting is a reasonable place to start.
+There are numerous conventions, compliance guidelines, and accreditation systems centered on the measurement of daylight availability. To cover these bases, ClimateStudio offers several sub-workflows (available via dropdown 10 in the figure below). If you don't have a specific standard in mind, the LEED Option 1 setting is a reasonable place to start.
 
 .. figure:: images/workflowPanel_daylight.png
    :width: 900px
    :align: center
 
-Depending on the sub-workflow selected, you will see up to six subpanels (labeled 1-6 in the figure above). To prepare a model for simulation, work your way through the available subpanels, entering site and material data as required.
+Depending on the sub-workflow selected, you will see up to five subpanels (labeled 1-5 in the figure above). To prepare a model for simulation, work your way through the available subpanels, entering site and material data as required.
 
 | 1 - `Location`_
-| 2 - `Materials`_
+| 2 - `Materials`_ (including dynamic blinds)
 | 3 - `Occupied Areas`_ 
 | 4 - `Scene Assets`_ (optional): `Tubular Daylighting Devices`_ (6), and `Trees`_ (7)
 | 5 - `Import .cse file from Revit`_ (optional)
@@ -36,7 +36,9 @@ Depending on the sub-workflow selected, you will see up to six subpanels (labele
 
 .. _Scene Assets: sceneObjects.html
 
-Please note that **modeling blinds is required** for the LEED Option 1 credit, and for achieving realistic predictions of annual daylight levels in buildings. Dynamic blinds are not considered for sub-workflows that assess point-in-time conditions (LEED Option 2, Daylight Factor, and BREEAM 4a/c). 
+Please note that **modeling blinds is required** for the LEED Option 1 credit, and for achieving realistic predictions of annual daylight levels in buildings. Dynamic blinds are not considered for sub-workflows that assess point-in-time conditions (LEED Option 2, Daylight Factor, and BREEAM 4a/c). As of ClimateStudio v2.0, blinds and other dynamic shading systems are specified in the `Materials`_ panel, as a property of Exterior Glass layers.
+
+.. _Materials: materials.html
 
 If you have not done any lighting simulations in ClimateStudio, it is recommended that you initially go through the `Lighting Model Setup`_ video tutorial (5 minutes). 
 The Rhino file used in the tutorial is available for `download`_.
@@ -53,7 +55,7 @@ While a simulation is in progress, traced light paths accumulate until the user-
 
 Simulation Results
 ------------------------
-Daylight availability results vary depending on the sub-workflow selected prior to simulation (10). Use the links below to skip ahead to the option of interest:
+Daylight availability results vary depending on the sub-workflow (10) selected prior to simulation. Use the links below to skip ahead to the option of interest:
 
 .. toctree::
    :maxdepth: 1

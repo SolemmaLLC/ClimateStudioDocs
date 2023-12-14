@@ -12,9 +12,9 @@ ClimateStudio supports multi zone thermal simulations using the US Department of
 To prepare a model for simulation, work your way through the following subpanels:
 
 | 1 - `Location`_
-| 2 - `Thermal Model`_
-
-Output variables and other simulation settings may be adjusted prior to the run using the `settings dialog`_ (3). The `library manager`_ (4) facilitates browsing and/or modifying various library assets, including templates, constructions, and schedules -- all of which are also accessible when editing the Thermal Model. Once all inputs have been populated, a simulation is invoked by pressing the start button (5). A DOS window should appear, showing the progress of the EnergyPlus simulation. The run may take several minutes. 
+| 2 - `Energy Sources and Emission Factors`_
+| 3 - `Thermal Model`_
+Output variables and other simulation settings may be adjusted prior to the run using the `settings dialog`_ (4). The `library manager`_ (5) facilitates browsing and/or modifying various library assets, including templates, constructions, and schedules -- all of which are also accessible when editing the Thermal Model. Once all inputs have been populated, a simulation is invoked by pressing the start button (6). A DOS window should appear, showing the progress of the EnergyPlus simulation. The run may take several minutes. 
 
 .. _Location: location.html
 
@@ -23,6 +23,8 @@ Output variables and other simulation settings may be adjusted prior to the run 
 .. _library manager: manageLibrary.html 
 
 .. _settings dialog: energyPlus.html 
+
+.. _Energy Sources and Emission Factors: emissionFactors.html 
 
 .. figure:: images/result_eplusWindow.png
    :width: 900px

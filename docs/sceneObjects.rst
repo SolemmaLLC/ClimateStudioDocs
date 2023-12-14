@@ -1,13 +1,13 @@
 Scene Assets
 ================================================
 
-Scene assets are geometries that can be placed in Rhino model as a Rhino block. These objects can be picked up by ClimateStudio when running simulations.  
+Scene assets are elements that can be placed in the scene as Rhino block instances. These objects are incorporated into ClimateStudio lighting simulations. Their specific behaviors are asset and workflow dependent (see below).  
 
 .. figure:: images/workflowPanel_SceneObjects.png
    :width: 900px
    :align: center
 
-As of v2.0 there are three different scene assets that can be placed: 
+As of v2.0, three different scene asset types are available:
 
 | 1 - `Luminaires`_ (optional)
 | 2 - `Tubular Daylighting Devices`_ (optional)

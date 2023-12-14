@@ -1,34 +1,30 @@
 Scheduled Material
 ================================================
 
-Scheduled `material`_ takes any non-dynamic material as input and changes it's behavior based on an hourly year-long schedule. 
+Scheduled materials are materials that appear or disappear based on an annual schedule.
 
 .. figure:: images/matBrowser_scheduled.png
    :width: 900px
    :align: center
 
-The preview of a scheduled material is an hourly heat map of the material's schedule with every day of the year on the x-axis and every hour of the day on the y-axis. 
-The color of the graph is based on the material's color and the transparency represents the presence / or lack thereof according to the schedule. 
+To select a base material, use the **"Material" tab (1)** and select an item in the table.
 
-If a `point-in-time workflow`_ is selected, the arrow on the x-axis and the box highlighting the hour shows the **point-in-time state** selected. This can be changed by selecting a different date and time in the `Sky`_ Sub-panel. 
+To select a schedule, use the **"Dynamic Behavior" tab (2)** and browse for a schedule using the **Schedule button (4)**, which opens a `schedule editor`_.
 
-Select any material from the **"Material" tab (1)** by clicking on the materials table. 
+The preview shows an hourly map of the material's schedule, with days of the year on the x-axis and hours of the day on the y-axis. The color of the graph is based on the material's reflection color, while the transparency represents its presence (or lack thereof) according to the schedule. If a `point-in-time workflow`_ is selected, the arrow on the x-axis and the box highlighting the hour indicates the **point-in-time state** used by the simulation. This depends on the date and time in the `Sky`_ sub-panel. `Annual workflows`_ use the schedule to set the behavior of the material at each hourly timestep. 
 
-To change the schedule and the transparency fraction behavior, use the **"Dynamic Behavior" tab (2)**: 
+When the schedule's value is 0, the material is absent. When the schedule's value is 1, and material is present. Fractional values between 0 and 1 are interpreted according to the **Transparency Type (3)** dropdown: 
 
-| **3** - Three different **Transparency Types**: 
+  - **Alpha Transparency** uses the fraction as the material's alpha channel, with 0 being fully transparent and 1 fully opaque. 
 
-  - **Alpha Transparency** uses the fraction as alpha transparency of the material, where 0 is transparent and 1 is opaque. 
+  - **BinaryOnOff** assumes full opacity whenever the fraction is greater than 0. 
 
-  - **BinaryOnOff** rounds the fraction to 0 or 1 and shows the material only on 1. 
-
-  - **MeshFaceScaling** renders the material as is while using the fraction to scale all mesh faces around their first vertex to achieve the global transparent effect. 0 means no mesh faces (scaled by 0 to nonexistent) and 1 means full (original) sized mesh faces. 
-
-| **4** - Click on the **Schedule button** to change schedules in the `schedule editor`_. 
-
-This material's `behavior varies slightly based on the workflow selected`_. 
+  - **MeshFaceScaling** uses the fraction to scale each mesh face about its first vertex. For example, a value of 0.5 shrinks faces by a factor of 2, while a value of 0 causes faces to disappear completely. The maximum fraction is 1, meaning elements cannot grow beyond their modeled size. MeshFaceScaling may be useful for dynamic elements like deciduous leaves that grow or shrink throughout the year. 
 
 
+Back to `Materials`_
+
+.. _Materials: materials.html
 
 .. _Sky: sky.html
 
@@ -36,6 +32,6 @@ This material's `behavior varies slightly based on the workflow selected`_.
 
 .. _schedule editor: scheduleEditor.html
 
-.. _point-in-time workflow: materials.html#dynamic-material-behavior-based-on-workflow
+.. _Annual workflows: materials.html#dynamic-materials
 
-.. _material: materials.html
+.. _point-in-time workflow: materials.html#dynamic-materials

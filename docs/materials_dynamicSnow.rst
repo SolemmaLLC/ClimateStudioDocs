@@ -1,25 +1,29 @@
 Dynamic Snow
 ================================================
 
-Dynamic Snow `material`_ mimics the reflectivity of snow in winter. 
+Dynamic snow materials mimic the reflectivity of snow in winter. 
 
 .. figure:: images/matBrowser_snow.png
    :width: 900px
    :align: center
+   
+|
+The **Snow Schedule (1)** is calculated based on the `project location's`_ weather file. The algorithm is based on Dry Bulb Temperature (DBT) -- with snow beginning to accumulate on consecutive days with below-freezing temperatures, and beginning melt on consecutive days with above-freezing temperatures. Precipitation data are not currently considered.
 
-**Snow Schedule (1)** is calculated based on project location's dry-bulb temperature. Snow will start to appear for consecutive days of below freezing and disappear for consecutive days of warmer temperature. 
+The preview graph shows snow coverage throughout the year, with the date on the x-axis and coverage fraction on the y-axis. Fractions between 0 and 1 are interpreted using the material's alpha channel (with 0 being fully transparent, at 1 fully opaque).
 
-The preview of a dynamic snow material is a graph of the snow throughout the year on the x-axis and fraction of snow coverage in the y-axis. Currently the fraction represents the alpha transparency of the snow material in each day of the year. 
+If a `point-in-time workflow`_ is selected, the arrow on the x-axis shows the **point-in-time state** selected. This depends on the date in the `Sky`_ sub-panel. `Annual workflows`_ use the schedule to set the behavior of the material at each hourly timestep. 
 
-If a `point-in-time workflow`_ is selected, the arrow on the x-axis shows the **point-in-time state** selected. This can be changed by selecting a different date in the `Sky`_ Sub-panel. 
+Back to `Materials`_
 
-This material's `behavior varies slightly based on the workflow selected`_. 
-
+.. _Materials: materials.html
 
 .. _Sky: sky.html
 
-.. _behavior varies slightly based on the workflow selected: materials.html#dynamic-material-behavior-based-on-workflow
-
 .. _material: materials.html
 
-.. _point-in-time workflow: materials.html#dynamic-material-behavior-based-on-workflow
+.. _point-in-time workflow: materials.html#dynamic-materials
+
+.. _Annual workflows: materials.html#dynamic-materials
+
+.. _project location's: location.html

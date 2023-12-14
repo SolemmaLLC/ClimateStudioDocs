@@ -1,15 +1,13 @@
 Trees
 ================================================
-ClimateStudio v2.0 comes with a set of 9 pre-made trees that can be placed into the model. These trees are pre-processed for our `radiance render engine`_. 
-
-The Tree Panel is used to place the pre-made trees, either individually or in groups. 
+As of v2.0, the Tree Panel provides a collection of tree geometries that can be placed in the Rhino document as block instances. The blocks are populated with ClimateStudio materials, including a `dynamic leaf`_ material -- which makes the tree behave as a **deciduous** species. I.e., its foliage disappears and changes color depending on the latitude and time of year, in both `point-in-time`_ and `annual`_ simulations. To make the tree behave as an **evergreen** species instead, you can edit its materials after placing the block.
 
 .. figure:: images/subPanel_trees.png
    :width: 900px
    :align: center
    
 
-Use the two dropdown menus to switch between the 9 trees: 
+The trees span a range of canopy densities and shapes (aspect ratios), which are selectable via the panel's two dropdowns: 
 
 | 1 - **Tree density**
 
@@ -29,62 +27,51 @@ Use the two dropdown menus to switch between the 9 trees:
 
 Add One Tree
 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
-Click on the **Add One Tree** button (3) to add a single tree instance with a diameter of 10 meters to the model. 
+Once a tree type is selected, you can add a single instance to the document using the **Add One Tree** button (3). You will be prompted to place the tree in the viewport. Once placed, the tree can be moved, resized, or copied / arrayed to create multiple instances.
 
-Add Multiple Trees (multiple instances of the same tree)
+Array Tree
 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
-To add multiple trees, first place points in the model where trees should be (place circles instead if the diameter of the tree crown have specific values).
+If you wish to automate the arrangement of multiple tree instances in advance, you can use the **Array Tree** button (4). To use this feature, first create points where trees should be located. If you wish to specify the size of tree instances in advance, use circles instead of points -- with the diameter indicating the size of the canopy.
 
-Click on the **Array Tree** button (4) to add multiple trees. 
+Once you have set up anchor geometries, click the **Array Tree** button (4). The Rhino command line will prompt you to select the points and/or circles of interest. It will then ask if size and/or rotational jitter should be applied to the tree instances. 
 
-Rhino will prompt in the command line to select either points or circles to be the basis of arraying trees.
+- Rotational jitter will give each instance a random rotation about its anchor point. 
 
-- Circle's diameter will be the tree crown's diameter. 
+- Size jitter will adjust the size of each instance, to give a sense of natural variation. This option applies only to instances with point anchors. 
 
-- If a point is provided the resulting tree is around 10 meters in diameter. 
-
-Select points and/or circles. 
-
-Rhino command line will ask if size and/or rotational jitter should be applied to the tree instance blocks. 
-
-- Rotational jitter will rotate the trees placed randomly, creating a more natural look even though they are all instances of the same tree block. 
-
-- Size jitter will scale these instances slightly randomly to create further variation. 
-
-After selecting size and or rotational jitter, trees are placed into the Rhino model as block instances. 
+After selecting the jitter option, trees are placed in the Rhino model as block instances. As when placing a single instance, these can be moved, resized, or copied after the fact.
 
 
-Tree Block and Tree Block Instances
+Block Definitions and Instances
 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
-Every time the **Add One Tree** or the **Array Tree** button is pressed, a new block is added to "CSTreeBlocks" layer, 
-and the geometries for leaf and trunk are placed in the sub-layer of a layer named with the density and shape of the tree. 
-These sub-layers can be turned on and off just like any Rhino layer. 
+Every time the **Add One Tree** or **Array Tree** button is pressed, a new **block definition** is created. The definition has a layer structure named after the type of tree, e.g. *CSTree Sparse Short*, and its geometry exists on sublayers, e.g. *Trunk* or *Leaves Detailed*. These sub-layers can be turned on/off or given new materials, just like any Rhino layer. **Instances** of these definitions are placed on the *CSTreeBlocks* layer. Turning off this layer will hide all CS trees placed in the Rhino document. Turning off the *CSTree Sparse Short* layer, on the other hand, will hide only CSTrees that are sparse and short. 
 
 .. figure:: images/subPanel_trees_layer.png
    :width: 900px
    :align: center
    
 
-Turning off the "CSTreeBlocks" layer will turn off all CS trees placed in the Rhino document. Turning off the "CSTree Sparse Short" layer will turn off all CSTrees that are sparse and short. 
-
-Tree blocks can be copied, scaled, moved, and rotated around the scene. These will all be created as additional instances of the block (same as the **Array Tree** button) and will not increase the Rhino file's footprint significantly. 
+Tree instances can be copied, scaled, moved, and rotated around the scene. Copies will create additional instances of the block definition, with minimal impact on the Rhino document's size. 
 
 Editing Trees
 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
-Since threes are pre-processed for our radiance workflow we don't recommend editing the trees beyond translation, rotation, and proportional scaling. ClimateStudio will show an error message and undo any edits that is not a similarity transform (reflection not allowed). 
+Since tree geometries are pre-compiled for faster loading in Radiance scenes, we don't recommend editing the trees beyond translation, rotation, and proportional scaling. ClimateStudio will show an error message and undo any edits that violate transform similarity (e.g. reflection). 
 
-Trees can be edited by exploding the blocks placed by Climate Studio, but this will cause the simulations to run slower as our optimizations cannot apply. 
+Trees can be edited by exploding or editing the block definitions placed by ClimateStudio, but this will bypass Radiance instancing, leading to longer simulation load times. 
 
 Materials
 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
-The leaves layers are pre-applied with ClimateStudio's `dynamic leaf material`_. 
+The leaf layers are pre-applied with ClimateStudio's `dynamic leaf`_ material, which mimics the behavior of deciduous foliage. Changing the material to a (static) **opaque** type will cause the leaves to always be present, as in an evergreen species. Block definition material layers can be edited in `materials panel`_ just like any other Rhino layer. 
 
 .. figure:: images/subPanel_trees_material.png
    :width: 900px
    :align: center
 
-The material of the leaves or tree trunk layer can be edited in `materials panel`_ just like any other Rhino layer. 
 
-.. _radiance render engine: radianceRender.html
-.. _dynamic leaf material: materials_dynamicLeaf.html
-.. _materials panel: materials.html
+
+
+.. _Dynamic Leaf: materials_dynamicLeaf.html
+.. _Materials Panel: materials.html
+.. _annual: materials.html#dynamic-materials
+.. _point-in-time: materials.html#dynamic-materials
+.. _below:tree.html#materials
