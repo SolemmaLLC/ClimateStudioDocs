@@ -1,4 +1,3 @@
-
 Luminaires
 ================================================
 ClimateStudio supports lighting calculations for daylit and electrically lit scenes. The daylight source is defined in the `Sky panel`_. For electric-lighting-only simulations, the sky can simply be set to nighttime. 
@@ -11,22 +10,39 @@ The Luminaires panel is used to select real-world luminaire products and place t
    :width: 900px
    :align: center
    
-A dialog will appear, allowing the user to browse through a series of IES files (**2**) that come with ClimateStudio. 
-An IES file is a manufacturer-supplied text file that provides the luminous intensity distribution of a lighting product on a spherical grid. 
-This data is usually displayed three-dimensionally as a photometric web or in horizontal and vertical sections (**8**). 
-Most lighting manufacturers provide IES files of their products on their websites. 
-If you are experiencing difficulty locating an IES file for a specific product, try the `IES library`_. 
-
-.. _IES library: https://ieslibrary.com/en/home
+A dialog will appear, allowing the user to browse through a series Luminaires in ClimateStudio's library. 
+The photometric web (**A**), color spectrum (**A**), and fixture information (**A**) are displayed in at the top. 
+Type in keywords in the search box (**A**) to filter the table and click on any product in the table (**A**) to select it. 
+A selected product can be deleted (**A**), copied (**A**), or edited (**A**). 
 
 .. figure:: images/subPanel_selectLuminaire.png
    :width: 900px
    :align: center
 
 
+Edit Luminaire
+----------------------------------------------------
+To add a new Luminaire to ClimateStudio, click the "+" Button (**A**). 
+The Luminaire editor dialog will appear, allowing the user to select an IES file as the photometry (**A**), configure the light fixture (**A**), and select the color (**A**) of a Luminaire. 
+
+.. figure:: images/subPanel_selectLuminaire.png
+   :width: 900px
+   :align: center
+
+In the "Photometry" tab, select an IES files (**A**) that come with ClimateStudio, this will also populate the "Fixture" tab with the shape and dimensions defined in the IES file, and the "Lamp Color" tab with a default spectrum. 
+An IES file is a manufacturer-supplied text file that provides the luminous intensity distribution of a lighting product on a spherical grid. 
+This data is usually displayed three-dimensionally as a photometric web or in horizontal and vertical sections. 
+On the left of the "Photometry" tab, the vertical section (**A**) is displayed with photometric section at 0° in gray and photometric section at 90° in black. 
+Most lighting manufacturers provide IES files of their products on their websites. 
+If you are experiencing difficulty locating an IES file for a specific product, try the `IES library`_. 
+
+.. _IES library: https://ieslibrary.com/en/home
+
 Power Multiplier
 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
-A linear multiplier (**3**) may be used to scale the luminous output of the fixture. This may be useful for setting ballast loss factors, etc.
+A linear Power Multiplier (**A**) may be used to scale the luminous output of the fixture. This may be useful for setting ballast loss factors, etc. 
+
+
 
 Total Luminous Output
 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
