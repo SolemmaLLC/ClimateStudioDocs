@@ -10,112 +10,111 @@ The Luminaires panel is used to select real-world luminaire products and place t
    :width: 900px
    :align: center
    
+|
+
 A dialog will appear, allowing the user to browse through a series of Luminaire products in ClimateStudio's library. 
 
 .. figure:: images/luminaire_LuminaireProductFromLib.png
    :width: 900px
    :align: center
 
-Lighting Zone
-<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+|
 
-Luminaires can be assigned to a lighting zone (**7**). Lighting zones are collections of luminaires operated using the same control, 
-such as an on/off or dimming switch. In ClimateStudio renderings, lighting zones are eligible for post-process brightness and color adjustment, as described `here`_. 
+Set Lighting Zone
+----------------------------------------------------
 
-To assign a luminaire to a lighting zone, enter a zone name or choose an existing zone using the combo box. To create a new zone, simply type in a new lighting zone name. 
-To make the zone eligible for post-process adjustments, check the Post-Process box (**30**) in the Luminaires Table (see last section).
+Luminaires can be assigned to a lighting zone using the dropdown (**2**) at the top of the dialog. Lighting zones are collections of luminaires operated using the same control, such as an on/off or dimming switch. In ClimateStudio renderings, lighting zones are eligible for post-process brightness and color adjustment, as described `here`_. 
+
+To assign a luminaire to a lighting zone, use the dropdown to select an existing zone, or use the dropdown's "New..." item to create a new zone. To make the zone eligible for post-process adjustments, check the Post-Process box (**30**) in the *Luminaires Table* (see `last section`_).
+
+.. _last section: luminaires.html#luminaires-table
 
 .. _here: radianceRender.html#post-processing-of-lighting-zones
 
-Choose a Luminaire Product
+Choose Luminaire Product
 ----------------------------------------------
 
-The photometric web, color spectrum, and fixture information are displayed at the top (**3**). 
+To choose a luminaire, select a row in the product table (**10**). To narrow your search, type keywords in the search box (**4**), or use the library filter (**5**) to isolate *Default* or *User*-defined products. User-defined products may be created using the New button (**9**), or by copying (**8**) an existing product and then using the Edit button (**7**). Only user-defined products may be deleted (**6**). 
 
-Type in keywords in the **search box (4)** to filter the **lumunaire products table (10)** and click on any product in the table to select it. 
+The properties of the selected product, including its luminous power, photometric distribution, color spectrum, and fixture dimensions are displayed above the table (**3**). 
 
-Switch between default and user libraries with the **library dropdown (5)**. 
+Once luminaire selection is complete, click the *Place in Rhino Model* button (**11**) to place an instance of the luminaire at a user-specified point. To create additional copies of the luminaire, simply use the *copy* or *array* commands in Rhino. Copying a luminaire creates multiple instances of the same object (using block instances), allowing the entire set of instances to be edited in concert. Each time you insert a luminaire using the *Place* button, a new block definition is created, which shows up as single row in the *Luminaires Table* (see `below`_).
 
-A selected product can be deleted (**6**), copied (**7**), or edited (**8**). Create a new luminaire product by clicking on the plus button (**9**). 
+.. _below: luminaires.html#luminaires-table
 
-.. The luminous output is the total, spherically-integrated luminous flux emitted by the luminaire according to the IES file's photometric distribution. This quantity should not be confused with the product's rated lumen value, which may (or may not) be listed in the IES file header. The total flux accounts for interreflection losses within the fixture, and is a more reliable indicator of measured and simulated behavior than rated lumen values (when they exist).
-
-.. The maximum intensity is the luminaire's peak candela value. Both this field and the total luminous output scale with the power multiplier.
-
-Once luminaire selection is complete, click the *Place in Rhino Model* button (**11**), 
-which places the luminaire in the Rhino model at a user-specified point.
-To create additional copies of the luminaire, simply use the *copy* or *array* commands in Rhino. 
-Copying luminaires creates multiple instances of the same object (using block instances), 
-allowing the entire set of instances to be edited in concert. 
-
-Edit or Create a Luminaire Product
+Edit or Create Luminaire Product
 ----------------------------------------------------
-The luminaire product editor dialog appears,  allowing the user to select an IES file as the **photometry (13)**, configure the light **fixture (14)**, and select the **lamp color (15)**. 
+Editing or creating a luminaire (using buttons **7** or **9**) opens the luminaire product editor. This dialog lets you specify the product's photometry (**13**), fixture shape (**14**), and lamp color (**15**). 
 
 .. figure:: images/luminaire_NewLuminaire.png
    :width: 900px
    :align: center
 
+|
 
-**Select a IES file (16)** in the **photometry (13)** tab to start creating a new luminaire product. 
-This will populate the **product name (12)** with the ies file name and display the **photometric web (18)**, 
-populate the **fixture (14)** with the shape and dimensions defined in the IES file, 
-and the **lamp color (15)** tab with a default spectrum. 
+Photometry
+----------------------------------------------------
+The product's luminous behavior is set by uploading an IES file (**16**). An IES file is a manufacturer-supplied text file that defines a product's luminous intensity distribution on a spherical grid. Most lighting manufacturers provide IES files on their web sites. If you are experiencing difficulty locating an IES file for a specific product, try the `IES library`_. ClimateStudio supports all IES file formats supported by Radiance.
 
-An IES file is a manufacturer-supplied text file that provides the luminous intensity distribution of a lighting product on a spherical grid. 
-This data is usually displayed three-dimensionally as a photometric web or in horizontal and vertical sections. 
-The vertical section (**18**) is displayed with photometric section at 0° in gray and photometric section at 90° in black. 
-Most lighting manufacturers provide IES files of their products on their websites. 
-If you are experiencing difficulty locating an IES file for a specific product, try the `IES library`_. 
+.. _IES library: https://ieslibrary.com/en/home
 
-Change the **power multiplier** to scale the luminous output of the fixture. This may be useful for setting ballast loss factors, etc. 
+Once an IES file is uploaded, the shape of its photometric distribution is drawn in vertical cross section (**18**). Its total luminous power is displayed in the *Lumens* field in table **19**. The total power is the spherically-integrated luminous flux emitted by the luminaire according to the IES file's distribution. This quantity should not be confused with the product's rated lumen value, which may (or may not) be listed in the IES file header. The total flux accounts for interreflection losses within the fixture, and is a more reliable indicator of measured and simulated behavior than the rated lumen value.
 
-Summary of the product are shown on the bottom (**18**). 
+The luminous output may be scaled linearly using the power multiplier field (**17**), which is useful for setting ballast loss factors, etc. 
 
+.. The maximum intensity is the luminaire's peak candela value. Both this field and the total luminous output scale with the power multiplier.
 
-Change the fixture **shape (20)** by clicking on the dropdown and choose between a sphere, a box, or a cylinder fixture, 
-the **dimensions (22)** of the fixture can be changed by typing in the text boxes. 
+Fixture Shape
+----------------------------------------------------
+By default, ClimateStudio generates scene descriptions of product fixtures using the Radiance subprogram *ies2rad*. This program converts the IES file into a primitive shape that Radiance can understand, such as a box or cylinder. At times, the *ies2rad* output is not satisfactory, either because the shape is improperly defined in the IES file (e.g. a bulb with zero diameter), or because the program itself fails to produce the described dimensions (e.g. a tall direct-indirect pendant converted into a shape with zero height). In such cases, you may wish to redefine the fixture by selecting *Custom* from the shape dropdown (**21**), and/or editing its dimensions (**23**). Changing a luminaire's shape and/or dimensions will not alter its far-field photometry, but it will impact near-field effects, as well as the fixture's appearance and surface luminance under direct viewing (as in renderings).
 
 .. figure:: images/luminaire_fixture.png
    :width: 900px
    :align: center
 
-Change the **housing (23)** material of box and cylinder fixtures by selecting from the `materials dialog`_, or it can be turned off completely. 
+|
 
-.. _materials dialog: materials.html
+In addition to editing the fixture's shape, you may specify an opaque housing material (**24**) for its non-luminous faces. Whether a face is luminous (shown with a yellow tint in the shape diagram (**22**)), and whether a fixture *has* non-luminous faces, depends on whether the IES file defines flux in the corresponding directions. One exception is the sides of cylinders. These are always non-luminous, as the underlying engine (Radiance 5.4) cannot compute correct photometry otherwise. 
 
 .. figure:: images/luminaire_fixture_shapes.png
    :width: 900px
    :align: center
 
-Change the **lamp color (15)** by selecting a spectrum from the **spectrum table (25)**, check the **melanopic and photopic actions (24)** in the graph above the table. 
+|
+
+Lamp Color
+----------------------------------------------------
+Most IES files do not include color information. In order to define a color, you must select a spectrum from the *Lamp Color* tab. Its color table (**26**) contains a diverse set of spectral power distributions (SPDs), including CIE standard illuminants as well as product SPDs measured by `Pacific Northwest National Laboratory`_ (PNNL). These spectra are meant to serve as archetypes loosely covering the gamut of extant lighting technologies, including LEDs of various color temperatures. As of ClimateStudio version 2.0, it is not possible to import custom spectra, though this feature is planned in future releases. Color spectra are converted to tristimulus (RGB) values for simulation in Radiance.
+
+.. _Pacific Northwest National Laboratory: https://www.pnnl.gov/
 
 
 .. figure:: images/luminaire_spectrum.png
    :width: 900px
    :align: center
 
-.. _IES library: https://ieslibrary.com/en/home
-
-
+|
 
 Luminaires Table
-<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+----------------------------------------------------
+Once a product is placed in the Rhino document, it will appear in the *Luminaires Table*, nested below its lighting zone. Each placement (via the *Add Luminaire* button (**1**)) creates in the active document a new luminaire block definition, which appears as a row in the table. Only luminaire blocks with visible instances appear in the table. The number of visible instances (there may be multiple if you have copied or arrayed them in Rhino) is listed in the *Count* column (**28**). You may edit a luminaire in-place, adjusting colors or swapping out the IES file entirely, using the *Edit* column (**29**) (see `editor`_ documentation above). Edits affect all instances of the selected luminaire block.
+
+.. _editor: luminaires.html#edit-or-create-luminaire-product
 
 .. figure:: images/subPanel_luminairesTable.png
    :width: 900px
    :align: center
 
-The Luminaires Table lists all luminaire objects in the model and controls their display in the viewport. The checkbox in the table's far left column (**26**), along with the visibility of the luminaire blocks in Rhino, 
-determines whether a luminaire is included in renderings and point-in-time illuminance calculations. 
-**Only luminaires that are visible and enabled at the moment a simulation starts are included in the analysis.**
+|
 
-The **hWeb (27)** and **vWeb (28)** toggles control the visibility of the 3d photometric web preview, while the **webScale (29)** column controls its size. 
+The checkbox in the table's far left column (**27**), along with the visibility of the luminaire instances in Rhino, determine whether a luminaire is included in renderings and point-in-time illuminance calculations. **Only luminaires that are visible and enabled at the moment a simulation starts are included in the analysis.**
 
-The **Post-Process** check box (**30**) determines whether a lighting zone is eligible for post-render adjustments, as described `here`_. Please note that all luminaires in a post-processed lighting zone will emit the same (adjustable) color. 
+The hWeb (**31**) and vWeb (**32**) toggles control the visibility of the 3d photometric web preview in the Rhino viewport, while the webScale column (**33**) controls its size. 
+
+The post-process check box (**34**) determines whether a lighting zone is eligible for post-render adjustments, as described `here`_. Please note that all luminaires in a post-processed lighting zone will emit the same (adjustable) color. 
 
 .. _here: radianceRender.html#post-processing-of-lighting-zones
 
-In the scene above, eight instances of an ambient suspended fixture have been assigned to the perimeter zone of the open office space, and another eight to its interior zone. Six instances of a down light, meanwhile, have been placed in the small meeting room. 
+In the scene above, eight instances of an ambient suspended fixture have been assigned to the perimeter zone of the open office space, and another eight to its interior zone. Six instances of a downlight have been placed in the conference room. 
 
 

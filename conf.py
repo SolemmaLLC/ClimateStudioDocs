@@ -56,7 +56,7 @@ numfig = True
 
 # General information about the project.
 project = u'ClimateStudio'
-copyright = u'2020, Solemma LLC'
+copyright = u'2024, Solemma LLC'
 author = u'Solemma LLC'
 
 # The version info for the project you're documenting, acts as replacement for
