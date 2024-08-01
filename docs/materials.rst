@@ -21,7 +21,7 @@ The library is divided into nine material categories:
 
 - Opaque
 - `Exterior Glass (with optional Dynamic Blinds)`_
-- `Exterior Glass (Dynamic)`_
+- `Exterior Glass (Electrochromic)`_
 - `Exterior Glass (Translucent Insulating)`_
 - `Interior Glass`_
 - `Dynamic Leaf`_
@@ -31,7 +31,7 @@ The library is divided into nine material categories:
 
 .. _Exterior Glass (with optional Dynamic Blinds): materials_exteriorGlass.html
 .. _Exterior Glass Shades: materials_exteriorGlass.html#shades-control-point-in-time-workflows
-.. _Exterior Glass (Dynamic): materials_exteriorGlassDynamic.html
+.. _Exterior Glass (Electrochromic): materials_exteriorGlassDynamic.html
 .. _Exterior Glass (Translucent Insulating): materials_exteriorGlassTranslucent.html
 .. _Interior Glass: materials_interiorGlass.html
 .. _Dynamic Leaf: materials_dynamicLeaf.html
