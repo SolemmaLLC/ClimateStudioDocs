@@ -115,6 +115,7 @@ The post-process check box (**34**) determines whether a lighting zone is eligib
 
 .. _here: radianceRender.html#post-processing-of-lighting-zones
 
-In the scene above, eight instances of an ambient suspended fixture have been assigned to the perimeter zone of the open office space, and another eight to its interior zone. Six instances of a downlight have been placed in the conference room. 
+In the scene above, eight instances of an ambient suspended fixture have been assigned to the perimeter zone of the open office space, and another eight to its interior zone. Six instances of a downlight have been placed in the conference room.
+
 
 
