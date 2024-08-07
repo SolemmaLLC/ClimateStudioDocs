@@ -19,8 +19,8 @@ Material Browser
 |
 The library is divided into nine material categories: 
 
-- Opaque
-- `Exterior Glass (with optional Dynamic Blinds)`_
+- Opaque Material
+- `Exterior Glass (with Dynamic Shade (optional))`_
 - `Exterior Glass (Electrochromic)`_
 - `Exterior Glass (Translucent Insulating)`_
 - `Interior Glass`_
@@ -29,8 +29,8 @@ The library is divided into nine material categories:
 - `Scheduled Material`_
 - `Custom Material`_
 
-.. _Exterior Glass (with optional Dynamic Blinds): materials_exteriorGlass.html
-.. _Exterior Glass Shades: materials_exteriorGlass.html#shades-control-point-in-time-workflows
+.. _Exterior Glass (with Dynamic Shade (optional)): materials_exteriorGlass.html
+.. _Exterior Glass (with Dynamic Shade): materials_exteriorGlass.html
 .. _Exterior Glass (Electrochromic): materials_exteriorGlassDynamic.html
 .. _Exterior Glass (Translucent Insulating): materials_exteriorGlassTranslucent.html
 .. _Interior Glass: materials_interiorGlass.html
@@ -39,60 +39,17 @@ The library is divided into nine material categories:
 .. _Scheduled Material: materials_scheduledMaterial.html
 .. _Custom Material: customRadianceMaterials.html
 
-Use the **category dropdown (1)** to switch between categories. 
+Use the dropdown (**1**) to switch between categories. Click on a row in the table (**5**) to change the current selection. The table is searchable (**4**) and its columns are sortable. The visual and physical properties of the selected material, as well as any relevant dynamic characteristics, are displayed in the panel (**2**) above the table
 
-The **material preview panel (2)** shows the visual and physical characteristics of the selected material, as well as any relevant dynamic controls. 
-
-Below this are the **tabs (3)**, which allow switching between different aspects of a material behavior, where applicable.  
-
-The **search box (4)** allows filtering materials by name, while the (sortable) columns of the **table (5)** allow ordering items by material property. 
-
-Once a selection is made, choose either **"Cancel"** to forgo changes, **"Clear"** to remove materials from all selected layers, or **"Select"** to apply the material to all selected layers **(6)**.   
+Once you are happy with your selection, click the **Select** button to apply the material to all selected layers. The **Clear** button will *remove* materials from all selected layers. Click **Cancel** to forgo any changes. 
 
 
 Dynamic Materials
 ----------------------------------------------------
 
-Some material categories, including `Exterior Glass`_, `Exterior Glass (Dynamic)`_, `Dynamic Leaf`_, `Dynamic Snow`_, and `Scheduled Material`_, contain materials or systems that change depending on the time of day or year. Exterior glass systems, for example, include (optional) shades that open or close in response to visual comfort conditions. Dynamic leaves, meanwhile, disappear or change color depending on season and latitude. Because these dynamic behaviors are tied to specific moments in time, and because ClimateStudio's lighting workflows have different relationships with time, it follows that the workflows handle dynamic materials differently. Specifically, the workflows divide into three groups:
+Several material categories, including `Exterior Glass (with Dynamic Shade)`_, `Exterior Glass (Electrochromic)`_, `Dynamic Leaf`_, `Dynamic Snow`_, and `Scheduled Material`_, contain materials or systems that change depending on the time of day or year. Exterior glass systems, for example, include (optional) shades that open or close in response to visual comfort conditions. Dynamic leaves, meanwhile, disappear or change color depending on the season and latitude. 
 
-.. _Exterior Glass: materials_exteriorGlass.html
-
-- **Annual workflows** simulate the scene over an entire year. These workflows assume dynamic materials take on a different state at each hourly timestep, with states determined by a control schedule. Annual workflows include:
-
-  - `Annual Glare`_
-
-  - `Radiation Map`_
-
-  - `Daylight Availability`_
-
-    - LEED Option 1
-
-    - BREEAM (4b)
-
-    - EN 17037
-
-    - Custom
-
-- **Point-in-Time workflows** simulate the scene at one specific date and time (or, in the case of LEED Option 2, two specific dates and times). These workflows assume the same leaf, snow, and scheduled-material control schedules that the annual workflows do, plucking the state from the date/time in question. The exception is the exterior glazing materials, which require a **point-in-time** state to be set by the user. This distinction allows testing different shade positions or electrochromic tints under different sky conditions. (Note that LEED Option 2 overrides this setting, forcing blinds to be open and EC glazings to assume their clearest state.) Point-in-time workflows include:
-
-  - `Point-in-time Illuminance`_
-
-  - `Radiance Render`_
-  
-  - `Daylight Availability`_
-
-    - LEED Option 2
-  
-- **Other workflows** include view and daylight-factor assessments, which are neither annual nor tied to a specific date or time. In these workflows, the visibility of leaves, snow, and scheduled materials is simply determined by the visibility of the Rhino layer, with leaves taking on their summer color. Shades are assumed to be open, and dynamic glass takes on its clearest tint.
-
-  - `View Analysis`_ 
-
-  - `Daylight Availability`_
-
-    - BREEAM (4a and 4c)
-
-    - Daylight Factor
-
+When conducting annual simulations, ClimateStudio uses *multiversal ray tracing* to capture all of these dynamic conditions in a single run. Generally speaking, the engine computes the dynamic schedules automatically, but some of the systems permit customization (e.g. switching between manual and automated blinds controls). For point-in-time simulations such as renderings, states are either derived from the annual schedule or set by the user. For a detailed description of behavior and control options, follow the links for each type of dynamic material above.
 
 
 .. _custom Radiance materials: customRadianceMaterials.html

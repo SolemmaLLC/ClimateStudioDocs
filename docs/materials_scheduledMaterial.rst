@@ -10,13 +10,17 @@ Scheduled materials are materials that appear or disappear based on an annual sc
 |
 Material
 ----------------------
-To select a material, use the **"Material" tab (1)** and select an item in the table from the **default library (4)** or form a **user library (4)**. 
+To select a material, use the *Material* tab (**1**) and select a row in the table. If you have created custom Radiance materials (see `here`_), you can access them via the library dropdown (**4**). 
 
 Dynamic Behavior
 -----------------------
-To select a schedule, use the **"Dynamic Behavior" tab (2)** and browse for a schedule using the **Schedule button (6)**, which opens a `schedule editor`_.
+To select a schedule, use the *Dynamic Behavior* tab (**2**) and browse for a schedule using the schedule button (**6**), which opens a `schedule editor`_.
 
-The preview shows an hourly map of the material's schedule, with days of the year on the x-axis and hours of the day on the y-axis. The color of the graph is based on the material's reflection color, while the transparency represents its presence (or lack thereof) according to the schedule. If a `point-in-time workflow`_ is selected, the arrow on the x-axis and the box highlighting the hour indicates the **point-in-time state** used by the simulation. This depends on the date and time in the `Sky`_ sub-panel. `Annual workflows`_ use the schedule to set the behavior of the material at each hourly timestep. 
+The preview shows an hourly map of the material's schedule, with days of the year on the x-axis and hours of the day on the y-axis. The color of the graph is based on the material's reflection color, while the transparency represents its presence (or lack thereof) according to the schedule. 
+
+If a point-in-time workflow (`Rendering`_ or `Point-in-Time Illuminance`_) is active, the arrow on the x-axis and the box highlighting the hour indicates the **point-in-time state** used by the simulation. This depends on the date and time in the `Sky`_ sub-panel. 
+
+Annual workflows (`Annual Glare`_, `Radiation Maps`_, and *LEED* / *Custom* / *EN* / *BREEAM 4b* `Daylight Availability`_ runs) use the schedule to set the behavior of the material at each hourly timestep. In `View`_, *Daylight Factor*, and *BREEAM 4a/c* daylight simulations, the material is assumed to be present if the Rhino layer is on.
 
 When the schedule's value is 0, the material is absent. When the schedule's value is 1, and material is present. Fractional values between 0 and 1 are interpreted according to the **Transparency Type (5)** dropdown: 
 
@@ -29,6 +33,8 @@ When the schedule's value is 0, the material is absent. When the schedule's valu
 
 Back to `Materials`_
 
+.. _here: customRadianceMaterials.html
+
 .. _Materials: materials.html
 
 .. _Sky: sky.html
@@ -37,6 +43,9 @@ Back to `Materials`_
 
 .. _schedule editor: scheduleEditor.html
 
-.. _Annual workflows: materials.html#dynamic-materials
-
-.. _point-in-time workflow: materials.html#dynamic-materials
+.. _View: viewAnalysis.html
+.. _Annual Glare: annualGlare.html
+.. _Daylight Availability: daylightAvailability.html
+.. _Radiation Maps: radiationMap.html
+.. _Rendering: radianceRender.html
+.. _Point-in-Time Illuminance: illuminance.html

@@ -57,33 +57,4 @@ The Getting Started section provides a quick overview of the ClimateStudio inter
    BREEAM<docs/BREEAM.rst>
    EN 17037<docs/EN17037.rst>
    LEED<docs/LEED.rst>
-   
-   
-   
-.. toctree::
-   :maxdepth: 3
-   :caption: FAQ
-   
-   Custom Radiance Materials<docs/customRadianceMaterials.rst>
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
 
-
-
-
-   
-------------------
-Indices and tables
-------------------
-
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
