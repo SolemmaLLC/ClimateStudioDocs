@@ -10,7 +10,9 @@ Simulation Setup
    :width: 900px
    :align: center
 
-To prepare a model for simulation, work your way though the materials and occupied-areas subpanels, labeled 1 and 2 in the figure above. 
+|
+
+To prepare a model for simulation, work your way though the materials and occupied-areas subpanels, labeled 1 and 2 in the figure above. You may also import tree assets, which are pre-tagged as *Nature/Vegetation* layers.
 
 | 1 - `Materials`_
 | 2 - `Occupied Areas`_ 
@@ -33,10 +35,9 @@ When assigning materials, a **VisionGlass** tag must be attached to layers that 
    :width: 900px
    :align: center
 
-If you are submitting for LEED certification, you may also wish to organize and tag model layers containing features of visual interest, including *nature*, streetscapes busy with *movement* (LEED v4.0), and *art* or *urban landmarks* (LEED v4.1). If you are testing for EN 17037 compliance, the only tag of relevance (other than VisionGlass) is the *ground* tag.
+If you are submitting for LEED certification, you may also wish to organize and tag model layers containing features of visual interest, including *Nature/Vegetation*, streetscapes busy with *Movement* (LEED v4.0), and *Art* or *Urban Landmarks* (LEED v4.1). If you are testing for EN 17037 compliance, the only tag of relevance (other than *VisionGlass*) is the *Ground* tag.
 
-If you have not done any lighting simulations in ClimateStudio, it is recommended that you initially go through the `Lighting Model Setup`_ video tutorial (5 minutes). 
-The Rhino file used in the tutorial is available for `download`_.
+If you have not done any lighting simulations in ClimateStudio, it is recommended that you initially go through the `Lighting Model Setup`_ video tutorial (5 minutes). The Rhino file used in the tutorial is available for `download`_.
 
 .. _Lighting Model Setup: https://vimeo.com/392379928 
 .. _download: https://climatestudiodocs.com/ExampleFiles/CS_Two_Zone_Office.3dm

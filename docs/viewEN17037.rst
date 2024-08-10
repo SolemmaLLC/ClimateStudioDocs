@@ -24,11 +24,15 @@ The compliance levels are based on three assessments, which are carried out for 
    :width: 700px
    :align: center
 
-- **Outside View Distance**: The median view distance from the window to objects seen outside the window. Thresholds for Minimum, Medium, and High levels of compliance are 6, 20, and 50 meters. The median is assessed using all pixels containing through-window views to the outside from the viewing position. The sky and un-modeled portions of the ground hemisphere are considered to be infinitely distant, so if these elements compose more than half of the outside view, the median distance will also be infinite.
+|
+
+- **Outside View Distance**: The median view distance from the window to objects seen outside the window. Thresholds for Minimum, Medium, and High levels of compliance are 6, 20, and 50 meters. The median is assessed using all pixels containing through-window views to the outside from the viewing position, as described `here`_.
+
+.. _here: viewDistance.html
 
 .. _results panel: results.html
    
-- **Number of View Layers**: EN 17037 defines three view layers: Sky, Ground, and Landscape. The Landscape layer includes both natural elements and buildings -- in other words, everything *except* sky and man-made ground. A view position must see at least the Landscape layer in order to achieve Minimum compliance. Medium compliance requires seeing the Landscape layer plus one other. High compliance requires seeing all three. ClimateStudio considers all exterior elements not labeled with a ground tag (see `setup instructions`_) to be part of the Landscape layer. ClimateStudio also considers ground-hemisphere view rays that escape the scene within five degrees of the horizon to be part of the Landscape layer. The justification for this is that distant, near-horizon views must contain *either* buildings or natural landscape, even if neither is modeled explicitly.
+- **Number of View Layers**: EN 17037 defines three view layers: Sky, Ground, and Landscape. The Landscape layer includes both natural elements and buildings -- in other words, everything *except* sky and man-made ground. A view position must see at least the Landscape layer in order to achieve Minimum compliance. Medium compliance requires seeing the Landscape layer plus one other. High compliance requires seeing all three. ClimateStudio considers all exterior elements not labeled with a *Ground* tag (see `setup instructions`_) to be part of the Landscape layer. ClimateStudio also considers ground-hemisphere view rays that escape the scene within five degrees of the horizon to be part of the Landscape layer. The justification for this is that distant, near-horizon views must contain *either* buildings or natural landscape, even if neither is modeled explicitly.
 
 .. _setup instructions: viewAnalysis.html
    
@@ -39,7 +43,9 @@ Below the dashboard is the Room Table, which lists compliance level percentages 
 .. figure:: images/result_panelENViewTable.png
    :width: 900px
    :align: center
-   
+
+|
+
 Metrics include compliance levels for each assessment criterion, as well as their underlying quantities, e.g. Horizontal Sight Angle, which is displayed using a continuous gradient:
 
 .. figure:: images/result_viewportENSightAngle.png
