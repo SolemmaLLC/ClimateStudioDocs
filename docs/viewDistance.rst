@@ -27,7 +27,7 @@ Normal-to-window distances also struggle to make sense of views through complex 
    
    **Fig. 3**: Normal-to-window distances struggle to make sense of complex facade.
 
-ClimateStudio takes a more tenable stance, which as that distances are measured along lines of sight. This avoids the problems and ambiguities described above, while also comporting with common sense: you measure what you see. Specifically, ClimateStudio begins its analysis of each view point by constructing a 360 x 60-degree panorama centered on the horizon. Through each pixel, the software renders the depth buffer from the vision glass to the next intersection, along the direction of the pixel ray.
+ClimateStudio takes a more tenable stance, which is that distances are measured along lines of sight. This avoids the problems and ambiguities described above, while also comporting with common sense: you measure what you see. Specifically, ClimateStudio begins its analysis of each view point by constructing a 360 x 60-degree panorama centered on the horizon. Through each pixel, the software renders the depth buffer from the vision glass to the next intersection, along the direction of the pixel ray.
 
 Defining Major Obstructions
 >>>>>>>>>>>>>>>>>>>>
@@ -78,7 +78,7 @@ The above method provides a clear and enforceable definition of "major obstructi
 Defining the Aperture
 >>>>>>>>>>>>>>>>>>>>
 
-A potential complication of any beyond-the-glass distance measurement is that it may capture portions of the window aperture itself. One can actually see this in the slivers of shallow-depth pixels around the borders the views in *Figure 7*. These are view rays that passed through the glazing before intersecting with the outside portion of the window frame. One might reasonably object to including these pixels in a median measurement, on the grounds that the aperture itself is not part typically perceived as part of the outside view composition. Because of this, ClimateStudio **ignores pixels containing elements less than 2 meters beyond the glass**. To change this cutoff, edit the *min outside distance* value in the simulation settings dialog:
+A potential complication of any beyond-the-glass distance measurement is that it may capture portions of the window aperture itself. One can actually see this in the slivers of shallow-depth pixels around the borders of the views in *Figure 7*. These are view rays that passed through the glazing before intersecting with the outside portion of the window frame. One might reasonably object to including these pixels in a median measurement, on the grounds that the aperture itself is not typically perceived as part of the outside view composition. Because of this, ClimateStudio **ignores pixels containing elements less than 2 meters beyond the glass**. To change this cutoff, edit the *min outside distance* value in the simulation settings dialog:
 
 .. figure:: images/viewSettings.png
    :width: 900px
