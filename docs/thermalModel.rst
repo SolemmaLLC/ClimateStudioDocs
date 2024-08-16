@@ -1,133 +1,89 @@
 Thermal Model
 ================================================
-.. figure:: images/subPanel_thermal.png
+.. figure:: images/thermal_ModelObjectsPanel.png
    :width: 900px
    :align: center
 
-This panel is used to build up a multi-zone EnergyPlus model for `Thermal Analysis`_. ClimateStudio supports the following geometric objects: Zones, Windows, Adiabatic/Ground and Shading. The icons (1) from left to right represent: 
+This panel is used to build a multi-zone EnergyPlus model for `Thermal Analysis`_. It is worthwhile pointing out that the thermal model is assumed to be built separately from the daylighting model in ClimateStudio. Both models can be stored on separate layers in the same Rhino file. 
 
 .. _Thermal Analysis: thermalAnalysis.html
 
-- Zone
-- Exterior Window (openings to outside)
-- Interior Windows (openings between zones)
-- Shading
-- Ground Surfaces
-- Adiabatic Surfaces. 
+Add the following geometric objects to ClimateStudio by clicking on the respective buttons: 
 
-Thermal Zones
+- `Zone`_
+- `Exterior Window`_ (openings to outside)
+- `Interior Window`_ (openings between zones)
+- `Shading`_
+- `Ground Surface`_
+- `Adiabatic Surface`_
+
+.. _Zone: thermal_zone.html
+.. _Exterior Window: thermal_window.html
+.. _Interior Window: thermal_window.html
+.. _Shading: thermal_shading.html#shading
+.. _Ground Surface: thermal_boundaryConditions.html#ground
+.. _Adiabatic Surface: thermal_boundaryConditions.html#adiabatic
+
+Use the Buttons on the top right to control the Rhino viewport preview and navigate the Thermal Model Table (**12**). 
+
+Change the **Preview Settings** (**8**) of the model to hide or show components of a thermal model. For example, hiding all the roofs and floors is a good way to check if all the partitions and interior windows are created correctly. 
+
+.. figure:: images/thermal_ModelPreviewSettings.png
+   :width: 900px
+   :align: center
+
+Changing the **Preview Mode** switches between viewing the **Model Geometry**, coloring the zones by **Space Use** (**20**), or coloring the zones by `system`_ assignments. This is useful for creating diagrams or quickly checking model settings.  
+
+.. _system: thermal_system.html
+
+.. figure:: images/thermal_PreviewModes.png
+   :width: 900px
+   :align: center
+
+Thermal Model Table
 ----------------
-Thermal zones are modeled as closed breps in Rhino. Thermal zones are the fundamental building blocks of thermal simulations. They consist of areas within a building that are conditioned to the same temperature, have the same programmatic use (such as office or classroom) and experience comparable loads from solar radiation, etc. A thermal zone is not necessarily the same as a room. A row of identical, south facing classrooms can be treated as a single zone since there will be no heat flow between the classrooms if they are used in the same way. On the other hand, a large open office area should be divided into perimeter zones bordering the building envelope with a depth of around 5m (15 feet) and a core zone (see below). Combining core and perimeter zones into a single zone leads to an under prediction of conditioning loads since a surplus of solar gains in one zone may be credited to the heating required in another. In reality, local cooling and heating may be required at the same time. 
 
-.. figure:: images/addObjects2.png
-   :width: 400px
-   :align: center
+The Thermal Model Table (**12**) organizes `zones`_, faces and `windows`_ in a nested tree structure that allows **editing** (**17**), 
+**deleting** (**18**) and temporarily **hiding** (**16**) model objects. 
+The table supports multi-select for convenient batch editing. 
+Any operation will be performed to all applicable items selected. 
 
-Spaces on different floors should also not be combined into a single zone because ClimateStudio identifies downward facing surfaces as floors and assigns internal loads for equipment and occupants by floor area. Combining two floors into a single zone thus halves those loads.  
+.. _zones: thermal_zone.html
+.. _windows: thermal_window.html
 
-The figure below shows an example zoning model of a two story wing with bands of classrooms bordering a central circulation area. The whole wing should be modeled as six zones, with North and South facing classrooms on both floors and a core zone for the aisle.  
+A Default `Ground Boundary`_ object is created for any new thermal model at z = 0. This can be turned off or deleted (**7**). 
 
-.. figure:: images/subPanel_thermalClassrooms.png
-   :width: 900px
-   :align: center
+.. _Ground Boundary: thermal_shadingGroundAdiabatic#Ground.html
 
-Neighboring zones have to be modeled carefully so that their surfaces actually touch. This is so that EnergyPlus understands that two zones are touching and any areas between them are hence interior.
+Use the **expand all** (**10**) and **collapse all** (**11**) buttons to help navigate the table: 
 
-Once one or several breps have been selected as thermal zones, the user should press enter and the Zone dialogue appears.
-
-.. figure:: images/addZone.png
-   :width: 900px
-   :align: center
-
-ClimateStudio comes with a large selection of predefined thermal zone descriptions including the US Department of Energy (DOE) Commercial `Prototype Building models.`_ These preset zone templates are descriptions of typical commercial US buildings located in different ASHRAE climate zones. For example, Boston is located in climate zone 5A. By using the filter function in the Zone dialogue, the user can select all building types available in the ClimateStudio database such as Midrise Apartment, Medium Office and Strip Mall. The `Thermal Zone Settings`_ page gives a description of all modeling inputs. 
-
-.. _Prototype Building models.: https://www.energy.gov/eere/slsc/building-energy-use-benchmarking
-
-.. figure:: images/addObjects5.png
-   :width: 900px
-   :align: center
-
-.. _Thermal Zone Settings: thermalZoneSettings.html
-
-Once a zone template has been assigned, the zones appear in the thermal model table and are previewed in the Rhino viewport (when in Wireframe display mode). The image below shows a two-zone model representing the conference room and open office in the `ClimateStudio example file.`_  It is worthwhile pointing out that it is assumed that the thermal model is built separately from the daylighting model in ClimateStudio. Both models can be stored on separate layers in the same Rhino file.  
-
-.. _ClimateStudio example file.: https://climatestudiodocs.com/ExampleFiles/CS_Two_Zone_Office.3dm
-
-.. figure:: images/subPanel_thermalZones.png
-   :width: 900px
-   :align: center
-
-Windows
------------
-Any type of envelope opening such as windows or skylights are models as flat surfaces with three or four corner points. Window surfaces have to be completely embedded in a zone surface to be recognized as a child object of a zone wall or roof. 
-
-Note: 
-	While window surfaces in EnergyPlus may not touch the edge of a zone surface, you may draw a window in ClimateStudio by just snapping to the corner points of a wall. ClimateStudio will then slightly offset the corner of the window from the wall surface.     
-
-Once all windows have been selected, the Windows dialogue appears. 
-
-.. figure:: images/addObjects7.png
-   :width: 900px
-   :align: center
-
-- **Glazing Material:** ClimateStudio comes with a large selection of actual glazing units that can be selected via the glazing construction dialogue. The input data for these glazing units are based on measurements stored in the `International Glazing Database (IGDB).`_ The glazing construction panel supports sorting the glazing units in the ClimateStudio database by, for example, visual light transmittance or solar heat gain coefficient. Once a glazing is selected, its main elements, such as individual glass panes and any fillings between the panes is displayed above.
-
-  .. _International Glazing Database (IGDB).: https://windows.lbl.gov/software/igdb
-
-  .. figure:: images/glazingConstruction.png
-   :width: 900px
-   :align: center
-
-- **Shading System Settings:** Dynamic shading systems can be modeled by setting a shading plus shading control. The schedule determines when the control is being activated throughout the year. 
-
-- **Ventilation Settings:** the user can specify whether a window is operable for natural ventilation purposes, the fraction of the window area that is operable and at what indoor zone temperature the window will be opened. 
-
-- **Window Frame:** By default, EnergyPlus assumes that the thermal properties of a glazing unit extend across the rough opening of the window. To consider the thermal properties of a frame, its outer frame width and U value can be set to account for heat losses across the frame.
-
-Once window surfaces have been selected, they are added to the thermal model table and are previewed in the Rhino viewport (when in Wireframe display mode). If the window geometry is valid and is placed on a zone face, it will appear as a child object of that surface in the zone table.
-
-.. figure:: images/subPanel_thermalWindows.png
-   :width: 900px
-   :align: center
-
-If the window geometry cannot be assigned to a zone-surface, it will be considered to be an invalid object and will be outlined in red. 
-
-.. figure:: images/subPanel_thermalInvalidWindow.png
+.. figure:: images/thermal_ModelObjectsTree.png
    :width: 900px
    :align: center
 
 
-Shading
---------------
-Shading surfaces may represent an overhang or parts of a neighboring building that shade thermal zone or window objects. EnergyPlus will create a shading mask for each window and all shading surfaces. This process is both slow, as well as somewhat unstable, so it is recommended that shading surfaces are assigned somewhat selectively. For example, in the urban massing model below, shading surfaces are the overhangs as well as walls from neighboring buildings that face the apartment building in the center. 
+| 13 - Expand or collapse  
+| 14 - Item **Icon**  
+| 15 - Item **Name**, double click to rename  
+| 16 - **Visibility**, click to toggle  
+| 17 - **Edit All Properties**, click to open an editor dialog
+| 18 - **Delete**, Or click the Delete button (**7**) above the table
+| 19 - **Window-to-wall Ratio** for auto-generated windows (Zones only). This column will be greyed out if the zone has any custom windows assigned, and ClimateStudio will not auto-generate any windows using the WWR settings. Click to edit window the window-to-wall ratio. Either a Uniform (**24**) ratio can be applied to all cardinal directions, or each Direction (**24**) can have different ratios. Click OK (**25**) to confirm the edit. The thermal model will auto-rebuild to reflect any of these changes. 
 
-.. figure:: images/addObjects11.png
+.. figure:: images/thermal_WWR.png
    :width: 900px
    :align: center
 
-Boundary Conditions
------------------------
-Boundary conditions are surfaces such as interior adiabatic surfaces or the ground. They have to be defined  as 3 or 4 corner surface objects in Rhino that are coincident with a thermal zone surface. 
+| 20 - **Space Use color** (Zones only), this color will be used to color the zone in **Space Use Preview Mode**. Click to edit color
+| 21 - Edit **Space Use** (Zones only), click to open the editor
+| 22 - Edit **Construction** (Zones only), click to open the editor. See Thermal `Zone`_
 
-Adiabatic
-	If a surface is defined as `adiabatic`, no heat flow will go through it during a simulation. Adiabatic surfaces are colored in red..
-
-.. figure:: images/addObjects12.png
-   :width: 500px
+.. figure:: images/thermal_ChangeTemplates.png
+   :width: 900px
    :align: center
-   
-.. _Thermal Analysis: thermalAnalysis.html
 
-  In the case of the ClimateStudio demo file, one may assume that the model only represents part of a larger building and that the three surfaces towards the West and North are adiabatic. The figure below shows how this would be modeled in ClimateStudio.
+| 23 - Edit **System** (Zones only), click to open the editor. Click on the checkbox (**26**) of the respective system (**27**) and click OK (**29**) to confirm the `system`_ assignment. Only one system may be selected. 
 
-  .. figure:: images/addObjects13.png
-     :width: 900px
-     :align: center
-     
-.. _Thermal Analysis: thermalAnalysis.html
-
-Ground
-	If a surface is defined as `ground`, it is assumed that it touches ground at the constant monthly temperature set under `Advanced EnergyPlus settings`_. Ground surfaces are colored in green. Please note that nearly every thermal model needs ground surfaces as the building otherwise floats above the ground as if on stilts.
-
-.. _Advanced EnergyPlus settings: energyPlus.html	
-
+.. figure:: images/thermal_AssignSystem.png
+   :width: 900px
+   :align: centerZ
