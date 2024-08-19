@@ -125,7 +125,13 @@ When there are too many zones, use the name filter (**25**) to help narrow down 
    :width: 900px
    :align: center    
 
-   
+| 
+
+To compare several results, use our `result comparison`_ tool. 
+
+.. _result comparison: resultComparison.html
+
+
    
    
    

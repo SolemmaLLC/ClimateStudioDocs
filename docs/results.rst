@@ -16,10 +16,15 @@ When a simulation is in progress, its result file is automatically loaded into t
 
 Results Comparison
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-The results table makes it convenient to flip between several design options with the simple use of up and down arrow keys. For thermal analysis results, ClimateStudio also supports the generation of performance plots comparing multiple files. To access this feature (available as of version 1.5), select multiple thermal results in the table and then click the results comparison button (1). This will launch a graphing window whose features are detailed in the link below.
+The results table makes it convenient to flip between several design options with the simple use of up and down arrow keys. For `thermal analysis results`_, ClimateStudio also supports the generation of performance plots comparing multiple files. To access this feature (available as of version 1.5), select multiple thermal results in the table and then click the results comparison button (1). This will launch a graphing window whose features are detailed in the link below.
+
+.. _thermal analysis results: thermalAnalysis.html#simulation-results
+
 
 .. toctree::
    :maxdepth: 1 
    :titlesonly:
    
    Results Comparison<resultComparison.rst>
+
+
