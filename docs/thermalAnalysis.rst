@@ -79,9 +79,9 @@ Use dropdown (**15**) to switch between 9 different graphs:
    :width: 900px
    :align: center
 
--	**Energy Use Intensity** shows monthly EUI levels for the whole building for heating, cooling, lighting and equipment.
+-	**Energy Use Intensity** shows monthly EUI levels for the whole building for heating, cooling, fans, pumps, lighting, hot water, humidification, heat rejection, and equipment. 
 
--	**Energy Use** shows the total monthly energy use for the whole building for heating, cooling, lighting, and equipment.
+-	**Energy Use** shows the total monthly energy use for the whole building for heating, cooling, fans, pumps, lighting, hot water, humidification, heat rejection, and equipment. 
 
 -	**Zone Temperature Curves** show the number of hours for each zone in which the operative temperature is below (red) or above (blue) a given temperature. In the example below, the operative temperature of the Open Office zone is 673h per year above 26 degrees Celsius, indicating a propensity of the space for overheating.
 

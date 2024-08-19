@@ -115,7 +115,7 @@ The window construction in the template is climate appropriate. However, it will
 
 .. _windows: thermal_window.html
 
-Window-to-wall Ratio (WWR) 
+Window-to-Wall Ratio (WWR) 
 ~~~~~~~~~~~~~
 
 A **uniform** (**5**) or **directional** window-to-wall ratio can be selected for this zone's auto-generated window 
