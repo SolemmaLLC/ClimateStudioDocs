@@ -156,3 +156,8 @@ At the same time, the approximate US retail price for natural gas was 0.04 $/kWh
 
 The ClimateStudio default values for electricity (cooling and electricity) of 0.612 CO2e kg/kWh correspond to the 2017 average value for the US grid. It is worth pointing out that these 
 numbers are highly variable both over time and regionally. Up to date numbers for different US zip codes are provided by the Energy Protection Agency’s Power Profiler https://www.epa.gov/energy/power-profiler#/.
+
+|
+Back to `Thermal Zone`_. 
+
+.. _Thermal Zone: thermal_zone.html

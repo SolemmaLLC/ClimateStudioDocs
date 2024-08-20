@@ -1,8 +1,9 @@
 Results Comparison
 -------------------------
-The Results Comparison tool is a graphical interface for comparing multiple `thermal analysis`_ results. It features a stacked bar graph that can be used to track the energy performance of a set of design variants vis-a-vis baselines and targets. The window can be launched from a button at the top of the `results panel`_.
+The Results Comparison tool is a graphical interface for comparing multiple `thermal analysis results`_. It features a stacked bar graph that can be used to track the energy performance of a set of design variants vis-a-vis baselines and targets. The window can be launched from a button at the top of the `results panel`_.
 
-.. _thermal analysis: thermalAnalysis.html
+.. _thermal analysis results: thermalAnalysis.html#simulation-results
+
 .. _results panel: results.html
 
 .. figure:: images/compareInput.jpg
@@ -32,3 +33,13 @@ Both the graph and the table can be exported in PNG or PDF format. The table can
 .. figure:: images/exporttablepdf.jpg
    :width: 600px
    :align: center
+
+|
+
+Back to `Thermal Analysis`_. 
+
+.. _Thermal Analysis: thermalAnalysis.html
+
+Back to `Results`_. 
+
+.. _Results: results.html

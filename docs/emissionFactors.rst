@@ -46,7 +46,11 @@ Resources
 
 - `NYSERDA energy annual prices`_ provides New York state prices for different fuels. 
 
+|
 
+Back to `Thermal Analysis`_. 
+
+.. _Thermal Analysis: thermalAnalysis.html
 
 .. _ANSI/ASHRAE/ICC/USGBC/IES Standard 189.1-2020: https://www.ashrae.org/technical-resources/standards-and-guidelines/read-only-versions-of-ashrae-standards
 .. _United States Environmental Protection Agency's power profiler: https://www.epa.gov/egrid/power-profiler#/
