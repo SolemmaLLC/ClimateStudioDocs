@@ -34,3 +34,8 @@ A default ground is provided for any new thermal model at z = 0. This can be del
   .. figure:: images/thermal_ExampleGround.png
      :width: 900px
      :align: center
+
+|
+Back to `Thermal Model`_. 
+
+.. _Thermal Model: thermalModel.html

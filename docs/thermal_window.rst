@@ -37,3 +37,8 @@ If the window geometry cannot be assigned to a zone-surface, it will be consider
 .. figure:: images/thermal_ExampleGlazingInvalid.png
    :width: 900px
    :align: center
+
+|
+Back to `Thermal Model`_. 
+
+.. _Thermal Model: thermalModel.html

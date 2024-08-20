@@ -33,3 +33,13 @@ Both the graph and the table can be exported in PNG or PDF format. The table can
 .. figure:: images/exporttablepdf.jpg
    :width: 600px
    :align: center
+
+|
+
+Back to `Thermal Analysis`_. 
+
+.. _Thermal Analysis: thermalAnalysis.html
+
+Back to `Results`_. 
+
+.. _Results: results.html

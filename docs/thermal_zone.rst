@@ -144,3 +144,9 @@ Once a zone template has been assigned, the zones appear in the `thermal model t
 .. figure:: images/thermal_ExampleZone.png
    :width: 900px
    :align: center
+
+
+|
+Back to `Thermal Model`_. 
+
+.. _Thermal Model: thermalModel.html

@@ -109,3 +109,8 @@ The **minimum and maximum outdoor temperature** bounds and the upper threshold f
 
 In the example below where Min =0, Max=30 and max RH=90%, the natural ventilation system will only be able to open windows if the outdoor ambient air is below 30 degrees and below an RH of 90%. If the ambient conditions are above the defined thresholds, no natural ventilation will be performed, and the active cooling system will be turned on automatically if available. 
 
+|
+
+Back to `System`_. 
+
+.. _System: thermal_system.html

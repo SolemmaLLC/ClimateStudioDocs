@@ -13,3 +13,8 @@ shading surfaces are the overhangs as well as walls from neighboring buildings t
 .. figure:: images/addObjects11.png
    :width: 900px
    :align: center
+
+|
+Back to `Thermal Model`_. 
+
+.. _Thermal Model: thermalModel.html

@@ -87,3 +87,9 @@ Use the **expand all** (**10**) and **collapse all** (**11**) buttons to help na
 .. figure:: images/thermal_AssignSystem.png
    :width: 900px
    :align: centerZ
+
+|
+
+Back to `Thermal Analysis`_. 
+
+.. _Thermal Analysis: thermalAnalysis.html
