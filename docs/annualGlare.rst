@@ -92,7 +92,7 @@ The results interface has five sections:
 
 .. _report generator: #reporting
 
-- The **Temporal Graphs** show the frequency of each DGP bin across all views(12), grouped by hour of day and day of year. In this example, the occurrence of perceptible, disturbing, and intolerable glare is unsurprisingly higher in the afternoons, since the building features rooms with Western but not Eastern exposures. The floor area(s) included in the graph can be altered using the dropdown (13) or by filtering and/or selecting areas in the Room Table. The rightmost dropdown (14) permits switching between annual and single-day statistics. In the latter mode, time sliders let you scrub through individual hours of year, which causes timestep DGP data to be previewed in the Rhino viewport. Export graph as bitmap with button on top right of graph (15). 
+- The **Temporal Graphs** show the frequency of each DGP bin across all views, grouped by hour of day and day of year. In this example, the occurrence of perceptible, disturbing, and intolerable glare is unsurprisingly higher in the afternoons, since the building features rooms with Western but not Eastern exposures. The floor area(s) included in the graph can be altered by filtering and/or selecting areas in the Room Table. The dropdown (14) permits switching between annual and single-day statistics. In the latter mode, time sliders let you scrub through individual hours of year, which causes timestep DGP data to be previewed in the Rhino viewport. Export graph as bitmap with button on top right of graph (15). 
 
 .. _report generator: #reporting
 

@@ -61,7 +61,7 @@ The results interface has five sections:
 
 .. _report generator: #reporting
 
-- The **Temporal Graphs** show daylight levels or blinds operation binned by hour of day and day of year. The sDA and ASE graphs show the percentage of floor area that is daylit (300 lux) or overit (1000 lux direct), respectively, for each temporal bin. The graphed floor area(s) can be altered using the dropdown (10) or by filtering and/or selecting areas in the Room Table. The rightmost dropdown (11) permits switching between annual and single-day statistics. In the latter mode, time sliders let you scrub through individual hours of year, which causes timestep illuminance data and shading states to be previewed in the Rhino viewport.
+- The **Temporal Graphs** show daylight levels or blinds operation binned by hour of day and day of year. The sDA and ASE graphs show the percentage of floor area that is daylit (300 lux) or overit (1000 lux direct), respectively, for each temporal bin. The graphed floor area(s) can be altered by filtering and/or selecting areas in the Room Table. The rightmost dropdown (11) permits switching between annual and single-day statistics. In the latter mode, time sliders let you scrub through individual hours of year, which causes timestep illuminance data and shading states to be previewed in the Rhino viewport.
 
 .. _report generator: #reporting
 
